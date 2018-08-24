@@ -1,4 +1,8 @@
-# Contribuindo para o projeto
+---
+id: contributing
+title: Contribuindo para o projeto
+---
+
 
 Antes de enviar uma alteração para este repositório,
 coloque-se como responsável por ela via issues do github. Verifique se você
