@@ -2,6 +2,7 @@
   "docs": {
     "Comunidade": ["codeofconduct", "contributing"],
     "Gerência": ["comunicacao", "processo"],
-    "Capacitação": ["treinamentos"]
+    "Capacitação": ["treinamentos"],
+    "Visão de Produto": ["docVisao"]
   }
 }
