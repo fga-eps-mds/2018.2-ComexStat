@@ -28,10 +28,10 @@ A equipe que realizará o Comexserv estará dividida entre os seguintes papéis:
 | Papel | Responsabilidade |
 | :---: | :--------------: |
 | Desenvolvedor | O desenvolvedor tem como papel desenvolver, testar, garantir a qualidade e entregar o aplicativo |
-| Product Owner |   |
-| Devops |   |
-| Engenheiro de Arquitetura |   |
-| Scrum Master   |   |
+| Product Owner | Responsável por passar a visão do cliente para a equipe, assim como priorizar a ordem de desenvolvimento do sistema de acordo com as necessidades do cliente. |
+| Devops | Responsável pela configuração de ambiente dos membros de desenvolvimento, assim como automatização de testes e deploy do sistema. |
+| Arquiteto de Software | No contexto da disciplina, atuará de maneira a analisar se a arquitetura de microserviços é viável para o projeto. |
+| Scrum Master | É um facilitador da equipe, responsável por retirar possíveis impedimentos que possam comprometer o andamento do projeto. |
 
 A equipe é compostas por alunos da disciplina de Métodos de Desenvolvimento de Software e Engenharia de Produto de Software. Os papéis foram divididos da seguinte maneira:
 
@@ -40,7 +40,7 @@ A equipe é compostas por alunos da disciplina de Métodos de Desenvolvimento de
 | Matheus Vitor Costa Joranhezon | Product Owner |
 | Fabíola Malta Fleury | Scrum Master |
 | Vinicius Rodrigues Oliveira | Devops |
-| Sannya Santana de Arvelos | Engenheira de Arquitetura |
+| Sannya Santana de Arvelos | Arquiteto de Software |
 | André Lucas Ferreira Lemos de Souza | Desenvolvedor |
 | Caio Brandão Santos | Desenvolvedor |
 | João Victor de Oliveira Matos | Desenvolvedor |
@@ -52,5 +52,3 @@ A equipe é compostas por alunos da disciplina de Métodos de Desenvolvimento de
 # 7. Prazo
 
 # 8. Custo
-
-# 9. Referências Bibliográficas
