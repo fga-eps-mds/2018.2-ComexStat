@@ -1,7 +1,13 @@
-deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: 23e22680b18c082f541b4ea581232afc803e5cac  # Set in the settings page of your repository, as a secure variable
-  keep-history: true
-  on:
-    branch: master
+language: node_js
+
+node_js:
+  - '8.9.4'
+
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
+
+script:
+  - bash ./deploy.sh
