@@ -21,6 +21,10 @@ Apesar dos dados referentes à prestação de serviços no Brasil serem abertos,
 
 # 5. Escopo do Projeto
 
+O Comexserv será uma plataforma web que terá como objetivo a facilitação na visualização dos dados de prestação de serviços no Brasil. Tendo isso em vista, alguns recursos são imprescindíveis para o sucesso do sistema.
+
+O sistema deve ser capaz de gerar tabelas a partir dos dados providos pelo banco de dados do MDIC, com a aplicação de filtros específicos, de maneira que o usuário possa ser capaz de fazer uma pesquisa personalizada para as suas necessidades. Além disso, deve se ter a opção de fazer downloas de dados no formato .scv, de maneira que o usuário possa adquirir os dados de sua fonte primária. 
+
 # 6. Equipe e Papéis
 
 A equipe que realizará o Comexserv estará dividida entre os seguintes papéis:
