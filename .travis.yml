@@ -1,13 +1,25 @@
+sudo: required
+
 language: node_js
+
+
+services:
+  - docker
 
 node_js:
   - '8.9.4'
+  branches:
+    only:
+      - master
 
 cache:
   yarn: true
-  directories:
-    - node_modules
 
+before_install:
+  - docker pull vinicinolivera/gh-pages-docker-travis
 
 script:
-  - bash ./deploy.sh
+  - echo "GH_NAME=${GH_NAME}" >> docs/.env
+  - echo "GH_EMAIL=${GH_EMAIL}" >> docs/.env
+  - echo "GH_TOKEN=${GH_TOKEN}" >> docs/.env
+  - docker run -v `pwd`:"/app" -w "/app" --env-file docs/.env vinicinolivera/gh-pages-docker-travis bash -c "sh deploy.sh"

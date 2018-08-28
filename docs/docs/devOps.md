@@ -21,5 +21,5 @@ Neste tópico será identificado alguns motivos de possuir o DevOps no projeto.
 
 ## 3. Referências
 
-*  O que é DevOps? 2018. Disponível em: <https://vertigo.com.br/o-que-e-devops/>. Acesso em: 27 ago. 2018.
-* TARGETTRUST. O que é DevOps?: Metodologia, benefícios e ferramentas!. 2015. Disponível em: <https://targettrust.com.br/blog/o-que-e-devops/>. Acesso em: 27 ago. 2018.
+> *  O que é DevOps? 2018. Disponível em: <https://vertigo.com.br/o-que-e-devops/>. Acesso em: 27 ago. 2018.
+> * TARGETTRUST. O que é DevOps?: Metodologia, benefícios e ferramentas!. 2015. Disponível em: <https://targettrust.com.br/blog/o-que-e-devops/>. Acesso em: 27 ago. 2018.
