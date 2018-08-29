@@ -39,4 +39,4 @@ A comunicação com o cliente será efetuada por meio de telegram, para marcaç�
 
 ## Referências Bibliográficas
 
-PMBOK, GUIA. "Um guia do conhecimento em gerenciamento de projetos." Quarta Edição 123 (2013).
+> * PMBOK, GUIA. "Um guia do conhecimento em gerenciamento de projetos." Quarta Edição 123 (2013).
