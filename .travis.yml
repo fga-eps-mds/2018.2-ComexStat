@@ -4,7 +4,7 @@ node_js:
   - '8'
 branches:
   only:
-    - feature/travis-configuration
+    - master
 cache:
   yarn: true
 script:
