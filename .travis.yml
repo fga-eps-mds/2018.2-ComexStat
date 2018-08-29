@@ -1,3 +1,4 @@
+# .travis.yml
 sudo: required
 
 language: node_js
@@ -7,9 +8,9 @@ services:
 
 node_js:
   - '8'
-  branches:
-    only:
-      - feature/travis-configuration
+branches:
+  only:
+    - feature/travis-configuration
 
 cache:
   yarn: true
