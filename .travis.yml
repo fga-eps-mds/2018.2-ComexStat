@@ -2,12 +2,11 @@ sudo: required
 
 language: node_js
 
-
 services:
   - docker
 
 node_js:
-  - '8.9.4'
+  - '8'
   branches:
     only:
       - master
@@ -22,4 +21,4 @@ script:
   - echo "GH_NAME=${GH_NAME}" >> docs/.env
   - echo "GH_EMAIL=${GH_EMAIL}" >> docs/.env
   - echo "GH_TOKEN=${GH_TOKEN}" >> docs/.env
-  - docker run -v `pwd`:"/app" -w "/app" --env-file docs/.env vinicinolivera/gh-pages-docker-travis bash -c "sh deploy.sh"
+  - docker run -v `pwd`:"/app" -w "/app" --env-file docs/.env vinicinolivera/gh-pages-docker-travis bash -c "cd docs; sh deploy.sh"
