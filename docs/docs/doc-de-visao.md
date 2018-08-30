@@ -3,6 +3,14 @@ id: docVisao
 title: Documento de Visão
 ---
 
+# Histórico da Revisão
+
+| **Data** | **Versão** | **Descrição** | **Autor** |
+| :------: | :--------: | :-----------: | :-------: |
+|29/08/2018|0.1.0|Abertura do documento|Rogério Junior, Marcos Nery e André Lucas|
+|29/08/2018|0.2.0|Preenchimento dos tópicos da introdução|Rogério Junior, Marcos Nery e André Lucas|   
+
+
 # 1. Introdução
 
 Nesta introdução serão abordados tópicos referentes a uma visão geral do produto, definindo seu propósito, escopo, definições, acrônimos, abreviações e referências
@@ -25,3 +33,8 @@ Para suprir a necessidade de um melhor sistema de vizualização de dados relaci
 | FGA | Faculdade do Gama |
 | UnB | Universidade do Gama |
 
+## 1.4 Referências
+
+## 1.5 Visão Geral 
+
+A organização do documento é feita de maneira a prover ao leitor a capacidade de através do mesmo entender o produto em seus vários aspectos de forma coesa. Para tal, são apresentados primeiramente os tópicos referentes a função geral do software e as motivações que levaram a sua criação, após isso, é descrito o posicionamento do produto em relação ao mercado e as partes interessada, incluindo a forma como a criação do sistema afetará os usuários. Por fim, são descritas as principais funcionalidades do software, bem como algumas de suas restrições e requisitos. 
