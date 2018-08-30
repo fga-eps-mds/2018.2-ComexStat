@@ -1,0 +1,60 @@
+---
+id: medicao
+title: Indicadores e Métricas
+---
+
+## Introdução
+
+É fundamental para saúde do projeto realizar seu monitoramento, coletando informações
+que podem auxiliar em decisões de negócio, melhoria do processo e seu gerenciamento.
+Para este fim, foi utilizada uma simplificação do processo GQM, para levantamento
+das medições que serão realizadas no projeto.
+
+### GQM de Produtividade
+
+![GQM_Produtividade](https://fga-eps-mds.github.io/2018.2-GrupoMDIC/img/GQM_Produtividade.png)
+
+O time possui como prazo para realização do projeto a duração das disciplinas de MDS e EPS,
+no segundo semestre de 2018. Logo, o aproveitamento do tempo deve ser otimizado, tentando
+entender como o time pode ser produtivo. Para isso, foram levantadas três perguntas
+
+#### O conhecimento do time está nivelado?
+
+#### O time está seguindo o planejamento da sprint
+#### Quão produtiva é a equipe?
+
+#### Métricas
+- Pontos
+
+- Burndown
+
+-  Velocity
+- Quadro de Horas
+- Earned value management (EVM)
+- Diferença entre nível de conhecimento dos membros no quadro de conhecimento
+
+Cinco:
+
+:D - Consigo ensinar outras pessoas
+:) - Consigo me virar
+:l - Sei mais ou menos
+:( - Sei muito pouco
+:S - Não tenho a menor ideia
+
+
+## Quadro de Horas (?)
+
+### GQM de Gerência de Riscos
+
+![GQM_Riscos](https://fga-eps-mds.github.io/2018.2-GrupoMDIC/img/GQM_Riscos.png)
+#### Matriz de Riscos
+
+#### Burndown de Riscos
+
+### GQM de Manutenção
+
+![GQM_Codigo](https://fga-eps-mds.github.io/2018.2-GrupoMDIC/img/GQM_codigo.png)
+
+## 3. Referências
+
+> * FOWLER, Martin & LEWIS, James. "Microsserviços em Poucas Palavras". Disponível em: <https://www.thoughtworks.com/pt/insights/blog/microservices-nutshell>. Acessado em 22/08/2018.
