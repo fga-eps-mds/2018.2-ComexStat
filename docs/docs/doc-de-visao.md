@@ -8,7 +8,7 @@ title: Documento de Visão
 | **Data** | **Versão** | **Descrição** | **Autor** |
 | :------: | :--------: | :-----------: | :-------: |
 |29/08/2018|0.1.0|Abertura do documento|Rogério Junior, Marcos Nery e André Lucas|
-|29/08/2018|0.2.0|Preenchimento dos tópicos da introdução|Rogério Junior, Marcos Nery e André Lucas|   
+|29/08/2018|0.2.0|Preenchimento dos tópicos da introdução|Rogério Junior, Marcos Nery e André Lucas|
 |30/08/2018|0.3.0|Preenchimento inicial dos tópicos do Posicionamento|Marcos Nery|
 | 30/08/2018 | 0.4.0 | Finalização dos tópicos de Posicionamento | Rogério Júnior |
 
@@ -27,7 +27,7 @@ Para suprir a necessidade de um melhor sistema de vizualização de dados relaci
 ## 1.3 Definições, acrônimos e abreviações
 
 | **Abreviação** | **Definição** |
-| :--------: | :-------: |  
+| :--------: | :-------: |
 | MDIC | Ministério da Industria, Comércio Exterior e Serviços |
 | MDS | Métodos de Desenvolvimento de Software |
 | EPS | Engenharia do Produto de Software |
@@ -49,7 +49,7 @@ O Comexserv, ao tornar mais fácil o acesso aos dados relacionados à prestaçã
 ## 2.2 Instrução do Problema
 
 |  | |
-| :--------: | :-------: |  
+| :--------: | :-------: |
 | **Problema**| Não há um sistema capaz de prover funções de acesso, filtragem e visualização aos dados coletados pelo MDIC relacionados ao comércio de serviços no Brasil|
 | **Funções afetadas** | Análise e visualização dos dados de comércio de serviços |
 | **Efeito** | Difícil acessibilidade aos dados coletados e falta de ferramentas que possibilitem uma melhor análise dos mesmos|
@@ -64,3 +64,26 @@ O Comexserv, ao tornar mais fácil o acesso aos dados relacionados à prestaçã
 | **Solução** | ComexServ |
 | **Descrição da Solução** | Uma plataforma web que permita ao usuário o acesso aos dados de forma fácil e intuitiva, a partir de uso de filtros e detalhamento, e que estes possa ser obtido no formato .csv |
 | **Diferenciais** | Facilidade no acesso à informação |
+
+### 3. Descrição dos Envolvidos e dos Usuários
+
+#### 3.1. Resumo dos Envolvidos
+
+| Nome | Descrição | Responsabilidade|
+|-----|-------|---------|
+| Equipe de Programação | Estudantes da Universidade de Brasilia da disciplina de Métodos de Desenvolvimento de Software. | Desenvolvimento do software esclarecido nesse documento, além de implementar testes e fazer o deploy do mesmo. |
+| Equipe de Gestão do Projeto | Estudantes da Universidade de Brasília da disciplina de Engenharia do Produto de Software | Acompanhar o processo de desenvolvimento da aplicação, identificando possíveis problemas e apontando caminhos e soluções. |
+
+#### 3.2. Resumo dos Usuários
+
+| Nome | Descrição |
+|------|--------|
+| Público Geral | Pessoas que tenham interesse em dados e informações sobre comércio de serviços. |
+| Funcionários | Funcionários do MDIC que trabalham nas áreas administrativas e necessitam filtrar tais informações. |
+
+#### 3.3. Ambiente do Usuário
+O acesso aos serviços do software poderá ser feito por navegadores de internet, como:
+* Google Chrome;
+* Mozila Firefox;
+* Apple Safari
+* Opera
