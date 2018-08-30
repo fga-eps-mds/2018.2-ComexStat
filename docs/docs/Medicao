@@ -20,26 +20,39 @@ entender como o time pode ser produtivo. Para isso, foram levantadas três pergu
 
 #### O conhecimento do time está nivelado?
 
-#### O time está seguindo o planejamento da sprint
+Caso o conhecimento não seja distribuido dentro do time, existe a possibilidade de sobrecarga de alguns membros
+e a não utilização do potencial de membros que ainda não possuiem as ferramentas e conhecimento necessários para ajudar o time.
+
+#### O time está seguindo o planejamento da sprint?
+
+Deve-se realizar um planejamento de acordo com a capacidade do time. Logo, o planejamento
+realizado tem como objetivo trabalho do time durante toda a sprint. Caso seja diagnosticado
+que o time entregou tudo muito antes da finalização, ou não conseguiu entregar todo o trabalho
+alocado, existem problemas que devem ser atacados.
+
 #### Quão produtiva é a equipe?
 
+Para que se possa melhorar a produtividade da equipe, é fundamental, em primeiro lugar, entender
+sua produtividade, e fazer planejamentos de acordo com esta.
+
 #### Métricas
+
 - Pontos
 
 - Burndown
 
 -  Velocity
+
 - Quadro de Horas
+
 - Earned value management (EVM)
+
 - Diferença entre nível de conhecimento dos membros no quadro de conhecimento
-
-Cinco:
-
-:D - Consigo ensinar outras pessoas
-:) - Consigo me virar
-:l - Sei mais ou menos
-:( - Sei muito pouco
-:S - Não tenho a menor ideia
+  - :D - Consigo ensinar outras pessoas
+  - :) - Consigo me virar
+  - :l - Sei mais ou menos
+  - :( - Sei muito pouco
+  - :S - Não tenho a menor ideia
 
 
 ## Quadro de Horas (?)
@@ -57,4 +70,4 @@ Cinco:
 
 ## 3. Referências
 
-> * FOWLER, Martin & LEWIS, James. "Microsserviços em Poucas Palavras". Disponível em: <https://www.thoughtworks.com/pt/insights/blog/microservices-nutshell>. Acessado em 22/08/2018.
+> * .
