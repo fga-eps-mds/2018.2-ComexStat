@@ -5,8 +5,8 @@ node_modules
 lib/core/metadata.js
 lib/core/MetadataBlog.js
 
-docs/website/translated_docs
-docs/website/build/
-docs/website/yarn.lock
-docs/website/node_modules
-docs/website/i18n/*
+website/translated_docs
+website/build/
+website/yarn.lock
+website/node_modules
+website/i18n/*

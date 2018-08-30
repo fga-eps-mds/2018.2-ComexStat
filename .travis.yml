@@ -1,14 +1,24 @@
-# .travis.yml
+sudo: required
+
 language: node_js
+
+services:
+  - docker
+
 node_js:
   - '8'
-branches:
-  only:
-    - master
+  branches:
+    only:
+      - feature/travis-configuration
+
 cache:
   yarn: true
+
+before_install:
+  - docker pull vinicinolivera/gh-pages-docker-travis
+
 script:
-  - git config --global user.name "${GH_NAME}"
-  - git config --global user.email "${GH_EMAIL}"
-  - echo "machine github.com login ${GH_NAME} password ${GH_TOKEN}" > ~/.netrc
-  - cd docs/website && yarn install && GIT_USER="${GH_NAME}" yarn run publish-gh-pages
+  - echo "GH_NAME=${GH_NAME}" >> docs/.env
+  - echo "GH_EMAIL=${GH_EMAIL}" >> docs/.env
+  - echo "GH_TOKEN=${GH_TOKEN}" >> docs/.env
+  - docker run -v `pwd`:"/app" -w "/app" --env-file docs/.env vinicinolivera/gh-pages-docker-travis bash -c "cd docs; sh deploy.sh"
