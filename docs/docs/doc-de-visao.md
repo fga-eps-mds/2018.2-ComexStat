@@ -11,6 +11,8 @@ title: Documento de Visão
 |29/08/2018|0.2.0|Preenchimento dos tópicos da introdução|Rogério Junior, Marcos Nery e André Lucas|
 |30/08/2018|0.3.0|Preenchimento inicial dos tópicos do Posicionamento|Marcos Nery|
 | 30/08/2018 | 0.4.0 | Finalização dos tópicos de Posicionamento | Rogério Júnior |
+| 30/08/2018 | 0.5.0 | Preenchimento inicial dos tópicos de Descrição | André Lucas |
+| 30/08/2018 | 0.6.0 | Preenchimento do tópico Perfis dos Usuários | João Victor | 
 
 # 1. Introdução
 
@@ -87,3 +89,27 @@ O acesso aos serviços do software poderá ser feito por navegadores de internet
 * Mozila Firefox;
 * Apple Safari
 * Opera
+
+## 3.4 Perfis dos Usuários
+
+### 3.4.1 Público Geral
+
+| Representantes | Público Geral |
+| :--------: | :-------: |  
+| Descrição | Pessoas que buscam entender melhor o comercio de serviços |
+| Tipo | Usuário interessado em estatísticas do comércio exterior de serviços |
+| Responsabilidades | O usuário não tem responsabilidades sobre a plataforma web |
+| Critérios de Sucesso | Achar o que o usuário deseja |
+| Envolvimento | Baixo |
+|Problemas/Comentários | - |
+
+### 3.4.2 Funcionários
+
+| Representantes | Funcionários |
+| :--------: | :-------: |  
+| Descrição | Funcionários do MDIC |
+| Tipo | Funcionários que necessitam de dados para analise do comercio de serviços |
+| Responsabilidades | Acessar a plataforma para obter os dados que precisa |
+| Critérios de Sucesso | Conhecer a plataforma e toda suas funcionalidades |
+| Envolvimento |  Alto |
+| Problemas/Comentários | - |
