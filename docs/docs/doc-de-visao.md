@@ -10,6 +10,7 @@ title: Documento de Visão
 |29/08/2018|0.1.0|Abertura do documento|Rogério Junior, Marcos Nery e André Lucas|
 |29/08/2018|0.2.0|Preenchimento dos tópicos da introdução|Rogério Junior, Marcos Nery e André Lucas|   
 |30/08/2018|0.3.0|Preenchimento inicial dos tópicos do Posicionamento|Marcos Nery|
+| 30/08/2018 | 0.4.0 | Finalização dos tópicos de Posicionamento | Rogério Júnior |
 
 # 1. Introdução
 
@@ -35,15 +36,15 @@ Para suprir a necessidade de um melhor sistema de vizualização de dados relaci
 
 ## 1.4 Referências
 
-## 1.5 Visão Geral 
+## 1.5 Visão Geral
 
 A organização do documento é feita de maneira a prover ao leitor a capacidade de através do mesmo entender o produto em seus vários aspectos de forma coesa. Para tal, são apresentados primeiramente os tópicos referentes a função geral do software e as motivações que levaram a sua criação, após isso, é descrito o posicionamento do produto em relação ao mercado e as partes interessada, incluindo a forma como a criação do sistema afetará os usuários. Por fim, são descritas as principais funcionalidades do software, bem como algumas de suas restrições e requisitos.
 
 # 2.Posicionamento:
 
 ## 2.1 Oportunidade de Negócios
-  
-O Comexserv, ao tornar mais fácil o acesso aos dados relacionados à prestação de serviços no Brasil e dar também aos usuários a possibilidade de filtrar e vizualisar as informações desejadas de forma mais adequada as suas necessidades, resolve dois principais problemas: a dificuldade no acesso a esses dados pela população de forma geral, e a dificuldade por parte dos interessados em conseguir tirar conclusões úteis a partir das informações por falta de ferramentas de filtragem e visualização. Dessa forma, o sistema dá mais eficiência para as funções do MDIC quanto a exposição dos dados relacionados ao comércio de serviçoes, bem como para qualquer análise que utilize essas informações como base. 
+
+O Comexserv, ao tornar mais fácil o acesso aos dados relacionados à prestação de serviços no Brasil e dar também aos usuários a possibilidade de filtrar e vizualisar as informações desejadas de forma mais adequada as suas necessidades, resolve dois principais problemas: a dificuldade no acesso a esses dados pela população de forma geral, e a dificuldade por parte dos interessados em conseguir tirar conclusões úteis a partir das informações por falta de ferramentas de filtragem e visualização. Dessa forma, o sistema dá mais eficiência para as funções do MDIC quanto a exposição dos dados relacionados ao comércio de serviçoes, bem como para qualquer análise que utilize essas informações como base.
 
 ## 2.2 Instrução do Problema
 
@@ -53,3 +54,13 @@ O Comexserv, ao tornar mais fácil o acesso aos dados relacionados à prestaçã
 | **Funções afetadas** | Análise e visualização dos dados de comércio de serviços |
 | **Efeito** | Difícil acessibilidade aos dados coletados e falta de ferramentas que possibilitem uma melhor análise dos mesmos|
 | **Solução** |Criação de uma plataforma web que dá ao usuário a possibilidade de acessar, filtrar e vizualisar os dados de forma mais adequada|
+
+## 2.3 Instrução de Posição do produto
+
+|  |  |
+| :--: | :--: |
+| **Público Alvo** | Público em Geral |
+| **Carência** | Necessidade de informações relacionadas ao comércio de bens de serviço brasileiro |
+| **Solução** | ComexServ |
+| **Descrição da Solução** | Uma plataforma web que permita ao usuário o acesso aos dados de forma fácil e intuitiva, a partir de uso de filtros e detalhamento, e que estes possa ser obtido no formato .csv |
+| **Diferenciais** | Facilidade no acesso à informação |
