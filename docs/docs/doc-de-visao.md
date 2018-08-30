@@ -13,6 +13,7 @@ title: Documento de Visão
 | 30/08/2018 | 0.4.0 | Finalização dos tópicos de Posicionamento | Rogério Júnior |
 | 30/08/2018 | 0.5.0 | Preenchimento inicial dos tópicos de Descrição | André Lucas |
 | 30/08/2018 | 0.6.0 | Preenchimento do tópico Perfis dos Usuários | João Victor | 
+| 30/08/2018 | 0.7.0 | Preenchimento inicial dos tópicos da visão geral | Marcos Nery|
 
 # 1. Introdução
 
@@ -121,3 +122,17 @@ O acesso aos serviços do software poderá ser feito por navegadores de internet
 | Ter acesso aos dados em outros formatos, mais compactos e brutos | Alta | Ter tudo reunido em um arquivo para diversos usos como pesquisas, análise de dados, etc.  | Acessar o site do MDIC, procurar pelas estatísticas de 2017 e baixá-las | Disponibilizar o download através de botões na página de resultado da pesquisa |
 | Filtrar a busca dos dados sobre o comércio de serviços | Alta | Facilitar ao usuário a obtenção dos dados de forma mais rápida e objetiva | Manualmente categorizar e filtrar os dados | Disponibilizar filtros e categorias na página de busca |
 | Visualizar os dados de forma mais organizada | Baixa | Entender e absorver os dados com maior facilidade | Gerar gráficos manualmente usando as planilhas disponibilizadas pelo MDIC | Disponibilizar gráficos, tabelas e outras ferramentas interativas para uma descrição mais clara e visual das informações |
+
+# 4.Visão Geral do Produto
+## 4.1 Perspectiva do produto
+ 
+ O Comexserv visa prover ao usuário facilidade de acesso a informações referentes ao comércio exterior brasileiro de serviços, viabilizando isso por meio de ferramentas de pesquisas no banco de dados, com a possibilidade da utilização de filtros e formas diferentes de visualização. Além disso, também são disponibilizadas formas coerentes para que os dados de interesse possam ser extraídos, em formato .csv ou similar.
+
+
+## 4.2 Resumo das capacidades
+
+| **Benefícios para o Cliente** | **Recursos de Suporte** |
+| :--------: | :-------: |  
+| Consulta rápida e fácil aos dados disponibilizados pelo MDIC | Pesquisa no banco de dados  |
+| Capacidade de filtrar as informações pesquisadas | Opções para obter resultados de acordo com filtros de categorias pré-determinadas ou customizadas  |
+| Possibilidade de fazer o download das informação desejadas| Recurso que permite ao usuário extrair uma determinada seleção de dados em formato tabular|
