@@ -113,3 +113,11 @@ O acesso aos serviços do software poderá ser feito por navegadores de internet
 | Critérios de Sucesso | Conhecer a plataforma e toda suas funcionalidades |
 | Envolvimento |  Alto |
 | Problemas/Comentários | - |
+
+## 3.6 Principais necessidades dos usuários ou envolvidos
+
+| **Necessidade** | **Prioridade** | **Interesses** | **Solução Atual** | **Solução Proposta** |
+| :--------: | :-------: | :--------: | :-------: | :--------: |
+| Ter acesso aos dados em outros formatos, mais compactos e brutos | Alta | Ter tudo reunido em um arquivo para diversos usos como pesquisas, análise de dados, etc.  | Acessar o site do MDIC, procurar pelas estatísticas de 2017 e baixá-las | Disponibilizar o download através de botões na página de resultado da pesquisa |
+| Filtrar a busca dos dados sobre o comércio de serviços | Alta | Facilitar ao usuário a obtenção dos dados de forma mais rápida e objetiva | Manualmente categorizar e filtrar os dados | Disponibilizar filtros e categorias na página de busca |
+| Visualizar os dados de forma mais organizada | Baixa | Entender e absorver os dados com maior facilidade | Gerar gráficos manualmente usando as planilhas disponibilizadas pelo MDIC | Disponibilizar gráficos, tabelas e outras ferramentas interativas para uma descrição mais clara e visual das informações |
