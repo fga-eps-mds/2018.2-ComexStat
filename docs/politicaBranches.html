@@ -1,0 +1,125 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Política de Branches · Projeto MDIC</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="# Política de Branches"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Política de Branches · Projeto MDIC"/><meta property="og:type" content="website"/><meta property="og:url" content="https://fga-eps-mds.github.io//2018.2-GrupoMDIC/index.html"/><meta property="og:description" content="# Política de Branches"/><meta property="og:image" content="https://fga-eps-mds.github.io//2018.2-GrupoMDIC/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://fga-eps-mds.github.io//2018.2-GrupoMDIC/img/docusaurus.png"/><link rel="shortcut icon" href="/2018.2-GrupoMDIC/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://fga-eps-mds.github.io//2018.2-GrupoMDIC/blog/atom.xml" title="Projeto MDIC Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://fga-eps-mds.github.io//2018.2-GrupoMDIC/blog/feed.xml" title="Projeto MDIC Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/2018.2-GrupoMDIC/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/2018.2-GrupoMDIC/"><img class="logo" src="/2018.2-GrupoMDIC/img/docusaurus.svg" alt="Projeto MDIC"/><h2 class="headerTitleWithLogo">Projeto MDIC</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/2018.2-GrupoMDIC/docs/contributing" target="_self">Docs</a></li><li class="siteNavGroupActive"><a href="/2018.2-GrupoMDIC/docs/contributing" target="_self">API</a></li><li class=""><a href="/2018.2-GrupoMDIC/en/help" target="_self">Help</a></li><li class=""><a href="/2018.2-GrupoMDIC/blog" target="_self">Sprints</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>Gerência</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Comunidade</h3><ul><li class="navListItem"><a class="navItem" href="/2018.2-GrupoMDIC/docs/codeofconduct">Code of Conduct</a></li><li class="navListItem"><a class="navItem" href="/2018.2-GrupoMDIC/docs/contributing">Contribuindo para o projeto</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Gerência</h3><ul><li class="navListItem"><a class="navItem" href="/2018.2-GrupoMDIC/docs/comunicacao">Plano de Comunicação</a></li><li class="navListItem"><a class="navItem" href="/2018.2-GrupoMDIC/docs/processo">Processo Definido</a></li><li class="navListItem"><a class="navItem" href="/2018.2-GrupoMDIC/docs/termodeabertura">Termo de Abertura do Projeto</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/2018.2-GrupoMDIC/docs/politicaBranches">Política de Branches</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Capacitação</h3><ul><li class="navListItem"><a class="navItem" href="/2018.2-GrupoMDIC/docs/microsservicos">Microsserviços</a></li><li class="navListItem"><a class="navItem" href="/2018.2-GrupoMDIC/docs/devOps">DevOps</a></li><li class="navListItem"><a class="navItem" href="/2018.2-GrupoMDIC/docs/treinamentos">Treinamentos</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Visão de Produto</h3><ul><li class="navListItem"><a class="navItem" href="/2018.2-GrupoMDIC/docs/docVisao">Documento de Visão</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Política de Branches</h1></header><article><div><span><h1><a class="anchor" aria-hidden="true" id="politica-de-branches"></a><a href="#politica-de-branches" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Política de Branches</h1>
+<h2><a class="anchor" aria-hidden="true" id="divisão-e-como-usar-as-branches"></a><a href="#divisão-e-como-usar-as-branches" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Divisão e como usar as branches</h2>
+<p>Com o intuito de possuir uma melhor dinâmica de mudanças de código, é importante que tenhamos uma boa política de branches. Este documento servirá de base para criação de branches e como serão organizadas, estas baseadas no <strong>git flow</strong> que é um modelo de organização de branches.</p>
+<p>Aqui será descrito como funcionará as branches do projeto.</p>
+<ul>
+<li><p><strong>Branch master</strong> - Esta será a branch que contém o código em nível de produção, será o código mais consolidado existente na aplicação. Todo o código novo produzido eventualmente é juntado com a branch master, em algum momento do desenvolvimento;</p></li>
+<li><p><strong>Branch develop</strong> - Develop é a branch que logo após releases deverá ser identica à master, porém, quando as features são terminadas, elas são juntadas nesta branch, testadas e somente depois as atualizações da develop passam pelo processo de juntar as novas atualizações com a branch master;</p></li>
+<li><p><strong>Branches feature</strong> - Essas são as branches na qual são desenvolvidos novos recursos ao projeto, elas serão criadas com o nome começando <strong>feature</strong>/ (exemplo: feature/new-layout) e a partir da branch develop, e, ao final, são juntadas com a branch develop;</p></li>
+<li><p><strong>Branches hotfix</strong> - São branches no qual são realizadas correções de bugs críticos encontrados em ambiente de produção, e que por isso são criadas a partir da branch master, e são juntadas diretamente com a branch master e com a branch develop. Por convenção, essas branches tem o nome começando com <strong>hotfix</strong>/ e terminando com o próximo sub-número de versão (exemplo: hotfix/2.31.1);</p></li>
+<li><p><strong>Branches release</strong> -  São branches com um nível de confiança maior do que a branch develop, e que se encontram em nível de preparação para ser juntada com a branch master e com a branch develop, nessas branches, bugs encontrados durante os testes das features que vão para produção podem ser corrigidos mais tranquilamente, antes de irem efetivamente para produção. Por convenção, essas branches tem o nome começando com <strong>release</strong>/ e terminando com o número da próxima versão do software, exemplo (release/2.32.0);</p></li>
+<li><p><strong>Branches documentation</strong> - Essas são as branches na qual são desenvolvidos os documentos do projeto, elas serão criadas com o nome começando <strong>documentation</strong>/ (exemplo: documentation/documentoVisao), elas são criadas a partir da branch master e, ao final, é feito um pull-request para a branch master.</p></li>
+</ul>
+<p>Para ir para a master, só é possível via requisição aqui na interface do github. E a branch tem q estar &quot;rebased&quot;, ou seja, sem conflitos, com os commits que estão na master (e os commits que entraram na master) e o acréscimo dos commits que foram feitos efetivamente pela sua branch.</p>
+<h2><a class="anchor" aria-hidden="true" id="comandos-basicos-a-serem-seguidos"></a><a href="#comandos-basicos-a-serem-seguidos" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Comandos básicos a serem seguidos</h2>
+<p>A branch master devemos sempre mantê-la atualizada, primeiro atualizando quais branches foram criadas ou deletadas no remoto, e depois dando pull na master:</p>
+<pre><code class="hljs">git fetch -p --all
+</code></pre>
+<p>A opção -p, ou --prune serve pra tbm deletar localmente as branchs q foram deletadas no remoto. --all serve para olhar para outros remotes (github, gitlab se tiver)</p>
+<pre><code class="hljs">git pull origin master
+</code></pre>
+<p>Isso atualiza a master, e por padrão não deve haver conflito.</p>
+<p>Origin é o remoto padrão, o primeiro cadastrado. é a url do repositório.</p>
+<p>Para ter certeza de que estamos na master:</p>
+<pre><code class="hljs">git checkout master
+</code></pre>
+<p>E a partir da master criamos a dev:</p>
+<pre><code class="hljs">git checkout -b develop # (nosso repo ja tem isso... nao rode &quot;-b&quot; com branches ja existentes)
+</code></pre>
+<p>A partir da develop diversos developers irão criar novas funcionalidades. Como exemplo podemos criar uma nova branch para desenvolver:</p>
+<pre><code class="hljs">git checkout -b feature/nova-func
+</code></pre>
+<p>Nessa nova branch iremos fazer diversos commits, de preferencia um commit a cada ponto importante, para termos pra onde voltar se algo der errado.</p>
+<p>Ao finalizar o desenvolvimento, damos push nessa nossa branch.</p>
+<pre><code class="hljs">git add -u
+git commit -s
+# escreva mensagem
+git push origin feature/nova-func
+</code></pre>
+<p>Ao final de toda a funcionalidade temos que mandar o que fizemos para a branch develop, para de la mandar pra master via merge request.</p>
+<p>Mas outras pessoas provavelmente ja mandaram modificações para a develop, de suas respectivas branchs. Isso pode gerar conflitos, commits de merge, entre outras coisas indesejadas.</p>
+<p>Uma boa pratica é, ir para develop:</p>
+<pre><code class="hljs">git checkout dev
+</code></pre>
+<p>Fazer um pull, mas usando o --rebase, para evitar commits de merge. (uma alternativa é apagar a branch de develop local, dar um fetch, e dar um checkout pra ela)</p>
+<pre><code class="hljs">git pull origin develop --rebase
+</code></pre>
+<p>ou</p>
+<pre><code class="hljs">git branch -D develop # estando em outra branch qualquer
+git fetch -p
+git checkout develop
+</code></pre>
+<p>Isso atualiza a branch develop.</p>
+<p>É interessante olhar os commits que estão acrescentados à develop por outras pessoas:</p>
+<pre><code class="hljs">git log
+</code></pre>
+<p>Agora de volta em nossa branch:</p>
+<pre><code class="hljs">git checkout feature/nova-func
+</code></pre>
+<p>Olhamos nossos commits e contamos quantos foram os que fizemos:</p>
+<pre><code class="hljs">git log
+</code></pre>
+<p>Se houver conflito basta dar</p>
+<pre><code class="hljs">git status
+</code></pre>
+<p>Corrigir o conflito no arquivo. Dar git add no mesmo, e entao</p>
+<pre><code class="hljs">git rebase --continue
+</code></pre>
+<p>Se nao houver conflito o rebase local ja está feito.</p>
+<p>Para subir isso pro remoto é necessário usar a flag -f pois vamos fazer uma alteração na branch que não é somente acrescentar um commit a frente de tudo. Essas alterações demandam a flag force.</p>
+<pre><code class="hljs">git push origin feature/nova-fun -f
+</code></pre>
+<p>Mas ainda nao podemos mandar nada pra develop, por conta dos commits de outras pessoas que já entraram la.</p>
+<p>Para solucionar isso fazemos um rebase com a develop:</p>
+<pre><code class="hljs">git rebase develop
+</code></pre>
+<p>Os commits que estão diferentes na branch develop, são aplicados à branch feature/nova-func.</p>
+<p>Se houver conflito, temos que resolver da mesma maneira:</p>
+<pre><code class="hljs">git status
+</code></pre>
+<p>Editar os arquivos com conflito, dar git add, e entao git rebase --continue</p>
+<p>Assim que a branch feature/nova-func estiver &quot;rebased&quot; podemos, ou fazer um merge request para a develop, ou mergir direto na develop, ja que a deve não precisa de tanta revisão. Isso vai depender da certeza de que as modificações estão ok.</p>
+<p>Para mergir direto, vá para a branch develop, e fazer um</p>
+<pre><code class="hljs">git merge feature/nova-func # ou rebase
+git push origin develop # de maneira geral nao precia de -f, ja q a develop não foi &quot;&quot;rebased&quot;&quot;
+</code></pre>
+<p>Já que os rebases foram feitos, não haverá conflito, por padrão.</p>
+<p>Para efetuar um merge request, basta ir na interface do github e apertar o botão, e mandar comparar as branchs (develop, e feature/nova-func). E assinar um revisor para aceitar ou não o merge request.</p>
+<p>Para mandar da develop para a master da org oficial só é possível via merge request, com branches rebased e sem conflitos. Nunca a pessoa que trabalhou na branch pode ser o próprio revisor. Deve-se ter cuidado ao aceitar merge requests na master, pois por padrão ela é uma brach protegida e que não pode sofrer nenhum rebase.</p>
+<h2><a class="anchor" aria-hidden="true" id="politica-de-commits"></a><a href="#politica-de-commits" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Política de commits</h2>
+<p>Para que ocorra uma padronização, nossos commits serão em inglês, com mensagens curtas e que possuam significados relevantes sobre o conteúdo do commit, estes deveão ser feitos apenas quando os incremetos forem significativos, devem ser evitado commits alterando nome de variáveis, excluindo e adicionando linhas em branco.</p>
+<p>Se estiver trabalhando em conjunto especifique os participantes no commit.</p>
+<pre><code class="hljs">git commit -s
+</code></pre>
+<p>Irá abrir o seu editor de texto e nele deverá ser acrescentado o(s) co-authored da seguindo o exemplo:</p>
+<pre><code class="hljs">Signed-off-by: Vinicius Rodrigues &lt;vinifladf@gmail.com&gt;
+Co-authored-by: João Victor &lt;joao15victor08@gmail.com&gt;
+</code></pre>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/2018.2-GrupoMDIC/docs/termodeabertura">← Termo de Abertura do Projeto</a><a class="docs-next button" href="/2018.2-GrupoMDIC/docs/microsservicos">Microsserviços →</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#divisão-e-como-usar-as-branches">Divisão e como usar as branches</a></li><li><a href="#comandos-basicos-a-serem-seguidos">Comandos básicos a serem seguidos</a></li><li><a href="#politica-de-commits">Política de commits</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/2018.2-GrupoMDIC/" class="nav-home"><img src="/2018.2-GrupoMDIC/img/docusaurus.svg" alt="Projeto MDIC" width="66" height="58"/></a><div><h5>Docs</h5><a href="/2018.2-GrupoMDIC/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/2018.2-GrupoMDIC/docs/en/doc2.html">Guides (or other categories)</a><a href="/2018.2-GrupoMDIC/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/2018.2-GrupoMDIC/en/users.html">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/2018.2-GrupoMDIC/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://code.facebook.com/projects/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/2018.2-GrupoMDIC/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2018 EPS e MDS UnB FGA</section></footer></div></body></html>
