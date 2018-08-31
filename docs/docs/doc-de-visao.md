@@ -18,6 +18,7 @@ title: Documento de Visão
 | 30/08/2018 | 0.9.0 | Preenchimento do tópico referente aos recursos do sistema |Marcos Nery|
 | 30/08/2018 | 0.10.1| Preenchimento das referências e correções gerais|Marcos Nery|
 | 30/08/2018 | 0.11.1| Preenchimento do tópico Requisitos do Produto | Caio Santos |
+| 31/08/2018 | 1.0.0 | Correções ortográficas e organização final da primeira versão do documento|Marcos Nery|
 
 ***
 ## 1. Introdução
@@ -199,15 +200,15 @@ Para maior eficiência, a aplicação será web, pois o gerenciamento de dados e
 
 ### 8.1 Requisitos do Sistema
 
-O sistema poderá ser acessado pelo usuário através de um navegador, tendo a necessidade de conexao com a internet.
+O sistema poderá ser acessado pelo usuário através de um navegador, tendo a necessidade de conexão com a internet.
 
 ### 8.2 Requisitos de Design
 
-O sistema deverá ser intuitivo e auto explicativo, possibilitando uma fácil interação com o usuário.
+O sistema deverá ser intuitivo e autoexplicativo, possibilitando uma fácil interação com o usuário.
 
 ### 8.3 Requisitos de Portabilidade
 
-O sistema é utilizável através dos navegadores web atuais, sendo compatível com os principais sistemas operacionais como Windows, Mac OS e Linux.
+O sistema é utilizável através da maior parte dos navegadores web atuais, sendo compatível com os principais sistemas operacionais como Windows, Mac OS e Linux.
 
 ### 8.4 Requisitos de Confiabilidade
 
