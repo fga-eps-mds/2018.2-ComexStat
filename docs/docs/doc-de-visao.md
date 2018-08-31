@@ -17,6 +17,7 @@ title: Documento de Visão
 | 30/08/2018 | 0.8.0 | Melhorias e preenchimento dos Topicos 6 e 7 | André Lucas |
 | 30/08/2018 | 0.9.0 | Preenchimento do tópico referente aos recursos do sistema |Marcos Nery|
 | 30/08/2018 | 0.10.1| Preenchimento das referências e correções gerais|Marcos Nery|
+| 30/08/2018 | 0.11.1| Preenchimento do tópico Requisitos do Produto | Caio Santos |
 
 ***
 ## 1. Introdução
@@ -46,10 +47,10 @@ Para suprir a necessidade de um melhor sistema de vizualização de dados relaci
 
   **PORTAL IFRN .MODELO DE UM DOCUMENTO DE VISÃO.** Disponível em:
   <http://docente.ifrn.edu.br/abrahaolopes/2015.1-integrado/3.2401.1m-projeto-integrador/modelo-de-documento-de-visao-do-sistema/view>. Acessado em: 29 de Agosto de 2018.
-  
-  **SISTEMA DE PESQUISA DE DADOS RELACIONADOS AO COMÉRCIO EXTERNO BRASILEIRO DE BENS.** Disponível em: 
+
+  **SISTEMA DE PESQUISA DE DADOS RELACIONADOS AO COMÉRCIO EXTERNO BRASILEIRO DE BENS.** Disponível em:
   <http://comexstat.mdic.gov.br/pt/home>. Acessado em: 29 de Agosto de 2018.
-  
+
   **FILTROS PARA ANÁLISE DE DADOS DO SISCOSERV.** Disponível em:
    <http://www.mdic.gov.br/portal/dashboard.html>. Acessado em: 28 de Agosto de 2018.
 
@@ -161,13 +162,13 @@ O acesso aos serviços do software poderá ser feito por navegadores de internet
 ***
 ## 5.Recursos do Produto
 ***
- 
+
    * Área de acesso aos dados disponibilizados acerca do comércio externo brasileiro de serviços.
    * Opções para filtrar as pesquisas por categorias específicas.
    * Opções para ordenar os resultados encontrados a partir de uma coluna específica.
    * Opções para incluir ou retirar colunas de informação da pesquisa feita.
-   * Possibilidade de extraír as informações de interesse em formatos tabulares acessíveis, como .csv. 
-   * Mais ferramentas relacionadas a formas diferentes de visualizar os dados, como aparatos gráficos e afins. 
+   * Possibilidade de extraír as informações de interesse em formatos tabulares acessíveis, como .csv.
+   * Mais ferramentas relacionadas a formas diferentes de visualizar os dados, como aparatos gráficos e afins.
 
 ***
 ## 6: Restrições
@@ -191,3 +192,23 @@ O sistema deve ter uma interface que seja de fácil uso para pessoas. Dessa form
 ***
 
 Para maior eficiência, a aplicação será web, pois o gerenciamento de dados e informações seria dificultado no caso de uma aplicação exclusiva para aparelhos mobile.
+
+***
+## 8. Requisitos do Produto
+***
+
+### 8.1 Requisitos do Sistema
+
+O sistema poderá ser acessado pelo usuário através de um navegador, tendo a necessidade de conexao com a internet.
+
+### 8.2 Requisitos de Design
+
+O sistema deverá ser intuitivo e auto explicativo, possibilitando uma fácil interação com o usuário.
+
+### 8.3 Requisitos de Portabilidade
+
+O sistema é utilizável através dos navegadores web atuais, sendo compatível com os principais sistemas operacionais como Windows, Mac OS e Linux.
+
+### 8.4 Requisitos de Confiabilidade
+
+O sistema deve se comprometer em disponibilizar os dados de maneira transparente e confiável aos usuários.
