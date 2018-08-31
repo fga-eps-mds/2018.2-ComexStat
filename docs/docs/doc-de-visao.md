@@ -16,6 +16,7 @@ title: Documento de Visão
 | 30/08/2018 | 0.7.0 | Preenchimento inicial dos tópicos da visão geral | Marcos Nery|
 | 30/08/2018 | 0.8.0 | Melhorias e preenchimento dos Topicos 6 e 7 | André Lucas |
 | 30/08/2018 | 0.9.0 | Preenchimento do tópico referente aos recursos do sistema |Marcos Nery|
+| 30/08/2018 | 0.10.0| Preenchimento das referências |Marcos Nery|
 
 ***
 ## 1. Introdução
@@ -42,6 +43,15 @@ Para suprir a necessidade de um melhor sistema de vizualização de dados relaci
 | UnB | Universidade do Gama |
 
 ### 1.4 Referências
+
+  **PORTAL IFRN .MODELO DE UM DOCUMENTO DE VISÃO.** Disponível em:
+  <http://docente.ifrn.edu.br/abrahaolopes/2015.1-integrado/3.2401.1m-projeto-integrador/modelo-de-documento-de-visao-do-sistema/view>. Acessado em: 29 de Agosto de 2018.
+  
+  **SISTEMA DE PESQUISA DE DADOS RELACIONADOS AO COMÉRCIO EXTERNO BRASILEIRO DE BENS.** Disponível em: 
+  <http://comexstat.mdic.gov.br/pt/home>. Acessado em: 29 de Agosto de 2018.
+  
+  **FILTROS PARA ANÁLISE DE DADOS DO SISCOSERV.** Disponível em:
+   <http://www.mdic.gov.br/portal/dashboard.html>. Acessado em: 28 de Agosto de 2018.
 
 ### 1.5 Visão Geral
 
@@ -148,7 +158,10 @@ O acesso aos serviços do software poderá ser feito por navegadores de internet
 | Capacidade de filtrar as informações pesquisadas | Opções para obter resultados de acordo com filtros de categorias pré-determinadas ou customizadas  |
 | Possibilidade de fazer o download das informação desejadas| Recurso que permite ao usuário extrair uma determinada seleção de dados em formato tabular|
 
+***
 ## 5.Recursos do Produto
+***
+ 
    * Área de acesso aos dados disponibilizados acerca do comércio externo brasileiro de serviços
     * Opções para filtrar as pesquisas por categorias específicas 
     * Opções para ordenar os resultados encontrados a partir de uma coluna específica
