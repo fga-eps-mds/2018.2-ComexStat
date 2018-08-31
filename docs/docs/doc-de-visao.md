@@ -15,6 +15,7 @@ title: Documento de Visão
 | 30/08/2018 | 0.6.0 | Preenchimento do tópico Perfis dos Usuários | João Victor |
 | 30/08/2018 | 0.7.0 | Preenchimento inicial dos tópicos da visão geral | Marcos Nery|
 | 30/08/2018 | 0.8.0 | Melhorias e preenchimento dos Topicos 6 e 7 | André Lucas |
+| 30/08/2018 | 0.9.0 | Preenchimento do tópico referente aos recursos do sistema |Marcos Nery|
 
 ***
 ## 1. Introdução
@@ -146,6 +147,14 @@ O acesso aos serviços do software poderá ser feito por navegadores de internet
 | Consulta rápida e fácil aos dados disponibilizados pelo MDIC | Pesquisa no banco de dados  |
 | Capacidade de filtrar as informações pesquisadas | Opções para obter resultados de acordo com filtros de categorias pré-determinadas ou customizadas  |
 | Possibilidade de fazer o download das informação desejadas| Recurso que permite ao usuário extrair uma determinada seleção de dados em formato tabular|
+
+## 5.Recursos do Produto
+   * Área de acesso aos dados disponibilizados acerca do comércio externo brasileiro de serviços
+    * Opções para filtrar as pesquisas por categorias específicas 
+    * Opções para ordenar os resultados encontrados a partir de uma coluna específica
+    * Opções para incluir ou retirar colunas de informação da pesquisa feita
+    * Possibilidade de extraír as informações de interesse em formatos tabulares acessíveis, como .csv 
+    * Mais ferramentas relacionadas a formas diferentes de visualizar os dados, como aparatos gráficos e afins. 
 
 ***
 ## 6: Restrições
