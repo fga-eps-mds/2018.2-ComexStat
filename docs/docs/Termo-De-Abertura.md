@@ -23,7 +23,7 @@ Apesar dos dados referentes à prestação de serviços no Brasil serem abertos,
 
 O Comexserv será uma plataforma web que terá como objetivo a facilitação na visualização dos dados de prestação de serviços no Brasil. Tendo isso em vista, alguns recursos são imprescindíveis para o sucesso do sistema.
 
-O sistema deve ser capaz de gerar tabelas a partir dos dados providos pelo banco de dados do MDIC, com a aplicação de filtros específicos, de maneira que o usuário possa ser capaz de fazer uma pesquisa personalizada para as suas necessidades. Além disso, deve se ter a opção de fazer downloas de dados no formato .scv, de maneira que o usuário possa adquirir os dados de sua fonte primária. 
+O sistema deve ser capaz de gerar tabelas a partir dos dados providos pelo banco de dados do MDIC, com a aplicação de filtros específicos, de maneira que o usuário possa ser capaz de fazer uma pesquisa personalizada para as suas necessidades. Além disso, deve se ter a opção de fazer downloas de dados no formato .cvs, de maneira que o usuário possa adquirir os dados de sua fonte primária.
 
 # 6. Equipe e Papéis
 
@@ -52,7 +52,27 @@ A equipe é compostas por alunos da disciplina de Métodos de Desenvolvimento de
 | Marcos Nery Borges Júnior | Desenvolvedor |
 | Rogério Silva dos Santos Júnior | Desenvolvedor |
 
+# 7. Metodologia de Desenvolvimento
 
-# 7. Prazo
+A metodologia decidida para a realização desse projeto é a Ágil, mais especificamente, será utilizado uma adaptação do modelo Scrum, para que as necessidades da equipe possam ser atendidas, devido ao contexto da disciplina. Os atributos utilizados da metodologia são:
 
-# 8. Custo
+# 8. Estratégia de Comunicação
+
+A equipe irá necessitar fortemente de contato presencial e virtual acentuados, graças à complexidade do projeto. Tendo isso em vista, para o aspecto presencial, serão realizadas reuniões ao longo da semana, sendo elas:
+
+| Reunião | Descrição | Dia | Horário | Duração |
+| :-----: | :-------: | :-: | :-----: | :-----: |
+| Daily | Essa reunião tem como objetivo alinhar a equipe durante a semana, de maneira que seja um momento para que todos os membros fiquem cientes da evolução do projeto como um todo. Além disso, é um momento para se expôr impedimentos, assim como compartilhar experiências.  | Terças e Quintas | 15:50 | No máximo 15 minutos. |
+| Review, Retrospectiva e Planejamento  | Essa reunião é para que seja feita uma análise da sprint como um todo. Nela será feito uma revisão do que foi produzido durante a semana, assim como uma retrospectiva do que foi positivo e negativo em questão de processo. Também será planejado o que será feito na próxima sprint. | Sábado | 09:30  | No máximo 3 horas.  |
+
+Além disso, para o aspecto virtual, serão utilizadas as seguintes ferramentas:
+
+| Nome | Descrição |
+| :--: | :-------: |
+| Telegram | Principal canal de comunicação da equipe. Aqui são tiradas dúvidas, imprevistos são comunicados e se tem a integração com o github, para que os membros sejam notificados da atividade do repositório. |
+
+# 9. Prazo
+
+O projeto teve inicio no dia 14 de Agosto de 2018, de maneira
+
+# 10. Custo
