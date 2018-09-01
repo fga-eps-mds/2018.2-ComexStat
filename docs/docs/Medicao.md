@@ -39,23 +39,40 @@ sua produtividade, e fazer planejamentos de acordo com esta.
 
 - Pontos
 
-- Burndown
+  Os pontos serão utilizados para estimar a dificuldade de entrega das issues. Cada issue
+  terá sua estimativa em pontos, utilizando a escala de fibonacci: 1, 2, 3, 5, 8, 11, 13 e 21.
+
+- Gráfico de Burndown
+  É um gráfico dos pontos da sprint (eixo y) e os dias da semana (eixo x) que possibilita
+  monitoramento do trabalho durante a execução da sprint. Possíveis interpretações são:
+  Se o trabalho está sendo feito de forma uniforme durante a sprint, as histórias estão sendo
+  entregues apenas ao final da sprint, por exemplo.
 
 -  Velocity
 
+É a média de pontos entregues do time por sprint. Facilita a estimativa de alocação de pontos
+para as próximas sprints.
+
 - Quadro de Horas
+Um documento excel compartilhado na pasta do drive do time, cada membro deve
+preencher o tempo de dedicação ao projeto durante a semana e quais atividades foram
+realizadas.
 
 - Earned value management (EVM)
+  É responsável por medir a performance técnica no projeto, em relação ao prazo e custo.
 
 - Diferença entre nível de conhecimento dos membros no quadro de conhecimento
+  Cada membro deve preencher a coluna relativa ao conhecimento na tecnologia indicada,
+  seguindo a legenda:
   - :D - Consigo ensinar outras pessoas
   - :) - Consigo me virar
   - :l - Sei mais ou menos
   - :( - Sei muito pouco
   - :S - Não tenho a menor ideia
+  Dessa forma, fica transparente como está o conhecimento dividido no time e é mais
+  fácil a formação de pareamentos
 
 
-## Quadro de Horas (?)
 
 ### GQM de Gerência de Riscos
 
