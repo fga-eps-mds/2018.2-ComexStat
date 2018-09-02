@@ -14,7 +14,7 @@ title: Documento de Visão
 | 30/08/2018 | 0.5.0 | Preenchimento inicial dos tópicos de Descrição | André Lucas |
 | 30/08/2018 | 0.6.0 | Preenchimento do tópico Perfis dos Usuários | João Victor |
 | 30/08/2018 | 0.7.0 | Preenchimento inicial dos tópicos da visão geral | Marcos Nery|
-| 30/08/2018 | 0.8.0 | Melhorias e preenchimento dos Topicos 6 e 7 | André Lucas |
+| 30/08/2018 | 0.8.0 | Melhorias e preenchimento dos Tópicos 6 e 7 | André Lucas |
 | 30/08/2018 | 0.9.0 | Preenchimento do tópico referente aos recursos do sistema |Marcos Nery|
 | 30/08/2018 | 0.10.1| Preenchimento das referências e correções gerais|Marcos Nery|
 | 30/08/2018 | 0.11.1| Preenchimento do tópico Requisitos do Produto | Caio Santos |
@@ -32,7 +32,7 @@ Esse documento visa especificar todo o escopo de funcionamento do Comexserv, dei
 
 ### 1.2 Escopo
 
-Para suprir a necessidade de um melhor sistema de vizualização de dados relacionados a prestação de serviços no Brasil o Comexserv será integrado por uma plataforma web, cujas capacidades irão abranger funcionaliades como: gerar tabelas a partir de dados providos pelo banco de dados do MDIC, dando ao usuario a possibilidade de filtrar os resultados a partir de informações específicas de acordo com as suas necessidades, e disponibilizar os resultados de tais tabelamentos para download em .scv ou similar, de tal forma que o usuário tenha facilidade para salvar os dados que são de seu interesse.
+Para suprir a necessidade de um melhor sistema de visualização de dados relacionados a prestação de serviços no Brasil o Comexserv será integrado por uma plataforma web, cujas capacidades irão abranger funcionalidades como: gerar tabelas a partir de dados providos pelo banco de dados do MDIC, dando ao usuário a possibilidade de filtrar os resultados a partir de informações específicas de acordo com as suas necessidades, e disponibilizar os resultados de tais tabelamentos para download em .csv ou similar, de tal forma que o usuário tenha facilidade para salvar os dados que são de seu interesse.
 
 ### 1.3 Definições, acrônimos e abreviações
 
@@ -65,7 +65,7 @@ A organização do documento é feita de maneira a prover ao leitor a capacidade
 
 ### 2.1 Oportunidade de Negócios
 
-O Comexserv, ao tornar mais fácil o acesso aos dados relacionados à prestação de serviços no Brasil e dar também aos usuários a possibilidade de filtrar e vizualisar as informações desejadas de forma mais adequada as suas necessidades, resolve dois principais problemas: a dificuldade no acesso a esses dados pela população de forma geral, e a dificuldade por parte dos interessados em conseguir tirar conclusões úteis a partir das informações por falta de ferramentas de filtragem e visualização. Dessa forma, o sistema dá mais eficiência para as funções do MDIC quanto a exposição dos dados relacionados ao comércio de serviçoes, bem como para qualquer análise que utilize essas informações como base.
+O Comexserv, ao tornar mais fácil o acesso aos dados relacionados à prestação de serviços no Brasil e dar também aos usuários a possibilidade de filtrar e visualizar as informações desejadas de forma mais adequada as suas necessidades, resolve dois principais problemas: a dificuldade no acesso a esses dados pela população de forma geral, e a dificuldade por parte dos interessados em conseguir tirar conclusões úteis a partir das informações por falta de ferramentas de filtragem e visualização. Dessa forma, o sistema dá mais eficiência para as funções do MDIC quanto a exposição dos dados relacionados ao comércio de serviços, bem como para qualquer análise que utilize essas informações como base.
 
 ### 2.2 Instrução do Problema
 
@@ -74,7 +74,7 @@ O Comexserv, ao tornar mais fácil o acesso aos dados relacionados à prestaçã
 | **Problema**| Não há um sistema capaz de prover funções de acesso, filtragem e visualização aos dados coletados pelo MDIC relacionados ao comércio de serviços no Brasil|
 | **Funções afetadas** | Análise e visualização dos dados de comércio de serviços |
 | **Efeito** | Difícil acessibilidade aos dados coletados e falta de ferramentas que possibilitem uma melhor análise dos mesmos|
-| **Solução** |Criação de uma plataforma web que dá ao usuário a possibilidade de acessar, filtrar e vizualisar os dados de forma mais adequada|
+| **Solução** |Criação de uma plataforma web que dá ao usuário a possibilidade de acessar, filtrar e visualizar os dados de forma mais adequada|
 
 ### 2.3 Instrução de Posição do produto
 
@@ -94,7 +94,7 @@ O Comexserv, ao tornar mais fácil o acesso aos dados relacionados à prestaçã
 
 | Nome | Descrição | Responsabilidade|
 |-----|-------|---------|
-| Equipe de Programação | Estudantes da Universidade de Brasilia da disciplina de Métodos de Desenvolvimento de Software. | Desenvolvimento do software esclarecido nesse documento, além de implementar testes e fazer o deploy do mesmo. |
+| Equipe de Programação | Estudantes da Universidade de Brasília da disciplina de Métodos de Desenvolvimento de Software. | Desenvolvimento do software esclarecido nesse documento, além de implementar testes e fazer o deploy do mesmo. |
 | Equipe de Gestão do Projeto | Estudantes da Universidade de Brasília da disciplina de Engenharia do Produto de Software | Acompanhar o processo de desenvolvimento da aplicação, identificando possíveis problemas e apontando caminhos e soluções. |
 
 ### 3.2. Resumo dos Usuários
@@ -129,7 +129,7 @@ O acesso aos serviços do software poderá ser feito por navegadores de internet
 | Representantes | Funcionários |
 | :--------: | :-------: |
 | Descrição | Funcionários do MDIC |
-| Tipo | Funcionários que necessitam de dados para analise do comercio de serviços |
+| Tipo | Funcionários que necessitam de dados para análise do comercio de serviços |
 | Responsabilidades | Acessar a plataforma para obter os dados que precisa |
 | Critérios de Sucesso | Conhecer a plataforma e toda suas funcionalidades |
 | Envolvimento |  Alto |
@@ -158,7 +158,7 @@ O acesso aos serviços do software poderá ser feito por navegadores de internet
 | :--------: | :-------: |
 | Consulta rápida e fácil aos dados disponibilizados pelo MDIC | Pesquisa no banco de dados  |
 | Capacidade de filtrar as informações pesquisadas | Opções para obter resultados de acordo com filtros de categorias pré-determinadas ou customizadas  |
-| Possibilidade de fazer o download das informação desejadas| Recurso que permite ao usuário extrair uma determinada seleção de dados em formato tabular|
+| Possibilidade de fazer o download das informações desejadas| Recurso que permite ao usuário extrair uma determinada seleção de dados em formato tabular|
 
 ***
 ## 5.Recursos do Produto
@@ -168,7 +168,7 @@ O acesso aos serviços do software poderá ser feito por navegadores de internet
    * Opções para filtrar as pesquisas por categorias específicas.
    * Opções para ordenar os resultados encontrados a partir de uma coluna específica.
    * Opções para incluir ou retirar colunas de informação da pesquisa feita.
-   * Possibilidade de extraír as informações de interesse em formatos tabulares acessíveis, como .csv.
+   * Possibilidade de extrair as informações de interesse em formatos tabulares acessíveis, como .csv.
    * Mais ferramentas relacionadas a formas diferentes de visualizar os dados, como aparatos gráficos e afins.
 
 ***
@@ -182,7 +182,7 @@ O mesmo deve disponibilizar dados e informações a terceiros e funcionários do
 
 ### 6.2 Restrições externas
 
-Dentre as restrições externas as que mais irão influenciar são a inexperiência com a linguagem e frameworks, além de possiveis transtornos entre a equipe de desenvolvimento.
+Dentre as restrições externas as que mais irão influenciar são a inexperiência com a linguagem e frameworks, além de possíveis transtornos entre a equipe de desenvolvimento.
 
 ### 6.3 Restrições de design
 
