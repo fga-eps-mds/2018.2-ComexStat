@@ -71,9 +71,9 @@ O Comexserv, ao tornar mais fácil o acesso aos dados relacionados à prestaçã
 
 |  | |
 | :--------: | :-------: |
-| **Problema**| Não há um sistema capaz de prover funções de acesso, filtragem e visualização aos dados coletados pelo MDIC relacionados ao comércio de serviços no Brasil|
+| **Problema**| Dados relacionados ao comércio exterior de serviços no Brasil são abertos a população porém de difícil uso e interpretação, por conta do seu grande volume e formato disponibilizado|
 | **Funções afetadas** | Análise e visualização dos dados de comércio de serviços |
-| **Efeito** | Difícil acessibilidade aos dados coletados e falta de ferramentas que possibilitem uma melhor análise dos mesmos|
+| **Efeito** | Os dados acabam por não serem utilizados|
 | **Solução** |Criação de uma plataforma web que dá ao usuário a possibilidade de acessar, filtrar e visualizar os dados de forma mais adequada|
 
 ### 2.3 Instrução de Posição do produto
