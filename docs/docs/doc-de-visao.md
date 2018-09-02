@@ -159,6 +159,7 @@ O acesso aos serviços do software poderá ser feito por navegadores de internet
 | Consulta rápida e fácil aos dados disponibilizados pelo MDIC | Pesquisa no banco de dados  |
 | Capacidade de filtrar as informações pesquisadas | Opções para obter resultados de acordo com filtros de categorias pré-determinadas ou customizadas  |
 | Possibilidade de fazer o download das informações desejadas| Recurso que permite ao usuário extrair uma determinada seleção de dados em formato tabular|
+| Capacidade de visualizar as informações de formas diferentes| Disponibilização de formas gráficas de representação dos dados selecionados|
 
 ***
 ## 5.Recursos do Produto
