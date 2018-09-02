@@ -77,7 +77,38 @@ realizadas.
 ### GQM de Gerência de Riscos
 
 ![GQM_Riscos](https://fga-eps-mds.github.io/2018.2-GrupoMDIC/img/GQM_Riscos.png)
+
 #### Matriz de Riscos
+
+É elicitada uma lista de possíveis riscos do projeto. A cada sprint, esses
+riscos são analisados e priorizados, tendo as seguintes grandezas relacionadas:
+
+- **Impacto**(I) : É mensurado com nota de 1 a 5, possuindo o seguinte significado,
+
+  - **5**: Catastrófico - o impacto ocasiona colapso às ações de gestão, a viabilidade
+  estratégica pode ser comprometida;
+  - **4**: Grande - o impacto compromete significativamente às ações de gestão, os
+  objetivos estratégicos podem ser fortemente comprometidos;
+  - **3**: Moderado - o impacto é significativo no alcance das ações de gestão;
+  - **2**: Pequeno - o impacto é pouco relevante ao alcance das ações de gestão;
+  - **1**: Insignificante - o impacto é mínimo no alcance das ações de gestão.
+
+
+- **Probabilidade** (P): Também possui nota de 1 a 5, atribuidas de acordo com a frequência observada/esperada do evento,
+  - **5** (>=90%): Evento esperado que ocorra na maioria das circunstâncias
+  - **4** (>=50% < 90%): Evento provavelmente ocorra na maioria das circunstâncias
+  - **3** (>=30% < 50%): Evento deve ocorrer em algum momento
+  - **2** (>=10% < 30%): Evento pode ocorrer em algum momento
+  - **1** (< 10%): Evento pode ocorrer apenas em circunstâncias excepcionais
+
+Possuindo as duas notas, o risco possui uma nota final, que é o produto das duas, (I*P), o **Nível de Risco**, que possui
+a seguinte análise:
+
+- Risco crítico:  >=15<=25
+- Risco  alto: >=8<=12
+- Risco moderado: >=4<=6
+- Risco pequeno: >=1<=3
+
 
 #### Burndown de Riscos
 
@@ -87,4 +118,4 @@ realizadas.
 
 ## 3. Referências
 
-> * .
+> * . Matriz de Riscos. Ministério do Planejamento. Disponível em <http://www.planejamento.gov.br/assuntos/gestao/controle-interno/matriz-de-riscos>. Acesso em 02/09/2018.

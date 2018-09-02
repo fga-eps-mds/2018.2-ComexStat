@@ -1,7 +1,7 @@
 {
   "docs": {
     "Comunidade": ["codeofconduct", "contributing"],
-    "Gerência": ["comunicacao", "processo", "termodeabertura"],
+    "Gerência": ["comunicacao", "processo", "termodeabertura", "medicao"],
     "Capacitação": ["microsservicos", "devOps","treinamentos"],
     "Visão de Produto": ["docVisao"]
   }
