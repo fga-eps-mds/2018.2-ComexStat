@@ -10,18 +10,22 @@ que podem auxiliar em decisões de negócio, melhoria do processo e seu gerencia
 Para este fim, foi utilizada uma simplificação do processo GQM, para levantamento
 das medições que serão realizadas no projeto.
 
+Por muitas vezes a medição e análise de software faz parte do processo de controle
+de qualidade, onde os componentes de um sistema que são medidos e analisados
+separadamente e depois há uma comparação de métricas de acordo com os dados do projeto.
+
 ### GQM de Produtividade
 
 ![GQM_Produtividade](https://fga-eps-mds.github.io/2018.2-GrupoMDIC/img/GQM_Produtividade.png)
 
 O time possui como prazo para realização do projeto a duração das disciplinas de MDS e EPS,
 no segundo semestre de 2018. Logo, o aproveitamento do tempo deve ser otimizado, tentando
-entender como o time pode ser produtivo. Para isso, foram levantadas três perguntas
+entender como o time pode ser produtivo. Para isso, foram levantadas três perguntas:
 
 #### O conhecimento do time está nivelado?
 
-Caso o conhecimento não seja distribuido dentro do time, existe a possibilidade de sobrecarga de alguns membros
-e a não utilização do potencial de membros que ainda não possuiem as ferramentas e conhecimento necessários para ajudar o time.
+Caso o conhecimento não seja distribuído dentro do time, existe a possibilidade de sobrecarga de alguns membros
+e a não utilização do potencial de membros que ainda não possuem as ferramentas e conhecimento necessários para ajudar o time.
 
 #### O time está seguindo o planejamento da sprint?
 
@@ -94,7 +98,7 @@ riscos são analisados e priorizados, tendo as seguintes grandezas relacionadas:
   - **1**: Insignificante - o impacto é mínimo no alcance das ações de gestão.
 
 
-- **Probabilidade** (P): Também possui nota de 1 a 5, atribuidas de acordo com a frequência observada/esperada do evento,
+- **Probabilidade** (P): Também possui nota de 1 a 5, atribuídas de acordo com a frequência observada/esperada do evento,
   - **5** (>=90%): Evento esperado que ocorra na maioria das circunstâncias
   - **4** (>=50% < 90%): Evento provavelmente ocorra na maioria das circunstâncias
   - **3** (>=30% < 50%): Evento deve ocorrer em algum momento
@@ -116,6 +120,37 @@ a seguinte análise:
 
 ![GQM_Codigo](https://fga-eps-mds.github.io/2018.2-GrupoMDIC/img/GQM_codigo.png)
 
+A manutenção de software preocupa-se em lidar com mudanças na parte do ciclo de vida
+do desenvolvimento de software. Para efetivamente descrever problemas e apontar suas
+causas, mantenedores interagem continuamente com o time, cliente e usuários.
+Como isso, foram elaboradas as seguintes perguntas:
+
+#### Quanto o código está sendo testado?
+
+Os testes ajudam o desenvolvedor a garantir a qualidade interna do código, dando feedback
+automatizados e permitindo uma manutenção com menor custo.
+
+#### O código está seguindo boas práticas de programação?
+
+O uso de regras e boas práticas é o melhor jeito de gerar a legibilidade do código, contribuindo significativamente para
+que o ciclo de desenvolvimento de sistemas ocorra de maneira mais ágil, prática e de fácil manutenção.
+
+#### O código é complexo?
+
+A ideia é basicamente contar o número de caminhos diferentes que um método pode ter.
+Quanto maior esta complexidade, mais difícil a manutenção e a testagem do código.
+
+#### Métricas
+
+- Porcentagem de código testado
+- Número de linhas por método
+- Números de erros com a folha de estilo
+- Duplicação de código
+- Complexidade ciclomática
+
 ## 3. Referências
 
 > * . Matriz de Riscos. Ministério do Planejamento. Disponível em <http://www.planejamento.gov.br/assuntos/gestao/controle-interno/matriz-de-riscos>. Acesso em 02/09/2018.
+> * Boas Práticas de programação. Disponível em: <https://www.devmedia.com.br/boas-praticas-de-programacao/21137>. Acessado em 02/09/2018.
+> * A importância dos Testes para a Qualidade de Software. Disponível em: <https://www.devmedia.com.br/a-importancia-dos-testes-para-a-qualidade-do-software/28439>. Acessado em 02/09/2018.
+> * Medindo a complexidade do seu Código. Disponível em: <http://blog.caelum.com.br/medindo-a-complexidade-do-seu-codigo/>. Acessado em 02/09/2018.
