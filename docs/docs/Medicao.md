@@ -116,6 +116,9 @@ a seguinte análise:
 
 #### Burndown de Riscos
 
+Deve-se somar o nível dos riscos, calculado em métrica anterior, e acompanhá-los em relação ao eixo do tempo.
+O ideal é observar durante o decorrer do projeto, a diminuição dos riscos.
+
 ### GQM de Manutenção
 
 ![GQM_Codigo](https://fga-eps-mds.github.io/2018.2-GrupoMDIC/img/GQM_codigo.png)
