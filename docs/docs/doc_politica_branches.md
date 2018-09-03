@@ -20,7 +20,7 @@ Aqui será descrito como funcionará as branches do projeto.
 
 * **Branches release** -  São branches com um nível de confiança maior do que a branch develop, e que se encontram em nível de preparação para ser juntada com a branch master e com a branch develop, nessas branches, bugs encontrados durante os testes das features que vão para produção podem ser corrigidos mais tranquilamente, antes de irem efetivamente para produção. Por convenção, essas branches tem o nome começando com **release**/ e terminando com o número da próxima versão do software, exemplo (release/2.32.0);
 
-* **Branches documentation** - Essas são as branches na qual são desenvolvidos os documentos do projeto, elas serão criadas com o nome começando **documentation**/ (exemplo: documentation/documentoVisao), elas são criadas a partir da branch master e, ao final, é feito um pull-request para a branch master.
+* **Branches documentation** - Essas são as branches na qual são desenvolvidos os documentos do projeto, elas serão criadas com o nome começando **documentation**/ (exemplo: documentation/documento-visao), elas são criadas a partir da branch develop e, ao final, é feito um pull-request para a branch develop.
 
 Para ir para a master, só é possível via requisição aqui na interface do github. E a branch tem q estar "rebased", ou seja, sem conflitos, com os commits que estão na master (e os commits que entraram na master) e o acréscimo dos commits que foram feitos efetivamente pela sua branch.
 
@@ -65,7 +65,7 @@ Mas outras pessoas provavelmente ja mandaram modificações para a develop, de s
 
 Uma boa pratica é, ir para develop:
 
-    git checkout dev
+    git checkout develop
 
 Fazer um pull, mas usando o --rebase, para evitar commits de merge. (uma alternativa é apagar a branch de develop local, dar um fetch, e dar um checkout pra ela)
 
@@ -135,7 +135,11 @@ Para mandar da develop para a master da org oficial só é possível via merge r
 
 ## Política de commits
 
-Para que ocorra uma padronização, nossos commits serão em inglês, com mensagens curtas e que possuam significados relevantes sobre o conteúdo do commit, estes deveão ser feitos apenas quando os incremetos forem significativos, devem ser evitado commits alterando nome de variáveis, excluindo e adicionando linhas em branco.
+Para que ocorra uma padronização, nossos commits serão em inglês, com mensagens curtas e que possuam significados relevantes sobre o conteúdo do commit, estas mensagens deverão possuir verbos conjulgados no tempo passado ou participio e serem feitos apenas quando os incremetos forem significativos, devem ser evitado commits alterando nome de variáveis, excluindo e adicionando linhas em branco.
+
+Exemplo de commits
+
+    Creating code of feature X.
 
 Se estiver trabalhando em conjunto especifique os participantes no commit.
 
@@ -145,3 +149,9 @@ Irá abrir o seu editor de texto e nele deverá ser acrescentado o(s) co-authore
 
     Signed-off-by: Vinicius Rodrigues <vinifladf@gmail.com>
     Co-authored-by: João Victor <joao15victor08@gmail.com>
+
+## Referências Bibliográficas
+
+> * HADLER, Mikael. Utilizando o fluxo Git Flow. Disponível em: <https://medium.com/trainingcenter/utilizando-o-fluxo-git-flow-e63d5e0d5e04>. Acesso em: 26 ago. 2018.
+
+> * MOTA, Fernando Jorge. Git Flow: Uma forma legal de organizar repositórios git. Disponível em: <https://fjorgemota.com/git-flow-uma-forma-legal-de-organizar-repositorios-git/>. Acesso em: 26 ago. 2018.
