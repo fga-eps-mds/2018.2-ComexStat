@@ -110,12 +110,8 @@ São os requisitos do projeto, documentados por meio de issues do Github e geren
   Todos os membros da equipe devem configurar suas máquinas para que elas possuam o ambiente de desenvolvimento.
 
 ## 5.2. Políticas de documentos
-<<<<<<< HEAD
   Todos os documentos criados no projeto devem estar disponíveis por sua Github Pages em: https://fga-eps-mds.github.io/2018.2-GrupoMDIC/. Cada documento deve ser criado
-  em branch de acordo com a política de branches, e deve ser revisado antes de aceito.
-=======
-  Todos os documentos criados no projeto devem estar disponíveis por sua Github Pages em: https://fga-eps-mds.github.io/2018.2-ComexStat/.
->>>>>>> 97ecae27b782c82e7987fa9eafc4ee5c41296d6d
+  em branch de acordo com a política de branches, e deve ser revisado antes de aceito, por meio de revisor atribuído em pull request da branch.
 
 ## 5.3. Políticas de papéis
 
