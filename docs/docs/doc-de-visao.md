@@ -28,7 +28,7 @@ title: Documento de Visão
 
 ### 1.1 Propósito
 
- Esse documento visa especificar todo o escopo de funcionamento do ComexStat, deixando claro seu objetivo, a razão de sua necessidade e a forma como busca solucionar os problemas aos quais se propõe, deixando claro possíveis restrições. Dessa forma, sua principal utilidade objetiva também, ao esclarecer o que é o sistema para os desenvolvedores, clientes e usuários, estabelecer entre os mesmos um eficiênte alinhamento de idéias.
+ Esse documento visa especificar todo o escopo de funcionamento do ComexStat, deixando claro seu objetivo, a razão de sua necessidade e a forma como busca solucionar os problemas aos quais se propõe, deixando claro possíveis restrições. Dessa forma, sua principal utilidade objetiva também, ao esclarecer o que é o sistema para os desenvolvedores, clientes e usuários, estabelecer entre os mesmos um eficiente alinhamento de ideias.
 
 ### 1.2 Escopo
 
@@ -36,7 +36,7 @@ Suprir a necessidade de um sistema proeminente na visualização de dados relaci
 * Gerar tabelas a partir de dados providos pelo banco de dados do MDIC, dando ao usuário a possibilidade de filtrar os resultados a partir de informações específicas, de acordo com as suas necessidades;
 * Disponibilizar os resultados de tais tabelamentos para download, principalmente, em formato PDF ou similar, de tal forma que o usuário tenha facilidade para salvar os dados que são de seu interesse;
 * Gerar gráficos que facilitem a visualização e entendimentos dos dados requisitados.
-Além disso, o sistema também deverá ser feito de forma adequada para integrar posteriormente, além das infomrações relacionadas ao comércio exterior de bens, os dados relacionados ao comércio exterior de serviços no Brasil. 
+Além disso, o sistema também deverá ser feito de forma adequada para integrar posteriormente, além das informações relacionadas ao comércio exterior de bens, os dados relacionados ao comércio exterior de serviços no Brasil. 
 
 
 ### 1.3 Definições, acrônimos e abreviações
@@ -62,7 +62,7 @@ Além disso, o sistema também deverá ser feito de forma adequada para integrar
 
 ### 1.5 Visão Geral
 
-A organização do documento é feita de maneira a prover ao leitor a capacidade de através do mesmo entender o produto em seus vários aspectos de forma coesa. Para tal, são apresentados primeiramente os tópicos referentes a função geral do software e as motivações que levaram a sua criação, após isso, é descrito o posicionamento do produto em relação ao mercado e as partes interessada, incluindo a forma como a criação do sistema afetará os usuários. Por fim, são descritas as principais funcionalidades do software, bem como algumas de suas restrições e requisitos.
+A organização do documento é feita de maneira a prover ao leitor a capacidade de através do mesmo entender o produto em seus vários aspectos de forma coesa. Para tal, são apresentados primeiramente os tópicos referentes a função geral do software e as motivações que levaram a sua criação, após isso, é descrito o posicionamento do produto em relação ao mercado e as partes interessadas, incluindo a forma como a criação do sistema afetará os usuários. Por fim, são descritas as principais funcionalidades do software, bem como algumas de suas restrições e requisitos.
 
 ***
 ## 2. Posicionamento
@@ -70,14 +70,14 @@ A organização do documento é feita de maneira a prover ao leitor a capacidade
 
 ### 2.1 Oportunidade de Negócios
 
-O ComexStat, tornando mais fácil o acesso aos dados relacionados ao comércio exterior de bens, e posteriormente serviços, no Brasil, proporciona também aos usuários a possibilidade de trabalhar com as informações desejadas de forma mais adequada as suas necessidades. Resolvendo portanto principalmente os problemas relacionados a atual dificuldade em acessar os dados e tirar deles alguma conclusão, por conta da forma pela qual os mesmos são disponibilizados e por seu grande volume, além falta de ferramentas que possibilitem ao usuário filtrar, visualizar graficamente, e exportar de formas variadas esses dados, recursos estes que são presentes no ComexStat. Dessa forma, o sistema dá mais eficiência para as funções do MDIC quanto a exposição das informações, bem como para qualquer gestor ou produtor de bens ou serviços que tenha interesse nos dados disponibilizados para fazer qualquer tipo de analise.
+O ComexStat, tornando mais fácil o acesso aos dados relacionados ao comércio exterior de bens, e posteriormente serviços, no Brasil, proporciona também aos usuários a possibilidade de trabalhar com as informações desejadas de forma mais adequada as suas necessidades. Resolvendo portanto principalmente os problemas relacionados a atual dificuldade em acessar os dados e tirar deles alguma conclusão, por conta da forma pela qual os mesmos são disponibilizados e por seu grande volume, além da falta de ferramentas que possibilitem ao usuário filtrar, visualizar graficamente, e exportar de formas variadas esses dados, recursos estes que são presentes no ComexStat. Dessa forma, o sistema dá mais eficiência para as funções do MDIC quanto a exposição das informações, bem como para qualquer gestor ou produtor de bens ou serviços que tenha interesse nos dados disponibilizados para fazer qualquer tipo de análise.
 
 ### 2.2 Instrução do Problema
 
 |  | |
 | :--------: | :-------: |
 | **Problema**| Dados relacionados ao comércio exterior de bens e serviços no Brasil são abertos a população porém de difícil uso e interpretação, por conta do seu grande volume e formato disponibilizado|
-| **Funções afetadas** | Análise e visualização dos dados de comércio de bens |
+| **Funções afetadas** | Análise e visualização dos dados de comércio de bens e serviços |
 | **Efeito** | Os dados acabam por não serem utilizados|
 | **Solução** |Criação de uma plataforma web que dá ao usuário a possibilidade de acessar, filtrar e visualizar os dados de forma mais intuitiva|
 
@@ -105,11 +105,11 @@ O ComexStat, tornando mais fácil o acesso aos dados relacionados ao comércio e
 
 ### 3.2. Descrição dos Usuários   
 
-| Representantes | Gestores em empresas ou autonomos provedores de bens ou serviços |
+| Representantes | Gestores em empresas ou autônomos provedores de bens ou serviços |
 | :--------: | :-------: |
 | Descrição | Indivíduos que por sua função/ocupação profissional podem ter interesse em acessar e analisar os dados disponibilizados pelo MDIC |
 | Responsabilidades | Fazer pesquisas filtrando os resultados e utilizar ferramentas de visualização gráfica |
-| Critérios de Sucesso | Entender de forma adequada os dados pesquisados sobre bens e serviços e conseguir exporta-los caso desejado |
+| Critérios de Sucesso | Entender de forma adequada os dados pesquisados sobre bens e serviços e conseguir exportá-los caso desejado |
 
 ### 3.3. Ambiente do Usuário
 O acesso aos serviços do software poderá ser feito por navegadores de internet, como:
@@ -133,7 +133,7 @@ O acesso aos serviços do software poderá ser feito por navegadores de internet
 
 ### 4.1 Perspectiva do produto
 
-  O ComexStat visa prover ao usuário facilidade de acesso a informações referentes ao comércio exterior brasileiro de bens, decomplicando a interpretação e visualização dos dados por meio de filtros de pesquisas e uso de gráficos. Além disso, também são disponibilizadas formas coerentes para que os dados de interesse possam ser extraídos, em formato .csv, PDF ou similar.
+  O ComexStat visa prover ao usuário facilidade de acesso a informações referentes ao comércio exterior brasileiro de bens, descomplicando a interpretação e visualização dos dados por meio de filtros de pesquisas e uso de gráficos. Além disso, também são disponibilizadas formas coerentes para que os dados de interesse possam ser extraídos, em formato .csv, PDF ou similar.
 
 
 ### 4.2 Resumo das capacidades
