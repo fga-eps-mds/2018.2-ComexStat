@@ -165,12 +165,13 @@ O acesso aos serviços do software poderá ser feito por navegadores de internet
 ## 5.Recursos do Produto
 ***
 
-   * Área de acesso aos dados disponibilizados acerca do comércio externo brasileiro de serviços.
+   * Área de acesso aos dados disponibilizados acerca do comércio externo brasileiro de bens e serviços.
    * Opções para filtrar as pesquisas por categorias específicas.
    * Opções para ordenar os resultados encontrados a partir de uma coluna específica.
    * Opções para incluir ou retirar colunas de informação da pesquisa feita.
-   * Possibilidade de extrair as informações de interesse em formatos tabulares acessíveis, como .csv.
+   * Possibilidade de extrair as informações de interesse em formatos tabulares acessíveis, como .csv, ou em formatos mais acessíveis como o PDF.
    * Mais ferramentas relacionadas a formas diferentes de visualizar os dados, como aparatos gráficos e afins.
+   * Permitir ao usuário, pelo uso de permalinks, compartilhar facilmente um conjunto específico de resultados.
 
 ***
 ## 6: Restrições
