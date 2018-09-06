@@ -24,7 +24,7 @@ title: Documento de Visão
 ## 1. Introdução
 ***
 
- Nesta introdução serão abordados tópicos referentes a uma visão geral do produto, definindo seu propósito, escopo, definições, acrônimos, abreviações e referências. 
+ Nesta introdução serão abordados tópicos referentes a uma visão geral do produto, definindo seu propósito, escopo, definições, acrônimos, abreviações e referências.
 
 ### 1.1 Propósito
 
@@ -35,7 +35,7 @@ title: Documento de Visão
 Suprir a necessidade de um sistema proeminente na visualização de dados relacionados ao comércio de bens no Brasil. Proporcionando algo que seja mais intuitivo ao usuário, o ComexStat será integrado por uma plataforma web, cujas capacidades abrangem funcionalidades como:
 * Gerar tabelas a partir de dados providos pelo banco de dados do MDIC, dando ao usuário a possibilidade de filtrar os resultados a partir de informações específicas, de acordo com as suas necessidades;
 * Disponibilizar os resultados de tais tabelamentos para download, principalmente, em formato PDF ou similar, de tal forma que o usuário tenha facilidade para salvar os dados que são de seu interesse;
-* Gerar gráficos que facilitem a visualização e entendimentos dos dados requisitados. 
+* Gerar gráficos que facilitem a visualização e entendimentos dos dados requisitados.
 
 
 ### 1.3 Definições, acrônimos e abreviações
@@ -61,7 +61,7 @@ Suprir a necessidade de um sistema proeminente na visualização de dados relaci
 
 ### 1.5 Visão Geral
 
-A organização do documento é feita de maneira a prover ao leitor a capacidade de através do mesmo entender o produto em seus vários aspectos de forma coesa. Para tal, são apresentados primeiramente os tópicos referentes a função geral do software e as motivações que levaram a sua criação, após isso, é descrito o posicionamento do produto em relação ao mercado e as partes interessada, incluindo a forma como a criação do sistema afetará os usuários. Por fim, são descritas as principais funcionalidades do software, bem como algumas de suas restrições e requisitos. 
+A organização do documento é feita de maneira a prover ao leitor a capacidade de através do mesmo entender o produto em seus vários aspectos de forma coesa. Para tal, são apresentados primeiramente os tópicos referentes a função geral do software e as motivações que levaram a sua criação, após isso, é descrito o posicionamento do produto em relação ao mercado e as partes interessada, incluindo a forma como a criação do sistema afetará os usuários. Por fim, são descritas as principais funcionalidades do software, bem como algumas de suas restrições e requisitos.
 
 ***
 ## 2. Posicionamento
@@ -69,7 +69,7 @@ A organização do documento é feita de maneira a prover ao leitor a capacidade
 
 ### 2.1 Oportunidade de Negócios
 
-O ComexStat, tornando mais fácil o acesso aos dados relacionados ao comércio exterior de bens e serviços no Brasil, proporciona também aos usuários a possibilidade de trabalhar com as informações desejadas de forma mais adequada as suas necessidades. Resolve principalmente os problemas relacionados a atual dificuldade em acessar os dados e tirar deles alguma conclusão, por conta da forma pela qual os mesmos são disponibilizados e por seu grande volume. A falta de ferramentas que possibilitem ao usuário filtrar, visualizar graficamente, e exportar de formas variadas esses dados, recursos estes que são presentes no ComexStat. Dessa forma, o sistema dá mais eficiência para as funções do MDIC quanto a exposição das informações, bem como para qualquer gestor ou produtor de bens ou serviços que tenha interesse nos dados disponibilizados para fazer qualquer tipo de analise. 
+O ComexStat, tornando mais fácil o acesso aos dados relacionados ao comércio exterior de bens e serviços no Brasil, proporciona também aos usuários a possibilidade de trabalhar com as informações desejadas de forma mais adequada as suas necessidades. Resolve principalmente os problemas relacionados a atual dificuldade em acessar os dados e tirar deles alguma conclusão, por conta da forma pela qual os mesmos são disponibilizados e por seu grande volume. A falta de ferramentas que possibilitem ao usuário filtrar, visualizar graficamente, e exportar de formas variadas esses dados, recursos estes que são presentes no ComexStat. Dessa forma, o sistema dá mais eficiência para as funções do MDIC quanto a exposição das informações, bem como para qualquer gestor ou produtor de bens ou serviços que tenha interesse nos dados disponibilizados para fazer qualquer tipo de analise.
 
 ### 2.2 Instrução do Problema
 
@@ -98,15 +98,19 @@ O ComexStat, tornando mais fácil o acesso aos dados relacionados ao comércio e
 
 | Nome | Descrição | Responsabilidade|
 |-----|-------|---------|
+| Cliente | Requisitou a aplicação | Fornecer e validar os requisitos da aplicação |
 | Equipe de Programação | Estudantes da Universidade de Brasília da disciplina de Métodos de Desenvolvimento de Software. | Desenvolvimento do software esclarecido nesse documento, além de implementar testes e fazer o deploy do mesmo. |
 | Equipe de Gestão do Projeto | Estudantes da Universidade de Brasília da disciplina de Engenharia do Produto de Software | Acompanhar o processo de desenvolvimento da aplicação, identificando possíveis problemas e apontando caminhos e soluções. |
 
-### 3.2. Resumo dos Usuários
+### 3.2. Descrição dos Usuários
 
-| Nome | Descrição |
-|------|--------|
-| Público Geral | Pessoas que tenham interesse em dados e informações sobre comércio de serviços. |
-| Funcionários | Funcionários do MDIC que trabalham nas áreas administrativas e necessitam filtrar tais informações. |
+| Representantes | Gestores |
+| :--------: | :-------: |
+| Descrição | Gestores em empresas ou autonomos provedores de bens e serviços |
+| Responsabilidades | Filtrar os resultados |
+| Critérios de Sucesso | Entender os dados sobre bens e serviços |
+| Envolvimento | Baixo |
+| Problemas/Comentários | - |
 
 ### 3.3. Ambiente do Usuário
 O acesso aos serviços do software poderá ser feito por navegadores de internet, como:
@@ -115,31 +119,8 @@ O acesso aos serviços do software poderá ser feito por navegadores de internet
 * Apple Safari
 * Opera
 
-### 3.4 Perfis dos Usuários
 
-#### 3.4.1 Público Geral
-
-| Representantes | Público Geral |
-| :--------: | :-------: |
-| Descrição | Pessoas que buscam entender melhor o comercio de serviços |
-| Tipo | Usuário interessado em estatísticas do comércio exterior de serviços |
-| Responsabilidades | O usuário não tem responsabilidades sobre a plataforma web |
-| Critérios de Sucesso | Achar o que o usuário deseja |
-| Envolvimento | Baixo |
-|Problemas/Comentários | - |
-
-#### 3.4.2 Funcionários
-
-| Representantes | Funcionários |
-| :--------: | :-------: |
-| Descrição | Funcionários do MDIC |
-| Tipo | Funcionários que necessitam de dados para análise do comercio de serviços |
-| Responsabilidades | Acessar a plataforma para obter os dados que precisa |
-| Critérios de Sucesso | Conhecer a plataforma e toda suas funcionalidades |
-| Envolvimento |  Alto |
-| Problemas/Comentários | - |
-
-### 3.5 Principais necessidades dos usuários ou envolvidos
+### 3.4 Principais necessidades dos usuários ou envolvidos
 
 | **Necessidade** | **Prioridade** | **Interesses** | **Solução Atual** | **Solução Proposta** |
 | :--------: | :-------: | :--------: | :-------: | :--------: |
@@ -153,7 +134,7 @@ O acesso aos serviços do software poderá ser feito por navegadores de internet
 
 ### 4.1 Perspectiva do produto
 
-  O ComexStat visa prover ao usuário facilidade de acesso a informações referentes ao comércio exterior brasileiro de bens, decomplicando a interpretação e visualização dos dados por meio de filtros de pesquisas e uso de gráficos. Além disso, também são disponibilizadas formas coerentes para que os dados de interesse possam ser extraídos, em formato .csv, PDF ou similar. 
+  O ComexStat visa prover ao usuário facilidade de acesso a informações referentes ao comércio exterior brasileiro de bens, decomplicando a interpretação e visualização dos dados por meio de filtros de pesquisas e uso de gráficos. Além disso, também são disponibilizadas formas coerentes para que os dados de interesse possam ser extraídos, em formato .csv, PDF ou similar.
 
 
 ### 4.2 Resumo das capacidades
@@ -188,11 +169,11 @@ O acesso aos serviços do software poderá ser feito por navegadores de internet
 
 ### 6.2 Restrições externas
 
- Dentre as restrições externas as que mais irão influenciar são a inexperiência com a linguagem e frameworks, além de possíveis transtornos entre a equipe de desenvolvimento. 
+ Dentre as restrições externas as que mais irão influenciar são a inexperiência com a linguagem e frameworks, além de possíveis transtornos entre a equipe de desenvolvimento.
 
 ### 6.3 Restrições de design
 
-O sistema deve ter uma interface que seja de fácil uso para pessoas. Dessa forma, será necessária uma plataforma intuitiva, com ícones e botões de fácil pesquisa e acesso. 
+O sistema deve ter uma interface que seja de fácil uso para pessoas. Dessa forma, será necessária uma plataforma intuitiva, com ícones e botões de fácil pesquisa e acesso.
 
 ### 6.4 Restrições de confiabilidade
 
@@ -202,7 +183,7 @@ O sistema deverá ter cobertura de testes - mínimo de 90%.
 ## 7:	Faixas de Qualidade
 ***
 
- Para maior eficiência, a aplicação será web, pois o gerenciamento de dados e informações seria dificultado no caso de uma aplicação exclusiva para aparelhos mobile. 
+ Para maior eficiência, a aplicação será web, pois o gerenciamento de dados e informações seria dificultado no caso de uma aplicação exclusiva para aparelhos mobile.
 
 ***
 ## 8. Requisitos do Produto
@@ -210,16 +191,16 @@ O sistema deverá ter cobertura de testes - mínimo de 90%.
 
 ### 8.1 Requisitos do Sistema
 
- O sistema poderá ser acessado pelo usuário através de um navegador, tendo a necessidade de conexão com a internet. 
+ O sistema poderá ser acessado pelo usuário através de um navegador, tendo a necessidade de conexão com a internet.
 
 ### 8.2 Requisitos de Design
 
- O sistema deverá ser intuitivo e autoexplicativo, possibilitando uma fácil interação com o usuário. 
+ O sistema deverá ser intuitivo e autoexplicativo, possibilitando uma fácil interação com o usuário.
 
 ### 8.3 Requisitos de Portabilidade
 
- O sistema é utilizável através da maior parte dos navegadores web atuais, sendo compatível com os principais sistemas operacionais como Windows, Mac OS e Linux. 
+ O sistema é utilizável através da maior parte dos navegadores web atuais, sendo compatível com os principais sistemas operacionais como Windows, Mac OS e Linux.
 
 ### 8.4 Requisitos de Confiabilidade
 
- O sistema deve se comprometer em disponibilizar os dados de maneira transparente e confiável aos usuários. 
+ O sistema deve se comprometer em disponibilizar os dados de maneira transparente e confiável aos usuários.
