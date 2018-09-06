@@ -28,11 +28,15 @@ Nesta introdução serão abordados tópicos referentes a uma visão geral do pr
 
 ### 1.1 Propósito
 
-Esse documento visa especificar todo o escopo de funcionamento do Comexserv, deixando claro seu objetivo, a razão de sua necessidade e a forma como busca solucionar os problemas aos quais se propõe, deixando claro possíveis restrições.
+Esse documento visa especificar todo o escopo de funcionamento do ComexStat, deixando claro seu objetivo, a razão de sua necessidade e a forma como busca solucionar os problemas aos quais se propõe, deixando claro possíveis restrições.
 
 ### 1.2 Escopo
 
-Para suprir a necessidade de um melhor sistema de visualização de dados relacionados a prestação de serviços no Brasil o Comexserv será integrado por uma plataforma web, cujas capacidades irão abranger funcionalidades como: gerar tabelas a partir de dados providos pelo banco de dados do MDIC, dando ao usuário a possibilidade de filtrar os resultados a partir de informações específicas de acordo com as suas necessidades, e disponibilizar os resultados de tais tabelamentos para download em .csv ou similar, de tal forma que o usuário tenha facilidade para salvar os dados que são de seu interesse.
+Suprir a necessidade de um sistema proeminente na visualização de dados relacionados ao comércio de bens no Brasil. Proporcionando algo que seja mais intuitivo ao usuário, o ComexStat será integrado por uma plataforma web, cujas capacidades abrangem funcionalidades como:
+* Gerar tabelas a partir de dados providos pelo banco de dados do MDIC, dando ao usuário a possibilidade de filtrar os resultados a partir de informações específicas, de acordo com as suas necessidades;
+* Disponibilizar os resultados de tais tabelamentos para download, principalmente, em formato PDF ou similar, de tal forma que o usuário tenha facilidade para salvar os dados que são de seu interesse;
+* Gerar gráficos que facilitem a visualização e entendimentos dos dados requisitados.
+
 
 ### 1.3 Definições, acrônimos e abreviações
 
@@ -65,26 +69,26 @@ A organização do documento é feita de maneira a prover ao leitor a capacidade
 
 ### 2.1 Oportunidade de Negócios
 
-O Comex Stat, ao tornar mais fácil o acesso aos dados relacionados ao comércio exterior de bens e serviços no Brasil, além de dar também aos usuários a possibilidade de trabalhar com as informações desejadas de forma mais adequada as suas necessidades, resolve principalmente os problemas relacionados a atual dificuldade em acessar os dados e tirar deles alguma conclusão, por conta da forma pela qual os mesmos são disponibilizados e por seu grande volume, além da falta de ferramentas que possibilitem ao usuário filtrar, visualizar graficamente, e exportar de formas variadas esses dados, recursos estes que são presentes no Comex Stat. Dessa forma, o sistema dá mais eficiência para as funções do MDIC quanto a exposição das informações, bem como para qualquer gestor ou produtor de bens ou serviços que tenha interesse nos dados disponibilizados para fazer qualquer tipo de análise.
+O ComexStat, tornando mais fácil o acesso aos dados relacionados ao comércio exterior de bens e serviços no Brasil, proporciona também aos usuários a possibilidade de trabalhar com as informações desejadas de forma mais adequada as suas necessidades. Resolve principalmente os problemas relacionados a atual dificuldade em acessar os dados e tirar deles alguma conclusão, por conta da forma pela qual os mesmos são disponibilizados e por seu grande volume. A falta de ferramentas que possibilitem ao usuário filtrar, visualizar graficamente, e exportar de formas variadas esses dados, recursos estes que são presentes no ComexStat. Dessa forma, o sistema dá mais eficiência para as funções do MDIC quanto a exposição das informações, bem como para qualquer gestor ou produtor de bens ou serviços que tenha interesse nos dados disponibilizados para fazer qualquer tipo de analise.
 
 ### 2.2 Instrução do Problema
 
 |  | |
 | :--------: | :-------: |
 | **Problema**| Dados relacionados ao comércio exterior de serviços no Brasil são abertos a população porém de difícil uso e interpretação, por conta do seu grande volume e formato disponibilizado|
-| **Funções afetadas** | Análise e visualização dos dados de comércio de serviços |
+| **Funções afetadas** | Análise e visualização dos dados de comércio de bens |
 | **Efeito** | Os dados acabam por não serem utilizados|
-| **Solução** |Criação de uma plataforma web que dá ao usuário a possibilidade de acessar, filtrar e visualizar os dados de forma mais adequada|
+| **Solução** |Criação de uma plataforma web que dá ao usuário a possibilidade de acessar, filtrar e visualizar os dados de forma mais intuitiva|
 
 ### 2.3 Instrução de Posição do produto
 
 |  |  |
 | :--: | :--: |
-| **Público Alvo** | Público em Geral |
+| **Público Alvo** | Gestores e produtores de bens |
 | **Carência** | Necessidade de informações relacionadas ao comércio de bens de serviço brasileiro |
 | **Solução** | ComexServ |
-| **Descrição da Solução** | Uma plataforma web que permita ao usuário o acesso aos dados de forma fácil e intuitiva, a partir de uso de filtros e detalhamento, e que estes possa ser obtido no formato .csv |
-| **Diferenciais** | Facilidade no acesso à informação |
+| **Descrição da Solução** | Uma plataforma web que permita ao usuário o acesso aos dados de forma fácil e intuitiva, a partir de uso de filtros e detalhamento, e que estes possa ser obtido, principalmente, no formato PDF |
+| **Diferenciais** | Facilidade no acesso e na interpretação dos dados |
 
 ***
 ## 3. Descrição dos Envolvidos e dos Usuários
