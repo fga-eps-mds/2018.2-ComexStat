@@ -36,6 +36,7 @@ Suprir a necessidade de um sistema proeminente na visualização de dados relaci
 * Gerar tabelas a partir de dados providos pelo banco de dados do MDIC, dando ao usuário a possibilidade de filtrar os resultados a partir de informações específicas, de acordo com as suas necessidades;
 * Disponibilizar os resultados de tais tabelamentos para download, principalmente, em formato PDF ou similar, de tal forma que o usuário tenha facilidade para salvar os dados que são de seu interesse;
 * Gerar gráficos que facilitem a visualização e entendimentos dos dados requisitados.
+Além disso, o sistema também deverá ser feito de forma adequada para integrar posteriormente, além das infomrações relacionadas ao comércio exterior de bens, os dados relacionados ao comércio exterior de serviços no Brasil. 
 
 
 ### 1.3 Definições, acrônimos e abreviações
@@ -69,13 +70,13 @@ A organização do documento é feita de maneira a prover ao leitor a capacidade
 
 ### 2.1 Oportunidade de Negócios
 
-O ComexStat, tornando mais fácil o acesso aos dados relacionados ao comércio exterior de bens e serviços no Brasil, proporciona também aos usuários a possibilidade de trabalhar com as informações desejadas de forma mais adequada as suas necessidades. Resolve principalmente os problemas relacionados a atual dificuldade em acessar os dados e tirar deles alguma conclusão, por conta da forma pela qual os mesmos são disponibilizados e por seu grande volume. A falta de ferramentas que possibilitem ao usuário filtrar, visualizar graficamente, e exportar de formas variadas esses dados, recursos estes que são presentes no ComexStat. Dessa forma, o sistema dá mais eficiência para as funções do MDIC quanto a exposição das informações, bem como para qualquer gestor ou produtor de bens ou serviços que tenha interesse nos dados disponibilizados para fazer qualquer tipo de analise.
+O ComexStat, tornando mais fácil o acesso aos dados relacionados ao comércio exterior de bens, e posteriormente serviços, no Brasil, proporciona também aos usuários a possibilidade de trabalhar com as informações desejadas de forma mais adequada as suas necessidades. Resolvendo portanto principalmente os problemas relacionados a atual dificuldade em acessar os dados e tirar deles alguma conclusão, por conta da forma pela qual os mesmos são disponibilizados e por seu grande volume, além falta de ferramentas que possibilitem ao usuário filtrar, visualizar graficamente, e exportar de formas variadas esses dados, recursos estes que são presentes no ComexStat. Dessa forma, o sistema dá mais eficiência para as funções do MDIC quanto a exposição das informações, bem como para qualquer gestor ou produtor de bens ou serviços que tenha interesse nos dados disponibilizados para fazer qualquer tipo de analise.
 
 ### 2.2 Instrução do Problema
 
 |  | |
 | :--------: | :-------: |
-| **Problema**| Dados relacionados ao comércio exterior de serviços no Brasil são abertos a população porém de difícil uso e interpretação, por conta do seu grande volume e formato disponibilizado|
+| **Problema**| Dados relacionados ao comércio exterior de bens e serviços no Brasil são abertos a população porém de difícil uso e interpretação, por conta do seu grande volume e formato disponibilizado|
 | **Funções afetadas** | Análise e visualização dos dados de comércio de bens |
 | **Efeito** | Os dados acabam por não serem utilizados|
 | **Solução** |Criação de uma plataforma web que dá ao usuário a possibilidade de acessar, filtrar e visualizar os dados de forma mais intuitiva|
@@ -84,11 +85,11 @@ O ComexStat, tornando mais fácil o acesso aos dados relacionados ao comércio e
 
 |  |  |
 | :--: | :--: |
-| **Público Alvo** | Gestores e produtores de bens |
-| **Carência** | Necessidade de informações relacionadas ao comércio de bens de serviço brasileiro |
-| **Solução** | ComexServ |
-| **Descrição da Solução** | Uma plataforma web que permita ao usuário o acesso aos dados de forma fácil e intuitiva, a partir de uso de filtros e detalhamento, e que estes possa ser obtido, principalmente, no formato PDF |
-| **Diferenciais** | Facilidade no acesso e na interpretação dos dados |
+| **Público Alvo** | Gestores e produtores de bens ou serviços|
+| **Carência** | Necessidade de um melhor acesso e ferramentas de manejo a informações relacionadas ao comércio exterior de bens e serviço no Brasil |
+| **Solução** | ComexStat |
+| **Descrição da Solução** | Uma plataforma web que permita ao usuário o acesso aos dados de forma fácil e intuitiva, a partir de uso de filtros, detalhamento e ferramentas de visualização gráfica, além da possibilidade de exportação das informações em formatos como PDF e .csv  |
+| **Diferenciais** | Facilidade no acesso e ferramental para proporcionar uma melhor interpretação dos dados |
 
 ***
 ## 3. Descrição dos Envolvidos e dos Usuários
@@ -102,15 +103,13 @@ O ComexStat, tornando mais fácil o acesso aos dados relacionados ao comércio e
 | Equipe de Programação | Estudantes da Universidade de Brasília da disciplina de Métodos de Desenvolvimento de Software. | Desenvolvimento do software esclarecido nesse documento, além de implementar testes e fazer o deploy do mesmo. |
 | Equipe de Gestão do Projeto | Estudantes da Universidade de Brasília da disciplina de Engenharia do Produto de Software | Acompanhar o processo de desenvolvimento da aplicação, identificando possíveis problemas e apontando caminhos e soluções. |
 
-### 3.2. Descrição dos Usuários
+### 3.2. Descrição dos Usuários   
 
-| Representantes | Gestores |
+| Representantes | Gestores em empresas ou autonomos provedores de bens ou serviços |
 | :--------: | :-------: |
-| Descrição | Gestores em empresas ou autonomos provedores de bens e serviços |
-| Responsabilidades | Filtrar os resultados |
-| Critérios de Sucesso | Entender os dados sobre bens e serviços |
-| Envolvimento | Baixo |
-| Problemas/Comentários | - |
+| Descrição | Indivíduos que por sua função/ocupação profissional podem ter interesse em acessar e analisar os dados disponibilizados pelo MDIC |
+| Responsabilidades | Fazer pesquisas filtrando os resultados e utilizar ferramentas de visualização gráfica |
+| Critérios de Sucesso | Entender de forma adequada os dados pesquisados sobre bens e serviços e conseguir exporta-los caso desejado |
 
 ### 3.3. Ambiente do Usuário
 O acesso aos serviços do software poderá ser feito por navegadores de internet, como:
@@ -124,9 +123,9 @@ O acesso aos serviços do software poderá ser feito por navegadores de internet
 
 | **Necessidade** | **Prioridade** | **Interesses** | **Solução Atual** | **Solução Proposta** |
 | :--------: | :-------: | :--------: | :-------: | :--------: |
-| Ter acesso aos dados em outros formatos, mais compactos e brutos | Alta | Ter tudo reunido em um arquivo para diversos usos como pesquisas, análise de dados, etc.  | Acessar o site do MDIC, procurar pelas estatísticas de 2017 e baixá-las | Disponibilizar o download através de botões na página de resultado da pesquisa |
-| Filtrar a busca dos dados sobre o comércio de serviços | Alta | Facilitar ao usuário a obtenção dos dados de forma mais rápida e objetiva | Manualmente categorizar e filtrar os dados | Disponibilizar filtros e categorias na página de busca |
-| Visualizar os dados de forma mais organizada | Baixa | Entender e absorver os dados com maior facilidade | Gerar gráficos manualmente usando as planilhas disponibilizadas pelo MDIC | Disponibilizar gráficos, tabelas e outras ferramentas interativas para uma descrição mais clara e visual das informações |
+| Ter acesso aos dados em outros formatos | Alta | Ter tudo reunido em um arquivo para diversos usos como pesquisas, análise de dados, etc.  | Acessar o site do MDIC, procurar pelas estatísticas de 2017 e baixá-las | Disponibilizar o download dos dados em diversos formatos através de botões na página de resultado da pesquisa |
+| Filtrar a busca dos dados | Alta | Facilitar ao usuário a obtenção dos dados de forma mais rápida e objetiva | Manualmente categorizar e filtrar os dados | Disponibilizar filtros e categorias na página de busca |
+| Visualizar os dados de forma mais organizada | Média | Entender e absorver os dados com maior facilidade | Gerar gráficos manualmente usando as planilhas disponibilizadas pelo MDIC | Disponibilizar gráficos, tabelas e outras ferramentas interativas para uma descrição mais clara e visual das informações |
 
 ***
 ## 4.Visão Geral do Produto
@@ -143,7 +142,7 @@ O acesso aos serviços do software poderá ser feito por navegadores de internet
 | :--------: | :-------: |
 | Consulta rápida e fácil aos dados disponibilizados pelo MDIC | Pesquisa no banco de dados  |
 | Capacidade de filtrar as informações pesquisadas | Opções para obter resultados de acordo com filtros de categorias pré-determinadas ou customizadas  |
-| Possibilidade de fazer o download das informações desejadas| Recurso que permite ao usuário extrair uma determinada seleção de dados em formato tabular|
+| Possibilidade de fazer o download das informações desejadas| Recurso que permite ao usuário extrair uma determinada seleção de dados, seja em formatos tabulares como .csv ou em formatos de documento como PDF |
 | Capacidade de visualizar as informações de formas diferentes| Disponibilização de formas gráficas de representação dos dados selecionados|
 
 ***
