@@ -65,7 +65,7 @@ A organização do documento é feita de maneira a prover ao leitor a capacidade
 
 ### 2.1 Oportunidade de Negócios
 
-O Comexserv, ao tornar mais fácil o acesso aos dados relacionados à prestação de serviços no Brasil e dar também aos usuários a possibilidade de filtrar e visualizar as informações desejadas de forma mais adequada as suas necessidades, resolve dois principais problemas: a dificuldade no acesso a esses dados pela população de forma geral, e a dificuldade por parte dos interessados em conseguir tirar conclusões úteis a partir das informações por falta de ferramentas de filtragem e visualização. Dessa forma, o sistema dá mais eficiência para as funções do MDIC quanto a exposição dos dados relacionados ao comércio de serviços, bem como para qualquer análise que utilize essas informações como base.
+O Comex Stat, ao tornar mais fácil o acesso aos dados relacionados ao comércio exterior de bens e serviços no Brasil, além de dar também aos usuários a possibilidade de trabalhar com as informações desejadas de forma mais adequada as suas necessidades, resolve principalmente os problemas relacionados a atual dificuldade em acessar os dados e tirar deles alguma conclusão, por conta da forma pela qual os mesmos são disponibilizados e por seu grande volume, além da falta de ferramentas que possibilitem ao usuário filtrar, visualizar graficamente, e exportar de formas variadas esses dados, recursos estes que são presentes no Comex Stat. Dessa forma, o sistema dá mais eficiência para as funções do MDIC quanto a exposição das informações, bem como para qualquer gestor ou produtor de bens ou serviços que tenha interesse nos dados disponibilizados para fazer qualquer tipo de análise.
 
 ### 2.2 Instrução do Problema
 
