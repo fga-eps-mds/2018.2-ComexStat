@@ -19,6 +19,7 @@ title: Documento de Visão
 | 30/08/2018 | 0.10.1| Preenchimento das referências e correções gerais|Marcos Nery|
 | 30/08/2018 | 0.11.1| Preenchimento do tópico Requisitos do Produto | Caio Santos |
 | 31/08/2018 | 1.0.0 | Correções ortográficas e organização final da primeira versão do documento|Marcos Nery|
+| 06/09/2018 | 1.1.1 | Alterações no documento com base nas revisões feitas e novas informações adquiridas| Marcos Nery, Rogério Júnior, Kaique Borges, André Lucas, João Victor e Caio Santos|
 
 ***
 ## 1. Introdução
@@ -36,6 +37,7 @@ Suprir a necessidade de um sistema proeminente na visualização de dados relaci
 * Gerar tabelas a partir de dados providos pelo banco de dados do MDIC, dando ao usuário a possibilidade de filtrar os resultados a partir de informações específicas, de acordo com as suas necessidades;
 * Disponibilizar os resultados de tais tabelamentos para download, principalmente, em formato PDF ou similar, de tal forma que o usuário tenha facilidade para salvar os dados que são de seu interesse;
 * Gerar gráficos que facilitem a visualização e entendimentos dos dados requisitados.
+
 Além disso, o sistema também deverá ser feito de forma adequada para integrar posteriormente, além das informações relacionadas ao comércio exterior de bens, os dados relacionados ao comércio exterior de serviços no Brasil. 
 
 
@@ -125,7 +127,7 @@ O acesso aos serviços do software poderá ser feito por navegadores de internet
 | :--------: | :-------: | :--------: | :-------: | :--------: |
 | Ter acesso aos dados em outros formatos | Alta | Ter tudo reunido em um arquivo para diversos usos como pesquisas, análise de dados, etc.  | Acessar o site do MDIC, procurar pelas estatísticas de 2017 e baixá-las | Disponibilizar o download dos dados em diversos formatos através de botões na página de resultado da pesquisa |
 | Filtrar a busca dos dados | Alta | Facilitar ao usuário a obtenção dos dados de forma mais rápida e objetiva | Manualmente categorizar e filtrar os dados | Disponibilizar filtros e categorias na página de busca |
-| Visualizar os dados de forma mais organizada | Média | Entender e absorver os dados com maior facilidade | Gerar gráficos manualmente usando as planilhas disponibilizadas pelo MDIC | Disponibilizar gráficos, tabelas e outras ferramentas interativas para uma descrição mais clara e visual das informações |
+| Visualizar os dados de forma mais organizada | Alta | Entender e absorver os dados com maior facilidade | Gerar gráficos manualmente usando as planilhas disponibilizadas pelo MDIC | Disponibilizar gráficos, tabelas e outras ferramentas interativas para uma descrição mais clara e visual das informações |
 
 ***
 ## 4.Visão Geral do Produto
