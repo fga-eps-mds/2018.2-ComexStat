@@ -21,16 +21,16 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'Projeto MDIC', // Title for your website.
-  tagline: 'Documentação do Projeto MDIC',
+  title: 'Comex Stat', // Title for your website.
+  tagline: 'Documentação do Comex Stat',
   url: 'https://fga-eps-mds.github.io/', // Your website URL
-  baseUrl: '/2018.2-GrupoMDIC/', // Base URL for your project */
+  baseUrl: '/2018.2-ComexStat/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
-  projectName: '2018.2-GrupoMDIC',
+  projectName: '2018.2-ComexStat',
   organizationName: 'fga-eps-mds',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...

@@ -143,7 +143,7 @@ que o ciclo de desenvolvimento de sistemas ocorra de maneira mais ágil, prátic
 A ideia é basicamente contar o número de caminhos diferentes que um método pode ter.
 Quanto maior esta complexidade, mais difícil a manutenção e a testagem do código.
 
-#### Métricas
+#### Métricas e Indicadores
 
 - Porcentagem de código testado
 - Número de linhas por método
