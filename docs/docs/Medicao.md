@@ -7,7 +7,7 @@ title: Indicadores e Métricas
 
 É fundamental para saúde do projeto realizar seu monitoramento, coletando informações
 que podem auxiliar em decisões de negócio, melhoria do processo e seu gerenciamento.
-Para este fim, foi utilizada uma simplificação do processo GQM, para levantamento
+Para este fim, foi utilizada uma simplificação do processo GQM(Goal-Quest-Metric, http://www.agilebuddha.com/software-metrics/which-software-metrics-and-why-introducing-basilis-gqm-approach/), para levantamento
 das medições que serão realizadas no projeto.
 
 Por muitas vezes a medição e análise de software faz parte do processo de controle
@@ -39,7 +39,7 @@ alocado, existem problemas que devem ser atacados.
 Para que se possa melhorar a produtividade da equipe, é fundamental, em primeiro lugar, entender
 sua produtividade, e fazer planejamentos de acordo com esta.
 
-#### Métricas
+#### Métricas e Indicadores
 
 - Pontos
 
@@ -145,10 +145,10 @@ Quanto maior esta complexidade, mais difícil a manutenção e a testagem do có
 
 #### Métricas e Indicadores
 
-- Porcentagem de código testado
-- Número de linhas por método
-- Números de erros com a folha de estilo
-- Duplicação de código
+- Porcentagem de código testado: Número de linhas percorridas durante os testes dividido pelo número de linhas totais de código
+- Número de linhas por método: Definidos em 35 linhas por método em python
+- Números de erros com a folha de estilo: Não devem existir nenhum erro detectado pela ferramenta de análise estática
+- Duplicação de código: deve-se evitar a duplicação de código, a saúde dessa métrica será analisada por meio de análise de ferramenta
 - Complexidade ciclomática
 
 ## 3. Referências
