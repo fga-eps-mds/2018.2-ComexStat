@@ -91,7 +91,7 @@ O ComexStat, tornando mais fácil o acesso aos dados relacionados ao comércio e
 | **Carência** | Necessidade de um melhor acesso e ferramentas de manejo a informações relacionadas ao comércio exterior de bens e serviço no Brasil |
 | **Solução** | ComexStat |
 | **Descrição da Solução** | Uma plataforma web que permita ao usuário o acesso aos dados de forma fácil e intuitiva, a partir de uso de filtros, detalhamento e ferramentas de visualização gráfica, além da possibilidade de exportação das informações em formatos como PDF e .csv  |
-| **Diferenciais** | Facilidade no acesso e ferramental para proporcionar uma melhor interpretação dos dados |
+| **Diferenciais** | Facilidade no acesso e ferramental para proporcionar uma melhor interpretação dos dados, oferecendo diversos recursos que não estão presentes no atual sistema, como permalinks para compartilhamento de resultados e as já citadas soluções de exportação e visualização gráfica dos dados  |
 
 ***
 ## 3. Descrição dos Envolvidos e dos Usuários
@@ -109,7 +109,7 @@ O ComexStat, tornando mais fácil o acesso aos dados relacionados ao comércio e
 
 | Representantes | Gestores em empresas ou autônomos provedores de bens ou serviços |
 | :--------: | :-------: |
-| Descrição | Indivíduos que por sua função/ocupação profissional podem ter interesse em acessar e analisar os dados disponibilizados pelo MDIC |
+| Descrição | Indivíduos que por sua função/ocupação profissional podem ter interesse em acessar os dados disponibilizados pelo MDIC, para finalidades como análise de mercado ou similares, muitas vezes servindo como base para tomada de decisões relacionadas a investimentos/negócios|
 | Responsabilidades | Fazer pesquisas filtrando os resultados e utilizar ferramentas de visualização gráfica |
 | Critérios de Sucesso | Entender de forma adequada os dados pesquisados sobre bens e serviços e conseguir exportá-los caso desejado |
 
@@ -117,8 +117,6 @@ O ComexStat, tornando mais fácil o acesso aos dados relacionados ao comércio e
 O acesso aos serviços do software poderá ser feito por navegadores de internet, como:
 * Google Chrome;
 * Mozila Firefox;
-* Apple Safari
-* Opera
 
 
 ### 3.4 Principais necessidades dos usuários ou envolvidos
@@ -164,7 +162,7 @@ O acesso aos serviços do software poderá ser feito por navegadores de internet
 ## 6: Restrições
 ***
 
-### 6.1 Restrições de implementação
+### 6.1 Restrições de implementação 
 
  O sistema deverá ser implementado na linguagem Python, construindo uma aplicação web com o uso do framework Django.
 
@@ -196,7 +194,7 @@ O sistema deverá ter cobertura de testes - mínimo de 90%.
 
 ### 8.2 Requisitos de Design
 
- O sistema deverá ser intuitivo e autoexplicativo, possibilitando uma fácil interação com o usuário.
+ O sistema deverá ser intuitivo e autoexplicativo, possibilitando uma fácil interação com o usuário, seguindo um fluxo básico de funcionamento definido por: Pesquisa ->Filtros -> Agrupamentos -> Visualização de dados -> Compartilhamento dos resultados.
 
 ### 8.3 Requisitos de Portabilidade
 
