@@ -62,6 +62,8 @@ Um documento excel compartilhado na pasta do drive do time, cada membro deve
 preencher o tempo de dedicação ao projeto durante a semana e quais atividades foram
 realizadas.
 
+Link das coletas em relação ao quadro de conhecimento: https://docs.google.com/spreadsheets/d/1R_BGLs-qQCNSnxN6YPW_TGO9EQ7bSqzsIV2COs5fzx4/edit?usp=sharing
+
 - Earned value management (EVM)
   É responsável por medir a performance técnica no projeto, em relação ao prazo e custo.
 
@@ -76,7 +78,7 @@ realizadas.
   Dessa forma, fica transparente como está o conhecimento dividido no time e é mais
   fácil a formação de pareamentos
 
-
+Link das coletas em relação ao quadro de conhecimento: https://docs.google.com/spreadsheets/d/1TF1ahfZebxilBgXzJfw6NVO-frcC9-Gw3bC4RGgJSxY/edit?usp=sharing
 
 ### GQM de Gerência de Riscos
 
@@ -113,6 +115,8 @@ a seguinte análise:
 - Risco moderado: >=4<=6
 - Risco pequeno: >=1<=3
 
+
+Link das coletas em relação aos riscos: https://docs.google.com/spreadsheets/d/16VGMfgXxWyXqNj7LwUO7X5FunRKnFoS_h6Idv5-Lmnw/edit?usp=sharing
 
 #### Burndown de Riscos
 
