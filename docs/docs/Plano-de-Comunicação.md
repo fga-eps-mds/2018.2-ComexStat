@@ -11,7 +11,8 @@ Este documento possui como objetivo orientar o gerenciamento da comunicação do
 
 |Ferramenta   |Descrição |Finalidade|
 |-------------|----------|----------|
-|Telegram    | Ferramenta para envio de mensagens instantâneas| Comunicação rápida feita para avisos pontuais e dúvidas  |
+|Telegram    | Ferramenta para envio de mensagens instantâneas| Comunicação rápida feita para avisos pontuais e dúvidas com o cliente |
+|Slack   |Ferramenta para envio de mensagens instantâneas   |   Comunicação e utilização de bots interno do time |
 |Github   | Plataforma para hospedagem e versionamento de código, gerenciamento do time e documentação do projeto  | O github, no aspecto de comunicação, servirá para comunicar e gerenciar o fluxo de trabalho do time, por meio de issues e do quadro kanban |
 |Drive   | Ferramenta para compartilhamento de arquivos|Compartilhamento de materiais de estudo e outras informações mais extensas, para não poluir o grupo do telegram |
 
