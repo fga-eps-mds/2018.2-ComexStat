@@ -18,4 +18,5 @@
 <url> <loc>https://fga-eps-mds.github.io/2018.2-ComexStat/docs/processo</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://fga-eps-mds.github.io/2018.2-ComexStat/docs/processo" /> </url>
 <url> <loc>https://fga-eps-mds.github.io/2018.2-ComexStat/docs/termodeabertura</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://fga-eps-mds.github.io/2018.2-ComexStat/docs/termodeabertura" /> </url>
 <url> <loc>https://fga-eps-mds.github.io/2018.2-ComexStat/docs/treinamentos</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://fga-eps-mds.github.io/2018.2-ComexStat/docs/treinamentos" /> </url>
+<url> <loc>https://fga-eps-mds.github.io/2018.2-ComexStat/docs/utilizandoDockerDjango</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://fga-eps-mds.github.io/2018.2-ComexStat/docs/utilizandoDockerDjango" /> </url>
 </urlset>
