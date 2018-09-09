@@ -28,10 +28,10 @@ XP (eXtreme Programming).
 ### 2.3. Arquiteto
 
 - Definir o roadmap de Requisitos;
-- Garantir que o time de desenvolvinto siga a arquitetura;
+- Garantir que o time de desenvolvimento siga a arquitetura;
 - Propor arquitetura de micro serviços;
 - Configuração de contâiners com micro serviços.
--
+
 ### 2.4. Scrum Master (SM)
 
 - Gerenciar comunicação do Time;

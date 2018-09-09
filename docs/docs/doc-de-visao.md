@@ -38,7 +38,7 @@ Suprir a necessidade de um sistema proeminente na visualização de dados relaci
 * Disponibilizar os resultados de tais tabelamentos para download, principalmente, em formato PDF ou similar, de tal forma que o usuário tenha facilidade para salvar os dados que são de seu interesse;
 * Gerar gráficos que facilitem a visualização e entendimentos dos dados requisitados.
 
-Além disso, o sistema também deverá ser feito de forma adequada para integrar posteriormente, além das informações relacionadas ao comércio exterior de bens, os dados relacionados ao comércio exterior de serviços no Brasil. 
+Além disso, o sistema também deverá ser feito de forma adequada para integrar posteriormente, além das informações relacionadas ao comércio exterior de bens, os dados relacionados ao comércio exterior de serviços no Brasil.
 
 
 ### 1.3 Definições, acrônimos e abreviações
@@ -49,7 +49,7 @@ Além disso, o sistema também deverá ser feito de forma adequada para integrar
 | MDS | Métodos de Desenvolvimento de Software |
 | EPS | Engenharia do Produto de Software |
 | FGA | Faculdade do Gama |
-| UnB | Universidade do Gama |
+| UnB | Universidade do Brasília |
 
 ### 1.4 Referências
 
@@ -81,7 +81,7 @@ O ComexStat, tornando mais fácil o acesso aos dados relacionados ao comércio e
 | **Problema**| Dados relacionados ao comércio exterior de bens e serviços no Brasil são abertos a população porém de difícil uso e interpretação, por conta do seu grande volume e formato disponibilizado|
 | **Funções afetadas** | Análise e visualização dos dados de comércio de bens e serviços |
 | **Efeito** | Os dados acabam por não serem utilizados|
-| **Solução** |Criação de uma plataforma web que dá ao usuário a possibilidade de acessar, filtrar e visualizar os dados de forma mais intuitiva|
+| **Solução** | Reformular a plataforma web já existente, de forma a dar ao usuário a possibilidade de acessar, filtrar e visualizar os dados de forma mais intuitiva|
 
 ### 2.3 Instrução de Posição do produto
 
@@ -101,9 +101,12 @@ O ComexStat, tornando mais fácil o acesso aos dados relacionados ao comércio e
 
 | Nome | Descrição | Responsabilidade|
 |-----|-------|---------|
+| Equipe de Programação | Estudantes da UnB da disciplina de MDS | Elaboração dos documentos de visão e de arquitetura; Desenvolvimento do software esclarecido nesse documento; Atendendo aos requisitos definidos; Utilizar as práticas ágeis para otimizar o processo. |
+| Devops | Estudante da UnB da disciplina de EPS |  Configurar ambiente de desenvolvimento, homologação e produção utilizando contâiners; Definir política de commits e branchs de acordo com o git flow; Garantir que o time siga o git flow; Construir o pipeline de integração e deploy contínuos; Definir roadmap de deploy contínuo. |
+| Arquiteto | Estudante da UnB da disciplina de EPS | Definir o roadmap de requisitos; Garantir que o time de desenvolvimento siga a arquitetura; Propor arquitetura de micro serviços e a configuração de contâiners com micro serviços. |
+| Scrum Master (SM) | Estudante da UnB da disciplina de EPS | Gerenciar comunicação do Time; Garantir que os membros sigam o processo Definido; Gerenciar riscos; Definir, monitorar e controlar indicadores e metricas de produtividade, utilizando-os para tomadas de decisões no projeto; Definir e seguir roadmap para produtividade máxima do time. |
+| Product Owner (PO) | Estudante da UnB da disciplina de EPS | Ter a visão de Produto; Elaborar o Termo de Abertura; Elaborar a Estrutura Analítica do Projeto (EAP); Definir plano de negócio; Gerenciar backlog de histórias; Desenvolver identidade visual e guia de usabilidade do produto; Definir roadmap de produto. |
 | Cliente | Requisitou a aplicação | Fornecer e validar os requisitos da aplicação |
-| Equipe de Programação | Estudantes da Universidade de Brasília da disciplina de Métodos de Desenvolvimento de Software. | Desenvolvimento do software esclarecido nesse documento, além de implementar testes e fazer o deploy do mesmo. |
-| Equipe de Gestão do Projeto | Estudantes da Universidade de Brasília da disciplina de Engenharia do Produto de Software | Acompanhar o processo de desenvolvimento da aplicação, identificando possíveis problemas e apontando caminhos e soluções. |
 
 ### 3.2. Descrição dos Usuários   
 
@@ -162,7 +165,7 @@ O acesso aos serviços do software poderá ser feito por navegadores de internet
 ## 6: Restrições
 ***
 
-### 6.1 Restrições de implementação 
+### 6.1 Restrições de implementação
 
  O sistema deverá ser implementado na linguagem Python, construindo uma aplicação web com o uso do framework Django.
 
