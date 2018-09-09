@@ -3,27 +3,8 @@ id: docVisao
 title: Documento de Visão
 ---
 
-# Histórico da Revisão
-
-| **Data** | **Versão** | **Descrição** | **Autor** |
-| :------: | :--------: | :-----------: | :-------: |
-|29/08/2018|0.1.0|Abertura do documento|Rogério Junior, Marcos Nery e André Lucas|
-|29/08/2018|0.2.0|Preenchimento dos tópicos da introdução|Rogério Junior, Marcos Nery e André Lucas|
-|30/08/2018|0.3.0|Preenchimento inicial dos tópicos do Posicionamento|Marcos Nery|
-| 30/08/2018 | 0.4.0 | Finalização dos tópicos de Posicionamento | Rogério Júnior |
-| 30/08/2018 | 0.5.0 | Preenchimento inicial dos tópicos de Descrição | André Lucas |
-| 30/08/2018 | 0.6.0 | Preenchimento do tópico Perfis dos Usuários | João Victor |
-| 30/08/2018 | 0.7.0 | Preenchimento inicial dos tópicos da visão geral | Marcos Nery|
-| 30/08/2018 | 0.8.0 | Melhorias e preenchimento dos Tópicos 6 e 7 | André Lucas |
-| 30/08/2018 | 0.9.0 | Preenchimento do tópico referente aos recursos do sistema |Marcos Nery|
-| 30/08/2018 | 0.10.1| Preenchimento das referências e correções gerais|Marcos Nery|
-| 30/08/2018 | 0.11.1| Preenchimento do tópico Requisitos do Produto | Caio Santos |
-| 31/08/2018 | 1.0.0 | Correções ortográficas e organização final da primeira versão do documento|Marcos Nery|
-| 06/09/2018 | 1.1.1 | Alterações no documento com base nas revisões feitas e novas informações adquiridas| Marcos Nery, Rogério Júnior, Kaique Borges, André Lucas, João Victor e Caio Santos|
-
-***
 ## 1. Introdução
-***
+
 
  Nesta introdução serão abordados tópicos referentes a uma visão geral do produto, definindo seu propósito, escopo, definições, acrônimos, abreviações e referências.
 
@@ -206,3 +187,22 @@ O sistema deverá ter cobertura de testes - mínimo de 90%.
 ### 8.4 Requisitos de Confiabilidade
 
  O sistema deve se comprometer em disponibilizar os dados de maneira transparente e confiável aos usuários.
+
+## Histórico da Revisão
+
+| **Data** | **Versão** | **Descrição** | **Autor** |
+| :------: | :--------: | :-----------: | :-------: |
+|29/08/2018|0.1.0|Abertura do documento|Rogério Junior, Marcos Nery e André Lucas|
+|29/08/2018|0.2.0|Preenchimento dos tópicos da introdução|Rogério Junior, Marcos Nery e André Lucas|
+|30/08/2018|0.3.0|Preenchimento inicial dos tópicos do Posicionamento|Marcos Nery|
+| 30/08/2018 | 0.4.0 | Finalização dos tópicos de Posicionamento | Rogério Júnior |
+| 30/08/2018 | 0.5.0 | Preenchimento inicial dos tópicos de Descrição | André Lucas |
+| 30/08/2018 | 0.6.0 | Preenchimento do tópico Perfis dos Usuários | João Victor |
+| 30/08/2018 | 0.7.0 | Preenchimento inicial dos tópicos da visão geral | Marcos Nery|
+| 30/08/2018 | 0.8.0 | Melhorias e preenchimento dos Tópicos 6 e 7 | André Lucas |
+| 30/08/2018 | 0.9.0 | Preenchimento do tópico referente aos recursos do sistema |Marcos Nery|
+| 30/08/2018 | 0.10.1| Preenchimento das referências e correções gerais|Marcos Nery|
+| 30/08/2018 | 0.11.1| Preenchimento do tópico Requisitos do Produto | Caio Santos |
+| 31/08/2018 | 1.0.0 | Correções ortográficas e organização final da primeira versão do documento|Marcos Nery|
+| 06/09/2018 | 1.1.1 | Alterações no documento com base nas revisões feitas e novas informações acrescentadas| Marcos Nery, Rogério Júnior, Kaique Borges, André Lucas, João Victor e Caio Santos|
+| 08/09/2018 | 2.0.0 | Feitas as revisões solicitadas pela Scrum Master |
