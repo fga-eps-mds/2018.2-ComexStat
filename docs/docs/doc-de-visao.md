@@ -205,4 +205,4 @@ O sistema deverá ter cobertura de testes - mínimo de 90%.
 | 30/08/2018 | 0.11.1| Preenchimento do tópico Requisitos do Produto | Caio Santos |
 | 31/08/2018 | 1.0.0 | Correções ortográficas e organização final da primeira versão do documento|Marcos Nery|
 | 06/09/2018 | 1.1.1 | Alterações no documento com base nas revisões feitas e novas informações acrescentadas| Marcos Nery, Rogério Júnior, Kaique Borges, André Lucas, João Victor e Caio Santos|
-| 08/09/2018 | 2.0.0 | Feitas as revisões solicitadas pela Scrum Master |
+| 08/09/2018 | 2.0.0 | Feitas as revisões solicitadas pela Scrum Master | Marcos Nery e Rogério Júnior |
