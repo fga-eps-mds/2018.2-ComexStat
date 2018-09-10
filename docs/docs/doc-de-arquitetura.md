@@ -52,6 +52,11 @@ Sendo uma sequência para a descrição geral do produto dada pelo Documento de 
 ## 5. Visão Lógica
 ***
 
+### 5.1 Visão Geral
+
+O sistema será desenvolvido usando o framework web Django, que é estruturado com padrão MVT, uma variação do padrão MVC.
+Pelo navegador, o usuário acessa um endereço web que pode ser digitado diretamente ou acessado por algum template, o processador de URL's do Django processa um padrão na URL e destina à view e método que descreve a ação a ser feita. Esse método então retorna algum template diretamente, ou pede à um modelo alguns dados, para então passá-los ao template.
+
 ***
 ## 6. Visão da Implementação
 ***
@@ -65,4 +70,5 @@ Sendo uma sequência para a descrição geral do produto dada pelo Documento de 
 | **Data** | **Versão** | **Descrição** | **Autor** |
 | :------: | :--------: | :-----------: | :-------: |
 |09/09/2018|0.1.0|Abertura e preenchimento da introdução|Marcos Nery|
-|10/09/2018|0.2.0|Adição das restrições e metas arquiterurais| Marcos Nery| 
+|10/09/2018|0.2.0|Adição das restrições e metas arquiterurais|Marcos Nery| 
+|10/09/2018|0.3.0|Adição da visão geral da visão lógica|Kaique Borges|
