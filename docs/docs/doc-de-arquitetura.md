@@ -75,6 +75,7 @@ Pelo navegador, o usuário acessa um endereço web que pode ser digitado diretam
 ***
 ## 7. Qualidade
 ***
+A arquitetura MVT oferece uma organização das camadas da aplicação, possibilitando aos desenvolvedores uma fácil manutenção, além de ser um padrão de arquitetura altamente confiável já que é muito utilizado.
 
 ## Histórico da Revisão
 
@@ -84,3 +85,4 @@ Pelo navegador, o usuário acessa um endereço web que pode ser digitado diretam
 |10/09/2018|0.2.0|Adição das restrições e metas arquiterurais|Marcos Nery|
 |10/09/2018|0.3.0|Adição da visão geral da visão lógica|Kaique Borges|
 |10/09/2018|0.4.0|Adição da representação arquitetural|André Lucas|
+|10/09/2018|0.5.0|Adição da qualidade|João Victor|
