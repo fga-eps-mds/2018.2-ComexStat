@@ -32,6 +32,17 @@ Sendo uma sequência para a descrição geral do produto dada pelo Documento de 
 ***
 ## 3. Restrições e Metas Arquiteturais
 ***
+* **Suportabilidade**
+      O software poderá ser utilizado sem grandes problemas pela maior parte dos navegadores mais populares, no entanto, as principais plataformas tidas como alvo são o Google Chrome e o FireFox, de tal forma que o usuário ao acessar o sistema por uma dessas vias poderá esperar total compatibilidade.
+
+ * **Usabilidade**
+       O sistema deverá ser intuitivo e de simples uso, seguindo uma sequência lógica de ações possíveis, definida por Pesquisa ->Filtros -> Agrupamentos -> Visualização de dados -> Compartilhamento dos resultados. Dessa forma, o usuário não deverá precisar de tutoriais ou treinamentos extras para usufruir dos recursos disponibilizados.
+
+ * **Ferramentas de Desenvolvimento**
+       O projeto será desenvolvido em Python (versão 3.x.x), pela utilização do framework Django (versão 3.x.x).
+
+  * **Confiabilidade**
+       O sistema terá uma cobertura mínima de testes de 90%, buscando garantir que suas funcionalidades foram suficientemente testadas.
 
 ***
 ## 4. Visão de Casos de Uso
@@ -54,3 +65,4 @@ Sendo uma sequência para a descrição geral do produto dada pelo Documento de 
 | **Data** | **Versão** | **Descrição** | **Autor** |
 | :------: | :--------: | :-----------: | :-------: |
 |09/09/2018|0.1.0|Abertura e preenchimento da introdução|Marcos Nery|
+|10/09/2018|0.2.0|Adição das restrições e metas arquiterurais| Marcos Nery| 
