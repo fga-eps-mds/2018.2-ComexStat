@@ -10,7 +10,7 @@ Na introdução será apresentada uma ampla visão do documento, deixando clara 
 
 ### 1.1 Objetivo
 
-O objetivo deste documento é de expor aos interessados uma visão geral acerca da arquitetura do ComexStat, pontuando aspectos deste segundo diferentes visões arquiteturais, deixando também em evidência algumas restrições e metas quanto a estes pontos.  
+O objetivo deste documento é de expor aos interessados uma visão geral acerca da arquitetura do ComexStat, pontuando aspectos deste segundo diferentes visões arquiteturais, deixando também em evidência algumas restrições e metas quanto a estes pontos.
 
 
 ### 1.2 Escopo
@@ -28,6 +28,17 @@ Sendo uma sequência para a descrição geral do produto dada pelo Documento de 
 ***
 ## 2. Representação Arquitetural
 ***
+O ComexStat será uma aplicação web desenvolvida a partir do framework Django, escrito em Python. O Django segue o padrão **MVC** de perto, no entanto, ele usa sua própria lógica na implementação. Como o *“Controller”* é manipulado pelo próprio framework e a maior parte do entusiasmo no Django acontece em modelos, templates e views, o Django é frequentemente chamado de framework da MTV. No padrão de desenvolvimento da **MVT**:
+
+**Model**, a camada de acesso a dados. Essa camada contém tudo e qualquer coisa sobre os dados: como acessá-lo, como validá-lo, quais comportamentos ele possui e as relações entre os dados.
+
+**View**, a camada de lógica de negócios. Essa camada contém a lógica que acessa o modelo e adia para o (s) modelo (s) apropriado (s). Você pode pensar nisso como a ponte entre modelos e modelos.
+
+**Template**, a camada de apresentação. Essa camada contém decisões relacionadas à apresentação: como algo deve ser exibido em uma página da Web ou outro tipo de documento.
+
+![arquitetura-mvt](https://www.javatpoint.com/django/images/django-mvt-based-control-flow.png)
+
+Esta é provavelmente a única infelicidade da nomeação no Django, porque a *view* do Django é mais parecida com o *controller* no MVC, e a *view* do MVC é na verdade um *Template* no Django. Independentemente de como as coisas são nomeadas, Django as executa da forma que é mais lógica para nós.
 
 ***
 ## 3. Restrições e Metas Arquiteturais
@@ -70,5 +81,6 @@ Pelo navegador, o usuário acessa um endereço web que pode ser digitado diretam
 | **Data** | **Versão** | **Descrição** | **Autor** |
 | :------: | :--------: | :-----------: | :-------: |
 |09/09/2018|0.1.0|Abertura e preenchimento da introdução|Marcos Nery|
-|10/09/2018|0.2.0|Adição das restrições e metas arquiterurais|Marcos Nery| 
+|10/09/2018|0.2.0|Adição das restrições e metas arquiterurais|Marcos Nery|
 |10/09/2018|0.3.0|Adição da visão geral da visão lógica|Kaique Borges|
+|10/09/2018|0.4.0|Adição da representação arquitetural|André Lucas|
