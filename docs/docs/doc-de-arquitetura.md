@@ -59,6 +59,26 @@ Esta é provavelmente a única infelicidade da nomeação no Django, porque a *v
 ## 4. Visão de Casos de Uso
 ***
 
+
+### 4.3 Prioridade dos casos de uso
+
+Na forma escolhida para classifica-los, os casos de uso possuem três tipos de prioridades:
+
+   * **Essenciais:** Funcionalidades indispensáveis para o sistema, sem as quais o mesmo não é considerado funcional.
+   * **Importantes:** Funcionalidades que são necessárias para o cliente, mas o sistema pode funcionar sem elas.
+   * **Desejáveis:** Funcionalidades desejadas mas que podem ou não ser adicionadas posteriormente, sem elas o sistema já atende todas as necessidades do cliente.
+
+
+   |Caso de Uso|Prioridade|
+   |:---------:|:--------:|
+   |Consultar e filtrar os dados disponibilizados|Essencial|
+   |Gerar permalinks dos resultados pesquisados|Essencial|
+   |Exportar os resultados das consultas em formatos como .csv e PDF|Essencial|
+   |Gerar visualizações gráficas dos dados|Essencial|
+   |Compartilhamento da consulta feita em redes sociais ou similares|Importante|
+   |Compartilhamento via embedding de páginas|Desejável|
+
+
 ***
 ## 5. Visão Lógica
 ***
