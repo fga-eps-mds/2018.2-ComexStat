@@ -1,5 +1,6 @@
 #!/bin/sh
 
+pip install -r requirements.txt
 cd src
 python manage.py makemigrations
 python manage.py migrate
