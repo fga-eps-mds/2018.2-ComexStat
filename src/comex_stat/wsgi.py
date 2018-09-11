@@ -1,5 +1,5 @@
 """
-WSGI config for comexStat project.
+WSGI config for comex_stat project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "comexStat.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "comex_stat.settings")
 
 application = get_wsgi_application()

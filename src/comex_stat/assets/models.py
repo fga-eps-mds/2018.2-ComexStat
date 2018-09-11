@@ -7,7 +7,7 @@ class AssetFacts(models.Model):
 
 
 class AssetImportFacts(AssetFacts):
-    name = models.CharField(max_length=100)
+    pass
 
 
 class AssetExportFacts(AssetFacts):
