@@ -37,8 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'comexStat.assets'
+    'comexStat.assets',
+    'graphene_django',
 ]
+
+GRAPHENE = {
+    'SCHEMA': 'comexStat.schema.schema'
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
