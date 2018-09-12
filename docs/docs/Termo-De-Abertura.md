@@ -19,7 +19,7 @@ Além disso, outro foco importante do sistema é a praticidade de uso dele, de m
 
 Os dados referentes à comércio de bens e prestação de serviços são vastos. Porém, o acesso à eles é muito difícil, tendo em vista a maneira na qual eles foram armazenados e o sistema existente hoje para a visualização deles. Isso causa um empencilho para muitos dos interessados neles, impossibilitando assim análises mais profundas, assim como seu entendimento.
 
-Notando isso, o Comexserv têm como objetivo facilitar a visualização dos dados referentes à comercio de bens e prestação de serviços para todos aqueles que estejam interessados, como imobiliárias, programadores, etc. 
+Notando isso, o Comexserv têm como objetivo facilitar a visualização dos dados referentes à comercio de bens e prestação de serviços para todos aqueles que estejam interessados, como imobiliárias, programadores, etc.
 
 # 4. Oportunidade de Negócios
 
@@ -80,6 +80,16 @@ Além disso, para o aspecto virtual, serão utilizadas as seguintes ferramentas:
 | Slack | Principal canal de comunicação da equipe. Aqui são tiradas dúvidas, imprevistos são comunicados e se tem a integração com o github, para que os membros sejam notificados da atividade do repositório. |
 | Telegram | Canal de comunicação utilizado primariamente para a comunicação com o cliente. |
 
-# 9. Prazo
+# 9. Prazo e Custo
 
-O projeto terá uma duração de um total de 16 sprints. A primeira sprint teve inicio no dia 14 de Agosto de 2018, de maneira que a última sprint será iniciada no dia  26 de novembro de 2018. Durante esse período, haverão duas datas de entregas importantes, sendo elas denominadas releases. Uma ocorrerá no inico de outubro, enquanto outra ocorrerá entre o final de novembro e o início de dezembro.
+O projeto terá uma duração de um total de 16 sprints. A primeira sprint teve inicio no dia 14 de Agosto de 2018, de maneira que a última sprint será iniciada no dia  26 de novembro de 2018. Durante esse período, haverão duas datas de entregas importantes, sendo elas denominadas releases. Uma ocorrerá no inico de outubro, enquanto outra ocorrerá entre o final de novembro e o início de dezembro. Totalizando assim 4 meses para a duração do projeto.
+
+
+O custo do projeto foi calculado utilizando os seguintes valores, em reais:
+
+| Nome | Custo | Quantidade | Custo Mensal | Custo Total |
+| :--: | :---: | :--------: | :----------: | :---------: |
+| Desenvolvedores | 3500 | 6 | 21000 | 84000 |
+| Engenheiros de Produto  | 6500 | 4 | 26000 | 104000 |
+
+Os valores para os salários foram obtidos a partir de salários de pessoas que exercem cargos semelhantes em Brasília. Para o time de desenvolvedor, considerou-se um salário de um desenvolvedor júnior, enquanto para os Engenheiros de Produto foi considerado o salário de um desenvolvedor sênior.
