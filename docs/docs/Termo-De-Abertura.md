@@ -5,15 +5,21 @@ title: Termo de Abertura do Projeto
 
 # 1. Introdução
 
-O Ministérios da Indústria, Comércio Exterior e Serviços(MDIC) é responsável pelas políticas de desenvolvimento da indústria, legislação de propriedade intelectual, regulamentação e execução de políticas relacionadas ao comércio externo, assim como as políticas de prestação de serviços. Considerando a política de dados abertos que o ministério segue, deseja-se que a população brasileira consiga acessar os dados relacionados à prestação de serviços com mais facilidade. Tendo isso em vista, a criação de um sistema computacional para representação desses dados é desejada.
+O Ministérios da Indústria, Comércio Exterior e Serviços(MDIC) é responsável pelas políticas de desenvolvimento da indústria, legislação de propriedade intelectual, regulamentação e execução de políticas relacionadas ao comércio externo, assim como as políticas de prestação de serviços. Dessa maneira, o MDIC possui uma vasta coleção de dados referentes à tais assuntos. Porém, tais dados são de difícil acesso, até mesmo para aqueles que trabalham dentro do próprio Ministério, o que impossibilita que ocorrão pesquisas profundas por meio dos analistas que lá trabalham.
+
+Seguindo uma política de dados abertos, deseja-se que tais dados sejam agora disponilibilizados de maneira simples, prática e efetiva, provendo liberdade e autonomia para o usuário, fazendo com que as informações providas a partir dessa disponibilização sejam úteis. Além disso, deseja-se que pessoas que são afetadas por esses dados sejam capazes de visualiza-los de maneira mais simples, tendo em vista que muitos dos interessados nem sabem da existência deles. Os possíveis interessados são todos aqueles que realizam comércio de bens e prestação de serviços, como imobiliárias, lojas de roupa, programadores, arquitetos, etc.
 
 # 2. Descrição do Projeto
 
-O Comexserv é um projeto idealizado pelo Ministério da Indústria, Comércio Exterior e Serviços(MDIC), que será desenvolvido por alunos da Engenharia de Software da Universidade de Brasília. O sistema têm como objetivo a facilitação da disponibilização de dados relacionados à comércio de bens e prestação de serviços no Brasil. Serão disponibilizados gráficos, tabelas e arquivos PDF para o assim como download de todos os dados referentes à tais serviços.
+O Comexserv é um projeto idealizado pelo Ministério da Indústria, Comércio Exterior e Serviços(MDIC), que será desenvolvido por alunos da Engenharia de Software da Universidade de Brasília. O sistema têm como objetivo a facilitação da disponibilização de dados relacionados à comércio de bens e prestação de serviços no Brasil, assim como a possibilidade de pesquisas avançadas e apresentação personalizada. Serão disponibilizados gráfico e tabela, além de download de arquivos PDF referente a eles.
+
+Além disso, outro foco importante do sistema é a praticidade de uso dele, de maneira que as informações contidas nele possam ser facilmente exportadas, seja em forma de PDF ou de permalink, de maneira que as informações geradas pelo sistema não estejam necessariamente presas à ele, provendo assim uma liberdade para o usuário utilizar o que foi gerado em outros arquivos, ou até mesmo em posts de blogs.
 
 # 3. Propósito do Projeto
 
-O projeto têm como objetivo a disponibilização de dados referentes à prestação de serviços no Brasil, de maneira à facilitar o acesso a esses dados.
+Os dados referentes à comércio de bens e prestação de serviços são vastos. Porém, o acesso à eles é muito difícil, tendo em vista a maneira na qual eles foram armazenados e o sistema existente hoje para a visualização deles. Isso causa um empencilho para muitos dos interessados neles, impossibilitando assim análises mais profundas, assim como seu entendimento.
+
+Notando isso, o Comexserv têm como objetivo facilitar a visualização dos dados referentes à comercio de bens e prestação de serviços para todos aqueles que estejam interessados, como imobiliárias, programadores, etc. 
 
 # 4. Oportunidade de Negócios
 
