@@ -9,7 +9,7 @@ O Ministérios da Indústria, Comércio Exterior e Serviços(MDIC) é responsáv
 
 # 2. Descrição do Projeto
 
-O Comexserv é um projeto idealizado pelo Ministério da Indústria, Comércio Exterior e Serviços(MDIC), que será desenvolvido por alunos da Engenharia de Software da Universidade de Brasília. O sistema têm como objetivo a facilitação da disponibilização de dados relacionados à prestação de serviços no Brasil. Serão disponibilizados gráficos e tabelas, assim como download de todos os dados referentes à tais serviços.
+O Comexserv é um projeto idealizado pelo Ministério da Indústria, Comércio Exterior e Serviços(MDIC), que será desenvolvido por alunos da Engenharia de Software da Universidade de Brasília. O sistema têm como objetivo a facilitação da disponibilização de dados relacionados à comércio de bens e prestação de serviços no Brasil. Serão disponibilizados gráficos, tabelas e arquivos PDF para o assim como download de todos os dados referentes à tais serviços.
 
 # 3. Propósito do Projeto
 
@@ -17,13 +17,15 @@ O projeto têm como objetivo a disponibilização de dados referentes à presta�
 
 # 4. Oportunidade de Negócios
 
-Apesar dos dados referentes à prestação de serviços no Brasil serem abertos, o acesso a eles não é simples. Além disso, muitos brasileiros nem possuem o conhecimento de que podem acessar tais dados. Desta forma, o Comexserv se apresenta como uma solução para ambos os problemas, pois, além de facilitar o acesso e a forma como tais dados serão vistos,
+Apesar dos dados referentes à comércio de bens e prestação de serviços no Brasil serem abertos, o acesso a eles não é simples e nem intuitivo, até mesmo para aqueles que trabalham dentro do próprio MDIC. Dessa maneira, muitos dos possíveis interessados nem sabem da existência de tais dados, impossibilitando o entendimento das leis e políticas brasileiras referentes à comércio de bens e prestação de serviços, prejudicando então empreendedores, empresas e prestadores de serviço em geral, como arquitetos, programadores, artistas, etc. Além, é claro, de prejudicar os estudos que poderiam ser feitos dentro do próprio Ministério, já que uma análise profunda dos dados hoje é inviável ou indevidamente complexa para os analistas.
+
+Tendo isso em vista, o Comexserv se apresenta como uma solução para tais problemas. O sistema será feito de maneira a focar em pontos essenciais para que se tenha facilidade e praticidade para o usuário, focando em maneiras avançadas de pesquisa de dados. Além disso, o sistema oferecerá opções personalizadas de apresentação dos dados por meio de gráficos, assim como a opção de geração de arquivos PDF a partir das pesquisas feitas pelo usuário.
 
 # 5. Escopo do Projeto
 
-O Comexserv será uma plataforma web que terá como objetivo a facilitação na visualização dos dados de prestação de serviços no Brasil. Tendo isso em vista, alguns recursos são imprescindíveis para o sucesso do sistema.
+O Comexserv será uma plataforma web que terá como objetivo a facilitação na visualização dos dados do comércio de bens e de prestação de serviços no Brasil. Tendo isso em vista, alguns recursos são imprescindíveis para o sucesso do sistema.
 
-O sistema deve ser capaz de gerar tabelas a partir dos dados providos pelo banco de dados do MDIC, com a aplicação de filtros específicos, de maneira que o usuário possa ser capaz de fazer uma pesquisa personalizada para as suas necessidades. Além disso, deve se ter a opção de fazer downloas de dados no formato .cvs, de maneira que o usuário possa adquirir os dados de sua fonte primária.
+O sistema deve ser capaz de gerar tabelas a partir dos dados providos pelo banco de dados do MDIC, com a aplicação de filtros específicos, de maneira que o usuário possa ser capaz de fazer uma pesquisa personalizada para as suas necessidades. Além disso, o sistema deve apresentar opções de gráficos, para que a visualização dos dados seja facilitada para o usuário. Outro ponto importante é a capacidade de se gerar arquivos PDF a partir do que foi gerado nas pesquisas do usuário.
 
 # 6. Equipe e Papéis
 
@@ -54,7 +56,7 @@ A equipe é compostas por alunos da disciplina de Métodos de Desenvolvimento de
 
 # 7. Metodologia de Desenvolvimento
 
-A metodologia decidida para a realização desse projeto é a Ágil, mais especificamente, será utilizado uma adaptação do modelo Scrum, para que as necessidades da equipe possam ser atendidas, devido ao contexto da disciplina. Os atributos utilizados da metodologia são:
+A metodologia decidida para a realização desse projeto é a Ágil, mais especificamente, será utilizado uma adaptação do modelo Scrum e do XP(eXtreme Programming), para que as necessidades da equipe possam ser atendidas, devido ao contexto da disciplina.
 
 # 8. Estratégia de Comunicação
 
@@ -69,10 +71,9 @@ Além disso, para o aspecto virtual, serão utilizadas as seguintes ferramentas:
 
 | Nome | Descrição |
 | :--: | :-------: |
-| Telegram | Principal canal de comunicação da equipe. Aqui são tiradas dúvidas, imprevistos são comunicados e se tem a integração com o github, para que os membros sejam notificados da atividade do repositório. |
+| Slack | Principal canal de comunicação da equipe. Aqui são tiradas dúvidas, imprevistos são comunicados e se tem a integração com o github, para que os membros sejam notificados da atividade do repositório. |
+| Telegram | Canal de comunicação utilizado primariamente para a comunicação com o cliente. |
 
 # 9. Prazo
 
-O projeto teve inicio no dia 14 de Agosto de 2018, de maneira
-
-# 10. Custo
+O projeto terá uma duração de um total de 16 sprints. A primeira sprint teve inicio no dia 14 de Agosto de 2018, de maneira que a última sprint será iniciada no dia  26 de novembro de 2018. Durante esse período, haverão duas datas de entregas importantes, sendo elas denominadas releases. Uma ocorrerá no inico de outubro, enquanto outra ocorrerá entre o final de novembro e o início de dezembro.
