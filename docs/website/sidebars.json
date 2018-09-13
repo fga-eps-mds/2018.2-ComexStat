@@ -3,6 +3,6 @@
     "Comunidade": ["codeofconduct", "contributing"],
     "Gerência": ["comunicacao", "processo", "termodeabertura",  "medicao","politicaBranches"],
     "Capacitação": ["microsservicos", "devOps","treinamentos", "utilizandoDockerDjango"],
-    "Visão de Produto": ["docVisao"]
+    "Visão de Produto": ["docVisao", "termodeabertura"]
   }
 }
