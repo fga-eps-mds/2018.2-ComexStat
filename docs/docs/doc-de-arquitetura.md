@@ -104,6 +104,10 @@ Pelo navegador, o usuário acessa um endereço web que pode ser digitado diretam
 ## 6. Visão da Implementação
 ***
 
+### 6.1 Diagrama do banco de dados
+[!Diagrama banco](ComexStat_DataBase.png)
+
+
 ***
 ## 7. Qualidade
 ***
