@@ -59,6 +59,17 @@ Esta é provavelmente a única infelicidade da nomeação no Django, porque a *v
 ## 4. Visão de Casos de Uso
 ***
 
+### 4.1 Atores
+
+#### 4.1.1 Usuário comum
+Este ator é o usuário do sistema que irá utilizar os recursos disponibilizados pela aplicação web, usufruindo de tudo que ela pode oferecer por meio de uma interface intuitiva e de fácil uso.
+
+#### 4.1.2 Usuário desenvolvedor
+Esse ator é o usuário do sistema que poderá acessar, filtrar e manusear os dados da forma desejada através de uma API.
+
+### 4.2 Diagrama de casos de uso
+
+![Casos de uso](casosDeUso.png)
 
 ### 4.3 Prioridade dos casos de uso
 
@@ -71,11 +82,12 @@ Na forma escolhida para classifica-los, os casos de uso possuem três tipos de p
 
    |Caso de Uso|Prioridade|
    |:---------:|:--------:|
-   |Consultar e filtrar os dados disponibilizados|Essencial|
+   |Consultar e filtrar os dados disponibilizados, através da API ou da aplicação web |Essencial|
    |Gerar permalinks dos resultados pesquisados|Essencial|
    |Exportar os resultados das consultas em formatos como .csv e PDF|Essencial|
    |Gerar visualizações gráficas dos dados|Essencial|
    |Compartilhamento da consulta feita em redes sociais ou similares|Importante|
+   |Comparar, incluindo graficamente ,os dados resultantes de múltiplas pesquisas|Desejável|
    |Compartilhamento via embedding de páginas|Desejável|
 
 
@@ -106,3 +118,4 @@ A arquitetura MVT oferece uma organização das camadas da aplicação, possibil
 |10/09/2018|0.3.0|Adição da visão geral da visão lógica|Kaique Borges|
 |10/09/2018|0.4.0|Adição da representação arquitetural|André Lucas|
 |10/09/2018|0.5.0|Adição da qualidade|João Victor|
+|13/09/2018|0.6.0|Adição da visão de casos de uso|Marcos Nery|
