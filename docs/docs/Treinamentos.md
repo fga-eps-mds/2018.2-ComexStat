@@ -594,3 +594,103 @@ title: Treinamentos
   </td>
 </tr>
 </tbody></table>
+
+
+
+## 6. Dojo de Python/Django e Graphene
+
+
+<table>
+  <tbody><tr>
+    <th colspan="4">Github</th>
+  </tr>
+ <tr>
+    <th colspan="1">Instrutores:</th>
+   <td colspan="2" align="center"> Fabíola
+    </td>
+<td colspan="1" align="center"> Data: 10/09/2018
+  </td>
+</tr>
+ <tr>
+ </tr>
+<tr>
+    <th colspan="1">Objetivo:</th>
+   <td colspan="3"> Familiariedade com as tecnologias de back end e API orientada ao GraphQL.
+  </td>
+</tr>
+<tr>
+    <th colspan="1">Conteúdo:</th>
+   <td colspan="3">Docker, Django.
+  </td>
+</tr>
+ <tr>
+    <th>Nome</th>
+    <th>Presente</th>
+    <th>Falta</th>
+    <th>Falta Justificada<br>
+</th>
+  </tr>
+ <tr>
+    <td align="center"> Caio
+    </td>
+<td align="center">
+ <img class="emoji" title=":white_check_mark:" alt=":white_check_mark:" src="https://camo.githubusercontent.com/1ddba8041888820bf881e1894ae67a973eaccb7d/68747470733a2f2f6173736574732d63646e2e6769746875622e636f6d2f696d616765732f69636f6e732f656d6f6a692f756e69636f64652f323730352e706e67" height="20" width="20" align="absmiddle" data-canonical-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2705.png">
+    </td>
+<td align="center">
+    </td>
+<td align="center"> <br>
+  </td>
+</tr>
+ <tr>
+    <td align="center"> João Victor
+    </td>
+    <td align="center">
+    <img class="emoji" title=":white_check_mark:" alt=":white_check_mark:" src="https://camo.githubusercontent.com/1ddba8041888820bf881e1894ae67a973eaccb7d/68747470733a2f2f6173736574732d63646e2e6769746875622e636f6d2f696d616765732f69636f6e732f656d6f6a692f756e69636f64652f323730352e706e67" height="20" width="20" align="absmiddle" data-canonical-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2705.png">
+        </td>
+    <td align="center">
+        </td>
+    <td align="center"> <br>
+      </td>
+    </tr>
+ <tr>
+    <td align="center"> Kaique Henrique
+    </td>
+<td align="center"> <img class="emoji" title=":white_check_mark:" alt=":white_check_mark:" src="https://camo.githubusercontent.com/1ddba8041888820bf881e1894ae67a973eaccb7d/68747470733a2f2f6173736574732d63646e2e6769746875622e636f6d2f696d616765732f69636f6e732f656d6f6a692f756e69636f64652f323730352e706e67" height="20" width="20" align="absmiddle" data-canonical-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2705.png">
+    </td>
+<td align="center">
+    </td>
+<td align="center"> <br>
+  </td>
+</tr>
+ <tr>
+    <td align="center"> Marcos Nery
+    </td>
+<td align="center"> <img class="emoji" title=":white_check_mark:" alt=":white_check_mark:" src="https://camo.githubusercontent.com/1ddba8041888820bf881e1894ae67a973eaccb7d/68747470733a2f2f6173736574732d63646e2e6769746875622e636f6d2f696d616765732f69636f6e732f656d6f6a692f756e69636f64652f323730352e706e67" height="20" width="20" align="absmiddle" data-canonical-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2705.png">
+    </td>
+<td align="center">
+    </td>
+<td align="center"> <br>
+  </td>
+</tr>
+
+ <tr>
+    <td align="center"> Rogério
+    </td>
+<td align="center"><img class="emoji" title=":white_check_mark:" alt=":white_check_mark:" src="https://camo.githubusercontent.com/1ddba8041888820bf881e1894ae67a973eaccb7d/68747470733a2f2f6173736574732d63646e2e6769746875622e636f6d2f696d616765732f69636f6e732f656d6f6a692f756e69636f64652f323730352e706e67" height="20" width="20" align="absmiddle" data-canonical-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2705.png">
+    </td>
+    <td align="center">
+    </td>
+<td align="center"> <br>
+  </td>
+</tr>
+ <tr>
+    <td align="center"> André Lucas
+    </td>
+<td align="center"> <img class="emoji" title=":white_check_mark:" alt=":white_check_mark:" src="https://camo.githubusercontent.com/1ddba8041888820bf881e1894ae67a973eaccb7d/68747470733a2f2f6173736574732d63646e2e6769746875622e636f6d2f696d616765732f69636f6e732f656d6f6a692f756e69636f64652f323730352e706e67" height="20" width="20" align="absmiddle" data-canonical-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2705.png">
+    </td>
+<td align="center">
+    </td>
+<td align="center"> <br>
+  </td>
+</tr>
+</tbody></table>
