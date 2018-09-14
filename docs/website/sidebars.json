@@ -2,7 +2,7 @@
   "docs": {
     "Comunidade": ["codeofconduct", "contributing"],
     "Gerência": ["comunicacao", "processo", "medicao", "politicaBranches"],
-    "Capacitação": ["treinamentos", "microsservicos", "devOps", "utilizandoDockerDjango"],
+    "Capacitação": ["treinamentos", "microsservicos", "devOps", "pipelineDevops","utilizandoDockerDjango"],
     "Visão de Produto": ["docVisao", "termodeabertura", "eap"]
   }
 }
