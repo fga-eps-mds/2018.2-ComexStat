@@ -11,7 +11,7 @@ Seguindo uma política de dados abertos, deseja-se que tais dados sejam agora di
 
 # 2. Descrição do Projeto
 
-O Comexserv é um projeto idealizado pelo Ministério da Indústria, Comércio Exterior e Serviços(MDIC), que será desenvolvido por alunos da Engenharia de Software da Universidade de Brasília. O sistema têm como objetivo a facilitação da disponibilização de dados relacionados à comércio de bens e prestação de serviços no Brasil, assim como a possibilidade de pesquisas avançadas e apresentação personalizada. Serão disponibilizados gráfico e tabela, além de download de arquivos PDF referente a eles.
+O ComexStat é um projeto idealizado pelo Ministério da Indústria, Comércio Exterior e Serviços(MDIC), que será desenvolvido por alunos da Engenharia de Software da Universidade de Brasília. O sistema têm como objetivo a facilitação da disponibilização de dados relacionados à comércio de bens e prestação de serviços no Brasil, assim como a possibilidade de pesquisas avançadas e apresentação personalizada. Serão disponibilizados gráfico e tabela, além de download de arquivos PDF referente a eles.
 
 Além disso, outro foco importante do sistema é a praticidade de uso dele, de maneira que as informações contidas nele possam ser facilmente exportadas, seja em forma de PDF ou de permalink, de maneira que as informações geradas pelo sistema não estejam necessariamente presas à ele, provendo assim uma liberdade para o usuário utilizar o que foi gerado em outros arquivos, ou até mesmo em posts de blogs.
 
@@ -19,23 +19,23 @@ Além disso, outro foco importante do sistema é a praticidade de uso dele, de m
 
 Os dados referentes à comércio de bens e prestação de serviços são vastos. Porém, o acesso à eles é muito difícil, tendo em vista a maneira na qual eles foram armazenados e o sistema existente hoje para a visualização deles. Isso causa um empencilho para muitos dos interessados neles, impossibilitando assim análises mais profundas, assim como seu entendimento.
 
-Notando isso, o Comexserv têm como objetivo facilitar a visualização dos dados referentes à comercio de bens e prestação de serviços para todos aqueles que estejam interessados, como imobiliárias, programadores, etc.
+Notando isso, o ComexStat têm como objetivo facilitar a visualização dos dados referentes à comercio de bens e prestação de serviços para todos aqueles que estejam interessados, como imobiliárias, programadores, etc.
 
 # 4. Oportunidade de Negócios
 
 Apesar dos dados referentes à comércio de bens e prestação de serviços no Brasil serem abertos, o acesso a eles não é simples e nem intuitivo, até mesmo para aqueles que trabalham dentro do próprio MDIC. Dessa maneira, muitos dos possíveis interessados nem sabem da existência de tais dados, impossibilitando o entendimento das leis e políticas brasileiras referentes à comércio de bens e prestação de serviços, prejudicando então empreendedores, empresas e prestadores de serviço em geral, como arquitetos, programadores, artistas, etc. Além, é claro, de prejudicar os estudos que poderiam ser feitos dentro do próprio Ministério, já que uma análise profunda dos dados hoje é inviável ou indevidamente complexa para os analistas.
 
-Tendo isso em vista, o Comexserv se apresenta como uma solução para tais problemas. O sistema será feito de maneira a focar em pontos essenciais para que se tenha facilidade e praticidade para o usuário, focando em maneiras avançadas de pesquisa de dados. Além disso, o sistema oferecerá opções personalizadas de apresentação dos dados por meio de gráficos, assim como a opção de geração de arquivos PDF a partir das pesquisas feitas pelo usuário.
+Tendo isso em vista, o ComexStat se apresenta como uma solução para tais problemas. O sistema será feito de maneira a focar em pontos essenciais para que se tenha facilidade e praticidade para o usuário, focando em maneiras avançadas de pesquisa de dados. Além disso, o sistema oferecerá opções personalizadas de apresentação dos dados por meio de gráficos, assim como a opção de geração de arquivos PDF a partir das pesquisas feitas pelo usuário.
 
 # 5. Escopo do Projeto
 
-O Comexserv será uma plataforma web que terá como objetivo a facilitação na visualização dos dados do comércio de bens e de prestação de serviços no Brasil. Tendo isso em vista, alguns recursos são imprescindíveis para o sucesso do sistema.
+O ComexStat será uma plataforma web que terá como objetivo a facilitação na visualização dos dados do comércio de bens e de prestação de serviços no Brasil. Tendo isso em vista, alguns recursos são imprescindíveis para o sucesso do sistema.
 
 O sistema deve ser capaz de gerar tabelas a partir dos dados providos pelo banco de dados do MDIC, com a aplicação de filtros específicos, de maneira que o usuário possa ser capaz de fazer uma pesquisa personalizada para as suas necessidades. Além disso, o sistema deve apresentar opções de gráficos, para que a visualização dos dados seja facilitada para o usuário. Outro ponto importante é a capacidade de se gerar arquivos PDF a partir do que foi gerado nas pesquisas do usuário.
 
 # 6. Equipe e Papéis
 
-A equipe que realizará o Comexserv estará dividida entre os seguintes papéis:
+A equipe que realizará o ComexStat estará dividida entre os seguintes papéis:
 
 | Papel | Responsabilidade |
 | :---: | :--------------: |
