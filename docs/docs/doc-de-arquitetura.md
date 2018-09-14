@@ -29,7 +29,9 @@ Sendo uma sequência para a descrição geral do produto dada pelo Documento de 
 ***
 ## 2. Representação Arquitetural
 ***
-O ComexStat será uma aplicação web desenvolvida a partir do framework Django, escrito em Python, em conjunto com a biblioteca Graphene para a utilização do framework GraphQL, que servirá para facilitar os meios de comunicação com o banco de dados. O Django segue o padrão **MVC** de perto, no entanto, ele usa sua própria lógica na implementação. Como o *“Controller”* é manipulado pelo próprio framework e a maior parte do entusiasmo no Django acontece em modelos, templates e views, o Django é frequentemente chamado de framework da MTV. No padrão de desenvolvimento da **MVT**:
+O ComexStat será uma aplicação web desenvolvida a partir do framework Django, escrito em Python, em conjunto com o framework Angular 2, que será utilizado no desenvolvimento do front-end, e com a linguagem de consulta a bases de dados GraphQL, que servirá para facilitar os meios de comunicação com o banco de dados, escolhida por sua grande capacidade como linguagem de consulta dentro do contexto de Data Science. 
+
+O Django segue o padrão **MVC** de perto, no entanto, ele usa sua própria lógica na implementação. Como o *“Controller”* é manipulado pelo próprio framework e a maior parte do entusiasmo no Django acontece em modelos, templates e views, o Django é frequentemente chamado de framework da MTV. No padrão de desenvolvimento da **MVT**:
 
 **Model**, a camada de acesso a dados. Essa camada contém tudo e qualquer coisa sobre os dados: como acessá-lo, como validá-lo, quais comportamentos ele possui e as relações entre os dados.
 
@@ -37,9 +39,13 @@ O ComexStat será uma aplicação web desenvolvida a partir do framework Django,
 
 **Template**, a camada de apresentação. Essa camada contém decisões relacionadas à apresentação: como algo deve ser exibido em uma página da Web ou outro tipo de documento.
 
+Desta forma, a *view* do Django é mais parecida com o *controller* no MVC, e a *view* do MVC é na verdade um *Template* no Django.
+
 ![arquitetura-mvt](https://www.javatpoint.com/django/images/django-mvt-based-control-flow.png)
 
-Esta é provavelmente a única infelicidade da nomeação no Django, porque a *view* do Django é mais parecida com o *controller* no MVC, e a *view* do MVC é na verdade um *Template* no Django. Independentemente de como as coisas são nomeadas, Django as executa da forma que é mais lógica para nós.
+Dito isso, o sistema será desenvolvido não pela utilização da arquitetura MVT do Django de forma pura mas sim pela já denotada adaptação que será feita, dando ao projeto uma nova face arquitetural, na qual as models do Django continuarão fazendo seu papel de classes de domínios e interface com o banco de dados, o Angular 2 será utilizado para construção front end, substituindo por conseguinte a função que seria feita pelas templates do Django. E por fim, o GraphQL, através das bibliotecas Graphene (para comunicação com o Django) e Apollo (para comunicação com o Angular), será a linguagem e ferramenta utilizada para realizar as consultas ao banco, ficando como interface entre o backend e o front end.
+
+
 
 ***
 ## 3. Restrições e Metas Arquiteturais
