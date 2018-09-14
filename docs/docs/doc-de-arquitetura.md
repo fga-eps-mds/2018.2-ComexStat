@@ -29,7 +29,7 @@ Sendo uma sequência para a descrição geral do produto dada pelo Documento de 
 ***
 ## 2. Representação Arquitetural
 ***
-O ComexStat será uma aplicação web desenvolvida a partir do framework Django, escrito em Python, em conjunto com o framework Angular 2, que será utilizado no desenvolvimento do front-end, e com a linguagem de consulta a bases de dados GraphQL, que servirá para facilitar os meios de comunicação com o banco de dados, escolhida por sua grande capacidade como linguagem de consulta dentro do contexto de Data Science. 
+O ComexStat será uma aplicação web desenvolvida a partir do framework Django, escrito em Python, em conjunto com o framework Angular 2, que será utilizado no desenvolvimento do front-end, e com a linguagem de consulta a bases de dados GraphQL, que servirá para facilitar os meios de comunicação com o banco de dados, escolhida por sua grande capacidade como linguagem de consulta dentro do contexto de Data Science.
 
 O Django segue o padrão **MVC** de perto, no entanto, ele usa sua própria lógica na implementação. Como o *“Controller”* é manipulado pelo próprio framework e a maior parte do entusiasmo no Django acontece em modelos, templates e views, o Django é frequentemente chamado de framework da MTV. No padrão de desenvolvimento da **MVT**:
 
@@ -106,7 +106,10 @@ Na forma escolhida para classifica-los, os casos de uso possuem três tipos de p
 ### 5.1 Visão Geral
 
 O sistema será desenvolvido usando o framework web Django, que é estruturado com padrão MVT, uma variação do padrão MVC.
-Pelo navegador, o usuário acessa um endereço web que pode ser digitado diretamente ou acessado por algum template, o processador de URL's do Django processa um padrão na URL e destina à view e método que descreve a ação a ser feita. Esse método então retorna algum template diretamente, ou pede à um modelo alguns dados, para então passá-los ao template.
+
+Essa arquitetura será modificada para ter um menor dependência entre as camadas, tornando o Django uma API usando apenas suas models e views, e acessando-o através do Angular 2, que será o front end e tomará o lugar dos templates.
+
+Pelo navegador, o usuário acessa um endereço web que pode ser digitado diretamente ou acessado pelo front end, o processador de URL's do Django processa um padrão na URL e destina à view e método que descreve a ação a ser feita. Esse método então retorna algum dado diretamente, ou pede à um modelo alguns dados, para então passá-los ao front end.
 
 Além disso, em comunicação com o Django será utilizada a biblioteca Graphene, que tera como função realizar as consultas ao banco de dados.
 
