@@ -1,6 +1,19 @@
 from django.db import models
 from datetime import datetime
 
+class NCM(models.Model):
+    ncm = models.CharField(max_length=250)
+    unid = models.CharField(max_length=100)
+    ppe = models.CharField(max_length=100)
+    ppi = models.CharField(max_length=100)
+    fat_agreg = models.CharField(max_length=100)
+    isic4 = models.CharField(max_length=100)
+    exp_subset = models.CharField(max_length=100)
+    ncm_por = models.CharField(max_length=100)
+    ncm_en = models.CharField(max_length=100)
+    ncm_es = models.CharField(max_length=100)
+    siit = models.CharField(max_length=100)
+
 class AssetFacts(models.Model):
     date = models.DateField(default=datetime.now)
     name = models.CharField(max_length=100)
@@ -26,16 +39,3 @@ class AssetExportFacts(AssetFacts):
     origin_fed_unit = models.CharField(max_length=100)
     destination_country = models.CharField(max_length=100)
     pass
-
-class NCM(models.Model):
-    ncm = models.CharField(max_length=250)
-    unid = models.CharField(max_length=100)
-    ppe = models.CharField(max_length=100)
-    ppi = models.CharField(max_length=100)
-    fat_agreg = models.CharField(max_length=100)
-    isic4 = models.CharField(max_length=100)
-    exp_subset = models.CharField(max_length=100)
-    ncm_por = models.CharField(max_length=100)
-    ncm_en = models.CharField(max_length=100)
-    ncm_es = models.CharField(max_length=100)
-    siit = models.CharField(max_length=100)
