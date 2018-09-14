@@ -83,7 +83,8 @@ Na forma escolhida para classifica-los, os casos de uso possuem três tipos de p
 
    |Caso de Uso|Prioridade|
    |:---------:|:--------:|
-   |Consultar e filtrar os dados disponibilizados, através da API ou da aplicação web |Essencial|
+   |Consultar e filtrar os dados disponibilizados, através da API|Essencial|
+   |Consultar e filtrar os dados disponibilizados, através da aplicação web|Essencial|
    |Gerar permalinks dos resultados pesquisados|Essencial|
    |Exportar os resultados das consultas em formatos como .csv e PDF|Essencial|
    |Gerar visualizações gráficas dos dados|Essencial|
