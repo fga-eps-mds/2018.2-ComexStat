@@ -57,7 +57,7 @@ Dito isso, o sistema será desenvolvido não pela utilização da arquitetura MV
        O sistema deverá ser intuitivo e de simples uso, seguindo uma sequência lógica de ações possíveis, definida por Pesquisa ->Filtros -> Agrupamentos -> Visualização de dados -> Compartilhamento dos resultados. Dessa forma, o usuário não deverá precisar de tutoriais ou treinamentos extras para usufruir dos recursos disponibilizados.
 
  * **Ferramentas de Desenvolvimento**
-       O projeto será desenvolvido em Python (versão 3.5.6), usando o framework Django (versão 2.0.3) e pela utilização da linguagem GraphQL de consultas a banco de dados para APIs, através da biblioteca Graphene.
+       O projeto será desenvolvido em Python (versão 3.5.6), usando o framework Django (versão 2.0.3), em conjunto com o Angular 2 que será de uso no front end e com a utilização da linguagem GraphQL de consultas a banco de dados, através das bibliotecas Graphene e Apollo para comunicação com Django e com o Angular respectivamente.
 
   * **Confiabilidade**
        O sistema terá uma cobertura mínima de testes de 90%, buscando garantir que suas funcionalidades foram suficientemente testadas.
