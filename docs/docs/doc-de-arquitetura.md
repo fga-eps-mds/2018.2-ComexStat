@@ -28,7 +28,7 @@ Sendo uma sequência para a descrição geral do produto dada pelo Documento de 
 ***
 ## 2. Representação Arquitetural
 ***
-O ComexStat será uma aplicação web desenvolvida a partir do framework Django, escrito em Python. O Django segue o padrão **MVC** de perto, no entanto, ele usa sua própria lógica na implementação. Como o *“Controller”* é manipulado pelo próprio framework e a maior parte do entusiasmo no Django acontece em modelos, templates e views, o Django é frequentemente chamado de framework da MTV. No padrão de desenvolvimento da **MVT**:
+O ComexStat será uma aplicação web desenvolvida a partir do framework Django, escrito em Python, utilizando o GraphQL. O Django segue o padrão **MVC** de perto, no entanto, ele usa sua própria lógica na implementação. Como o *“Controller”* é manipulado pelo próprio framework e a maior parte do entusiasmo no Django acontece em modelos, templates e views, o Django é frequentemente chamado de framework da MTV. No padrão de desenvolvimento da **MVT**:
 
 **Model**, a camada de acesso a dados. Essa camada contém tudo e qualquer coisa sobre os dados: como acessá-lo, como validá-lo, quais comportamentos ele possui e as relações entre os dados.
 
@@ -50,7 +50,7 @@ Esta é provavelmente a única infelicidade da nomeação no Django, porque a *v
        O sistema deverá ser intuitivo e de simples uso, seguindo uma sequência lógica de ações possíveis, definida por Pesquisa ->Filtros -> Agrupamentos -> Visualização de dados -> Compartilhamento dos resultados. Dessa forma, o usuário não deverá precisar de tutoriais ou treinamentos extras para usufruir dos recursos disponibilizados.
 
  * **Ferramentas de Desenvolvimento**
-       O projeto será desenvolvido em Python (versão 3.x.x), pela utilização do framework Django (versão 3.x.x).
+       O projeto será desenvolvido em Python (versão 3.x.x), usando o framework Django (versão 3.x.x) e pela utilização da linguagem de consultas para APIs GraphQL (versão 2.x.x).
 
   * **Confiabilidade**
        O sistema terá uma cobertura mínima de testes de 90%, buscando garantir que suas funcionalidades foram suficientemente testadas.
@@ -111,7 +111,7 @@ Pelo navegador, o usuário acessa um endereço web que pode ser digitado diretam
 ***
 ## 7. Qualidade
 ***
-A arquitetura MVT oferece uma organização das camadas da aplicação, possibilitando aos desenvolvedores uma fácil manutenção, além de ser um padrão de arquitetura altamente confiável já que é muito utilizado.
+A arquitetura MVT oferece uma organização das camadas da aplicação, possibilitando aos desenvolvedores uma fácil manutenção, além de ser um padrão de arquitetura altamente confiável já que é muito utilizado. GraphQL é mais eficiente que outras linguagens, já que ele não é vinculado a nenhum banco de dados, apenas realisa a consulta retornando apenas o que é pedido.
 
 ## Histórico da Revisão
 
@@ -123,3 +123,4 @@ A arquitetura MVT oferece uma organização das camadas da aplicação, possibil
 |10/09/2018|0.4.0|Adição da representação arquitetural|André Lucas|
 |10/09/2018|0.5.0|Adição da qualidade|João Victor|
 |13/09/2018|0.6.0|Adição da visão de casos de uso|Marcos Nery|
+|13/09/2018|0.6.1|Atualização da representação arquitetural,restrições e metas arquiteturais e qualidade|João Victor|
