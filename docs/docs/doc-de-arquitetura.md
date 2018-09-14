@@ -107,6 +107,10 @@ Pelo navegador, o usuário acessa um endereço web que pode ser digitado diretam
 ### 6.1 Diagrama do banco de dados
 ![Diagrama banco](ComexStat_DataBase.png)
 
+### 6.2 Diagrama de classe
+
+#### Model
+![Diagrama-classe-model](diagrama-de-classe-model.png)
 
 ***
 ## 7. Qualidade
@@ -124,3 +128,4 @@ A arquitetura MVT oferece uma organização das camadas da aplicação, possibil
 |10/09/2018|0.5.0|Adição da qualidade|João Victor|
 |13/09/2018|0.6.0|Adição da visão de casos de uso|Marcos Nery|
 |13/09/2018|0.6.1|Atualização da representação arquitetural,restrições e metas arquiteturais e qualidade|João Victor|
+|13/09/2018|0.7.0|Adição do diagrama de classe|André Lucas|
