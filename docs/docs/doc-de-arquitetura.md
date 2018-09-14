@@ -120,6 +120,9 @@ Além disso, em comunicação com o Django será utilizada a biblioteca Graphene
 ***
 A arquitetura MVT oferece uma organização das camadas da aplicação, possibilitando aos desenvolvedores uma fácil manutenção, além de ser um padrão de arquitetura altamente confiável já que é muito utilizado. Além disso, GraphQL é mais eficiente que outras linguagens na função que cumpre, já que ele não é vinculado a nenhum banco de dados, apenas realisa a consulta retornando o que é pedido.
 
+Outro ponto a ser ressaltado é, pelo uso das ferramentas citadas, a busca pelo desenvolvimento de um código de fácil manutenibilidade, para que o sistema possa ser facilmente mantido e evoluído mesmo quando, após sua finalização, ele seja passado para os cuidados de outros profissionais.
+
+
 ## Histórico da Revisão
 
 | **Data** | **Versão** | **Descrição** | **Autor** |
