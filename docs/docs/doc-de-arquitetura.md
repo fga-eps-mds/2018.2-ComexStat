@@ -24,6 +24,7 @@ Sendo uma sequência para a descrição geral do produto dada pelo Documento de 
 | :--------: | :-------: |
 | MVC | Model-View-Controller (Modelo-Visão-Controlador, em inglês) |
 | MVT | Model-View-Template (Modelo-Visão-Template, em inglês) |
+| MDIC |Ministério da Indústria, Comércio Exterior e Serviços|
 
 ***
 ## 2. Representação Arquitetural
@@ -62,10 +63,10 @@ Esta é provavelmente a única infelicidade da nomeação no Django, porque a *v
 ### 4.1 Atores
 
 #### 4.1.1 Usuário comum
-Este ator é o usuário do sistema que irá utilizar os recursos disponibilizados pela aplicação web, usufruindo de tudo que ela pode oferecer por meio de uma interface intuitiva e de fácil uso.
+Este ator é o usuário do sistema que irá utilizar os recursos disponibilizados pela aplicação web, usufruindo de tudo que ela pode oferecer por meio de uma interface intuitiva e de fácil uso. É o usuário que representa os gestores ou produtores de bens/serviços que tenham interesse nos dados relacionados ao comércio exterior destes objetos de estudo e nas capacidades de análise desses dados que o sistema dá a eles, proporcionando-lhes maior embasamento para decisões de mercado ou pesquisas similares.
 
 #### 4.1.2 Usuário desenvolvedor
-Esse ator é o usuário do sistema que poderá acessar, filtrar e manusear os dados da forma desejada através de uma API.
+Esse ator é o usuário do sistema que poderá acessar, filtrar e manusear os dados da forma desejada através de uma API. É o usuário que representa, principalmente, os funcionários do MDIC cuja função profissional envolve o manejo direto dos dados relacionados ao comércio exterior de bens e serviços agrupados por este ministério.
 
 ### 4.2 Diagrama de casos de uso
 
