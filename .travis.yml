@@ -1,13 +1,36 @@
 # .travis.yml
+sudo: required
+
 language: node_js
 node_js:
   - '8'
-branches:
-  only:
-    - develop
+
+services:
+  - docker
+
+env:
+  - DOCKER_COMPOSE_VERSION=1.21.0
+
+before_install:
+  - sudo rm /usr/local/bin/docker-compose
+  - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
+  - chmod +x docker-compose
+  - sudo mv docker-compose /usr/local/bin
+
+# before_script:
+#   - cp env.tmpl .env
+
+# branches:
+#   only:
+#     - develop
+
 cache:
   yarn: true
+
 script:
+  - docker-compose up -d
+  - docker-compose exec web flake8 --exclude='ipython_log.py*,migrations,templates, settings.py, manage.py'
+  - docker-compose exec web coverage run -m pytest --create-db --nomigrations
   - git config --global user.name "${GH_NAME}"
   - git config --global user.email "${GH_EMAIL}"
   - echo "machine github.com login ${GH_NAME} password ${GH_TOKEN}" > ~/.netrc
