@@ -70,7 +70,7 @@ Esse ator é o usuário do sistema que poderá acessar, filtrar e manusear os da
 
 ### 4.2 Diagrama de casos de uso
 
-![Casos de uso](casosDeUso.png)
+![Casos de uso](https://fga-eps-mds.github.io/2018.2-ComexStat/img/casosDeUso.png)
 
 ### 4.3 Prioridade dos casos de uso
 
@@ -108,12 +108,12 @@ Além disso, em comunicação com o Django será utilizada a biblioteca Graphene
 ***
 
 ### 6.1 Diagrama do banco de dados
-![Diagrama banco](ComexStat_DataBase.png)
+![Diagrama banco](https://fga-eps-mds.github.io/2018.2-ComexStat/img/ComexStat_DataBase.png)
 
 ### 6.2 Diagramas de classes, por camadas
 
 #### Model
-![Diagrama-classe-model](diagrama-de-classe-model.png)
+![Diagrama-classe-model](https://fga-eps-mds.github.io/2018.2-ComexStat/img/diagrama-de-classe-model.png)
 
 ***
 ## 7. Qualidade
