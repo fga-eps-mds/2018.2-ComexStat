@@ -10,7 +10,7 @@ Na introdução será apresentada uma ampla visão do documento, deixando clara 
 
 ### 1.1 Objetivo
 
-O objetivo deste documento é de expor aos interessados uma visão geral acerca da arquitetura do ComexStat, pontuando aspectos deste segundo diferentes visões arquiteturais, deixando também em evidência algumas restrições e metas quanto a estes pontos.
+Expor aos interessados uma visão geral acerca da arquitetura do ComexStat, pontuando aspectos deste segundo diferentes visões arquiteturais, deixando também em evidência algumas restrições e metas quanto a estes pontos.
 
 
 ### 1.2 Escopo
@@ -29,13 +29,13 @@ Sendo uma sequência para a descrição geral do produto dada pelo Documento de 
 ***
 ## 2. Representação Arquitetural
 ***
-O ComexStat será uma aplicação web desenvolvida a partir do framework Django, escrito em Python, em conjunto com o framework Angular 2, que será utilizado no desenvolvimento do front-end, e com a linguagem de consulta a bases de dados GraphQL, que servirá para facilitar os meios de comunicação com o banco de dados, escolhida por sua grande capacidade como linguagem de consulta dentro do contexto de Data Science. 
+O ComexStat será uma aplicação web desenvolvida a partir do framework Django, escrito em Python, em conjunto com o framework Angular 2, que será utilizado no desenvolvimento do front-end, e com a linguagem de consulta a bases de dados GraphQL, que servirá para facilitar os meios de comunicação com o banco de dados, escolhida por sua grande capacidade como linguagem de consulta dentro do contexto de Data Science.
 
 O Django segue o padrão **MVC** de perto, no entanto, ele usa sua própria lógica na implementação. Como o *“Controller”* é manipulado pelo próprio framework e a maior parte do entusiasmo no Django acontece em modelos, templates e views, o Django é frequentemente chamado de framework da MTV. No padrão de desenvolvimento da **MVT**:
 
 **Model**, a camada de acesso a dados. Essa camada contém tudo e qualquer coisa sobre os dados: como acessá-lo, como validá-lo, quais comportamentos ele possui e as relações entre os dados.
 
-**View**, a camada de lógica de negócios. Essa camada contém a lógica que acessa o modelo e adia para o (s) modelo (s) apropriado (s). Você pode pensar nisso como a ponte entre modelos e modelos.
+**View**, a camada de lógica de negócios. Essa camada contém a lógica que acessa o modelo e requisita a respectiva reposta. Você pode pensar nisso como a ponte entre modelos e templates.
 
 **Template**, a camada de apresentação. Essa camada contém decisões relacionadas à apresentação: como algo deve ser exibido em uma página da Web ou outro tipo de documento.
 
@@ -43,7 +43,7 @@ Desta forma, a *view* do Django é mais parecida com o *controller* no MVC, e a 
 
 ![arquitetura-mvt](https://www.javatpoint.com/django/images/django-mvt-based-control-flow.png)
 
-Dito isso, o sistema será desenvolvido não pela utilização da arquitetura MVT do Django de forma pura mas sim pela já denotada adaptação que será feita, dando ao projeto uma nova face arquitetural, na qual as models do Django continuarão fazendo seu papel de classes de domínios e interface com o banco de dados, o Angular 2 será utilizado para construção front-end, substituindo por conseguinte a função que seria feita pelas templates do Django. E por fim, o GraphQL, através das bibliotecas Graphene (para comunicação com o Django) e Apollo (para comunicação com o Angular), será a linguagem e ferramenta utilizada para realizar as consultas ao banco, ficando como interface entre o back-end e o front-end.
+Dito isso, o sistema será desenvolvido não pela utilização da arquitetura MVT do Django de forma pura, mas pela denotação da adaptação citada, dando ao projeto uma nova face arquitetural, na qual as models do Django continuarão fazendo seu papel de classes de domínios e interface com o banco de dados, o Angular 2 será utilizado para construção front-end, substituindo por conseguinte a função que seria feita pelas templates do Django. E por fim, o GraphQL, através das bibliotecas Graphene (para comunicação com o Django) e Apollo (para comunicação com o Angular), será a linguagem e ferramenta utilizada para realizar as consultas ao banco, ficando como interface entre o back-end e o front-end.
 
 
 
@@ -51,7 +51,7 @@ Dito isso, o sistema será desenvolvido não pela utilização da arquitetura MV
 ## 3. Restrições e Metas Arquiteturais
 ***
 * **Suportabilidade**
-      O software poderá ser utilizado sem grandes problemas pela maior parte dos navegadores mais populares, no entanto, as principais plataformas tidas como alvo são o Google Chrome e o FireFox, de tal forma que o usuário ao acessar o sistema por uma dessas vias poderá esperar total compatibilidade.
+      O software poderá ser utilizado sem grandes problemas pela maior parte dos navegadores mais populares, no entanto, mas o principal enfoque são o Google Chrome e o FireFox, de tal forma que o usuário ao acessar o sistema por uma dessas vias poderá esperar total compatibilidade.
 
  * **Usabilidade**
        O sistema deverá ser intuitivo e de simples uso, seguindo uma sequência lógica de ações possíveis, definida por Pesquisa ->Filtros -> Agrupamentos -> Visualização de dados -> Compartilhamento dos resultados. Dessa forma, o usuário não deverá precisar de tutoriais ou treinamentos extras para usufruir dos recursos disponibilizados.
@@ -69,10 +69,10 @@ Dito isso, o sistema será desenvolvido não pela utilização da arquitetura MV
 ### 4.1 Atores
 
 #### 4.1.1 Usuário comum
-Este ator é o usuário do sistema que irá utilizar os recursos disponibilizados pela aplicação web, usufruindo de tudo que ela pode oferecer por meio de uma interface intuitiva e de fácil uso. É o usuário que representa os gestores ou produtores de bens/serviços que tenham interesse nos dados relacionados ao comércio exterior destes objetos de estudo e nas capacidades de análise desses dados que o sistema dá a eles, proporcionando-lhes maior embasamento para decisões de mercado ou pesquisas similares.
+Usuário do sistema que utiliza os recursos disponibilizados pela aplicação web, usufruindo de tudo que ela pode oferecer por meio de uma interface intuitiva e de fácil uso. É o usuário que representa os gestores ou produtores de bens/serviços que tenham interesse nos dados relacionados ao comércio exterior, destes objetos de estudo e nas capacidades de análise desses dados que o sistema proporciona, proporcionando-lhes maior embasamento para decisões de mercado ou pesquisas similares.
 
 #### 4.1.2 Usuário desenvolvedor
-Esse ator é o usuário do sistema que poderá acessar, filtrar e manusear os dados da forma desejada através de uma API. É o usuário que representa, principalmente, os funcionários do MDIC cuja função profissional envolve o manejo direto dos dados relacionados ao comércio exterior de bens e serviços agrupados por este ministério.
+Usuário do sistema que acessa, filtra e manuseia os dados da forma desejada através de uma API. É o usuário que representa, principalmente, os funcionários do MDIC cuja função profissional envolve o manejo direto dos dados relacionados ao comércio exterior de bens e serviços agrupados por este ministério.
 
 ### 4.2 Diagrama de casos de uso
 
@@ -103,7 +103,7 @@ Na forma escolhida para classifica-los, os casos de uso possuem três tipos de p
 ## 5. Visão Lógica
 ***
 
-O sistema será desenvolvido usando o framework web Django, com uma forma adaptada de seu padrão MVT, em conjunto com o Angular para o front-end e o GraphQL como linguagem e ferramenta de consulta ao banco de dados. Ficando portanto setorizado da seguinte forma: 
+O sistema será desenvolvido usando o framework web Django, com uma forma adaptada de seu padrão MVT, em conjunto com o Angular para o front-end e o GraphQL como linguagem e ferramenta de consulta ao banco de dados. Ficando portanto setorizado da seguinte forma:
 
   * API em Django.
   * Models do Django como classes de domínios e interface com o banco de dados.
@@ -127,9 +127,9 @@ Sendo assim, pelo navegador, o usuário acessa um endereço web que pode ser dig
 ***
 ## 7. Qualidade
 ***
-A arquitetura adotada, utilizada como adaptação do MVT, oferece uma organização das camadas da aplicação, possibilitando aos desenvolvedores uma fácil manutenção, além de vir de um padrão de arquitetura altamente confiável e muito utilizado. Além disso, GraphQL é mais eficiente que outras linguagens na função que cumpre, já que ele não é vinculado a nenhum banco de dados, apenas realisa a consulta retornando o que é pedido.
+A arquitetura adotada, utilizada como adaptação do MVT, oferece uma organização das camadas da aplicação, possibilitando aos desenvolvedores uma fácil manutenção, além de vir de um padrão de arquitetura altamente confiável e muito utilizado. Além disso, GraphQL é mais eficiente que outras linguagens na função que cumpre, já que ele não é vinculado a nenhum banco de dados, apenas realisa a consulta retornando o requisitado.
 
-Outro ponto a ser ressaltado é, pelo uso das ferramentas citadas, a busca pelo desenvolvimento de um código de fácil manutenibilidade, para que o sistema possa ser facilmente mantido e evoluído mesmo quando, após sua finalização, ele seja passado para os cuidados de outros profissionais.
+Outro ponto a ser ressaltado é o uso das ferramentas citadas, que buscam pelo desenvolvimento de um código de fácil manutenibilidade, para que o sistema possa ser facilmente mantido e evoluído, mesmo após sua finalização, quando ele será passado para os cuidados de outros profissionais.
 
 
 ## Histórico da Revisão
@@ -145,4 +145,4 @@ Outro ponto a ser ressaltado é, pelo uso das ferramentas citadas, a busca pelo 
 |13/09/2018|0.6.1|Atualização da representação arquitetural,restrições e metas arquiteturais e qualidade|João Victor|
 |13/09/2018|0.7.0|Adição do diagrama de classe|André Lucas|
 |13/09/2018|0.8.0|Adição do diagrama de banco de dados|Marcos Nery|
-|14/09/2018|1.0.0|Revisões gerais para primeira versão do documento|Marcos Nery|
+|14/09/2018|1.0.0|Revisões gerais para primeira versão do documento|Marcos Nery e Rogério Júnior|
