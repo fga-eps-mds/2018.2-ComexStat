@@ -29,7 +29,7 @@ Sendo uma sequência para a descrição geral do produto dada pelo Documento de 
 ***
 ## 2. Representação Arquitetural
 ***
-O ComexStat será uma aplicação web desenvolvida a partir do framework Django, escrito em Python, em conjunto com o framework Angular 2, que será utilizado no desenvolvimento do front-end, e com a linguagem de consulta a bases de dados GraphQL, que servirá para facilitar os meios de comunicação com o banco de dados, escolhida por sua grande capacidade como linguagem de consulta dentro do contexto de Data Science.
+O ComexStat será uma aplicação web desenvolvida a partir do framework Django, escrito em Python, em conjunto com o framework Angular 2, que será utilizado no desenvolvimento do front-end, e com a linguagem de consulta a bases de dados GraphQL, que servirá para facilitar os meios de comunicação com o banco de dados, escolhida por sua grande capacidade como linguagem de consulta dentro do contexto de Data Science. 
 
 O Django segue o padrão **MVC** de perto, no entanto, ele usa sua própria lógica na implementação. Como o *“Controller”* é manipulado pelo próprio framework e a maior parte do entusiasmo no Django acontece em modelos, templates e views, o Django é frequentemente chamado de framework da MTV. No padrão de desenvolvimento da **MVT**:
 
@@ -43,7 +43,7 @@ Desta forma, a *view* do Django é mais parecida com o *controller* no MVC, e a 
 
 ![arquitetura-mvt](https://www.javatpoint.com/django/images/django-mvt-based-control-flow.png)
 
-Dito isso, o sistema será desenvolvido não pela utilização da arquitetura MVT do Django de forma pura mas sim pela já denotada adaptação que será feita, dando ao projeto uma nova face arquitetural, na qual as models do Django continuarão fazendo seu papel de classes de domínios e interface com o banco de dados, o Angular 2 será utilizado para construção front end, substituindo por conseguinte a função que seria feita pelas templates do Django. E por fim, o GraphQL, através das bibliotecas Graphene (para comunicação com o Django) e Apollo (para comunicação com o Angular), será a linguagem e ferramenta utilizada para realizar as consultas ao banco, ficando como interface entre o backend e o front end.
+Dito isso, o sistema será desenvolvido não pela utilização da arquitetura MVT do Django de forma pura mas sim pela já denotada adaptação que será feita, dando ao projeto uma nova face arquitetural, na qual as models do Django continuarão fazendo seu papel de classes de domínios e interface com o banco de dados, o Angular 2 será utilizado para construção front-end, substituindo por conseguinte a função que seria feita pelas templates do Django. E por fim, o GraphQL, através das bibliotecas Graphene (para comunicação com o Django) e Apollo (para comunicação com o Angular), será a linguagem e ferramenta utilizada para realizar as consultas ao banco, ficando como interface entre o back-end e o front-end.
 
 
 
@@ -57,7 +57,7 @@ Dito isso, o sistema será desenvolvido não pela utilização da arquitetura MV
        O sistema deverá ser intuitivo e de simples uso, seguindo uma sequência lógica de ações possíveis, definida por Pesquisa ->Filtros -> Agrupamentos -> Visualização de dados -> Compartilhamento dos resultados. Dessa forma, o usuário não deverá precisar de tutoriais ou treinamentos extras para usufruir dos recursos disponibilizados.
 
  * **Ferramentas de Desenvolvimento**
-       O projeto será desenvolvido em Python (versão 3.5.6), usando o framework Django (versão 2.0.3), em conjunto com o Angular 2 que será de uso no front end e com a utilização da linguagem GraphQL de consultas a banco de dados, através das bibliotecas Graphene e Apollo para comunicação com Django e com o Angular respectivamente.
+       O projeto será desenvolvido em Python (versão 3.5.6), usando o framework Django (versão 2.0.3), em conjunto com o Angular 2 que será de uso no front-end e com a utilização da linguagem GraphQL de consultas a banco de dados, através das bibliotecas Graphene e Apollo para comunicação com Django e com o Angular respectivamente.
 
   * **Confiabilidade**
        O sistema terá uma cobertura mínima de testes de 90%, buscando garantir que suas funcionalidades foram suficientemente testadas.
@@ -103,15 +103,14 @@ Na forma escolhida para classifica-los, os casos de uso possuem três tipos de p
 ## 5. Visão Lógica
 ***
 
-### 5.1 Visão Geral
+O sistema será desenvolvido usando o framework web Django, com uma forma adaptada de seu padrão MVT, em conjunto com o Angular para o front-end e o GraphQL como linguagem e ferramenta de consulta ao banco de dados. Ficando portanto setorizado da seguinte forma: 
 
-O sistema será desenvolvido usando o framework web Django, que é estruturado com padrão MVT, uma variação do padrão MVC.
+  * API em Django.
+  * Models do Django como classes de domínios e interface com o banco de dados.
+  * Front-end em Angular 2 funcionando como cliente do back-end e fazendo requisições a ele pela interação do usuário ao acessar a aplicação, de tal forma a processar e mostrar de forma apropriada os dados de saída ao mesmo.
+  * GraphQL como interface entre front-end e back-end, tendo a função de fazer a consulta ao banco, e realizando essa comunicação através das bibliotecas Graphene no Django e Apollo no Angular.
 
-Essa arquitetura será modificada para ter um menor dependência entre as camadas, tornando o Django uma API usando apenas suas models e views, e acessando-o através do Angular 2, que será o front end e tomará o lugar dos templates.
-
-Pelo navegador, o usuário acessa um endereço web que pode ser digitado diretamente ou acessado pelo front end, o processador de URL's do Django processa um padrão na URL e destina à view e método que descreve a ação a ser feita. Esse método então retorna algum dado diretamente, ou pede à um modelo alguns dados, para então passá-los ao front end.
-
-Além disso, em comunicação com o Django será utilizada a biblioteca Graphene, que tera como função realizar as consultas ao banco de dados.
+Sendo assim, pelo navegador, o usuário acessa um endereço web que pode ser digitado diretamente ou acessado pelo front-end, o processador de URL's do Django processa um padrão na URL e destina à view e método que descreve a ação a ser feita. E por fim, seja por meio da API de forma direta ou pelo front-end em Angular da aplicação web, o usuário recebe o retorno apropriado de sua requisição, cuja consulta terá sido feita por meio do GraphQL com as Models do Django.
 
 ***
 ## 6. Visão da Implementação
@@ -128,7 +127,7 @@ Além disso, em comunicação com o Django será utilizada a biblioteca Graphene
 ***
 ## 7. Qualidade
 ***
-A arquitetura MVT oferece uma organização das camadas da aplicação, possibilitando aos desenvolvedores uma fácil manutenção, além de ser um padrão de arquitetura altamente confiável já que é muito utilizado. Além disso, GraphQL é mais eficiente que outras linguagens na função que cumpre, já que ele não é vinculado a nenhum banco de dados, apenas realisa a consulta retornando o que é pedido.
+A arquitetura adotada, utilizada como adaptação do MVT, oferece uma organização das camadas da aplicação, possibilitando aos desenvolvedores uma fácil manutenção, além de vir de um padrão de arquitetura altamente confiável e muito utilizado. Além disso, GraphQL é mais eficiente que outras linguagens na função que cumpre, já que ele não é vinculado a nenhum banco de dados, apenas realisa a consulta retornando o que é pedido.
 
 Outro ponto a ser ressaltado é, pelo uso das ferramentas citadas, a busca pelo desenvolvimento de um código de fácil manutenibilidade, para que o sistema possa ser facilmente mantido e evoluído mesmo quando, após sua finalização, ele seja passado para os cuidados de outros profissionais.
 
