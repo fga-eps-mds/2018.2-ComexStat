@@ -84,11 +84,21 @@ desenvolvedores Angular.
 
 ### 3.3. Diagrama
 
-![Diagrama_Representacao_Arquitetural](https://fga-eps-mds.github.io/2018.2-ComexStat/img/RepresentacaoArquitetural.png)
+![Diagrama_Representacao_Arquitetural](https://fga-eps-mds.github.io/2018.2-ComexStat/img/Representacao_Arquitetural.png)
 
-## 4. Comunicação dos Microserviços
+## 4. Definição dos Microserviços
 
+Nomeclatura
 
+Assests - Armazenamento de bens.
+
+Charts - Gerar gráficos.
+
+Files - Gerar arquivos para baixáveis.
+
+### 4.1. Diagrama
+
+![Diagrama_De_Microsservicos](https://fga-eps-mds.github.io/2018.2-ComexStat/img/Diagrama_de_Microsservicos.png)
 
 ## 5. Referências
 
