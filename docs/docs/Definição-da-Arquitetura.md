@@ -16,37 +16,40 @@ Com base na arquitetura microserviços, foram definidas as seguintes tecnologias
 
 ## 2. Tecnologias que Serão Utilizadas
 
+Todas as tecnologias adotadas foram escolhidas em conjunto com o cliente, por meio
+de reuniões que fazermos semanalmente.
+
 ### 2.1. Django
 
-O Django é um framework Web Python de alto nível que incentiva o rápido desenvolvimento e o
-design claro e objetivo.
+O Django é um framework web na linguagem Python, que permite rápido desenvolvimento e
+design claro e objetivo de aplicações web..
 
-O Django será utilizado no back-end do projeto por ter uma excelente estrutura base
+O Django será utilizado no back-end do projeto por apresentar uma adequeda estrutura base
 para projetos, por ser a maior comunidade e ter maior aceitação entre os frameworks
 web Python, além  de acarretar em um boa curva de aprendizado para a equipe.
 
 ### 2.2. Angular
 
-Angular é uma plataforma e framework para construção da interface de aplicações usando
-HTML, CSS e principalmente JavaScript. O Angular facilita a criação de aplicações na web.
+Angular é um framework para construção da interfaces de usuário usando
+HTML, CSS e JavaScript, através de suas bibliotecas facilita o desenvolvimento
+de aplicações web.
 
 O Angular será aplicado como o front-end do projeto por ser um framework completo e por
-possui muitos componentes disponíveis para diversas necessidades da aplicação.
+possuir diversos componentes disponíveis para as várias necessidades da aplicação.
 
 
 ### 2.3. GraphQL
 
-GraphQL é uma linguagem de consulta para APIs e o tempo de execução que usa para
-atender essas consultas com os dados existentes. O GraphQL fornece uma descrição
-completa e compreensível dos dados em sua API.
+GraphQL é uma linguagem de consulta para APIs, o GraphQL fornece uma descrição
+completa e compreensível dos dados contidos na API.
 
-O GraphQL possui três características principais:
-* Permite que o cliente especifique exatamente quais dados são necessários.
+Características principais:
+* Permite que o cliente especifique exatamente quais dados deseja obter.
 * Facilita a agregação de dados de várias fontes.
 * Usa um sistema de tipos para descrever dados.
 
-O GraphQL foi adotado por ser uma linguagem de busca, achamos viável, pois, a plicação será
-voltada para buscas.
+GraphQL foi escolhido por oferecer características arquiteturais que vão de
+acordo com a aplicação.
 
 ### 2.4. PostgreSQL
 
@@ -62,9 +65,30 @@ a gerenciar e a proteger a integridade dos dados.
 
 ## 3. Relacionamento das Tecnologias
 
-### 3.1. Diagrama
+### 3.1. GraphQL com Django
 
-## 4. Comunicação das Tecnologias
+O ComexStat contará com a implementação do GraphQL e Python, para essa integração
+onde será utilizado a biblioteca Graphene. Será utilizado basicamente o query
+do GraphQL, para fazer buscas de informações do banco de dados.
+
+### 3.2. GraphQL com Angular
+
+O Apollo Client possui uma implementação em Angular para GraphQL. O Apollo Client foi
+projetado desde o início para facilitar a construção de componentes de interface
+do usuário que buscam dados com o GraphQL.
+
+O Apollo Client é flexível para a plataforma Angular, onde foi cuidadosamente
+desenvolvida para funcionar bem com todas as ferramentas usadas pelos
+desenvolvedores Angular.
+
+
+### 3.3. Diagrama
+
+![Diagrama_Representacao_Arquitetural](https://fga-eps-mds.github.io/2018.2-ComexStat/img/RepresentacaoArquitetural.png)
+
+## 4. Comunicação dos Microserviços
+
+
 
 ## 5. Referências
 
