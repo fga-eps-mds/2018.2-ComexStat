@@ -25,6 +25,7 @@ Para definição da comunicação interna, cabe ressaltar que apesar dos integra
 |Participantes|Método    |Tipo de Reunião    |Horário|Dia   |
 |-------------|----------|-------|-------|------|
 |Time|Presencial| Daily|15:50-16:00 |Terça|
+|Time|Presencial| Daily|15:50-16:00 |Quarta|
 |Time |Presencial| Daily|15:50-16:00 |Quinta|
 |Time  |Presencial| Rituais de sprint(Retrospectiva, Revisão e Planejamento)| 9:30-12:30 |Sábado|
 
