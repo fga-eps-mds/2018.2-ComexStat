@@ -1,6 +1,7 @@
 from django.db import models
 from datetime import datetime
 
+
 class NCM(models.Model):
     ncm = models.CharField(max_length=250)
     unid = models.CharField(max_length=100)
@@ -13,6 +14,7 @@ class NCM(models.Model):
     ncm_en = models.CharField(max_length=100)
     ncm_es = models.CharField(max_length=100)
     siit = models.CharField(max_length=100)
+
 
 class AssetFacts(models.Model):
     date = models.DateField(default=datetime.now)
