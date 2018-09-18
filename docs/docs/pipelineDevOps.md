@@ -33,3 +33,7 @@ Aqui estará a versão mais estável do software, este ambiente estará disponí
 ## Pipeline DevOps
 
 ![Pipeline DevOps](https://fga-eps-mds.github.io/2018.2-ComexStat/img/pipelineDevops.png)
+
+## 3. Referências
+
+> * 4LINUX. Diferenças entre Integração, deploy e entrega contínua. Disponível em: <https://www.4linux.com.br/diferencas-entre-integracao-deploy-e-entrega-continua>. Acesso em: 18 set. 2018.
