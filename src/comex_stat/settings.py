@@ -45,6 +45,10 @@ GRAPHENE = {
     'SCHEMA': 'comex_stat.schema.schema'
 }
 
+FIXTURE_DIRS = (
+   'assets/fixtures/',
+)
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
