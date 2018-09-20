@@ -1,0 +1,18 @@
+[
+  {
+    "model": "assets.assetexportfacts",
+    "pk": 1,
+    "fields": {
+      "destination_fed_unit": "",
+      "origin_country": ""
+    }
+  },
+  {
+    "model": "assets.assetexportfacts",
+    "pk": 2,
+    "fields": {
+      "origin_fed_unit": "",
+      "destination_country": ""
+    }
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "model": "assets.assetfacts",
+    "pk": 1,
+    "fields": {
+      "date": "",
+      "name": "",
+      "ncm": "",
+      "port": "",
+      "port_code": "",
+      "transportation": "",
+      "registries": "",
+      "net_kilogram": "",
+      "fob_value": ""
+    }
+  },
+  {
+    "model": "assets.assetfacts",
+    "pk": 2,
+    "fields": {
+      "date": "",
+      "name": "",
+      "ncm": "",
+      "port": "",
+      "port_code": "",
+      "transportation": "",
+      "registries": "",
+      "net_kilogram": "",
+      "fob_value": ""
+    }
+  }
+]
