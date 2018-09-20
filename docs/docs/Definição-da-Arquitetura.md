@@ -89,24 +89,21 @@ desenvolvedores Angular.
 ## 4. Arquitetura do Software
 
 Foi decidido junto ao cliente a posibilidade de uma arquitetura monolítica, visto
-que o escopo do projeto está bem acoplado e que vamos utilizar bibliotecas externa
+que o escopo do projeto está bem acoplado e que vamos utilizar bibliotecas externas
 para as funcionalidades da aplicação.
 
  Uma arquitetura monolítica é o modelo unificado tradicional para o design de um
  programa de software.
 
-O software monolítico é projetado para ser independente; Os componentes do programa
+O software monolítico é projetado para ser independente, os componentes do programa
 são interconectados e interdependentes, em vez de fracamente acoplados, como é o
 caso dos programas de software modulares. Em uma arquitetura bem acoplada, cada
 componente e seus componentes associados devem estar presentes para que o código
 seja executado ou compilado.
 
-Programas monolíticos normalmente têm melhor rendimento do que abordagens modulares,
-como a arquitetura de microsserviço e podem ser mais fáceis de testar e depurar.
-
 ### 4.1. Diagrama
 
-
+![Diagrama-Monolitico](https://fga-eps-mds.github.io/2018.2-ComexStat/img/Diagrama-Monolitico.png)
 
 ## 5. Referências
 
