@@ -3,16 +3,16 @@
     "model": "assets.assetimportfacts",
     "pk": 1,
     "fields": {
-      "destination_fed_unit": "",
-      "origin_country": ""
+      "destination_fed_unit": "Minas Gerais",
+      "origin_country": "Canadá"
     }
   },
   {
     "model": "assets.assetimportfacts",
     "pk": 2,
     "fields": {
-      "destination_fed_unit": "",
-      "origin_country": ""
+      "destination_fed_unit": "Rio de Janeiro",
+      "origin_country": "Estados Unidos"
     }
   }
 ]

@@ -3,16 +3,16 @@
     "model": "assets.assetexportfacts",
     "pk": 1,
     "fields": {
-      "destination_fed_unit": "",
-      "origin_country": ""
+      "origin_fed_unit": "São Paulo",
+      "destination_country": "França"
     }
   },
   {
     "model": "assets.assetexportfacts",
     "pk": 2,
     "fields": {
-      "origin_fed_unit": "",
-      "destination_country": ""
+      "origin_fed_unit": "Brasília",
+      "destination_country": "Portugual"
     }
   }
 ]
