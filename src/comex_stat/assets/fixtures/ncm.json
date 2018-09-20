@@ -1,0 +1,36 @@
+[
+  {
+    "model": "assets.ncm",
+    "pk": 1,
+    "fields": {
+      "ncm": ,
+      "unid": ,
+      "ppe": ,
+      "ppi": ,
+      "fat_agreg": ,
+      "isic4": ,
+      "exp_subset": ,
+      "ncm_por": ,
+      "ncm_en": ,
+      "ncm_es": ,
+      "siit": 
+    }
+  },
+  {
+    "model": "assets.ncm",
+    "pk": 2,
+    "fields": {
+      "ncm": ,
+      "unid": ,
+      "ppe": ,
+      "ppi": ,
+      "fat_agreg": ,
+      "isic4": ,
+      "exp_subset": ,
+      "ncm_por": ,
+      "ncm_en": ,
+      "ncm_es": ,
+      "siit":
+    }
+  }
+]
