@@ -2,7 +2,10 @@ import graphene
 
 from graphene_django.types import DjangoObjectType
 
-from comex_stat.assets.models import AssetImportFacts, AssetExportFacts, NCM, CUCI
+from comex_stat.assets.models import AssetImportFacts
+from comex_stat.assets.models import AssetExportFacts
+from comex_stat.assets.models import NCM
+from comex_stat.assets.models import CUCI
 
 
 class AssetImportFactsType(DjangoObjectType):
@@ -19,9 +22,11 @@ class NCMType(DjangoObjectType):
     class Meta:
         model = NCM
 
+
 class CUCIType(DjangoObjectType):
     class Meta:
         model = CUCI
+
 
 class Query(object):
     all_import = graphene.List(AssetImportFactsType)
