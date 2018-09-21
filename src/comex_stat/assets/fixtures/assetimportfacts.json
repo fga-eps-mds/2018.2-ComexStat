@@ -4,7 +4,7 @@
     "pk": 1,
     "fields": {
       "destination_fed_unit": "BA",
-      "origin_country": "Canadá",
+      "origin_country": "Alemanha",
       "date": "05/2018",
       "name": "Guarnições para móveis, carrocerias e semelhantes, de plásticos",
       "ncm": "39263000",
@@ -55,7 +55,7 @@
     "pk": 4,
     "fields": {
       "destination_fed_unit": "SP",
-      "origin_country": "Panamá",
+      "origin_country": "Estados Unidos",
       "date": "05/2018",
       "name": "Outras partes de bombas para líquidos",
       "ncm": "84139190",
@@ -72,7 +72,7 @@
     "pk": 5,
     "fields": {
       "destination_fed_unit": "SP",
-      "origin_country": "Panamá",
+      "origin_country": "Itália",
       "date": "05/2018",
       "name": "Outras partes de bombas para líquidos",
       "ncm": "84139190",

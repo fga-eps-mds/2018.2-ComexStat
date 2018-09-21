@@ -21,7 +21,7 @@
     "pk": 2,
     "fields": {
       "origin_fed_unit": "SP",
-      "destination_country": "Portugual",
+      "destination_country": "Honduras",
       "date": "03/2018",
       "name": "Painéis de fibras madeira de média densidade (denominados MDF), com densidade superior a 0,8 g/cm3, não trabalhados mecanicamente nem recobertos à superfície",
       "ncm": "44119210",
@@ -38,7 +38,7 @@
     "pk": 3,
     "fields": {
       "origin_fed_unit": "SP",
-      "destination_country": "França",
+      "destination_country": "Uruguai",
       "date": "03/18",
       "name": "Calças, jardineiras, bermudas e shorts (calções), de uso feminino, de fibras sintéticas",
       "ncm": "62046300",
