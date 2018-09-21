@@ -22,20 +22,20 @@ class NCMType(DjangoObjectType):
     class Meta:
         model = NCM
         filter_fields = {
-            'ncm': ['icontains'],
-            'unid': ['icontains'],
-            'ppe': ['icontains'],
-            'ppi': ['icontains'],
-            'fat_agreg': ['icontains'],
+            'ncm_code': ['icontains'],
+            'ncm_name_pt': ['icontains'],
+            'ncm_name_en': ['icontains'],
+            'ncm_name_es': ['icontains'],
+            'statistic_unit_code': ['icontains'],
+            'ppe_code': ['icontains'],
+            'ppi_code': ['icontains'],
+            'aggregate_factor_code': ['icontains'],
             'cuci': [],
-            'isic4': ['icontains'],
             'cgce': [],
             'sh': [],
-            'exp_subset': ['icontains'],
-            'ncm_pt': ['icontains'],
-            'ncm_en': ['icontains'],
-            'ncm_es': ['icontains'],
-            'siit': ['icontains']
+            'isic4_code': ['icontains'],
+            'exportation_subset': ['icontains'],
+            'siit_code': ['icontains']
         }
         interfaces = {graphene.Node, }
 
@@ -44,26 +44,26 @@ class CUCIType(DjangoObjectType):
     class Meta:
         model = CUCI
         filter_fields = {
-            'cuci_item': ['icontains'],
-            'cuci_item_pt': ['icontains'],
-            'cuci_item_en': ['icontains'],
-            'cuci_item_es': ['icontains'],
-            'cuci_sub': ['icontains'],
-            'cuci_sub_pt': ['icontains'],
-            'cuci_sub_en': ['icontains'],
-            'cuci_sub_es': ['icontains'],
-            'cuci_pos': ['icontains'],
-            'cuci_pos_pt': ['icontains'],
-            'cuci_pos_en': ['icontains'],
-            'cuci_pos_es': ['icontains'],
-            'cuci_cap': ['icontains'],
-            'cuci_cap_pt': ['icontains'],
-            'cuci_cap_en': ['icontains'],
-            'cuci_cap_es': ['icontains'],
-            'cuci_sec': ['icontains'],
-            'cuci_sec_pt': ['icontains'],
-            'cuci_sec_en': ['icontains'],
-            'cuci_sec_es': ['icontains']
+            'item_code': ['icontains'],
+            'item_name_pt': ['icontains'],
+            'item_name_en': ['icontains'],
+            'item_name_es': ['icontains'],
+            'subitem_code': ['icontains'],
+            'subitem_name_pt': ['icontains'],
+            'subitem_name_en': ['icontains'],
+            'subitem_name_es': ['icontains'],
+            'position_code': ['icontains'],
+            'position_name_pt': ['icontains'],
+            'position_name_en': ['icontains'],
+            'position_name_es': ['icontains'],
+            'chapter_code': ['icontains'],
+            'chapter_name_pt': ['icontains'],
+            'chapter_name_en': ['icontains'],
+            'chapter_name_es': ['icontains'],
+            'section_code': ['icontains'],
+            'section_name_pt': ['icontains'],
+            'section_name_en': ['icontains'],
+            'section_name_es': ['icontains']
         }
         interfaces = {graphene.Node, }
 
@@ -72,18 +72,18 @@ class CGCEType(DjangoObjectType):
     class Meta:
         model = CGCE
         filter_fields = {
-            'cgce_n1': ['icontains'],
-            'cgce_n1_pt': ['icontains'],
-            'cgce_n1_en': ['icontains'],
-            'cgce_n1_es': ['icontains'],
-            'cgce_n2': ['icontains'],
-            'cgce_n2_pt': ['icontains'],
-            'cgce_n2_en': ['icontains'],
-            'cgce_n2_es': ['icontains'],
-            'cgce_n3': ['icontains'],
-            'cgce_n3_pt': ['icontains'],
-            'cgce_n3_en': ['icontains'],
-            'cgce_n3_es': ['icontains']
+            'level1_code': ['icontains'],
+            'level1_name_pt': ['icontains'],
+            'level1_name_en': ['icontains'],
+            'level1_name_es': ['icontains'],
+            'level2_code': ['icontains'],
+            'level2_name_pt': ['icontains'],
+            'level2_name_en': ['icontains'],
+            'level2_name_es': ['icontains'],
+            'level3_code': ['icontains'],
+            'level3_name_pt': ['icontains'],
+            'level3_name_en': ['icontains'],
+            'level3_name_es': ['icontains']
         }
         interfaces = {graphene.Node, }
 
@@ -92,22 +92,22 @@ class SHType(DjangoObjectType):
     class Meta:
         model = SH
         filter_fields = {
-            'sh2': ['icontains'],
-            'sh2_pt': ['icontains'],
-            'sh2_en': ['icontains'],
-            'sh2_es': ['icontains'],
-            'sh4': ['icontains'],
-            'sh4_pt': ['icontains'],
-            'sh4_en': ['icontains'],
-            'sh4_es': ['icontains'],
-            'sh6': ['icontains'],
-            'sh6_pt': ['icontains'],
-            'sh6_en': ['icontains'],
-            'sh6_es': ['icontains'],
-            'ncm_secrom': ['icontains'],
-            'sec_pt': ['icontains'],
-            'sec_en': ['icontains'],
-            'sec_es': ['icontains']
+            'chapter_code': ['icontains'],
+            'chapter_name_pt': ['icontains'],
+            'chapter_name_en': ['icontains'],
+            'chapter_name_es': ['icontains'],
+            'position_code': ['icontains'],
+            'position_name_pt': ['icontains'],
+            'position_name_en': ['icontains'],
+            'position_name_es': ['icontains'],
+            'subposition_code': ['icontains'],
+            'subposition_name_pt': ['icontains'],
+            'subposition_name_en': ['icontains'],
+            'subposition_name_es': ['icontains'],
+            'section_code': ['icontains'],
+            'section_name_pt': ['icontains'],
+            'section_name_en': ['icontains'],
+            'section_name_es': ['icontains']
         }
         interfaces = {graphene.Node, }
 
