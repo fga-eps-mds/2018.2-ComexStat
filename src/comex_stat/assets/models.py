@@ -20,21 +20,21 @@ class TradeBlocs(models.Model):
     bloc_name_pt = models.CharField(max_length=100)
     bloc_name_en = models.CharField(max_length=100)
     bloc_name_es = models.CharField(max_length=100)
-    bloc_code = models.CharField(max_length=100)
+    bloc_code = models.CharField(max_length=10)
 
 
 class Country(models.Model):
     country_name_pt = models.CharField(max_length=100)
     country_name_en = models.CharField(max_length=100)
     country_name_es = models.CharField(max_length=100)
-    country_code_iso3 = models.CharField(max_length=100)
+    country_code_iso3 = models.CharField(max_length=3)
     trade_bloc = models.ForeignKey(TradeBlocs, on_delete=models.CASCADE)
 
 
 class FedUnit(models.Model):
     uf_name = models.CharField(max_length=100)
     uf_code = models.CharField(max_length=100)
-    uf_initials = models.CharField(max_length=100)
+    uf_initials = models.CharField(max_length=6)
 
 
 class Transportation(models.Model):
