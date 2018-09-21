@@ -1,0 +1,34 @@
+[
+  {
+    "model": "assets.assetimportfacts",
+    "pk": 1,
+    "fields": {
+      "destination_fed_unit": "Minas Gerais",
+      "origin_country": "Canadá"
+    }
+  },
+  {
+    "model": "assets.assetimportfacts",
+    "pk": 2,
+    "fields": {
+      "destination_fed_unit": "Rio de Janeiro",
+      "origin_country": "Estados Unidos"
+    }
+  },
+  {
+    "model": "assets.assetimportfacts",
+    "pk": 3,
+    "fields": {
+      "destination_fed_unit": "São Paulo",
+      "origin_country": "China"
+    }
+  },
+  {
+    "model": "assets.assetimportfacts",
+    "pk": 4,
+    "fields": {
+      "destination_fed_unit": "São Paulo",
+      "origin_country": "Panamá"
+    }
+  }
+]
