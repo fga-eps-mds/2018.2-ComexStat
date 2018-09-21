@@ -13,12 +13,233 @@
       "ncm_por": ,
       "ncm_en": ,
       "ncm_es": ,
-      "siit": 
+      "siit":
     }
   },
   {
     "model": "assets.ncm",
     "pk": 2,
+    "fields": {
+      "ncm": ,
+      "unid": ,
+      "ppe": ,
+      "ppi": ,
+      "fat_agreg": ,
+      "isic4": ,
+      "exp_subset": ,
+      "ncm_por": ,
+      "ncm_en": ,
+      "ncm_es": ,
+      "siit":
+    }
+  },
+  {
+    "model": "assets.ncm",
+    "pk": 3,
+    "fields": {
+      "ncm": ,
+      "unid": ,
+      "ppe": ,
+      "ppi": ,
+      "fat_agreg": ,
+      "isic4": ,
+      "exp_subset": ,
+      "ncm_por": ,
+      "ncm_en": ,
+      "ncm_es": ,
+      "siit":
+    }
+  },
+  {
+    "model": "assets.ncm",
+    "pk": 4,
+    "fields": {
+      "ncm": ,
+      "unid": ,
+      "ppe": ,
+      "ppi": ,
+      "fat_agreg": ,
+      "isic4": ,
+      "exp_subset": ,
+      "ncm_por": ,
+      "ncm_en": ,
+      "ncm_es": ,
+      "siit":
+    }
+  },
+  {
+    "model": "assets.ncm",
+    "pk": 5,
+    "fields": {
+      "ncm": ,
+      "unid": ,
+      "ppe": ,
+      "ppi": ,
+      "fat_agreg": ,
+      "isic4": ,
+      "exp_subset": ,
+      "ncm_por": ,
+      "ncm_en": ,
+      "ncm_es": ,
+      "siit":
+    }
+  },
+  {
+    "model": "assets.ncm",
+    "pk": 6,
+    "fields": {
+      "ncm": ,
+      "unid": ,
+      "ppe": ,
+      "ppi": ,
+      "fat_agreg": ,
+      "isic4": ,
+      "exp_subset": ,
+      "ncm_por": ,
+      "ncm_en": ,
+      "ncm_es": ,
+      "siit":
+    }
+  },
+  {
+    "model": "assets.ncm",
+    "pk": 7,
+    "fields": {
+      "ncm": ,
+      "unid": ,
+      "ppe": ,
+      "ppi": ,
+      "fat_agreg": ,
+      "isic4": ,
+      "exp_subset": ,
+      "ncm_por": ,
+      "ncm_en": ,
+      "ncm_es": ,
+      "siit":
+    }
+  },
+  {
+    "model": "assets.ncm",
+    "pk": 8,
+    "fields": {
+      "ncm": ,
+      "unid": ,
+      "ppe": ,
+      "ppi": ,
+      "fat_agreg": ,
+      "isic4": ,
+      "exp_subset": ,
+      "ncm_por": ,
+      "ncm_en": ,
+      "ncm_es": ,
+      "siit":
+    }
+  },
+  {
+    "model": "assets.ncm",
+    "pk": 9,
+    "fields": {
+      "ncm": ,
+      "unid": ,
+      "ppe": ,
+      "ppi": ,
+      "fat_agreg": ,
+      "isic4": ,
+      "exp_subset": ,
+      "ncm_por": ,
+      "ncm_en": ,
+      "ncm_es": ,
+      "siit":
+    }
+  },
+  {
+    "model": "assets.ncm",
+    "pk": 10,
+    "fields": {
+      "ncm": ,
+      "unid": ,
+      "ppe": ,
+      "ppi": ,
+      "fat_agreg": ,
+      "isic4": ,
+      "exp_subset": ,
+      "ncm_por": ,
+      "ncm_en": ,
+      "ncm_es": ,
+      "siit":
+    }
+  },
+  {
+    "model": "assets.ncm",
+    "pk": 11,
+    "fields": {
+      "ncm": ,
+      "unid": ,
+      "ppe": ,
+      "ppi": ,
+      "fat_agreg": ,
+      "isic4": ,
+      "exp_subset": ,
+      "ncm_por": ,
+      "ncm_en": ,
+      "ncm_es": ,
+      "siit":
+    }
+  },
+  {
+    "model": "assets.ncm",
+    "pk": 12,
+    "fields": {
+      "ncm": ,
+      "unid": ,
+      "ppe": ,
+      "ppi": ,
+      "fat_agreg": ,
+      "isic4": ,
+      "exp_subset": ,
+      "ncm_por": ,
+      "ncm_en": ,
+      "ncm_es": ,
+      "siit":
+    }
+  },
+  {
+    "model": "assets.ncm",
+    "pk": 13,
+    "fields": {
+      "ncm": ,
+      "unid": ,
+      "ppe": ,
+      "ppi": ,
+      "fat_agreg": ,
+      "isic4": ,
+      "exp_subset": ,
+      "ncm_por": ,
+      "ncm_en": ,
+      "ncm_es": ,
+      "siit":
+    }
+  },
+  {
+    "model": "assets.ncm",
+    "pk": 14,
+    "fields": {
+      "ncm": ,
+      "unid": ,
+      "ppe": ,
+      "ppi": ,
+      "fat_agreg": ,
+      "isic4": ,
+      "exp_subset": ,
+      "ncm_por": ,
+      "ncm_en": ,
+      "ncm_es": ,
+      "siit":
+    }
+  },
+  {
+    "model": "assets.ncm",
+    "pk": 15,
     "fields": {
       "ncm": ,
       "unid": ,
