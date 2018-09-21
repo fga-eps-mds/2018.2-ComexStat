@@ -14,5 +14,50 @@
       "origin_fed_unit": "Brasília",
       "destination_country": "Portugual"
     }
+  },
+  {
+    "model": "assets.assetfacts",
+    "pk": 3,
+    "fields": {
+      "date": "",
+      "name": "",
+      "ncm": "",
+      "port": "",
+      "port_code": "",
+      "transportation": "",
+      "registries": "",
+      "net_kilogram": "",
+      "fob_value": ""
+    }
+  },
+  {
+    "model": "assets.assetfacts",
+    "pk": 4,
+    "fields": {
+      "date": "",
+      "name": "",
+      "ncm": "",
+      "port": "",
+      "port_code": "",
+      "transportation": "",
+      "registries": "",
+      "net_kilogram": "",
+      "fob_value": ""
+    }
+  },
+  {
+    "model": "assets.assetfacts",
+    "pk": 5,
+    "fields": {
+      "date": "",
+      "name": "",
+      "ncm": "",
+      "port": "",
+      "port_code": "",
+      "transportation": "",
+      "registries": "",
+      "net_kilogram": "",
+      "fob_value": ""
+    }
   }
 ]

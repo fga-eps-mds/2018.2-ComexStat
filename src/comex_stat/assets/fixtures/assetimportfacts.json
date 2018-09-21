@@ -14,5 +14,21 @@
       "destination_fed_unit": "Rio de Janeiro",
       "origin_country": "Estados Unidos"
     }
+  },
+  {
+    "model": "assets.assetimportfacts",
+    "pk": 3,
+    "fields": {
+      "destination_fed_unit": "São Paulo",
+      "origin_country": "China"
+    }
+  },
+  {
+    "model": "assets.assetimportfacts",
+    "pk": 4,
+    "fields": {
+      "destination_fed_unit": "São Paulo",
+      "origin_country": "Panamá"
+    }
   }
 ]
