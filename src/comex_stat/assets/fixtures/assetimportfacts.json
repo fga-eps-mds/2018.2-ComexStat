@@ -3,32 +3,85 @@
     "model": "assets.assetimportfacts",
     "pk": 1,
     "fields": {
-      "destination_fed_unit": "Minas Gerais",
-      "origin_country": "Canadá"
+      "destination_fed_unit": "BA",
+      "origin_country": "Canadá",
+      "date": "05/2018",
+      "name": "Guarnições para móveis, carrocerias e semelhantes, de plásticos",
+      "ncm": "39263000",
+      "port": "0817800 - PORTO DE SANTOS",
+      "port_code": "0817800",
+      "transportation": "MARITIMA",
+      "registries": "4",
+      "net_kilogram": "4",
+      "fob_value": "555"
     }
   },
   {
     "model": "assets.assetimportfacts",
     "pk": 2,
     "fields": {
-      "destination_fed_unit": "Rio de Janeiro",
-      "origin_country": "Estados Unidos"
+      "destination_fed_unit": "SP",
+      "origin_country": "Estados Unidos",
+      "date": "05/2018",
+      "name": "Outras obras de cortiça aglomerada",
+      "ncm": "45049000",
+      "port": "0000000",
+      "port_code": "0000000 - NAO INFORMADO",
+      "transportation": "VIA NAO DECLARADA",
+      "registries": "26",
+      "net_kilogram": "26",
+      "fob_value": "3215"
     }
   },
   {
     "model": "assets.assetimportfacts",
     "pk": 3,
     "fields": {
-      "destination_fed_unit": "São Paulo",
-      "origin_country": "China"
+      "destination_fed_unit": "PE",
+      "origin_country": "China",
+      "date": "05/2018",
+      "name": "Porcas de ferro fundido, ferro ou aço",
+      "ncm": "73181600",
+      "port": "0417902 - IRF - PORTO DE SUAPE",
+      "port_code": "0417902",
+      "transportation": "MARITIMA",
+      "registries": "370",
+      "net_kilogram": "370",
+      "fob_value": "2283"
     }
   },
   {
     "model": "assets.assetimportfacts",
     "pk": 4,
     "fields": {
-      "destination_fed_unit": "São Paulo",
-      "origin_country": "Panamá"
+      "destination_fed_unit": "SP",
+      "origin_country": "Panamá",
+      "date": "05/2018",
+      "name": "Outras partes de bombas para líquidos",
+      "ncm": "84139190",
+      "port": "0817600 - AEROPORTO INTERNACIONAL DE SAO PAULO/GUARULHOS",
+      "port_code": "817600",
+      "transportation": "AEREA",
+      "registries": "4424",
+      "net_kilogram": "4424",
+      "fob_value": "332623"
+    }
+  },
+  {
+    "model": "assets.assetimportfacts",
+    "pk": 5,
+    "fields": {
+      "destination_fed_unit": "SP",
+      "origin_country": "Panamá",
+      "date": "05/2018",
+      "name": "Outras partes de bombas para líquidos",
+      "ncm": "84139190",
+      "port": "0817600 - AEROPORTO INTERNACIONAL DE SAO PAULO/GUARULHOS",
+      "port_code": "817600",
+      "transportation": "AEREA",
+      "registries": "464",
+      "net_kilogram": "464",
+      "fob_value": "31454"
     }
   }
 ]
