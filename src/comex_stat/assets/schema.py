@@ -44,7 +44,7 @@ class TradeBlocsType(DjangoObjectType):
         filter_fields = {
             'bloc_name_pt': ['icontains'],
             'bloc_name_en': ['icontains'],
-            'bloc_name_sp': ['icontains'],
+            'bloc_name_es': ['icontains'],
             'bloc_code': ['icontains']
         }
         interfaces = {graphene.Node, }
@@ -56,7 +56,7 @@ class CountryType(DjangoObjectType):
         filter_fields = {
             'country_name_pt': ['icontains'],
             'country_name_en': ['icontains'],
-            'country_name_sp': ['icontains'],
+            'country_name_es': ['icontains'],
             'country_code_iso3': ['icontains']
         }
         interfaces = {graphene.Node, }
