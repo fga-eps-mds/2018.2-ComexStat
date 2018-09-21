@@ -3,7 +3,7 @@ import graphene
 from graphene_django.types import DjangoObjectType
 from graphene_django.filter.fields import DjangoFilterConnectionField
 from comex_stat.assets.models import (AssetImportFacts, AssetExportFacts,
-                                      NCM, TradeBlocs, Country, FedUnit,
+                                      NCM, TradeBlocs, Country, FederativeUnit,
                                       Transportation, Urf)
 
 
@@ -42,10 +42,10 @@ class TradeBlocsType(DjangoObjectType):
     class Meta:
         model = TradeBlocs
         filter_fields = {
-            'bloc_name_pt': ['icontains'],
-            'bloc_name_en': ['icontains'],
-            'bloc_name_es': ['icontains'],
-            'bloc_code': ['icontains']
+            'name_portuguese': ['icontains'],
+            'name_english': ['icontains'],
+            'name_spanish': ['icontains'],
+            'code': ['icontains']
         }
         interfaces = {graphene.Node, }
 
@@ -54,21 +54,21 @@ class CountryType(DjangoObjectType):
     class Meta:
         model = Country
         filter_fields = {
-            'country_name_pt': ['icontains'],
-            'country_name_en': ['icontains'],
-            'country_name_es': ['icontains'],
-            'country_code_iso3': ['icontains']
+            'name_portuguese': ['icontains'],
+            'name_english': ['icontains'],
+            'name_spanish': ['icontains'],
+            'code_iso3': ['icontains']
         }
         interfaces = {graphene.Node, }
 
 
-class FedUnitType(DjangoObjectType):
+class FederativeUnitType(DjangoObjectType):
     class Meta:
-        model = FedUnit
+        model = FederativeUnit
         filter_fields = {
-            'uf_code': ['icontains'],
-            'uf_name': ['icontains'],
-            'uf_initials': ['icontains']
+            'code': ['icontains'],
+            'name': ['icontains'],
+            'initials': ['icontains']
         }
         interfaces = {graphene.Node, }
 
@@ -77,8 +77,8 @@ class TransportationType(DjangoObjectType):
     class Meta:
         model = Transportation
         filter_fields = {
-            'transportation_name': ['icontains'],
-            'transportation_code': ['icontains']
+            'name': ['icontains'],
+            'code': ['icontains']
         }
         interfaces = {graphene.Node, }
 
@@ -87,8 +87,8 @@ class UrfType(DjangoObjectType):
     class Meta:
         model = Urf
         filter_fields = {
-            'urf_code': ['icontains'],
-            'urf_name': ['icontains'],
+            'code': ['icontains'],
+            'name': ['icontains'],
         }
         interfaces = {graphene.Node, }
 
@@ -99,7 +99,7 @@ class Query(object):
     all_ncm = graphene.List(NCMType)
     all_tradeBlocs = DjangoFilterConnectionField(TradeBlocsType)
     all_country = DjangoFilterConnectionField(CountryType)
-    all_fedUnit = DjangoFilterConnectionField(FedUnitType)
+    all_federativeUnit = DjangoFilterConnectionField(FederativeUnitType)
     all_transportation = DjangoFilterConnectionField(TransportationType)
     all_urf = DjangoFilterConnectionField(UrfType)
 
@@ -118,8 +118,8 @@ class Query(object):
     def resolve_all_country(self, info, **kwargs):
         return Country.objects.all()
 
-    def resolve_all_fedUnit(self, info, **kwargs):
-        return FedUnit.objects.all()
+    def resolve_all_federativeUnit(self, info, **kwargs):
+        return FederativeUnit.objects.all()
 
     def resolve_all_transportation(self, info, **kwargs):
         return Transportation.objects.all()
