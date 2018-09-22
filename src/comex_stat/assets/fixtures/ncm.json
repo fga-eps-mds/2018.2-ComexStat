@@ -1,0 +1,172 @@
+[
+  {
+    "model": "assets.ncm",
+    "pk": 1,
+    "fields": {
+      "ncm": "84099190",
+      "unid": "10",
+      "ppe": "3193",
+      "ppi": "3172",
+      "fat_agreg": "03",
+      "isic4": "29",
+      "exp_subset": "1005",
+      "ncm_por": "Outras partes para motores de explosão",
+      "ncm_en": "Other parts for internal combustion engines",
+      "ncm_es": "Otras partes para motores de explosión",
+      "siit": "2000"
+    }
+  },
+  {
+    "model": "assets.ncm",
+    "pk": 2,
+    "fields": {
+      "ncm": "44119210",
+      "unid": "16",
+      "ppe": "3580",
+      "ppi": "3580",
+      "fat_agreg": "03",
+      "isic4": "16",
+      "exp_subset": "0805",
+      "ncm_por": "Painéis de fibras madeira de média densidade (denominados MDF), com densidade superior a 0,8 g/cm3, não trabalhados mecanicamente nem recobertos à superfície",
+      "ncm_en": "Medium density fibreboard (called MDF), with a density of more than 0,8 g / cm3, not mechanically worked or surface covered",
+      "ncm_es": "Paneles de fibras de madera de media densidad (denominados MDF), con una densidad superior a 0,8 g / cm3, no trabajados mecánicamente ni recubiertos a la superficie",
+      "siit": "4000"
+    }
+  },
+  {
+    "model": "assets.ncm",
+    "pk": 3,
+    "fields": {
+      "ncm": "62046300",
+      "unid": "11",
+      "ppe": "3499",
+      "ppi": "3083",
+      "fat_agreg": "03",
+      "isic4": "14",
+      "exp_subset": "1602",
+      "ncm_por": "Calças, jardineiras, bermudas e shorts (calções), de uso feminino, de fibras sintéticas",
+      "ncm_en": "Women's or girls' trousers, bib and brace overalls, breeches and shorts of synthetic fibers",
+      "ncm_es": "Pantalones, pantalones cortos, bermudas y pantalones cortos (pantalones), de uso femenino, de fibras sintéticas",
+      "siit": "4000"
+    }
+  },
+  {
+    "model": "assets.ncm",
+    "pk": 4,
+    "fields": {
+      "ncm": "33049990",
+      "unid": "10",
+      "ppe": "3681",
+      "ppi": "3681",
+      "fat_agreg": "03",
+      "isic4": "20",
+      "exp_subset": "1404",
+      "ncm_por": "Outros sabões/produtos/preparações, em barras, pedaços, etc.",
+      "ncm_en": "Other soaps / products / preparations, in bars, pieces, etc.",
+      "ncm_es": "Otros jabones / productos / preparaciones, en barras, pedazos, etc.",
+      "siit": "2000"
+    }
+  },
+  {
+    "model": "assets.ncm",
+    "pk": 5,
+    "fields": {
+      "ncm": "73181500",
+      "unid": "10",
+      "ppe": "3671",
+      "ppi": "3671",
+      "fat_agreg": "03",
+      "isic4": "25",
+      "exp_subset": "1599",
+      "ncm_por": "Outros parafusos e pinos ou pernos, mesmo com as porcas e arruelas, de ferro fundido, ferro ou aço",
+      "ncm_en": "Other screws and bolts, whether or not with their nuts and washers, of cast iron, iron or steel",
+      "ncm_es": "Otros tornillos y pernos o pernos, incluso con las tuercas y arandelas, de fundición, hierro o acero",
+      "siit": "3000"
+    }
+  },
+  {
+    "model": "assets.ncm",
+    "pk": 6,
+    "fields": {
+      "ncm": "39263000",
+      "unid": "10",
+      "ppe": "3619",
+      "ppi": "3427",
+      "fat_agreg": "03",
+      "isic4": "22",
+      "exp_subset": "1407",
+      "ncm_por": "Guarnições para móveis, carrocerias e semelhantes, de plásticos",
+      "ncm_en": "Fittings for furniture, coachwork and the like, of plastics",
+      "ncm_es": "Guarniciones para muebles, carrocerías y similares, de plástico",
+      "siit": "3000"
+    }
+  },
+  {
+    "model": "assets.ncm",
+    "pk": 7,
+    "fields": {
+      "ncm": "45049000",
+      "unid": "10",
+      "ppe": "3990",
+      "ppi": "3990",
+      "fat_agreg": "03",
+      "isic4": "16",
+      "exp_subset": "8099",
+      "ncm_por": "Outras obras de cortiça aglomerada",
+      "ncm_en": "Other articles of agglomerated cork",
+      "ncm_es": "Otras manufacturas de corcho aglomerado",
+      "siit": "4000"
+    }
+  },
+  {
+    "model": "assets.ncm",
+    "pk": 8,
+    "fields": {
+      "ncm": "73181600",
+      "unid": "10",
+      "ppe": "3671",
+      "ppi": "3671",
+      "fat_agreg": "03",
+      "isic4": "25",
+      "exp_subset": "1599",
+      "ncm_por": "Porcas de ferro fundido, ferro ou aço",
+      "ncm_en": "Nuts of cast iron, iron or steel",
+      "ncm_es": "Tuercas de hierro fundido, hierro o acero",
+      "siit": "3000"
+    }
+  },
+  {
+    "model": "assets.ncm",
+    "pk": 9,
+    "fields": {
+      "ncm": "84139190",
+      "unid": "10",
+      "ppe": "3060",
+      "ppi": "3060",
+      "fat_agreg": "03",
+      "isic4": "28",
+      "exp_subset": "0901",
+      "ncm_por": "Outras partes de bombas para líquidos",
+      "ncm_en": "Other parts of pumps for liquids",
+      "ncm_es": "Otras partes de bombas para líquidos",
+      "siit": "2000"
+    }
+  },
+  {
+    "model": "assets.ncm",
+    "pk": 10,
+    "fields": {
+      "ncm": "84139190",
+      "unid": "10",
+      "ppe": "3060",
+      "ppi": "3060",
+      "fat_agreg": "03",
+      "isic4": "28",
+      "exp_subset": "0901",
+      "ncm_por": "Outras partes de bombas para líquidos",
+      "ncm_en": "Other parts of pumps for liquids",
+      "ncm_es": "Otras partes de bombas para líquidos",
+      "siit": "2000"
+    }
+  }
+]
