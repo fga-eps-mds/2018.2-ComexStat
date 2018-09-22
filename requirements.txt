@@ -10,3 +10,4 @@ pytest-django==3.1.2
 flake8==3.5.0
 coveralls
 coverage
+psycopg2-binary

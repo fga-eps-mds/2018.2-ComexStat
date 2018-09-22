@@ -73,3 +73,4 @@ class AssetExportFacts(AssetFacts):
     origin_fed_unit = models.ForeignKey(
         FederativeUnit, on_delete=models.CASCADE)
     destination_country = models.ForeignKey(Country, on_delete=models.CASCADE)
+

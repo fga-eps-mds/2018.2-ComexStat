@@ -1,6 +1,6 @@
 ---
 id: definicaoArquitetura
-title: Definição Arquitetura
+title: Definição Arquitetural
 ---
 
 ## 1. Introdução
@@ -86,19 +86,24 @@ desenvolvedores Angular.
 
 ![Diagrama_Representacao_Arquitetural](https://fga-eps-mds.github.io/2018.2-ComexStat/img/Representacao_Arquitetural.png)
 
-## 4. Definição dos Microserviços
+## 4. Arquitetura do Software
 
-Nomeclatura
+Foi decidido junto ao cliente a posibilidade de uma arquitetura monolítica, visto
+que o escopo do projeto está bem acoplado e que vamos utilizar bibliotecas externas
+para as funcionalidades da aplicação.
 
-Assests - Armazenamento de bens.
+ Uma arquitetura monolítica é o modelo unificado tradicional para o design de um
+ programa de software.
 
-Charts - Gerar gráficos.
-
-Files - Gerar arquivos para baixáveis.
+O software monolítico é projetado para ser independente, os componentes do programa
+são interconectados e interdependentes, em vez de fracamente acoplados, como é o
+caso dos programas de software modulares. Em uma arquitetura bem acoplada, cada
+componente e seus componentes associados devem estar presentes para que o código
+seja executado ou compilado.
 
 ### 4.1. Diagrama
 
-![Diagrama_De_Microsservicos](https://fga-eps-mds.github.io/2018.2-ComexStat/img/Diagrama_de_Microsservicos.png)
+![Diagrama-Monolitico](https://fga-eps-mds.github.io/2018.2-ComexStat/img/Diagrama-Monolitico.png)
 
 ## 5. Referências
 
@@ -107,3 +112,4 @@ Files - Gerar arquivos para baixáveis.
 > * AFONSO, Alexandre. Disponível em: <https://blog.algaworks.com/o-que-e-angular/>. Acessado em 13/09/2018.
 > * Edson. Disponível em: <https://www.devmedia.com.br/postgresql-tutorial/33025>. Acessado em 13/09/2018.
 > * PostgreSQL. Disponível em: <https://www.postgresql.org/about/>. Acessado em 13/09/2018.
+> * SCARPA, João Mateus. Disponível em: <https://blog.designa.com.br/padr%C3%B5es-de-arquitetura-de-software-voc%C3%AA-sabe-do-que-estamos-falando-4858967c4054>. Acessado em 19/09/2018.
