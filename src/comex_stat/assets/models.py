@@ -76,13 +76,45 @@ class NCM(models.Model):
     siit_code = models.CharField(max_length=100)
 
 
+class TradeBlocs(models.Model):
+    name_portuguese = models.CharField(max_length=100)
+    name_english = models.CharField(max_length=100)
+    name_spanish = models.CharField(max_length=100)
+    code = models.CharField(max_length=10)
+
+
+class Country(models.Model):
+    name_portuguese = models.CharField(max_length=100)
+    name_english = models.CharField(max_length=100)
+    name_spanish = models.CharField(max_length=100)
+    code_iso3 = models.CharField(max_length=3)
+    trade_bloc = models.ForeignKey(TradeBlocs, on_delete=models.CASCADE)
+
+
+class FederativeUnit(models.Model):
+    name = models.CharField(max_length=100)
+    code = models.CharField(max_length=100)
+    initials = models.CharField(max_length=6)
+
+
+class Transportation(models.Model):
+    name = models.CharField(max_length=100)
+    code = models.CharField(max_length=100)
+
+
+class Urf(models.Model):
+    # URF = "Federative Regional Unit", or "Unidade regional federativa" in pt
+    name = models.CharField(max_length=100)
+    code = models.CharField(max_length=100)
+
+
 class AssetFacts(models.Model):
     date = models.DateField(default=datetime.now)
     name = models.CharField(max_length=100)
     ncm = models.ForeignKey(NCM, on_delete=models.CASCADE)
-    port = models.CharField(max_length=100)
-    port_code = models.CharField(max_length=100)
-    transportation = models.CharField(max_length=100)
+    urf = models.ForeignKey(Urf, on_delete=models.CASCADE, null=True)
+    transportation = models.ForeignKey(
+        Transportation, on_delete=models.CASCADE)
     registries = models.BigIntegerField()
     net_kilogram = models.FloatField()
     fob_value = models.FloatField()
@@ -92,10 +124,12 @@ class AssetFacts(models.Model):
 
 
 class AssetImportFacts(AssetFacts):
-    destination_fed_unit = models.CharField(max_length=100)
-    origin_country = models.CharField(max_length=100)
+    destination_fed_unit = models.ForeignKey(
+        FederativeUnit, on_delete=models.CASCADE)
+    origin_country = models.ForeignKey(Country, on_delete=models.CASCADE)
 
 
 class AssetExportFacts(AssetFacts):
-    origin_fed_unit = models.CharField(max_length=100)
-    destination_country = models.CharField(max_length=100)
+    origin_fed_unit = models.ForeignKey(
+        FederativeUnit, on_delete=models.CASCADE)
+    destination_country = models.ForeignKey(Country, on_delete=models.CASCADE)
