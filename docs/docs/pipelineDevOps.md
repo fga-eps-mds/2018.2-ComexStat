@@ -62,6 +62,55 @@ O Code Climate funciona de maneira muito simples, após o cadastro do projeto p�
 ou privado do Github na plataforma ele vai iniciar a verificá-lo até gerar um nota
 que vai de zero a quatro.
 
+## Pipeline
+
+O ambiente de homologação será atualizado a cada sprint e estará disponível apenas
+para desenvolvedores e cliente, já o de produção será atualizado a cada duas sprints
+e está disponível além do cliente para os usuários.
+
+Nossos serviços estão separados em três parte: back-end, front-end e database.
+
+Foi separado em quatro fases a entrega de artefatos, onde, no ambiente de homologação
+deverá ser entregue pequenas funcionalidades já para o ambiente de produção será
+criada uma release para fazer o deploy das funcionalidades do software.
+
+### Fase 1
+
+![Fase 1](https://fga-eps-mds.github.io/2018.2-ComexStat/img/Diagrama-Pipeline1.png)
+
+Na primeira fase será executada a política de branches, de commits e os teste para a
+construção do código, onde o time terá que seguir os padrões que foi proposto para
+assim criar uma versão com funcionalidades.
+
+### Fase 2
+
+![Fase 2](https://fga-eps-mds.github.io/2018.2-ComexStat/img/Diagrama-Pipeline2.png)
+
+Na segunda fase a nova versão que foi publicada é processada pela ferramenta que vai
+realizar todos os testes unitários, os que já foram implementados e os novos, logo
+após é feito a build de teste. Em caso de erros a versão voltará para primeira fase.
+
+### Fase 3
+
+![Fase 3](https://fga-eps-mds.github.io/2018.2-ComexStat/img/Diagrama-Pipeline3.png)
+
+Nessa fase a versão está mais estável, se a nova funcionalidade estiver funcionando
+como desejado e devidamente testada então um pull request poderá ser solicitado para
+ser feito a união da nova funcionalidade com a versão em produção da aplicação.
+
+Será feito a análise manual do pull request, se a pipeline estiver operando corretamente
+ela segue para produção, caso contrário ela volta pra fase anterior.
+
+
+### Fase 4
+
+![Fase 4](https://fga-eps-mds.github.io/2018.2-ComexStat/img/Diagrama-Pipeline4.png)
+
+Na quarta versão a versão já foi aprovada e é colocada na linha de produção onde
+as ferramentas de CI e CD fará o deploy da nova funcionalidade, no qual executará
+a entrega automática da mesma.
+
+
 ## Processo do Pipeline DevOps
 
 ![Pipeline DevOps](https://fga-eps-mds.github.io/2018.2-ComexStat/img/pipelineDevops.png)
