@@ -42,8 +42,27 @@ desenvolvimento do software. É onde o cliente aceita ou não as funcionalidades
 * Produção - O produto é onde se encontra a versão mais estável do software, em que estará
 dispinível a versão final do produto para os usuários.
 
+## Teste e Build
 
-## Pipeline DevOps
+Planejamos utilizar a ferramenta Travis-CI para a realização de testes unitários no
+projeto.
+
+O Travis possui integração com o Github, uma vez configurado, a cada commit um build
+é lançado pelo Travis de forma automática. Também conhecido como integração contínua,
+o processo de executar o build e testes é feita a cada commit.
+
+Para avaliar a manutenibilidade do código iremos utilizar o Code Climate para analisar
+estaticamente a qualidade do código, onde será visto a complexidade ciclomática e a
+duplicidade de código.
+
+O Code Climate foi criado por Bryan Helmkamp, bastante conhecido por contribuições
+em vários projetos open source.
+
+O Code Climate funciona de maneira muito simples, após o cadastro do projeto público
+ou privado do Github na plataforma ele vai iniciar a verificá-lo até gerar um nota
+que vai de zero a quatro.
+
+## Processo do Pipeline DevOps
 
 ![Pipeline DevOps](https://fga-eps-mds.github.io/2018.2-ComexStat/img/pipelineDevops.png)
 
