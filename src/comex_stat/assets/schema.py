@@ -4,17 +4,21 @@ from graphene_django.types import DjangoObjectType
 
 from comex_stat.assets.models import AssetImportFacts, AssetExportFacts, NCM
 
+
 class AssetImportFactsType(DjangoObjectType):
     class Meta:
         model = AssetImportFacts
+
 
 class AssetExportFactsType(DjangoObjectType):
     class Meta:
         model = AssetExportFacts
 
+
 class NCMType(DjangoObjectType):
     class Meta:
         model = NCM
+
 
 class Query(object):
     all_import = graphene.List(AssetImportFactsType)
