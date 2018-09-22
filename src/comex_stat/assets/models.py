@@ -94,10 +94,8 @@ class AssetFacts(models.Model):
 class AssetImportFacts(AssetFacts):
     destination_fed_unit = models.CharField(max_length=100)
     origin_country = models.CharField(max_length=100)
-    pass
 
 
 class AssetExportFacts(AssetFacts):
     origin_fed_unit = models.CharField(max_length=100)
     destination_country = models.CharField(max_length=100)
-    pass
