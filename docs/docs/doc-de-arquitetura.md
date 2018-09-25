@@ -68,8 +68,7 @@ Na prática, esse processo se dará por meio do usuário fazendo requisições p
        O sistema deverá ser intuitivo e de simples uso, seguindo uma sequência lógica de ações possíveis, definida por Pesquisa ->Filtros -> Agrupamentos -> Visualização de dados -> Compartilhamento dos resultados. Dessa forma, o usuário não deverá precisar de tutoriais ou treinamentos extras para usufruir dos recursos disponibilizados.
 
  * **Ferramentas de Desenvolvimento**
-       O projeto será desenvolvido em Python (versão 3.5.6), usando o framework Django (versão 2.0.3), em conjunto com o Angular 2 que será de uso no front-end e com a utilização da linguagem GraphQL de consultas a banco de dados, através das bibliotecas Graphene e Apollo para comunicação com Django e com o Angular respectivamente.
-
+       O projeto será desenvolvido em Python (versão 3.5.6), usando o framework Django (versão 2.0.3), em conjunto com o Angular 2 que será de uso no front-end e com a utilização da linguagem GraphQL de consultas a banco de dados, no caso do Django através da biblioteca Graphene.
   * **Confiabilidade**
        O sistema terá uma cobertura mínima de testes de 90%, buscando garantir que suas funcionalidades foram suficientemente testadas.
 
@@ -119,7 +118,7 @@ O sistema será desenvolvido usando o framework web Django, com uma forma adapta
   * API em Django.
   * Models do Django como classes de domínios e interface com o banco de dados.
   * Front-end em Angular 2 funcionando como cliente do back-end e fazendo requisições a ele pela interação do usuário ao acessar a aplicação, de tal forma a processar e mostrar de forma apropriada os dados de saída ao mesmo.
-  * GraphQL como interface entre front-end e back-end, tendo a função de fazer a consulta ao banco, e realizando essa comunicação através das bibliotecas Graphene no Django e Apollo no Angular.
+  * GraphQL como interface entre front-end e back-end, tendo a função de fazer a consulta ao banco, cujos resultados serão posteriormente retornados ao front-end se necessário.
 
 Sendo assim, pelo navegador, o usuário acessa diretamente a API, podendo nela fazer diretamente as suas pesquisas e filtragem nos dados do banco através do GraphQL, ou então acessa a aplicação web por meio do front-end em Angular. Neste, um chamado "router" fará a identificação no padrão da URL e irá direcionar o usuário à View apropriada, através da qual o mesmo poderá fazer suas requisições, que serão então passadas para API da forma já descrita. Por fim, os resultados retornados da busca feita são renderizados na View de forma apropriada para a visualização. 
 
