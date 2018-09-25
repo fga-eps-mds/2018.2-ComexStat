@@ -31,7 +31,16 @@ Sendo uma sequência para a descrição geral do produto dada pelo Documento de 
 ***
 O ComexStat será uma aplicação web desenvolvida a partir do framework Django, escrito em Python, em conjunto com o framework Angular 2, que será utilizado no desenvolvimento do front-end, e com a linguagem de consulta a bases de dados GraphQL, que servirá para facilitar os meios de comunicação com o banco de dados, escolhida por sua grande capacidade como linguagem de consulta dentro do contexto de Data Science.
 
-O Django segue o padrão **MVC** de perto, no entanto, ele usa sua própria lógica na implementação. Como o *“Controller”* é manipulado pelo próprio framework e a maior parte do entusiasmo no Django acontece em modelos, templates e views, o Django é frequentemente chamado de framework da MTV. No padrão de desenvolvimento da **MVT**:
+
+O Angular 2, que será utilizado para o front-end, possuí uma arquitetura orientada a componentes como visualizado pelo diagrama abaixo:  
+
+![Diagrama Angular](https://fga-eps-mds.github.io/2018.2-ComexStat/img/diagrama-angular.PNG)
+
+
+Cada componente constrói através de Templates em HTML uma View, na qual é projetado o conteúdo visto pelo usuário. As chamadas Event e Propery Biding são as âncoras que ligam os elementos do Template nas funções do componente (que por sí é formado por várias parcelas de código em TypeScript definindo diversos métodos e elementos visuais, manipulando o conteúdo que é renderizado nas Views), o primeiro tipo conectando eventos e o segundo propriedades. Os serviços por sua vez, que são inseridos através das "Dependency Injections" (dependências de serviços estabelecidas nos componentes), são tarefas que fogem do aspecto da interação entre Templates e Views, como por exemplo uma requisição de dados ao servidor, e por isso ficam fora do mediado pelos componentes, sendo definidos de forma separada para uma melhor modularização e reutilização de código. Por fim, as "Directives" são classes que possuem outras instruções para a renderização das Templates em Views, podendo ser estruturais (definindo adição, remoção ou substituição de elementos a serem renderizados) ou de atributo (podendo definir outros comportamentos para atributos dentro do HTML). Todo esse conjunto forma enfim um Modulo, que ao se agrupar com outros módulos constrói a aplicação em Angular.
+
+
+O Django, que será utilizado no back-end, por sua vez segue o padrão **MVC** de perto, no entanto, ele usa sua própria lógica na implementação. Como o *“Controller”* é manipulado pelo próprio framework e a maior parte do entusiasmo no Django acontece em modelos, templates e views, o Django é frequentemente chamado de framework da MTV. No padrão de desenvolvimento da **MVT**:
 
 **Model**, a camada de acesso a dados. Essa camada contém tudo e qualquer coisa sobre os dados: como acessá-lo, como validá-lo, quais comportamentos ele possui e as relações entre os dados.
 
@@ -41,9 +50,9 @@ O Django segue o padrão **MVC** de perto, no entanto, ele usa sua própria lóg
 
 Desta forma, a *view* do Django é mais parecida com o *controller* no MVC, e a *view* do MVC é na verdade um *Template* no Django.
 
-Dito isso, o sistema será desenvolvido não pela utilização da arquitetura MVT do Django de forma pura, mas pela denotação da adaptação citada, dando ao projeto uma nova face arquitetural, na qual as models do Django continuarão fazendo seu papel de classes de domínios e interface com o banco de dados, o Angular 2 será utilizado para construção front-end, substituindo por conseguinte a função que seria feita pelas templates do Django. E por fim, o GraphQL, no caso do Django através da biblioteca Graphene, será a linguagem e ferramenta utilizada para realizar as consultas ao banco, ficando como interface entre o back-end e o front-end. 
+Dito isso, o sistema será desenvolvido não pela utilização da arquitetura MVT do Django de forma pura, mas pela adaptação já denotada com a utilização do Angular, dando ao projeto uma nova face arquitetural, na qual as models do Django continuarão fazendo seu papel de classes de domínios e interface com o banco de dados, o Angular 2 será utilizado para construção front-end, substituindo por conseguinte a função que seria feita pelas templates do Django. E por fim, o GraphQL, no caso do Django através da biblioteca Graphene, será a linguagem e ferramenta utilizada para realizar as consultas ao banco, ficando como interface entre o back-end e o front-end. 
 
-Na prática esse processo se dará por meio do usuário fazendo requisições por meio do front-end em Angular, que enviará uma ordem de pesquisa para a API através de um query parametrizado. Logo então, através dos métodos de pesquisa e filtragem definidos no Schema e pela utilização dos modelos de dados definidos nas models, será feita com o GraphQL uma consulta ao banco de dados (construído em SQLite). Após isso, o front-end receberá em formato JSON uma resposta com os resultados da pesquisa, que serão enfim mostrados ao usuário pelos Components do Angular. Isso tudo pode ser visualizado no seguinte diagrama:
+Na prática, esse processo se dará por meio do usuário fazendo requisições por meio do front-end em Angular, que enviará uma ordem de pesquisa para a API através de um query parametrizado. Logo então, através dos métodos de pesquisa e filtragem definidos no Schema e pela utilização dos modelos de dados definidos nas models, será feita com o GraphQL uma consulta ao banco de dados (construído em SQLite). Após isso, o front-end receberá em formato JSON uma resposta com os resultados da pesquisa, que serão enfim mostrados ao usuário pelos Components do Angular. Isso tudo pode ser visualizado no seguinte diagrama:
 
 
 ![Diagrama de arquitetura](https://fga-eps-mds.github.io/2018.2-ComexStat/img/diagrama-arquitetura.png)
