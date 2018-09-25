@@ -41,10 +41,12 @@ O Django segue o padrão **MVC** de perto, no entanto, ele usa sua própria lóg
 
 Desta forma, a *view* do Django é mais parecida com o *controller* no MVC, e a *view* do MVC é na verdade um *Template* no Django.
 
-![arquitetura-mvt](https://www.javatpoint.com/django/images/django-mvt-based-control-flow.png)
+Dito isso, o sistema será desenvolvido não pela utilização da arquitetura MVT do Django de forma pura, mas pela denotação da adaptação citada, dando ao projeto uma nova face arquitetural, na qual as models do Django continuarão fazendo seu papel de classes de domínios e interface com o banco de dados, o Angular 2 será utilizado para construção front-end, substituindo por conseguinte a função que seria feita pelas templates do Django. E por fim, o GraphQL, no caso do Django através da biblioteca Graphene, será a linguagem e ferramenta utilizada para realizar as consultas ao banco, ficando como interface entre o back-end e o front-end. 
 
-Dito isso, o sistema será desenvolvido não pela utilização da arquitetura MVT do Django de forma pura, mas pela denotação da adaptação citada, dando ao projeto uma nova face arquitetural, na qual as models do Django continuarão fazendo seu papel de classes de domínios e interface com o banco de dados, o Angular 2 será utilizado para construção front-end, substituindo por conseguinte a função que seria feita pelas templates do Django. E por fim, o GraphQL, através das bibliotecas Graphene (para comunicação com o Django) e Apollo (para comunicação com o Angular), será a linguagem e ferramenta utilizada para realizar as consultas ao banco, ficando como interface entre o back-end e o front-end.
+Na prática esse processo se dará por meio do usuário fazendo requisições por meio do front-end em Angular, que enviará uma ordem de pesquisa para a API através de um query parametrizado. Logo então, através dos métodos de pesquisa e filtragem definidos no Schema e pela utilização dos modelos de dados definidos nas models, será feita com o GraphQL uma consulta ao banco de dados (construído em SQLite). Após isso, o front-end receberá em formato JSON uma resposta com os resultados da pesquisa, que serão enfim mostrados ao usuário pelos Components do Angular. Isso tudo pode ser visualizado no seguinte diagrama:
 
+
+![Diagrama de arquitetura](https://fga-eps-mds.github.io/2018.2-ComexStat/img/diagrama-arquitetura.png)
 
 
 ***
