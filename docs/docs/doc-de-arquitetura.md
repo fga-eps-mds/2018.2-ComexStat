@@ -121,7 +121,7 @@ O sistema será desenvolvido usando o framework web Django, com uma forma adapta
   * Front-end em Angular 2 funcionando como cliente do back-end e fazendo requisições a ele pela interação do usuário ao acessar a aplicação, de tal forma a processar e mostrar de forma apropriada os dados de saída ao mesmo.
   * GraphQL como interface entre front-end e back-end, tendo a função de fazer a consulta ao banco, e realizando essa comunicação através das bibliotecas Graphene no Django e Apollo no Angular.
 
-Sendo assim, pelo navegador, o usuário acessa um endereço web que pode ser digitado diretamente ou acessado pelo front-end, o processador de URL's do Django processa um padrão na URL e destina à view e método que descreve a ação a ser feita. E por fim, seja por meio da API de forma direta ou pelo front-end em Angular da aplicação web, o usuário recebe o retorno apropriado de sua requisição, cuja consulta terá sido feita por meio do GraphQL com as Models do Django.
+Sendo assim, pelo navegador, o usuário acessa diretamente a API, podendo nela fazer diretamente as suas pesquisas e filtragem nos dados do banco através do GraphQL, ou então acessa a aplicação web por meio do front-end em Angular. Neste, um chamado "router" fará a identificação no padrão da URL e irá direcionar o usuário à View apropriada, através da qual o mesmo poderá fazer suas requisições, que serão então passadas para API da forma já descrita. Por fim, os resultados retornados da busca feita são renderizados na View de forma apropriada para a visualização. 
 
 ***
 ## 6. Visão da Implementação
@@ -140,7 +140,7 @@ Sendo assim, pelo navegador, o usuário acessa um endereço web que pode ser dig
 ***
 A arquitetura adotada, utilizada como adaptação do MVT, oferece uma organização das camadas da aplicação, possibilitando aos desenvolvedores uma fácil manutenção, além de vir de um padrão de arquitetura altamente confiável e muito utilizado. Além disso, GraphQL é mais eficiente que outras linguagens na função que cumpre, já que ele não é vinculado a nenhum banco de dados, apenas realisa a consulta retornando o requisitado.
 
-Outro ponto a ser ressaltado é o uso das ferramentas citadas, que buscam pelo desenvolvimento de um código de fácil manutenibilidade, para que o sistema possa ser facilmente mantido e evoluído, mesmo após sua finalização, quando ele será passado para os cuidados de outros profissionais.
+Outro ponto a ser ressaltado, é o uso das ferramentas citadas em busca pelo desenvolvimento de um código de fácil manutenibilidade, para que o sistema possa ser facilmente mantido e evoluído, mesmo após sua finalização, quando ele será passado para os cuidados de outros profissionais.
 
 
 ## Histórico da Revisão
