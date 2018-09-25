@@ -32,7 +32,7 @@ Sendo uma sequência para a descrição geral do produto dada pelo Documento de 
 O ComexStat será uma aplicação web desenvolvida a partir do framework Django, escrito em Python, em conjunto com o framework Angular 2, que será utilizado no desenvolvimento do front-end, e com a linguagem de consulta a bases de dados GraphQL, que servirá para facilitar os meios de comunicação com o banco de dados, escolhida por sua grande capacidade como linguagem de consulta dentro do contexto de Data Science.
 
 
-O Angular 2, que será utilizado para o front-end, possuí uma arquitetura orientada a componentes como visualizado pelo diagrama abaixo:  
+O Angular 2 possuí uma arquitetura orientada a componentes como visualizado pelo diagrama abaixo:  
 
 ![Diagrama Angular](https://fga-eps-mds.github.io/2018.2-ComexStat/img/diagrama-angular.PNG)
 
@@ -127,7 +127,7 @@ Sendo assim, pelo navegador, o usuário acessa diretamente a API, podendo nela f
 ***
 
 ### 6.1 Diagrama do banco de dados
-![Diagrama banco](https://fga-eps-mds.github.io/2018.2-ComexStat/img/ComexStat_DataBase.png)
+![Diagrama banco](https://fga-eps-mds.github.io/2018.2-ComexStat/img/ComexStat_DataBasehtml.png)
 
 ### 6.2 Diagramas de classes, por camadas
 
@@ -156,3 +156,4 @@ Outro ponto a ser ressaltado, é o uso das ferramentas citadas em busca pelo des
 |13/09/2018|0.7.0|Adição do diagrama de classe|André Lucas|
 |13/09/2018|0.8.0|Adição do diagrama de banco de dados|Marcos Nery|
 |14/09/2018|1.0.0|Revisões gerais para primeira versão do documento|Marcos Nery e Rogério Júnior|
+|25/09/2018|2.0.0|Refatoração da arquitetura|Marcos Nery|
