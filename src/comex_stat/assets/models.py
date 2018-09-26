@@ -2,78 +2,91 @@ from django.db import models
 from datetime import datetime
 
 
+
 class SH(models.Model):
-    chapter_code = models.CharField(max_length=250)
-    chapter_name_pt = models.CharField(max_length=250)
-    chapter_name_en = models.CharField(max_length=250)
-    chapter_name_es = models.CharField(max_length=250)
-    position_code = models.CharField(max_length=250)
-    position_name_pt = models.CharField(max_length=250)
-    position_name_en = models.CharField(max_length=250)
-    position_name_es = models.CharField(max_length=250)
-    subposition_code = models.CharField(max_length=250)
-    subposition_name_pt = models.CharField(max_length=250)
-    subposition_name_en = models.CharField(max_length=250)
-    subposition_name_es = models.CharField(max_length=250)
-    section_code = models.CharField(max_length=250)
-    section_name_pt = models.CharField(max_length=250)
-    section_name_en = models.CharField(max_length=250)
-    section_name_es = models.CharField(max_length=250)
+    '''
+        SH stands for Sistema Harmónico
+    '''
+    chapter_code = models.CharField(max_length=2,blank=False)
+    chapter_name_pt = models.CharField(max_length=250,blank=False)
+    chapter_name_en = models.CharField(max_length=250,blank=False)
+    chapter_name_es = models.CharField(max_length=250,blank=False)
+    position_code = models.CharField(max_length=4,blank=False)
+    position_name_pt = models.CharField(max_length=250,blank=False)
+    position_name_en = models.CharField(max_length=250,blank=False)
+    position_name_es = models.CharField(max_length=250,blank=False)
+    subposition_code = models.CharField(max_length=6,blank=False)
+    subposition_name_pt = models.CharField(max_length=250,blank=False)
+    subposition_name_en = models.CharField(max_length=250,blank=False)
+    subposition_name_es = models.CharField(max_length=250,blank=False)
+    section_code = models.CharField(max_length=2,blank=False)
+    section_name_pt = models.CharField(max_length=250,blank=False)
+    section_name_en = models.CharField(max_length=250,blank=False)
+    section_name_es = models.CharField(max_length=250,blank=False)
 
 
 class CGCE(models.Model):
-    level1_code = models.CharField(max_length=250)
-    level1_name_pt = models.CharField(max_length=250)
-    level1_name_en = models.CharField(max_length=250)
-    level1_name_es = models.CharField(max_length=250)
-    level2_code = models.CharField(max_length=250)
-    level2_name_pt = models.CharField(max_length=250)
-    level2_name_en = models.CharField(max_length=250)
-    level2_name_es = models.CharField(max_length=250)
-    level3_code = models.CharField(max_length=250)
-    level3_name_pt = models.CharField(max_length=250)
-    level3_name_en = models.CharField(max_length=250)
-    level3_name_es = models.CharField(max_length=250)
+    '''
+        CGCE stands for Classificação por Grandes Categorias Econômicas
+    '''
+    level1_code = models.CharField(max_length=1,blank=False)
+    level1_name_pt = models.CharField(max_length=250,blank=False)
+    level1_name_en = models.CharField(max_length=250,blank=False)
+    level1_name_es = models.CharField(max_length=250,blank=False)
+    level2_code = models.CharField(max_length=2,blank=False)
+    level2_name_pt = models.CharField(max_length=250,blank=False)
+    level2_name_en = models.CharField(max_length=250,blank=False)
+    level2_name_es = models.CharField(max_length=250,blank=False)
+    level3_code = models.CharField(max_length=3,blank=False)
+    level3_name_pt = models.CharField(max_length=250,blank=False)
+    level3_name_en = models.CharField(max_length=250,blank=False)
+    level3_name_es = models.CharField(max_length=250,blank=False)
 
 
 class CUCI(models.Model):
-    item_code = models.CharField(max_length=250)
-    item_name_pt = models.CharField(max_length=250)
-    item_name_en = models.CharField(max_length=250)
-    item_name_es = models.CharField(max_length=250)
-    subitem_code = models.CharField(max_length=250)
-    subitem_name_pt = models.CharField(max_length=250)
-    subitem_name_en = models.CharField(max_length=250)
-    subitem_name_es = models.CharField(max_length=250)
-    position_code = models.CharField(max_length=250)
-    position_name_pt = models.CharField(max_length=250)
-    position_name_en = models.CharField(max_length=250)
-    position_name_es = models.CharField(max_length=250)
-    chapter_code = models.CharField(max_length=250)
-    chapter_name_pt = models.CharField(max_length=250)
-    chapter_name_en = models.CharField(max_length=250)
-    chapter_name_es = models.CharField(max_length=250)
-    section_code = models.CharField(max_length=250)  # Section from NCM
-    section_name_pt = models.CharField(max_length=250)
-    section_name_en = models.CharField(max_length=250)
-    section_name_es = models.CharField(max_length=250)
+    '''
+        CUCI stands for Classificação Uniforme do Comércio Internacional
+    '''
+    item_code = models.CharField(max_length=5,blank=False)
+    item_name_pt = models.CharField(max_length=250,blank=False)
+    item_name_en = models.CharField(max_length=250,blank=False)
+    item_name_es = models.CharField(max_length=250,blank=False)
+    subitem_code = models.CharField(max_length=4,blank=False)
+    subitem_name_pt = models.CharField(max_length=250,blank=False)
+    subitem_name_en = models.CharField(max_length=250,blank=False)
+    subitem_name_es = models.CharField(max_length=250,blank=False)
+    position_code = models.CharField(max_length=3,blank=False)
+    position_name_pt = models.CharField(max_length=250,blank=False)
+    position_name_en = models.CharField(max_length=250,blank=False)
+    position_name_es = models.CharField(max_length=250,blank=False)
+    chapter_code = models.CharField(max_length=2,blank=False)
+    chapter_name_pt = models.CharField(max_length=250,blank=False)
+    chapter_name_en = models.CharField(max_length=250,blank=False)
+    chapter_name_es = models.CharField(max_length=250,blank=False)
+    section_code = models.CharField(max_length=1,blank=False)
+    section_name_pt = models.CharField(max_length=250,blank=False)
+    section_name_en = models.CharField(max_length=250,blank=False)
+    section_name_es = models.CharField(max_length=250,blank=False)
 
 
 class NCM(models.Model):
-    ncm_code = models.CharField(max_length=250)
-    ncm_name_pt = models.CharField(max_length=100)
-    ncm_name_en = models.CharField(max_length=100)
-    ncm_name_es = models.CharField(max_length=100)
-    statistic_unit_code = models.CharField(max_length=100)
-    ppe_code = models.CharField(max_length=100)
-    ppi_code = models.CharField(max_length=100)
-    aggregate_factor_code = models.CharField(max_length=100)
-    cuci = models.ForeignKey(CUCI, on_delete=models.CASCADE)
-    cgce = models.ForeignKey(CGCE, on_delete=models.CASCADE)
-    sh = models.ForeignKey(SH, on_delete=models.CASCADE)
-    isic4_code = models.CharField(max_length=100)
-    exportation_subset = models.CharField(max_length=100)
-    siit_code = models.CharField(max_length=100)
+    '''
+        NCM stands for Nomenclatura Comum do Mercosul
+    '''
+    ncm_code = models.CharField(max_length=8,blank=False)
+    ncm_name_pt = models.CharField(max_length=250,blank=False)
+    ncm_name_en = models.CharField(max_length=250,blank=False)
+    ncm_name_es = models.CharField(max_length=250,blank=False)
+    statistic_unit_code = models.CharField(max_length=2,blank=False)
+    ppe_code = models.CharField(max_length=4,blank=False,verbose_name="Pauta de Produtos Exportados")
+    ppi_code = models.CharField(max_length=4,blank=False,verbose_name="Pauta de Produtos Importados")
+    aggregate_factor_code = models.CharField(max_length=1,blank=False)
+    cuci = models.ForeignKey(CUCI, on_delete=models.CASCADE,verbose_name="Classificação Uniforme do Comércio Internacional")
+    cgce = models.ForeignKey(CGCE, on_delete=models.CASCADE,verbose_name="Classificação por Grandes Categorias Econômicas")
+    sh = models.ForeignKey(SH, on_delete=models.CASCADE,verbose_name="Sistema Harmónico")
+    isic4_code = models.CharField(max_length=2,blank=False,verbose_name="International Standard Industrial Classification (Revision 4)")
+    exportation_subset = models.CharField(max_length=4,blank=False)
+    siit_code = models.CharField(max_length=4,blank=False,verbose_name="Setores Industriais por Intensidade Tecnológica")
 
 
 class TradeBlocs(models.Model):
@@ -103,7 +116,6 @@ class Transportation(models.Model):
 
 
 class Urf(models.Model):
-    # URF = "Federative Regional Unit", or "Unidade regional federativa" in pt
     name = models.CharField(max_length=100)
     code = models.CharField(max_length=100)
 
