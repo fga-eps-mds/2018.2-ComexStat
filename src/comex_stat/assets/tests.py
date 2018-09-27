@@ -1,5 +1,4 @@
 from django.test import TestCase
-from datetime import datetime
 from comex_stat.assets.models import (AssetImportFacts, AssetExportFacts,
                                       TradeBlocs, Country, FederativeUnit,
                                       Transportation, Urf, NCM, CUCI, CGCE, SH)
@@ -130,7 +129,82 @@ class AssetExportFactsTest(TestCase):
             destination_country=self.country
         )
 
-    def test_one_to_one_relation(self):
+        self.AssetImportFacts = AssetImportFacts.objects.create(
+            date="2018-09-22",
+            name="Texto",
+            ncm=self.ncm,
+            urf=self.urf,
+            transportation=self.transportation,
+            registries=1,
+            net_kilogram=1,
+            fob_value=191,
+            destination_fed_unit=self.federativeUnit,
+            origin_country=self.country
+        )
+
+    def test_instaced_import(self):
+        """
+            This will test if the object are being instaced
+        """
+        self.assertIsNotNone(self.AssetImportFacts)
+
+    def test_instaced_export(self):
+        """
+            This will test if the object are being instaced
+        """
+        self.assertIsNotNone(self.AssetExportFacts)
+
+    def test_instaced_country(self):
+        """
+            This will test if the object are being instaced
+        """
+        self.assertIsNotNone(self.country)
+
+    def test_instaced_trade_blocks(self):
+        """
+            This will test if the object are being instaced
+        """
+        self.assertIsNotNone(self.tradeBlocs)
+
+    def test_instaced_federative_unit(self):
+        """
+            This will test if the object are being instaced
+        """
+        self.assertIsNotNone(self.federativeUnit)
+
+    def test_instaced_transportation(self):
+        """
+            This will test if the object are being instaced
+        """
+        self.assertIsNotNone(self.transportation)
+
+    def test_instaced_urf(self):
+        """
+            This will test if the object are being instaced
+        """
+        self.assertIsNotNone(self.urf)
+
+    def test_import_facts_relations(self):
+        """
+            This method will test if the import relations are beeing linked
+            as they should
+        """
+
+        self.assertIs(self.ncm, self.AssetImportFacts.ncm)
+        self.assertIs(self.urf, self.AssetImportFacts.urf)
+        self.assertIs(self.transportation,
+                      self.AssetImportFacts.transportation)
+        self.assertIs(self.federativeUnit, self.
+                      AssetImportFacts.destination_fed_unit)
+        self.assertIs(self.country, self.
+                      AssetImportFacts.origin_country)
+
+    def test_export_facts_relations(self):
+        """
+            This method will test if the export relations are beeing linked
+            as they should
+        """
+
         self.assertIs(self.ncm, self.AssetExportFacts.ncm)
         self.assertIs(self.urf, self.AssetExportFacts.urf)
         self.assertIs(self.transportation,
@@ -139,7 +213,121 @@ class AssetExportFactsTest(TestCase):
                       AssetExportFacts.origin_fed_unit)
         self.assertIs(self.country, self.
                       AssetExportFacts.destination_country)
-        self.assertIs(self.cuci, self.ncm.cuci)
-        self.assertIs(self.cgce, self.ncm.cgce)
-        self.assertIs(self.sh, self.ncm.sh)
+
+    def test_country_relations(self):
+        """
+            This method will test if the country relations are beeing linked
+            as they should
+        """
         self.assertIs(self.tradeBlocs, self.country.trade_bloc)
+
+    def test_other_cuci_relation(self):
+        """
+            This method will test if the cuci relation are beeing
+            linked as they should
+        """
+        self.assertIs(self.cuci, self.ncm.cuci)
+
+    def test_other_cgce_relation(self):
+        """
+            This method will test if cgce relations are beeing
+            linked as they should
+        """
+        self.assertIs(self.cgce, self.ncm.cgce)
+
+    def test_other_sh_relation(self):
+        """
+            This method will test sh relations are beeing
+            linked as they should
+        """
+        self.assertIs(self.sh, self.ncm.sh)
+
+    def test_cascade_delete_ncm_import(self):
+        """
+          This will test the deletion cascade
+        """
+        self.ncm.delete()
+
+        with self.assertRaises(AssetImportFacts.DoesNotExist):
+            AssetImportFacts.objects.get()
+
+    def test_cascade_delete_urf_import(self):
+        """
+          This will test the deletion cascade
+        """
+        self.urf.delete()
+
+        with self.assertRaises(AssetImportFacts.DoesNotExist):
+            AssetImportFacts.objects.get()
+
+    def test_cascade_delete_transportation_import(self):
+        """
+          This will test the deletion cascade
+        """
+        self.transportation.delete()
+
+        with self.assertRaises(AssetImportFacts.DoesNotExist):
+            AssetImportFacts.objects.get()
+
+    def test_cascade_delete_federative_unit_import(self):
+        """
+          This will test the deletion cascade
+        """
+        self.federativeUnit.delete()
+
+        with self.assertRaises(AssetImportFacts.DoesNotExist):
+            AssetImportFacts.objects.get()
+
+    def test_cascade_delete_country_import(self):
+        """
+          This will test the deletion cascade
+        """
+        self.country.delete()
+
+        with self.assertRaises(AssetImportFacts.DoesNotExist):
+            AssetImportFacts.objects.get()
+
+    def test_cascade_delete_ncm_export(self):
+        """
+          This will test the deletion cascade
+        """
+        self.ncm.delete()
+
+        with self.assertRaises(AssetExportFacts.DoesNotExist):
+            AssetExportFacts.objects.get()
+
+    def test_cascade_delete_urf_export(self):
+        """
+          This will test the deletion cascade
+        """
+        self.urf.delete()
+
+        with self.assertRaises(AssetExportFacts.DoesNotExist):
+            AssetExportFacts.objects.get()
+
+    def test_cascade_delete_transportation_export(self):
+        """
+          This will test the deletion cascade
+        """
+        self.transportation.delete()
+
+        with self.assertRaises(AssetExportFacts.DoesNotExist):
+            AssetExportFacts.objects.get()
+
+    def test_cascade_delete_federative_unit_export(self):
+        """
+          This will test the deletion cascade
+        """
+        self.federativeUnit.delete()
+
+        with self.assertRaises(AssetExportFacts.DoesNotExist):
+            AssetExportFacts.objects.get()
+
+    def test_cascade_delete_country_export(self):
+        """
+          This will test the deletion cascade
+        """
+        self.country.delete()
+
+        with self.assertRaises(AssetExportFacts.DoesNotExist):
+            AssetExportFacts.objects.get()
