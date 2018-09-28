@@ -1,7 +1,6 @@
 from django.db import models
 from django.core.validators import RegexValidator
 from datetime import datetime
-from django.core.exceptions import ValidationError
 validate_only_numbers = RegexValidator(regex="^[0-9]+$",
                                        message="Somente números são permitidos"
                                        )

@@ -210,7 +210,7 @@ class NCMTests(TestCase):
 
         with self.assertRaises(NCM.DoesNotExist):
             NCM.objects.get()
-    
+
     def test_cascade_delete_cgce(self):
         self.create_ncm(ncm_code="123", ppe_code="32",
                         ppi_code="28",
