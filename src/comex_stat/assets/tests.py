@@ -199,3 +199,36 @@ class NCMTests(TestCase):
         self.assertTrue('siit_code' in cm.exception.message_dict and
                         "Somente números são permitidos" in
                         cm.exception.message_dict['siit_code'])
+
+    def test_cascade_delete_sh(self):
+        self.create_ncm(ncm_code="123", ppe_code="32",
+                        ppi_code="28",
+                        statistic_unit_code="11",
+                        aggregate_factor_code="2",
+                        isic4_code="21", siit_code="4")
+        self.sh.delete()
+
+        with self.assertRaises(NCM.DoesNotExist):
+            NCM.objects.get()
+    
+    def test_cascade_delete_cgce(self):
+        self.create_ncm(ncm_code="123", ppe_code="32",
+                        ppi_code="28",
+                        statistic_unit_code="11",
+                        aggregate_factor_code="2",
+                        isic4_code="21", siit_code="4")
+        self.cgce.delete()
+
+        with self.assertRaises(NCM.DoesNotExist):
+            NCM.objects.get()
+
+    def test_cascade_delete_cuci(self):
+        self.create_ncm(ncm_code="123", ppe_code="32",
+                        ppi_code="28",
+                        statistic_unit_code="11",
+                        aggregate_factor_code="2",
+                        isic4_code="21", siit_code="4")
+        self.cuci.delete()
+
+        with self.assertRaises(NCM.DoesNotExist):
+            NCM.objects.get()
