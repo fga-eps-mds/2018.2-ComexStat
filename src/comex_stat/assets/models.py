@@ -1,6 +1,7 @@
 from django.db import models
 from django.core.validators import RegexValidator
 from datetime import datetime
+from django.core.exceptions import ValidationError
 validate_only_numbers = RegexValidator(regex="^[0-9]+$",
                                        message="Somente números são permitidos"
                                        )
@@ -10,6 +11,7 @@ class SH(models.Model):
     '''
         SH stands for Sistema Harmónico
     '''
+
     chapter_code = models.CharField(max_length=2, blank=True,
                                     validators=[validate_only_numbers])
     chapter_name_pt = models.CharField(max_length=250, blank=True)
@@ -96,10 +98,10 @@ class NCM(models.Model):
     statistic_unit_code = models.CharField(max_length=2, blank=False,
                                            validators=[validate_only_numbers])
     ppe_code = models.CharField(max_length=4, blank=False,
-                                verbose_name="Pauta de Produtos Exportados code",
+                                verbose_name="Pauta de Produtos Exportados",
                                 validators=[validate_only_numbers])
     ppi_code = models.CharField(max_length=4, blank=False,
-                                verbose_name="Pauta de Produtos Importados code",
+                                verbose_name="Pauta de Produtos Importados",
                                 validators=[validate_only_numbers])
     aggregate_factor_code = models.CharField(max_length=1, blank=False,
                                              validators=[validate_only_numbers]
@@ -114,7 +116,7 @@ class NCM(models.Model):
                            verbose_name="Sistema Harmónico")
     isic4_code = models.CharField(max_length=2, blank=False,
                                   verbose_name='''International Standard Industrial
-                                               Classification (Revision 4) code''',
+                                               Classification (Revision 4)''',
                                   validators=[validate_only_numbers])
     exportation_subset = models.CharField(max_length=4, blank=False)
     siit_code = models.CharField(max_length=4, blank=False,

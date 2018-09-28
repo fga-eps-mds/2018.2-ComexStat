@@ -1,7 +1,6 @@
 from django.test import TestCase
 from comex_stat.assets.models import CUCI, NCM, SH, CGCE
 from django.core.exceptions import ValidationError
-# Create your tests here.
 
 
 class SHTests(TestCase):
@@ -12,17 +11,23 @@ class SHTests(TestCase):
 
     def test_code_fields_do_not_accept_letters(self):
         """
-            Test if the fields that store codes does not accept letters or
-            special chars in it
+            Test if a validation error occurs when a field that store a code
+            tries to be saved with a letter or special char
         """
-        sh = self.create_sh(chapter_code="a", position_code="4%3",
+        sh = self.create_sh(chapter_code="#", position_code="4%3",
                             subposition_code="1-+=3")
         with self.assertRaises(ValidationError) as cm:
             sh.full_clean()
 
-        self.assertTrue('chapter_code' in cm.exception.message_dict)
-        self.assertTrue('position_code' in cm.exception.message_dict)
-        self.assertTrue('subposition_code' in cm.exception.message_dict)
+        self.assertTrue('chapter_code' in cm.exception.message_dict and
+                        "Somente números são permitidos" in
+                        cm.exception.message_dict['chapter_code'])
+        self.assertTrue('position_code' in cm.exception.message_dict and
+                        "Somente números são permitidos" in
+                        cm.exception.message_dict['position_code'])
+        self.assertTrue('subposition_code' in cm.exception.message_dict and
+                        "Somente números são permitidos" in
+                        cm.exception.message_dict['subposition_code'])
 
 
 class CGCETests(TestCase):
@@ -33,8 +38,8 @@ class CGCETests(TestCase):
 
     def test_code_fields_do_not_accept_letters(self):
         """
-            Test if the fields that store codes does not accept letters or
-            special chars in it
+            Test if a validation error occurs when a field that store a code
+            tries to be saved with a letter or special char
         """
         cgce = self.create_cgce(level1_code="2k",
                                 level2_code="d45",
@@ -42,9 +47,15 @@ class CGCETests(TestCase):
         with self.assertRaises(ValidationError) as cm:
             cgce.full_clean()
 
-        self.assertTrue('level1_code' in cm.exception.message_dict)
-        self.assertTrue('level2_code' in cm.exception.message_dict)
-        self.assertTrue('level3_code' in cm.exception.message_dict)
+        self.assertTrue('level1_code' in cm.exception.message_dict and
+                        "Somente números são permitidos" in
+                        cm.exception.message_dict['level1_code'])
+        self.assertTrue('level2_code' in cm.exception.message_dict and
+                        "Somente números são permitidos" in
+                        cm.exception.message_dict['level2_code'])
+        self.assertTrue('level3_code' in cm.exception.message_dict and
+                        "Somente números são permitidos" in
+                        cm.exception.message_dict['level3_code'])
 
 
 class CUCITests(TestCase):
@@ -57,8 +68,8 @@ class CUCITests(TestCase):
 
     def test_code_fields_do_not_accept_letters(self):
         """
-            Test if the fields that store codes does not accept letters or
-            special chars in it
+            Test if a validation error occurs when a field that store a code
+            tries to be saved with a letter or special char
         """
         cuci = self.create_cuci(item_code="2%",
                                 subitem_code="&*45",
@@ -67,10 +78,18 @@ class CUCITests(TestCase):
         with self.assertRaises(ValidationError) as cm:
             cuci.full_clean()
 
-        self.assertTrue('item_code' in cm.exception.message_dict)
-        self.assertTrue('subitem_code' in cm.exception.message_dict)
-        self.assertTrue('position_code' in cm.exception.message_dict)
-        self.assertTrue('chapter_code' in cm.exception.message_dict)
+        self.assertTrue('item_code' in cm.exception.message_dict and
+                        "Somente números são permitidos" in
+                        cm.exception.message_dict['item_code'])
+        self.assertTrue('subitem_code' in cm.exception.message_dict and
+                        "Somente números são permitidos" in
+                        cm.exception.message_dict['subitem_code'])
+        self.assertTrue('position_code' in cm.exception.message_dict and
+                        "Somente números são permitidos" in
+                        cm.exception.message_dict['position_code'])
+        self.assertTrue('chapter_code' in cm.exception.message_dict and
+                        "Somente números são permitidos" in
+                        cm.exception.message_dict['chapter_code'])
 
 
 class NCMTests(TestCase):
@@ -148,8 +167,8 @@ class NCMTests(TestCase):
 
     def test_code_fields_do_not_accept_letters(self):
         """
-            Test if the fields that store codes does not accept letters or
-            special chars in it
+            Test if a validation error occurs when a field that store a code
+            tries to be saved with a letter or special char
         """
         ncm = self.create_ncm(ncm_code="%321", ppe_code="kd9",
                               ppi_code="2#8",
@@ -159,10 +178,24 @@ class NCMTests(TestCase):
         with self.assertRaises(ValidationError) as cm:
             ncm.full_clean()
 
-        self.assertTrue('ncm_code' in cm.exception.message_dict)
-        self.assertTrue('ppe_code' in cm.exception.message_dict)
-        self.assertTrue('ppi_code' in cm.exception.message_dict)
-        self.assertTrue('statistic_unit_code' in cm.exception.message_dict)
-        self.assertTrue('aggregate_factor_code' in cm.exception.message_dict)
-        self.assertTrue('isic4_code' in cm.exception.message_dict)
-        self.assertTrue('siit_code' in cm.exception.message_dict)
+        self.assertTrue('ncm_code' in cm.exception.message_dict and
+                        "Somente números são permitidos" in
+                        cm.exception.message_dict['ncm_code'])
+        self.assertTrue('ppe_code' in cm.exception.message_dict and
+                        "Somente números são permitidos" in
+                        cm.exception.message_dict['ppe_code'])
+        self.assertTrue('ppi_code' in cm.exception.message_dict and
+                        "Somente números são permitidos" in
+                        cm.exception.message_dict['ppi_code'])
+        self.assertTrue('statistic_unit_code' in cm.exception.message_dict and
+                        "Somente números são permitidos" in
+                        cm.exception.message_dict['statistic_unit_code'])
+        self.assertTrue('aggregate_factor_code' in cm.exception.message_dict
+                        and "Somente números são permitidos" in
+                        cm.exception.message_dict['aggregate_factor_code'])
+        self.assertTrue('isic4_code' in cm.exception.message_dict and
+                        "Somente números são permitidos" in
+                        cm.exception.message_dict['isic4_code'])
+        self.assertTrue('siit_code' in cm.exception.message_dict and
+                        "Somente números são permitidos" in
+                        cm.exception.message_dict['siit_code'])
