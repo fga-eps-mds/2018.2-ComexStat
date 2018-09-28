@@ -71,3 +71,98 @@ class CUCITests(TestCase):
         self.assertTrue('subitem_code' in cm.exception.message_dict)
         self.assertTrue('position_code' in cm.exception.message_dict)
         self.assertTrue('chapter_code' in cm.exception.message_dict)
+
+
+class NCMTests(TestCase):
+
+    def setUp(self):
+        self.sh = SH.objects.create(
+            chapter_code="32",
+            chapter_name_pt="test",
+            chapter_name_en="test",
+            chapter_name_es="test",
+            position_code="3215",
+            position_name_pt="test",
+            position_name_en="test",
+            position_name_es="test",
+            subposition_code="321574",
+            subposition_name_pt="test",
+            subposition_name_en="test",
+            subposition_name_es="test",
+            section_code="IV",
+            section_name_pt="test",
+            section_name_en="test",
+            section_name_es="test"
+        )
+
+        self.cgce = CGCE.objects.create(
+            level1_code="2",
+            level1_name_pt="test",
+            level1_name_en="test",
+            level1_name_es="test",
+            level2_code="23",
+            level2_name_pt="test",
+            level2_name_en="test",
+            level2_name_es="test",
+            level3_code="235",
+            level3_name_pt="test",
+            level3_name_en="test",
+            level3_name_es="test"
+        )
+
+        self.cuci = CUCI.objects.create(
+            item_code="12345",
+            item_name_pt="test",
+            item_name_en="test",
+            item_name_es="test",
+            subitem_code="1234",
+            subitem_name_pt="test",
+            subitem_name_en="test",
+            subitem_name_es="test",
+            position_code="123",
+            position_name_pt="test",
+            position_name_en="test",
+            position_name_es="test",
+            chapter_code="12",
+            chapter_name_pt="test",
+            chapter_name_en="test",
+            chapter_name_es="test",
+            section_code="XX",
+            section_name_pt="test",
+            section_name_en="test",
+            section_name_es="test"
+        )
+
+    def create_ncm(self, ncm_code, ppe_code,
+                   ppi_code, statistic_unit_code,
+                   aggregate_factor_code,
+                   isic4_code, siit_code):
+        return NCM.objects.create(ncm_code=ncm_code, ppe_code=ppe_code,
+                                  ppi_code=ppi_code,
+                                  statistic_unit_code=statistic_unit_code,
+                                  aggregate_factor_code=aggregate_factor_code,
+                                  isic4_code=isic4_code, siit_code=siit_code,
+                                  sh=self.sh, cgce=self.cgce, cuci=self.cuci,
+                                  ncm_name_pt="test", ncm_name_en="test",
+                                  ncm_name_es="test", exportation_subset="2")
+
+    def test_code_fields_do_not_accept_letters(self):
+        """
+            Test if the fields that store codes does not accept letters or
+            special chars in it
+        """
+        ncm = self.create_ncm(ncm_code="%321", ppe_code="kd9",
+                              ppi_code="2#8",
+                              statistic_unit_code="#@!9",
+                              aggregate_factor_code="test",
+                              isic4_code="$'od", siit_code="sadc")
+        with self.assertRaises(ValidationError) as cm:
+            ncm.full_clean()
+
+        self.assertTrue('ncm_code' in cm.exception.message_dict)
+        self.assertTrue('ppe_code' in cm.exception.message_dict)
+        self.assertTrue('ppi_code' in cm.exception.message_dict)
+        self.assertTrue('statistic_unit_code' in cm.exception.message_dict)
+        self.assertTrue('aggregate_factor_code' in cm.exception.message_dict)
+        self.assertTrue('isic4_code' in cm.exception.message_dict)
+        self.assertTrue('siit_code' in cm.exception.message_dict)

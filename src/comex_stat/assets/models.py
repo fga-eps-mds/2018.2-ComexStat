@@ -25,7 +25,8 @@ class SH(models.Model):
     subposition_name_pt = models.CharField(max_length=250)
     subposition_name_en = models.CharField(max_length=250)
     subposition_name_es = models.CharField(max_length=250)
-    section_code = models.CharField(max_length=2, blank=False)
+    section_code = models.CharField(max_length=2, blank=False,
+                                    verbose_name="Section code from NCM")
     section_name_pt = models.CharField(max_length=250)
     section_name_en = models.CharField(max_length=250)
     section_name_es = models.CharField(max_length=250)
@@ -76,7 +77,8 @@ class CUCI(models.Model):
     chapter_name_pt = models.CharField(max_length=250, blank=False)
     chapter_name_en = models.CharField(max_length=250, blank=False)
     chapter_name_es = models.CharField(max_length=250, blank=False)
-    section_code = models.CharField(max_length=1, blank=False)
+    section_code = models.CharField(max_length=1, blank=False,
+                                    verbose_name="Section code from NCM")
     section_name_pt = models.CharField(max_length=250, blank=False)
     section_name_en = models.CharField(max_length=250, blank=False)
     section_name_es = models.CharField(max_length=250, blank=False)
@@ -94,10 +96,10 @@ class NCM(models.Model):
     statistic_unit_code = models.CharField(max_length=2, blank=False,
                                            validators=[validate_only_numbers])
     ppe_code = models.CharField(max_length=4, blank=False,
-                                verbose_name="Pauta de Produtos Exportados",
+                                verbose_name="Pauta de Produtos Exportados code",
                                 validators=[validate_only_numbers])
     ppi_code = models.CharField(max_length=4, blank=False,
-                                verbose_name="Pauta de Produtos Importados",
+                                verbose_name="Pauta de Produtos Importados code",
                                 validators=[validate_only_numbers])
     aggregate_factor_code = models.CharField(max_length=1, blank=False,
                                              validators=[validate_only_numbers]
@@ -112,12 +114,12 @@ class NCM(models.Model):
                            verbose_name="Sistema Harmónico")
     isic4_code = models.CharField(max_length=2, blank=False,
                                   verbose_name='''International Standard Industrial
-                                               Classification (Revision 4)''',
+                                               Classification (Revision 4) code''',
                                   validators=[validate_only_numbers])
     exportation_subset = models.CharField(max_length=4, blank=False)
     siit_code = models.CharField(max_length=4, blank=False,
                                  verbose_name='''Setores Industriais por
-                                              Intensidade Tecnológica''',
+                                              Intensidade Tecnológica code''',
                                  validators=[validate_only_numbers])
 
 
