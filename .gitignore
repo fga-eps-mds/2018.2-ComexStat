@@ -4,7 +4,7 @@ node_modules
 
 lib/core/metadata.js
 lib/core/MetadataBlog.js
-
+src/comex_stat/assets/migrations/*
 docs/website/translated_docs
 docs/website/build/
 docs/website/yarn.lock
