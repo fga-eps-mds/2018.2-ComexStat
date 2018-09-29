@@ -3,6 +3,10 @@
 
 [![Build Status](https://travis-ci.org/fga-eps-mds/2018.2-ComexStat.svg?branch=develop)](https://travis-ci.org/fga-eps-mds/2018.2-ComexStat)
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/f8c2e994cae38bdd6ce7/maintainability)](https://codeclimate.com/github/fga-eps-mds/2018.2-ComexStat/maintainability)
+
+[![Test Coverage](https://api.codeclimate.com/v1/badges/f8c2e994cae38bdd6ce7/test_coverage)](https://codeclimate.com/github/fga-eps-mds/2018.2-ComexStat/test_coverage)
+
 ## Sobre
 
 O ComexStat, vem com o objetivo de tornar mais fácil o acesso aos dados relacionados ao comércio exterior de bens, e posteriormente serviços no Brasil, proporcionando aos usuários a possibilidade de trabalhar com as informações desejadas de forma mais adequada as suas necessidades.
