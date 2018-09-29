@@ -1,5 +1,4 @@
 import graphene
-# import json
 from django.test import TestCase
 from django.db import IntegrityError
 from comex_stat.assets.schema import Query
@@ -735,7 +734,11 @@ class QueryTest(TestCase):
         )
 
     def test_query_asset_import(self):
-        query = query = '''
+        '''
+            This test verifies the database search result
+        '''
+
+        query = '''
           query {
             allImport{
               edges {
@@ -958,7 +961,11 @@ class QueryTest(TestCase):
         self.assertEqual(expected, result.data)
 
     def test_query_asset_export(self):
-        query = query = '''
+        '''
+            This test verifies the database search result
+        '''
+
+        query = '''
             query {
               allExport {
                 edges {
@@ -1178,6 +1185,184 @@ class QueryTest(TestCase):
 
         schema = graphene.Schema(Query)
         result = schema.execute(query)
-        # print(json.dumps(result.data), ident=4) --> You should first copy the
-        # result of this to get the expected output to compare
+        self.assertEqual(expected, result.data)
+
+    def test_query_trade_blocs(self):
+        '''
+            This test verifies the database search result
+        '''
+
+        query = '''
+            query{
+              allTradeblocs{
+                edges{
+                  node{
+                    nameEnglish
+                    nameSpanish
+                    namePortuguese
+                    code
+                  }
+                }
+              }
+            }
+        '''
+
+        expected = {"allTradeblocs": {
+                "edges": [
+                    {
+                        "node": {
+                            "nameEnglish": "english",
+                            "nameSpanish": "spanish",
+                            "namePortuguese": "portuguese",
+                            "code": "190"
+                        }
+                    }
+                ]
+            }
+         }
+
+        schema = graphene.Schema(Query)
+        result = schema.execute(query)
+        self.assertEqual(expected, result.data)
+
+    def test_query_country(self):
+        '''
+            This test verifies the database search result
+        '''
+
+        query = '''
+            {
+              allCountry{
+                edges{
+                  node{
+                    nameEnglish
+                    namePortuguese
+                    nameSpanish
+                    codeIso3
+                  }
+                }
+              }
+            }
+        '''
+
+        expected = {"allCountry": {
+                "edges": [
+                    {
+                        "node": {
+                            "nameEnglish": "Name",
+                            "namePortuguese": "Nome",
+                            "nameSpanish": "Nombre",
+                            "codeIso3": "190"
+                        }
+                    }
+                ]
+            }
+         }
+
+        schema = graphene.Schema(Query)
+        result = schema.execute(query)
+        self.assertEqual(expected, result.data)
+
+    def test_query_federative_unit(self):
+        '''
+            This test verifies the database search result
+        '''
+
+        query = '''
+            {
+              allFederativeunit{
+                edges{
+                  node{
+                    name
+                    code
+                    initials
+                  }
+                }
+              }
+            }
+        '''
+
+        expected = {"allFederativeunit": {
+                "edges": [
+                    {
+                        "node": {
+                            "name": "Name",
+                            "code": "9090",
+                            "initials": "SP"
+                        }
+                    }
+                ]
+            }
+         }
+
+        schema = graphene.Schema(Query)
+        result = schema.execute(query)
+        self.assertEqual(expected, result.data)
+
+    def test_query_transportation(self):
+        '''
+            This test verifies the database search result
+        '''
+
+        query = '''
+            {
+              allTransportation{
+                edges{
+                  node{
+                    name
+                    code
+                  }
+                }
+              }
+            }
+        '''
+
+        expected = {"allTransportation": {
+                "edges": [
+                    {
+                        "node": {
+                            "name": "Name",
+                            "code": "code"
+                        }
+                    }
+                ]
+            }
+         }
+
+        schema = graphene.Schema(Query)
+        result = schema.execute(query)
+        self.assertEqual(expected, result.data)
+
+    def test_query_urf(self):
+        '''
+            This test verifies the database search result
+        '''
+
+        query = '''
+            {
+              allUrf{
+                edges{
+                  node{
+                    name
+                    code
+                  }
+                }
+              }
+            }
+        '''
+
+        expected = {"allUrf": {
+                "edges": [
+                    {
+                        "node": {
+                            "name": "name",
+                            "code": "code"
+                        }
+                    }
+                ]
+            }
+         }
+
+        schema = graphene.Schema(Query)
+        result = schema.execute(query)
         self.assertEqual(expected, result.data)
