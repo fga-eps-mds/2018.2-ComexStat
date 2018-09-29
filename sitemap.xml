@@ -3,7 +3,6 @@
 <url> <loc>https://fga-eps-mds.github.io/2018.2-ComexStat/help</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://fga-eps-mds.github.io/2018.2-ComexStat/en/help" /> </url>
 <url> <loc>https://fga-eps-mds.github.io/2018.2-ComexStat/index</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://fga-eps-mds.github.io/2018.2-ComexStat/en/index" /> </url>
 <url> <loc>https://fga-eps-mds.github.io/2018.2-ComexStat/users</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://fga-eps-mds.github.io/2018.2-ComexStat/en/users" /> </url>
-<url> <loc>https://fga-eps-mds.github.io/2018.2-ComexStat/blog/2018/09/22/sprint-6</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
 <url> <loc>https://fga-eps-mds.github.io/2018.2-ComexStat/blog/2018/09/15/sprint-5</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
 <url> <loc>https://fga-eps-mds.github.io/2018.2-ComexStat/blog/2018/09/08/sprint-4</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
 <url> <loc>https://fga-eps-mds.github.io/2018.2-ComexStat/blog/2018/09/01/sprint-3</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
@@ -19,7 +18,6 @@
 <url> <loc>https://fga-eps-mds.github.io/2018.2-ComexStat/docs/docArquitetura</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://fga-eps-mds.github.io/2018.2-ComexStat/docs/docArquitetura" /> </url>
 <url> <loc>https://fga-eps-mds.github.io/2018.2-ComexStat/docs/docVisao</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://fga-eps-mds.github.io/2018.2-ComexStat/docs/docVisao" /> </url>
 <url> <loc>https://fga-eps-mds.github.io/2018.2-ComexStat/docs/eap</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://fga-eps-mds.github.io/2018.2-ComexStat/docs/eap" /> </url>
-<url> <loc>https://fga-eps-mds.github.io/2018.2-ComexStat/docs/guiaestilo</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://fga-eps-mds.github.io/2018.2-ComexStat/docs/guiaestilo" /> </url>
 <url> <loc>https://fga-eps-mds.github.io/2018.2-ComexStat/docs/medicao</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://fga-eps-mds.github.io/2018.2-ComexStat/docs/medicao" /> </url>
 <url> <loc>https://fga-eps-mds.github.io/2018.2-ComexStat/docs/microsservicos</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://fga-eps-mds.github.io/2018.2-ComexStat/docs/microsservicos" /> </url>
 <url> <loc>https://fga-eps-mds.github.io/2018.2-ComexStat/docs/pipelineDevOps</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://fga-eps-mds.github.io/2018.2-ComexStat/docs/pipelineDevOps" /> </url>
