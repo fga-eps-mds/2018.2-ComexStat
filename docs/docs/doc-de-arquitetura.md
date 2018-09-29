@@ -113,6 +113,8 @@ Na forma escolhida para classifica-los, os casos de uso possuem três tipos de p
 ## 5. Visão Lógica
 ***
 
+### 5.1 Visão Geral
+
 O sistema será desenvolvido usando o framework web Django, com uma forma adaptada de seu padrão MVT, em conjunto com o Angular para o front-end e o GraphQL como linguagem e ferramenta de consulta ao banco de dados. Ficando portanto setorizado da seguinte forma:
 
   * API em Django.
@@ -121,6 +123,27 @@ O sistema será desenvolvido usando o framework web Django, com uma forma adapta
   * GraphQL como interface entre front-end e back-end, tendo a função de fazer a consulta ao banco, cujos resultados serão posteriormente retornados ao front-end se necessário.
 
 Sendo assim, pelo navegador, o usuário acessa diretamente a API, podendo nela fazer diretamente as suas pesquisas e filtragem nos dados do banco através do GraphQL, ou então acessa a aplicação web por meio do front-end em Angular. Neste, um chamado "router" fará a identificação no padrão da URL e irá direcionar o usuário à View apropriada, através da qual o mesmo poderá fazer suas requisições, que serão então passadas para API da forma já descrita. Por fim, os resultados retornados da busca feita são renderizados na View de forma apropriada para a visualização. 
+
+### 5.2 Pacotes de Design Significativos do Ponto de Vista da Arquitetura 
+
+![Diagrama de pacotes](https://fga-eps-mds.github.io/2018.2-ComexStat/img/diagrama_pacotes.png)
+
+No Back-End temos os pacotes de design significativos como sendo: models, schema e tests. Cada um com seu respectivo conteúdo:
+
+  * models: Contém as models do Django, onde são definidos os modelos de dados. Representam a interface com o banco de dados.
+  * schema: Contém a definição dos métodos de pesquisa e filtragem de dados, unindo Django e GraphQL através da biblioteca Graphene.
+  * tests: Contém os testes unitários feitos no sistema.
+
+Já no Front-End, em Angular 2, temos a representação dos pacotes de design significativos como sendo os Components do módulo "assets", que pertence a aplicação "comex_stat", sendo estes (todos contendo suas devidas Views e Templates relacionadas):
+
+  * search: Component que define a parte da aplicação dedicada as pesquisas de dados
+  * graphic: Component que define a parte da aplicação dedicada a visualização gráfica dos dados 
+  * nav: Component que define a barra de navegação da aplicação
+  * export: Component que define a parte da aplicação dedicada a exportação dos dados 
+  * share: Component que define a parte da aplicação dedicada ao compartilhamento de páginas 
+
+Além disso, há também dentro do módulo "assets" a seção "shared", na qual serão definidas coisas como os já citados Services da aplicação.
+
 
 ***
 ## 6. Visão da Implementação
@@ -157,3 +180,4 @@ Outro ponto a ser ressaltado, é o uso das ferramentas citadas em busca pelo des
 |13/09/2018|0.8.0|Adição do diagrama de banco de dados|Marcos Nery|
 |14/09/2018|1.0.0|Revisões gerais para primeira versão do documento|Marcos Nery e Rogério Júnior|
 |25/09/2018|2.0.0|Refatoração da arquitetura|Marcos Nery|
+|26/09/2018|2.1.0|Adição do diagrama de pacotes|Marcos Nery|
