@@ -9,6 +9,8 @@ services:
   - docker
 
 env:
+  global:
+    - CC_TEST_REPORTER_ID=cba7e65a3e4c938f1968478baa08ca245a354ec2d0fa85d12a2a62d54ad72a49
   - DOCKER_COMPOSE_VERSION=1.21.0
 
 before_install:
@@ -17,6 +19,11 @@ before_install:
   - chmod +x docker-compose
   - sudo mv docker-compose /usr/local/bin
 
+before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+s
 # branches:
 #   only:
 #     - develop
@@ -32,3 +39,6 @@ script:
   - git config --global user.email "${GH_EMAIL}"
   - echo "machine github.com login ${GH_NAME} password ${GH_TOKEN}" > ~/.netrc
   - cd docs/website && yarn install && GIT_USER="${GH_NAME}" yarn run publish-gh-pages
+
+after_script:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
