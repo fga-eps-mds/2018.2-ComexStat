@@ -6,6 +6,9 @@ services:
 - docker
 env:
 - DOCKER_COMPOSE_VERSION=1.21.0
+global:
+    - CC_TEST_REPORTER_ID=cba7e65a3e4c938f1968478baa08ca245a354ec2d0fa85d12a2a62d54ad72a49
+language: node_js
 before_install:
 - sudo rm /usr/local/bin/docker-compose
 - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname
@@ -26,6 +29,11 @@ script:
 - echo "machine github.com login ${GH_NAME} password ${GH_TOKEN}" > ~/.netrc
 - cd docs/website && yarn install && GIT_USER="${GH_NAME}" GIT_BRANCH=master yarn run publish-gh-pages
 
+before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+
 deploy:
   - provider: heroku
     app: api-comexstat
@@ -40,3 +48,6 @@ deploy:
       develop
     api_key:
       secure: gndgDVvj2SlJ+vX7BIcIoauDb4KX2pwucuokyQSjrM7L6X4UjNNJYXfzwetRpWhN4ha8AJtHlDiIPKTgB0yf8UcWZPjGjKQ3JexGm3tCLWQd/uTpFswksr/yXEkmwLwvZVA2ukM6JQ0/MRGGHsQXD5FInxOvdLFboNuslxpnCrbHG5YKRVxUKWOD6rkd7AP1A9n8z7iAYAAMyM0wowypLvhoshAeSTcK95b64oZ3TFbfoiuQ1NMwmflgfDAb5F408trYHdoc9gTkEa2tsddIYMrtIYRl1rX3Do0fpWOJ9r6H/5uZlff9dF1VIv2bRWzAwywz1ch2p20sKXfL1WZt2rb+s91jeUjKv8kDYBUxYjvyi7I5T3j06EsJyKnAfDAezKZ4yhsL+Jo4Et4drEvHB5K7cqjEVLbKN1hl2TKO48ydTkCS+uQ4TvYoYRafWLBFiWALOViDZMxCsChwjo82laX4VA0MGUB9/wp1PhSqHsohz6fuV9wt8FZ16QmyuOhBC3PwN/nmBr3cOMPl6EBVNGbMW0QLi2hajrsNCBeUhbTNh/tbqNxsw7zIKmz9v5OxszeF/AJdLn6EVnFhTD4PMP36XyfYK5jvfkr38oziC41qhTMaw1VMxqJcpEodXTgkun4o1GKgbtmPBhZZAc//X3MjomPv67784JqK6D/SSdo=
+
+after_script:
+  - ./cc-test-reporter after-build -t lcov --debug --exit-code $TRAVIS_TEST_RESULT
