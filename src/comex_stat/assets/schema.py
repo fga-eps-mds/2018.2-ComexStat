@@ -183,7 +183,7 @@ class UrfType(DjangoObjectType):
         interfaces = {graphene.Node, }
 
 
-class Query(object):
+class Query(graphene.ObjectType):
     all_import = DjangoFilterConnectionField(AssetImportFactsType)
     all_export = DjangoFilterConnectionField(AssetExportFactsType)
     all_tradeBlocs = DjangoFilterConnectionField(TradeBlocsType)
