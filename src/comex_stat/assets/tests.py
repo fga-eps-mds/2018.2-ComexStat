@@ -238,6 +238,7 @@ class NCMTests(TestCase):
         with self.assertRaises(NCM.DoesNotExist):
             NCM.objects.get()
 
+
 class AssetExportFactsTestModel(TestCase):
 
     def setUp(self):
