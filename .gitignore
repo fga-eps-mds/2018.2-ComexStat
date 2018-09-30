@@ -12,3 +12,5 @@ docs/website/node_modules
 docs/website/i18n/*
 **/__pycache__/
 db.sqlite3
+
+src/comex_stat/static/**

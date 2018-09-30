@@ -25,14 +25,14 @@ script:
 - cd docs/website && yarn install && GIT_USER="${GH_NAME}" yarn run publish-gh-pages
 deploy:
   - provider: heroku
-    app: comexstat
+    app: api-comexstat
     on:
       master
     api_key:
       secure: gndgDVvj2SlJ+vX7BIcIoauDb4KX2pwucuokyQSjrM7L6X4UjNNJYXfzwetRpWhN4ha8AJtHlDiIPKTgB0yf8UcWZPjGjKQ3JexGm3tCLWQd/uTpFswksr/yXEkmwLwvZVA2ukM6JQ0/MRGGHsQXD5FInxOvdLFboNuslxpnCrbHG5YKRVxUKWOD6rkd7AP1A9n8z7iAYAAMyM0wowypLvhoshAeSTcK95b64oZ3TFbfoiuQ1NMwmflgfDAb5F408trYHdoc9gTkEa2tsddIYMrtIYRl1rX3Do0fpWOJ9r6H/5uZlff9dF1VIv2bRWzAwywz1ch2p20sKXfL1WZt2rb+s91jeUjKv8kDYBUxYjvyi7I5T3j06EsJyKnAfDAezKZ4yhsL+Jo4Et4drEvHB5K7cqjEVLbKN1hl2TKO48ydTkCS+uQ4TvYoYRafWLBFiWALOViDZMxCsChwjo82laX4VA0MGUB9/wp1PhSqHsohz6fuV9wt8FZ16QmyuOhBC3PwN/nmBr3cOMPl6EBVNGbMW0QLi2hajrsNCBeUhbTNh/tbqNxsw7zIKmz9v5OxszeF/AJdLn6EVnFhTD4PMP36XyfYK5jvfkr38oziC41qhTMaw1VMxqJcpEodXTgkun4o1GKgbtmPBhZZAc//X3MjomPv67784JqK6D/SSdo=
 
   - provider: heroku
-    app: comexstat-staging
+    app: api-comexstat-staging
     on:
       develop
     api_key:
