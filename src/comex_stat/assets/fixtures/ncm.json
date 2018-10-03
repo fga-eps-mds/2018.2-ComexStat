@@ -15,7 +15,7 @@
       "ncm_name_en": "Otras partes para motores de explosión",
       "siit_code": "2000",
       "cuci": 71391,
-      "cgce": 2,
+      "cgce": 280,
       "sh": 840991
     }
   },
@@ -35,7 +35,7 @@
       "ncm_name_es": "Paneles de fibras de madera de media densidad (denominados MDF), con una densidad superior a 0,8 g / cm3, no trabajados mecánicamente ni recubiertos a la superficie",
       "siit_code": "4000",
       "cuci": 63459,
-      "cgce": 2,
+      "cgce": 240,
       "sh": 441192
     }
   },
@@ -55,7 +55,7 @@
       "ncm_name_es": "Pantalones, pantalones cortos, bermudas y pantalones cortos (pantalones), de uso femenino, de fibras sintéticas",
       "siit_code": "4000",
       "cuci": 8426,
-      "cgce": 3,
+      "cgce": 321,
       "sh": 620463
     }
   },
@@ -75,7 +75,7 @@
       "ncm_name_es": "Otros jabones / productos / preparaciones, en barras, pedazos, etc.",
       "siit_code": "2000",
       "cuci": 5532,
-      "cgce": 3,
+      "cgce": 322,
       "sh": 330499
     }
   },
@@ -95,7 +95,7 @@
       "ncm_name_es": "Otros tornillos y pernos o pernos, incluso con las tuercas y arandelas, de fundición, hierro o acero",
       "siit_code": "3000",
       "cuci": 69421,
-      "cgce": 2,
+      "cgce": 240,
       "sh": 731815
     }
   },
@@ -115,7 +115,7 @@
       "ncm_name_es": "Guarniciones para muebles, carrocerías y similares, de plástico",
       "siit_code": "3000",
       "cuci": 89395,
-      "cgce": 2,
+      "cgce": 240,
       "sh": 392630
     }
   },
@@ -135,7 +135,7 @@
       "ncm_name_es": "Otras manufacturas de corcho aglomerado",
       "siit_code": "4000",
       "cuci": 63329,
-      "cgce": 2,
+      "cgce": 240,
       "sh": 450490
     }
   },
@@ -155,7 +155,7 @@
       "ncm_name_es": "Tuercas de hierro fundido, hierro o acero",
       "siit_code": "3000",
       "cuci": 69421,
-      "cgce": 2,
+      "cgce": 240,
       "sh": 731816
     }
   },
@@ -175,7 +175,7 @@
       "ncm_name_es": "Otras partes de bombas para líquidos",
       "siit_code": "2000",
       "cuci": 74291,
-      "cgce": 2,
+      "cgce": 270,
       "sh": 841391
     }
   }

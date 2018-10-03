@@ -1,0 +1,92 @@
+[
+  {
+    "models": "assets.CGCE",
+    "pk": 280,
+    "fields": {
+      "level1_code": 280,
+      "level1_name_pt": "Peças para equipamentos de transporte",
+      "level1_name_en": "Parts for transport equipment",
+      "level1_name_es": "Piezas para equipos de transporte",
+      "level2_code": 28,
+      "level2_name_pt": "Peças para equipamentos de transporte",
+      "level2_name_en": "Parts for transport equipment",
+      "level2_name_es": "Piezas para equipos de transporte",
+      "level3_code": 2,
+      "level3_name_pt": "BENS INTERMEDIÁRIOS (BI)",
+      "level3_name_en": "INTERMEDIATE GOODS (BI)",
+      "level3_name_es": "BIENES INTERMEDIOS (BI)"
+    }
+  },
+  {
+    "models": "assets.CGCE",
+    "pk": 240,
+    "fields": {
+      "level1_code": 240,
+      "level1_name_pt": "Insumos industriais elaborados",
+      "level1_name_en": "Elaborated industrial inputs",
+      "level1_name_es": "Insumos industriales elaborados",
+      "level2_code": 24,
+      "level2_name_pt": "Insumos industriais elaborados",
+      "level2_name_en": "Elaborated industrial inputs",
+      "level2_name_es": "Insumos industriales elaborados",
+      "level3_code": 2,
+      "level3_name_pt": "BENS INTERMEDIÁRIOS (BI)",
+      "level3_name_en": "INTERMEDIATE GOODS (BI)",
+      "level3_name_es": "BIENES INTERMEDIOS (BI)"
+    }
+  },
+  {
+    "models": "assets.CGCE",
+    "pk": 321,
+    "fields": {
+      "level1_code": 321,
+      "level1_name_pt": "Bens de consumo semiduráveis",
+      "level1_name_en": "Semi-durable consumer goods",
+      "level1_name_es": "Bienes de consumo semidurables",
+      "level2_code": 321,
+      "level2_name_pt": "Bens de consumo semiduráveis e não duráveis",
+      "level2_name_en": "Consumer goods semi-durable and non-durable",
+      "level2_name_es": "Bienes de consumo semidurables y no durables",
+      "level3_code": 3,
+      "level3_name_pt": "BENS DE CONSUMO (BC)",
+      "level3_name_en": "CONSUMER GOODS (BC)",
+      "level3_name_es": "BIENES DE CONSUMO (BC)"
+    }
+  },
+  {
+    "models": "assets.CGCE",
+    "pk": 322,
+    "fields": {
+      "level1_code": 322,
+      "level1_name_pt": "Bens de consumo não duráveis",
+      "level1_name_en": "Non-durable goods",
+      "level1_name_es": "Bienes de consumo no durables",
+      "level2_code": 32,
+      "level2_name_pt": "Bens de consumo semiduráveis e não duráveis",
+      "level2_name_en": "Consumer goods semi-durable and non-durable",
+      "level2_name_es": "Bienes de consumo semidurables y no durables",
+      "level3_code": 3,
+      "level3_name_pt": "BENS DE CONSUMO (BC)",
+      "level3_name_en": "CONSUMER GOODS (BC)",
+      "level3_name_es": "BIENES DE CONSUMO (BC)"
+    }
+  },
+  {
+    "models": "assets.CGCE",
+    "pk": 270,
+    "fields": {
+      "level1_code": 270,
+      "level1_name_pt": "Peças e acessórios para bens de capital",
+      "level1_name_en": "Parts and accessories for capital goods",
+      "level1_name_es": "Piezas y accesorios para bienes de capital",
+      "level2_code": 27,
+      "level2_name_pt": "Peças e acessórios para bens de capital",
+      "level2_name_en": "Parts and accessories for capital goods",
+      "level2_name_es": "Piezas y accesorios para bienes de capital",
+      "level3_code": 2,
+      "level3_name_pt": "BENS INTERMEDIÁRIOS (BI)",
+      "level3_name_en": "INTERMEDIATE GOODS (BI)",
+      "level3_name_es": "BIENES INTERMEDIOS (BI)"
+    }
+  },
+]
