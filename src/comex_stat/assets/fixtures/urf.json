@@ -1,0 +1,58 @@
+[
+  {
+    "model": "assets.Urf",
+    "pk": 817800,
+    "fields": {
+      "name": "0817800 - PORTO DE SANTOS",
+      "code": "817800"
+    }
+  },
+  {
+    "model": "assets.Urf",
+    "pk": 0,
+    "fields": {
+      "name": "0000000 - NAO INFORMADO",
+      "code": "0"
+    }
+  },
+  {
+    "model": "assets.Urf",
+    "pk": 417902,
+    "fields": {
+      "name": "0417902 - IRF - PORTO DE SUAPE",
+      "code": "417902"
+    }
+  },
+  {
+      "model": "assets.Urf",
+      "pk": 817600,
+      "fields": {
+        "name": "0817600 - AEROPORTO INTERNACIONAL DE SAO PAULO/GUARULHOS",
+        "code": "817600"
+      }
+  },
+  {
+      "model": "assets.Urf",
+      "pk": 147600,
+      "fields": {
+        "name": "0147600 - ALF - CORUMBÁ",
+        "code": "147600"
+      }
+  },
+  {
+      "model": "assets.Urf",
+      "pk": 817700,
+      "fields": {
+        "name": "0817700 - AEROPORTO INTERNACIONAL DE VIRACOPOS",
+        "code": "817700"
+      }
+  },
+  {
+      "model": "assets.Urf",
+      "pk": 917500,
+      "fields": {
+        "name": "0917500 - ALF - FOZ DO IGUAÇU",
+        "code": "917500"
+      }
+  }
+]
