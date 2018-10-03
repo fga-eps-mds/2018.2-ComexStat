@@ -1,0 +1,98 @@
+[
+  {
+    "model": "assets.Transportation",
+    "pk": 0,
+    "fields": {
+      "name": "VIA NAO DECLARADA",
+      "code": "00"
+    }
+  },
+  {
+    "model": "assets.Transportation",
+    "pk": 1,
+    "fields": {
+      "name": "MARITIMA",
+      "code": "01"
+    }
+  },
+  {
+    "model": "assets.Transportation",
+    "pk": 2,
+    "fields": {
+      "name": "FLUVIAL",
+      "code": "02"
+    }
+  },
+  {
+    "model": "assets.Transportation",
+    "pk": 3,
+    "fields": {
+      "name": "LACUSTRE",
+      "code": "03"
+    }
+  },
+  {
+    "model": "assets.Transportation",
+    "pk": 4,
+    "fields": {
+      "name": "AEREA",
+      "code": "04"
+    }
+  },
+  {
+    "model": "assets.Transportation",
+    "pk": 5,
+    "fields": {
+      "name": "POSTAL",
+      "code": "05"
+    }
+  },
+  {
+    "model": "assets.Transportation",
+    "pk": 6,
+    "fields": {
+      "name": "FERROVIARIA",
+      "code": "06"
+    }
+  },
+  {
+    "model": "assets.Transportation",
+    "pk": 7,
+    "fields": {
+      "name": "RODOVIARIA",
+      "code": "07"
+    }
+  },
+  {
+    "model": "assets.Transportation",
+    "pk": 8,
+    "fields": {
+      "name": "CONDUTO/REDE DE TRANSMISSAO",
+      "code": "08"
+    }
+  },
+  {
+    "model": "assets.Transportation",
+    "pk": 9,
+    "fields": {
+      "name": "MEIOS PROPRIOS",
+      "code": "09"
+    }
+  },
+  {
+    "model": "assets.Transportation",
+    "pk": 99,
+    "fields": {
+      "name": "VIA DESCONHECIDA",
+      "code": "99"
+    }
+  },
+  {
+    "model": "assets.Transportation",
+    "pk": 10,
+    "fields": {
+      "name": "ENTRADA/SAIDA FICTA",
+      "code": "10" 
+    }
+  },
+]

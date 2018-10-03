@@ -1,0 +1,112 @@
+[
+  {
+    "models": "assets.TradeBlocs",
+    "pk": 51,
+    "fields": {
+      "name_portuguese": "África",
+      "name_english": "Africa (minus MIDDLE EAST)",
+      "name_spanish": "África (menos ORIENTE MEDIO)",
+      "code": "51"
+    }
+  },
+  {
+    "models": "assets.TradeBlocs",
+    "pk": 105,
+    "fields": {
+      "name_portuguese": "América Central e Caribe",
+      "name_english": "Central America and Caribbean",
+      "name_spanish": "América Central y Caribe",
+      "code": "105"
+    }
+  },
+  {
+    "models": "assets.TradeBlocs",
+    "pk": 107,
+    "fields": {
+      "name_portuguese": "América do Norte",
+      "name_english": "North America",
+      "name_spanish": "América del norte",
+      "code": "107"
+    }
+  },
+  {
+    "models": "assets.TradeBlocs",
+    "pk": 48,
+    "fields": {
+      "name_portuguese": "América do Sul",
+      "name_english": "South America",
+      "name_spanish": "América del Sur",
+      "code": "48"
+    }
+  },
+  {
+    "models": "assets.TradeBlocs",
+    "pk": 39,
+    "fields": {
+      "name_portuguese": "Ásia (Exclusive Oriente Médio)",
+      "name_english": "Asia (minus MIDDLE EAST)",
+      "name_spanish": "Asia (menos Oriente Medio)",
+      "code": "39"
+    }
+  },
+  {
+    "models": "assets.TradeBlocs",
+    "pk": 53,
+    "fields": {
+      "name_portuguese": "Associcação de Nações do Sudeste Asiático - ASEAN",
+      "name_english": "Association Of Southeast Asian Nations (ASEAN)",
+      "name_spanish": "Asociación de Países del Sudeste Asiático (ASEAN)",
+      "code": "53"
+    }
+  },
+  {
+    "models": "assets.TradeBlocs",
+    "pk": 112,
+    "fields": {
+      "name_portuguese": "Europa",
+      "name_english": "Europe",
+      "name_spanish": "Europa",
+      "code": "112"
+    }
+  },
+  {
+    "models": "assets.TradeBlocs",
+    "pk": 111,
+    "fields": {
+      "name_portuguese": "Mercado Comum do Sul - Mercosul",
+      "name_english": "Southern Common Market (MERCOSUL)",
+      "name_spanish": "Mercado Comum del Sur (MERCOSUR)",
+      "code": "111"
+    }
+  },
+  {
+    "models": "assets.TradeBlocs",
+    "pk": 61,
+    "fields": {
+      "name_portuguese": "Oceania",
+      "name_english": "Oceania",
+      "name_spanish": "Oceania",
+      "code": "61"
+    }
+  },
+  {
+    "models": "assets.TradeBlocs",
+    "pk": 41,
+    "fields": {
+      "name_portuguese": "Oriente Médio",
+      "name_english": "Middle East",
+      "name_spanish": "Oriente Medio",
+      "code": "41"
+    }
+  },
+  {
+    "models": "assets.TradeBlocs",
+    "pk": 22,
+    "fields": {
+      "name_portuguese": "União Europeia - UE",
+      "name_english": "European Union (EU)",
+      "name_spanish": "Uniao Europea (UE)",
+      "code": "22"
+    }
+  },
+]
