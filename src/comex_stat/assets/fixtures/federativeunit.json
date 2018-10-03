@@ -1,0 +1,38 @@
+[
+  {
+    "model": "assets.FederativeUnit",
+    "pk": 45,
+    "fields": {
+      "name": "Rio Grande do Sul",
+      "code": "45",
+      "initials": "RS"
+    }
+  },
+  {
+    "model": "assets.FederativeUnit",
+    "pk": 41,
+    "fields": {
+      "name": "São Paulo",
+      "code": "41",
+      "initials": "SP"
+    }
+  },
+  {
+    "model": "assets.FederativeUnit",
+    "pk": 33,
+    "fields": {
+      "name": "Minas Gerais",
+      "code": "33",
+      "initials": "MG"
+    }
+  },
+  {
+    "model": "assets.FederativeUnit",
+    "pk": 32,
+    "fields": {
+      "name": "Bahia",
+      "code": "32",
+      "initials": "BA"
+    }
+  }
+]
