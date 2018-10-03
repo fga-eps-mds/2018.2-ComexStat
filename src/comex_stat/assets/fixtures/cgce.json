@@ -1,6 +1,6 @@
 [
   {
-    "models": "assets.CGCE",
+    "model": "assets.CGCE",
     "pk": 280,
     "fields": {
       "level1_code": "280",
@@ -18,7 +18,7 @@
     }
   },
   {
-    "models": "assets.CGCE",
+    "model": "assets.CGCE",
     "pk": 240,
     "fields": {
       "level1_code": "240",
@@ -36,7 +36,7 @@
     }
   },
   {
-    "models": "assets.CGCE",
+    "model": "assets.CGCE",
     "pk": 321,
     "fields": {
       "level1_code": "321",
@@ -54,7 +54,7 @@
     }
   },
   {
-    "models": "assets.CGCE",
+    "model": "assets.CGCE",
     "pk": 322,
     "fields": {
       "level1_code": "322",
@@ -72,7 +72,7 @@
     }
   },
   {
-    "models": "assets.CGCE",
+    "model": "assets.CGCE",
     "pk": 270,
     "fields": {
       "level1_code": "270",
@@ -88,5 +88,5 @@
       "level3_name_en": "INTERMEDIATE GOODS (BI)",
       "level3_name_es": "BIENES INTERMEDIOS (BI)"
     }
-  },
+  }
 ]

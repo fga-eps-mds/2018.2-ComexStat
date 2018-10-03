@@ -1,6 +1,6 @@
 [
   {
-    "models": "assets.TradeBlocs",
+    "model": "assets.TradeBlocs",
     "pk": 51,
     "fields": {
       "name_portuguese": "África",
@@ -10,7 +10,7 @@
     }
   },
   {
-    "models": "assets.TradeBlocs",
+    "model": "assets.TradeBlocs",
     "pk": 105,
     "fields": {
       "name_portuguese": "América Central e Caribe",
@@ -20,7 +20,7 @@
     }
   },
   {
-    "models": "assets.TradeBlocs",
+    "model": "assets.TradeBlocs",
     "pk": 107,
     "fields": {
       "name_portuguese": "América do Norte",
@@ -30,7 +30,7 @@
     }
   },
   {
-    "models": "assets.TradeBlocs",
+    "model": "assets.TradeBlocs",
     "pk": 48,
     "fields": {
       "name_portuguese": "América do Sul",
@@ -40,7 +40,7 @@
     }
   },
   {
-    "models": "assets.TradeBlocs",
+    "model": "assets.TradeBlocs",
     "pk": 39,
     "fields": {
       "name_portuguese": "Ásia (Exclusive Oriente Médio)",
@@ -50,7 +50,7 @@
     }
   },
   {
-    "models": "assets.TradeBlocs",
+    "model": "assets.TradeBlocs",
     "pk": 53,
     "fields": {
       "name_portuguese": "Associcação de Nações do Sudeste Asiático - ASEAN",
@@ -60,7 +60,7 @@
     }
   },
   {
-    "models": "assets.TradeBlocs",
+    "model": "assets.TradeBlocs",
     "pk": 112,
     "fields": {
       "name_portuguese": "Europa",
@@ -70,7 +70,7 @@
     }
   },
   {
-    "models": "assets.TradeBlocs",
+    "model": "assets.TradeBlocs",
     "pk": 111,
     "fields": {
       "name_portuguese": "Mercado Comum do Sul - Mercosul",
@@ -80,7 +80,7 @@
     }
   },
   {
-    "models": "assets.TradeBlocs",
+    "model": "assets.TradeBlocs",
     "pk": 61,
     "fields": {
       "name_portuguese": "Oceania",
@@ -90,7 +90,7 @@
     }
   },
   {
-    "models": "assets.TradeBlocs",
+    "model": "assets.TradeBlocs",
     "pk": 41,
     "fields": {
       "name_portuguese": "Oriente Médio",
@@ -100,7 +100,7 @@
     }
   },
   {
-    "models": "assets.TradeBlocs",
+    "model": "assets.TradeBlocs",
     "pk": 22,
     "fields": {
       "name_portuguese": "União Europeia - UE",
@@ -108,5 +108,5 @@
       "name_spanish": "Uniao Europea (UE)",
       "code": "22"
     }
-  },
+  }
 ]
