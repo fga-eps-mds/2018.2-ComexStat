@@ -3,85 +3,80 @@
     "model": "assets.assetexportfacts",
     "pk": 1,
     "fields": {
-      "origin_fed_unit": "RS",
-      "destination_country": "Bolívia",
-      "date": "03/2018",
+      "origin_fed_unit": 45,
+      "destination_country": 97,
+      "date": "2018-03-01",
       "name": "Outras partes para motores de explosão",
-      "ncm": "84099190",
-      "port": "0147600 - ALF - CORUMBÁ",
-      "port_code": "0147600",
-      "transportation": "FERROVIARIA",
-      "registries": "1",
-      "net_kilogram": "1",
-      "fob_value": "191"
+      "ncm": 84099190,
+      "urf": 147600,
+      "transportation": 1,
+      "registries": 1,
+      "net_kilogram": 1,
+      "fob_value": 191
     }
   },
   {
     "model": "assets.assetexportfacts",
     "pk": 2,
     "fields": {
-      "origin_fed_unit": "SP",
-      "destination_country": "Honduras",
-      "date": "03/2018",
+      "origin_fed_unit": 41,
+      "destination_country": 345,
+      "date": "2018-03-05",
       "name": "Painéis de fibras madeira de média densidade (denominados MDF), com densidade superior a 0,8 g/cm3, não trabalhados mecanicamente nem recobertos à superfície",
-      "ncm": "44119210",
-      "port": "0147600 - ALF - CORUMBÁ",
-      "port_code": "147600",
-      "transportation": "RODOVIARIA",
-      "registries": "39",
-      "net_kilogram": "39071",
-      "fob_value": "16590"
+      "ncm": 44119210,
+      "urf": 147600,
+      "transportation": 1,
+      "registries": 39,
+      "net_kilogram": 39071,
+      "fob_value": 16590
     }
   },
   {
     "model": "assets.assetexportfacts",
     "pk": 3,
     "fields": {
-      "origin_fed_unit": "SP",
-      "destination_country": "Uruguai",
-      "date": "03/18",
+      "origin_fed_unit": 41,
+      "destination_country": 845,
+      "date": "2018-03-09",
       "name": "Calças, jardineiras, bermudas e shorts (calções), de uso feminino, de fibras sintéticas",
-      "ncm": "62046300",
-      "port": "0817700 - AEROPORTO INTERNACIONAL DE VIRACOPOS",
-      "port_code": "0817700",
-      "transportation": "AEREA",
-      "registries": "14",
-      "net_kilogram": "6",
-      "fob_value": "769"
+      "ncm": 62046300,
+      "urf": 817700,
+      "transportation": 4,
+      "registries": 14,
+      "net_kilogram": 6,
+      "fob_value": 769
     }
   },
   {
     "model": "assets.assetexportfacts",
     "pk": 4,
     "fields": {
-      "origin_fed_unit": "SP",
-      "destination_country": "Paraguai",
-      "date": "08/2018",
-      "name": "Outros produtos de beleza ou de maquiagem preparados, etc",
-      "ncm": "33049990",
-      "port": "0917500 - ALF - FOZ DO IGUAÇU",
-      "port_code": "0917500",
-      "transportation": "FERROVIARIA",
-      "registries": "3399",
-      "net_kilogram": "3399",
-      "fob_value": "39508"
+      "origin_fed_unit": 41,
+      "destination_country": 586,
+      "date": "2018-08-15",
+      "name": "Produtos de maquiagem para os lábios",
+      "ncm": 33049990,
+      "urf": 917500,
+      "transportation": 6,
+      "registries": 3399,
+      "net_kilogram": 3399,
+      "fob_value": 39508
     }
   },
   {
     "model": "assets.assetexportfacts",
     "pk": 5,
     "fields": {
-      "origin_fed_unit": "MG",
-      "destination_country": "Equador",
-      "date": "06/2018",
+      "origin_fed_unit": 33,
+      "destination_country": 239,
+      "date": "2018-06-19",
       "name": "Outros parafusos e pinos ou pernos, mesmo com as porcas e arruelas, de ferro fundido, ferro ou aço",
-      "ncm": "73181500",
-      "port": "0817700 - AEROPORTO INTERNACIONAL DE VIRACOPOS",
-      "port_code": "0817700",
-      "transportation": "AEREA",
-      "registries": "0",
-      "net_kilogram": "0",
-      "fob_value": "9"
+      "ncm": 73181500,
+      "urf": 817700,
+      "transportation": 4,
+      "registries": 0,
+      "net_kilogram": 0,
+      "fob_value": 9
     }
-  },
+  }
 ]

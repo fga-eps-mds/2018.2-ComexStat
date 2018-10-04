@@ -1,0 +1,200 @@
+[
+  {
+    "model": "assets.SH",
+    "pk": 840991,
+    "fields": {
+      "chapter_code": "84",
+      "chapter_name_pt": "Reatores nucleares, caldeiras, máquinas, aparelhos e instrumentos mecânicos, e suas partes",
+      "chapter_name_en": "Nuclear reactors, boilers, machinery and mechanical appliances; others",
+      "chapter_name_es": "Reactores nucleares, calderas, máquinas, otros.",
+      "position_code": "8409",
+      "position_name_pt": "Partes reconhecíveis como exclusiva ou principalmente destinadas aos motores das posições 8407 ou 8408",
+      "position_name_en": "Parts suitable for use solely or principally with the engines of heading No 8407 or 8408",
+      "position_name_es": "Partes identificables como destinadas, exclusiva o principalmente, a los motores de las partidas 8407 u 8408",
+      "subposition_code": "840991",
+      "subposition_name_pt": "Outras partes exclusiva ou principalmente destinadas aos motores de pistão, de ignição por centelha",
+      "subposition_name_en": "Parts suitable for use solely or principally with spark-ignition internal combustion piston engine, n.e.s.",
+      "subposition_name_es": "Partes identificables como destinadas exclusiva o principalmente a motores de émbolo pistón de encendido por chispa, n.c.o.p.",
+      "section_code": "XVI",
+      "section_name_pt": "Máquinas e aparelhos, material elétrico e suas partes; Aparelhos de gravação ou reprodução de som, aparelhos de gravação ou reprodução de imagens e de som em televisão, e suas partes e acessórios",
+      "section_name_en": "Machinery and mechanical appliances; Electrical equipment and parts thereof; Sound recorders and reproducers, sound recorders and producers of television image; Parts and accessoires of such articles",
+      "section_name_es": "Máquinas y aparatos, material eléctrico e sus partes; Aparatos de grabación o reproducción de sonido, aparatos de grabación o reproducción de imágenes y sonido en televisión, y las partes y accesorios de estos aparatos"
+    }
+  },
+  {
+    "model": "assets.SH",
+    "pk": 441192,
+    "fields": {
+      "chapter_code": "44",
+      "chapter_name_pt": "Madeira, carvão vegetal e obras de madeira",
+      "chapter_name_en": "Wood and articles of wood; wood charcoal",
+      "chapter_name_es": "Madera, carbón vegetal y manufacturas de madera",
+      "position_code": "4411",
+      "position_name_pt": "Painéis de fibras de madeira ou de outras matérias lenhosas, mesmo aglomeradas com resinas ou com outros aglutinantes orgânicos",
+      "position_name_en": "Tableros de fibra de madera u otras materias leñosas, incluso aglomerados con resinas u otros aglutinantes orgánicos",
+      "position_name_es": "Fibreboard of wood or other ligneous materials, whether or not bonded with resins or other organic substances",
+      "subposition_code": "441192",
+      "subposition_name_pt": "Painéis de fibra de madeira ou de outras matérias lenhosas, mesmo aglomeradas com resinas ou outros algutinantes orgânicos, com densidade superior a 0,8g/cm3",
+      "subposition_name_en": "Other fibreboard of wood, 0.35<d<=0.5g/cm3",
+      "subposition_name_es": "Tableros de fibra de madera u otras materias leñosas, incl. aglomeradas con resinas o demás aglutinantes orgánicos, de densidad > 0,8 g/cm³",
+      "section_code": "IX",
+      "section_name_pt": "Madeira, carvão vegetal e obras de madeira; Cortiça e suas obras; Obras de espartaria ou de cestaria",
+      "section_name_en": "Madera, carbón vegetal y manufacturas de madera; Corcho y manufacturas de corcho; Manufacturas de espartería o de cestería",
+      "section_name_es": "Wood, vegetal charcoal and wood manufactures"
+    }
+  },
+  {
+    "model": "assets.SH",
+    "pk": 620463,
+    "fields": {
+      "chapter_code": "62",
+      "chapter_name_pt": "Vestuário e seus acessórios, exceto de Malha",
+      "chapter_name_en": "Articles of apparel and clothing accessories, not knitted or crocheted",
+      "chapter_name_es": "Prendas y complementos (accesorios), de vestir, excepto los de punto",
+      "position_code": "6204",
+      "position_name_pt": "Fatos de saia-casaco, conjuntos, casacos, vestidos, saias, saias-calças, calças, jardineiras, bermudas e calções (shorts) (exceto de banho), de uso feminino",
+      "position_name_en": "Women's or girls' suits, ensembles, jackets, blazers, dresses, skirts, divided skirts, trousers, bib and brace overalls, breeches and shorts (other than swimwear)",
+      "position_name_es": "Trajes sastre, conjuntos, chaquetas (sacos), vestidos, faldas, faldas pantalón, pantalones largos, pantalones con peto, pantalones cortos (calzones) y shorts (excepto de baño), para mujeres o niñas",
+      "subposition_code": "620463",
+      "subposition_name_pt": "Camisas de algodão, de uso masculino",
+      "subposition_name_en": "Women''s or girls'' trousers, bib and brace overalls, breeches and shorts of synthetic fibres (excl. knitted or crocheted, panties and swimwear)",
+      "subposition_name_es": "Camisas de fibras sintéticas o artificiales, para hombres o niños (exc. de punto, así como camisones y camisetas)",
+      "section_code": "XI",
+      "section_name_pt": "Matérias têxteis e suas obras",
+      "section_name_en": "Textiles and textiles articles",
+      "section_name_es": "Materias textiles y sus manufacturas"
+    }
+  },
+  {
+    "model": "assets.SH",
+    "pk": 330499,
+    "fields": {
+      "chapter_code": "33",
+      "chapter_name_pt": "Óleos essenciais e resinóides; produtos de perfumaria ou de toucador preparados e preparações cosméticas",
+      "chapter_name_en": "Essential oils and resinoids; perfumery, cosmetic or toilet preparations",
+      "chapter_name_es": "Aceites esenciales y resinoides; preparaciones de perfumería, otros.",
+      "position_code": "3304",
+      "position_name_pt": "Produtos de beleza ou de maquilhagem preparados e preparações para conservação ou cuidados da pele (exceto medicamentos), incluídas as preparações anti-solares e os bronzeadores; preparações para manicuros e pedicuros",
+      "position_name_en": "Beauty or make-up preparations and preparations for the care of the skin (other than medicaments), including sunscreen or sun tan preparations; manicure or pedicure preparations",
+      "position_name_es": "Preparaciones capilares",
+      "subposition_code": "330499",
+      "subposition_name_pt": "Outros produtos de beleza ou de maquilagem preparados",
+      "subposition_name_en": "Beauty or make-up preparations and preparations for the care of the skin (other than medicaments), incl. sunscreen or suntan preparations (excl. medicaments, lip and eye make-up preparations, manicure or pedicure preparations and make-up",
+      "subposition_name_es": "Preparaciones de belleza, maquillaje y para el cuidado de la piel, incl. las preparaciones antisolares y las bronceadoras (exc. medicamentos, preparaciones para el maquillaje de los labios o de los ojos, preparaciones para manicuras",
+      "section_code": "VI",
+      "section_name_pt": "Produtos das indústrias químicas ou indústrias conexas",
+      "section_name_en": "Products of chemical or allied industries",
+      "section_name_es": "Productos de las industrias químicas o de las industrias conexas"
+    }
+  },
+  {
+    "model": "assets.SH",
+    "pk": 731815,
+    "fields": {
+      "chapter_code": "73",
+      "chapter_name_pt": "Obras de ferro fundido, ferro ou aço",
+      "chapter_name_en": "Articles of iron or steel",
+      "chapter_name_es": "Manufacturas de fundición, de hierro o acero",
+      "position_code": "7318",
+      "position_name_pt": "Parafusos, pernos ou pinos, roscados, porcas, tira-fundos, ganchos roscados, rebites, chavetas, cavilhas, contrapinos ou troços, anilhas ou arruelas",
+      "position_name_en": "Screws, bolts, nuts, coach screws, screw hooks, rivets, cotters, cotter-pins, washers (including spring washers) and similar articles, of iron or steel",
+      "position_name_es": "Tornillos, pernos, tuercas, tirafondos, escarpias roscadas, remaches, pasadores, clavijas, chavetas, arandelas, incluidas las arandelas de muelle (resorte) y artículos similares, de fundición, hierro o acero",
+      "subposition_code": "731815",
+      "subposition_name_pt": "Outros parafusos e pinos ou pernos, mesmo com as porcas e arruelas, de ferro fundido, ferro ou aço",
+      "subposition_name_en": "Screws, bolts, nuts, coach screws, screw hooks, rivets, cotters, cotter-pins, washers (including spring washers) and similar articles, of iron or steel",
+      "subposition_name_es": "Tornillos y pernos, roscados, de fundición, hierro o acero, incl. con sus tuercas y arandelas (exc. tirafondos y demás tornillos para madera; escarpias y armellas, roscadas; tornillos taladradores; clavos-tornillo, tapones metálicos roscados",
+      "section_code": "XV",
+      "section_name_pt": "Metais comuns e suas obras",
+      "section_name_en": "Metales comunes y manufacturas de estos metales",
+      "section_name_es": "Base metals and articles of base metal"
+    }
+  },
+  {
+    "model": "assets.SH",
+    "pk": 392630,
+    "fields": {
+      "chapter_code": "39",
+      "chapter_name_pt": "Plásticos e suas obras",
+      "chapter_name_en": "Plastics and articles thereof",
+      "chapter_name_es": "Plástico y sus manufacturas",
+      "position_code": "3926",
+      "position_name_pt": "Outras obras de plástico e obras de outras matérias das posições 3901 a 3914",
+      "position_name_en": "Other articles of plastics and articles of other materials of headings 3901 to 3914",
+      "position_name_es": "Demás manufacturas de plástico y manufacturas de las demás materias de las partidas 3901 a 3914",
+      "subposition_code": "392630",
+      "subposition_name_pt": "Outras obras de plásticos e obras de outras matérias das posições 3901 a 3904",
+      "subposition_name_en": "Articles of plastics and articles of other materials of heading 3901 to 3914, n.e.s",
+      "subposition_name_es": "Manufacturas de plástico y manufacturas de las demás materias de las partidas 3901 a 3914, n.c.o.p.",
+      "section_code": "VII",
+      "section_name_pt": "Plásticos e suas obras; Borracha e suas obras",
+      "section_name_en": "Plastics and articles thereof",
+      "section_name_es": "Materias plásticas y manufacturas de estas materias; Caucho y manufacturas de caucho"
+    }
+  },
+  {
+    "model": "assets.SH",
+    "pk": 450490,
+    "fields": {
+      "chapter_code": "45",
+      "chapter_name_pt": "Cortiça e suas obras",
+      "chapter_name_en": "Cork and articles of cork",
+      "chapter_name_es": "Corcho y sus manufacturas",
+      "position_code": "4054",
+      "position_name_pt": "Cortiça aglomerada (com ou sem aglutinantes) e suas obras",
+      "position_name_en": "Agglomerated cork (with or without a binding substance) and articles of agglomerated cork",
+      "position_name_es": "Corcho aglomerado, incluso con aglutinante, y manufacturas de corcho aglomerado",
+      "subposition_code": "450490",
+      "subposition_name_pt": "Outras obras de cortiça aglomerada",
+      "subposition_name_en": "Agglomerated cork, with or without a binding substance, and articles of agglomerated cork (excl. footware and parts thereof; insoles, whether or not removable; headgear and parts thereof",
+      "subposition_name_es": "Corcho aglomerado, incl. con aglutinante, y manufacturas de corcho aglomerado (exc. calzado y sus partes, principalmente las plantillas no fijas; artículos de sombrerería y sus partes",
+      "section_code": "IX",
+      "section_name_pt": "Madeira, carvão vegetal e obras de madeira; Cortiça e suas obras; Obras de espartaria ou de cestaria",
+      "section_name_en": "Madera, carbón vegetal y manufacturas de madera; Corcho y manufacturas de corcho; Manufacturas de espartería o de cestería",
+      "section_name_es": "Wood and articles of wood; Wood charcoal; Cork and articles of cork; Manufactures of straw, of esparto or of other plaiting materials; Basketware and wickerwork"
+    }
+  },
+  {
+    "model": "assets.SH",
+    "pk": 731816,
+    "fields": {
+      "chapter_code": "73",
+      "chapter_name_pt": "Obras de ferro fundido, ferro ou aço",
+      "chapter_name_en": "Articles of iron or steel",
+      "chapter_name_es": "Manufacturas de fundición, de hierro o acero",
+      "position_code": "7318",
+      "position_name_pt": "Parafusos, pernos ou pinos, roscados, porcas, tira-fundos, ganchos roscados, rebites, chavetas, cavilhas, contrapinos ou troços, anilhas ou arruelas (incluídas as de pressão) e artefactos semelhantes",
+      "position_name_en": "Screws, bolts, nuts, coach screws, screw hooks, rivets, cotters, cotter-pins, washers (including spring washers) and similar articles, of iron or steel",
+      "position_name_es": "Tornillos, pernos, tuercas, tirafondos, escarpias roscadas, remaches, pasadores, clavijas, chavetas, arandelas, incluidas las arandelas de muelle (resorte) y artículos similares, de fundición, hierro o acero",
+      "subposition_code": "731816",
+      "subposition_name_pt": "Porcas de ferro fundido, ferro ou aço",
+      "subposition_name_en": "Nuts of iron or steel",
+      "subposition_name_es": "Tuercas, de fundición, hierro o acero",
+      "section_code": "XV",
+      "section_name_pt": "Metais comuns e suas obras",
+      "section_name_en": "Metales comunes y manufacturas de estos metales",
+      "section_name_es": "Base metals and articles of base metal"
+    }
+  },
+  {
+    "model": "assets.SH",
+    "pk": 841391,
+    "fields": {
+      "chapter_code": "84",
+      "chapter_name_pt": "Reatores nucleares, caldeiras, máquinas, aparelhos e instrumentos mecânicos, e suas partes",
+      "chapter_name_en": "Nuclear reactors, boilers, machinery and mechanical appliances; others",
+      "chapter_name_es": "Reactores nucleares, calderas, máquinas, otros.",
+      "position_code": "8412",
+      "position_name_pt": "Bombas para líquidos, mesmo com dispositivo medidor; elevadores de líquidos",
+      "position_name_en": "Pumps for liquids, whether or not fitted with a measuring device; liquid elevators",
+      "position_name_es": "Bombas para líquidos, incluso con dispositivo medidor incorporado; elevadores de líquidos",
+      "subposition_code": "841391",
+      "subposition_name_pt": "Bombas de vácuo",
+      "subposition_name_en": "Vacuum pumps",
+      "subposition_name_es": "Bombas de vacío",
+      "section_code": "XVI",
+      "section_name_pt": "Máquinas e aparelhos, material elétrico e suas partes; Aparelhos de gravação ou reprodução de som, aparelhos de gravação ou reprodução de imagens e de som em televisão, e suas partes e acessórios",
+      "section_name_en": "Machinery and mechanical appliances",
+      "section_name_es": "Máquinas y aparatos, material eléctrico e sus partes; Aparatos de grabación o reproducción de sonido, aparatos de grabación o reproducción de imágenes y sonido en televisión, y las partes y accesorios de estos aparatos"
+    }
+  }
+]
