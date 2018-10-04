@@ -14,7 +14,7 @@ const users = [
     caption: 'User1',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/docusaurus.svg',
+    image: '/img/docusaurus.sv',
     infoLink: 'https://www.facebook.com',
     pinned: true,
   },
@@ -48,14 +48,42 @@ const siteConfig = {
   users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/docusaurus.svg',
-  footerIcon: 'img/docusaurus.svg',
-  favicon: 'img/favicon.png',
+
+
+  Rogerio: 'img/rogerio.jpg',
+  Marcos: 'img/marcos.jpg',
+  Joao: 'img/joao.jpg',
+  Andre: 'img/andre.jpg',
+  Kaique: 'img/rogerio.jpg',
+  Caio: 'img/rogerio.jpg',
+  Matheus: 'img/matheus.jpg',
+  Vinicius: 'img/vinicius.jpg',
+  Sannya: 'img/sannya.jpg',
+
+  RogerioGithub: 'https://github.com/rogerioo',
+  MarcosGithub: 'https://github.com/marcosnbj',
+  JoaoGithub: 'https://github.com/joao15victor08',
+  AndreGithub: 'https://github.com/andrelucasf',
+  KaiqueGithub: 'https://github.com/riquekaique',
+  CaioGithub: 'https://github.com/caioiobs',
+  MatheusGithub: 'https://github.com/joranhezon',
+  ViniciusGithub: 'https://github.com/vinicinolivera',
+  SannyaGithub: 'https://github.com/sannyaarvelos',
+
+  members: [
+    "@rogerioo", "@marcosnbj", "@joao15victor08", "@andrelucasf",
+    "@riquekaique", "@caioiobs", "@johanhezon", "@vinicinolivera", "@sannyaarvelos"
+  ],
+
+  /* path to images for header/footer */
+  headerIcon: 'img/logo_header.png',
+  footerIcon: 'img/logo_header.png',
+  favicon: 'img/logo_header.png',
 
   /* Colors for website */
   colors: {
-    primaryColor: '#2E8555',
-    secondaryColor: '#205C3B',
+    primaryColor: '#17c13d',
+    secondaryColor: '#17c13d',
   },
 
   /* Custom fonts for website */
