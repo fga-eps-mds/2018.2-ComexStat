@@ -154,10 +154,6 @@ const Cards = (props) => {
       photo = siteConfig.Andre
       githubLink = siteConfig.AndreGithub
       break
-    case "@caioiobs":
-      photo = siteConfig.Caio
-      githubLink = siteConfig.CaioGithub
-      break
     case "@johanhezon":
       photo = siteConfig.Matheus
       githubLink = siteConfig.MatheusGithub
