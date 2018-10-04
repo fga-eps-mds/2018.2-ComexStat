@@ -1,12 +1,19 @@
-.DS_Store
+_Store
 
 node_modules
 
 lib/core/metadata.js
 lib/core/MetadataBlog.js
-
+src/comex_stat/assets/migrations/*
 docs/website/translated_docs
 docs/website/build/
 docs/website/yarn.lock
 docs/website/node_modules
 docs/website/i18n/*
+**/__pycache__/
+db.sqlite3
+
+src/comex_stat/static/**
+
+*.pyc
+__pycache__

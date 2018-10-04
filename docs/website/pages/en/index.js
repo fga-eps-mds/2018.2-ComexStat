@@ -123,8 +123,21 @@ const FeatureCallout = () => (
   <div
     className="productShowcaseSection paddingBottom"
     style={{textAlign: 'center'}}>
-    <h2>Feature Callout</h2>
-    <MarkdownBlock>These are features of this project</MarkdownBlock>
+    <h2>Time do projeto</h2>
+    <MarkdownBlock>
+    |Nome|Github|Email|
+    |----------------------- |--------------------| ---------------------|
+    |André Lucas Ferreira Lemos de Souza|[@andrelucasf](https://github.com/andrelucasf)|andre.lucas.lemos@hotmail.com|
+    |Caio Brandão Santos|[@caioiobs](https://github.com/caioiobs)|caiobs10@gmail.com|
+    |Fabíola Malta Fleury|[@fabiolamfleury](https://github.com/fabiolamfleury)|fabiola.mfleury@gmail.com|
+    |João Victor de Oliveira Matos	| [@joao15victor08](https://github.com/joao15victor08)|	joao15victor08@gmail.com|
+    |Kaique Henrique de Carvalho Borges|	[@riquekaique](https://github.com/riquekaique)|	rique.kaique@gmail.com|
+    |Matheus Vitor Costa Joranhezon	|[@Joranhezon](https://github.com/Joranhezon)|	mjoranhezon@gmail.com|
+    |Marcos Nery Borges Júnior	|[@MarcosNBJ](https://github.com/MarcosNBJ)|	marcosnery.comp@gmail.com|
+    |Rogério Silva dos Santos Júnior	|[@rogerioo](https://github.com/rogerioo)|	rogeriojunior@aluno.unb.br|
+    |Sannya Santana De Arvelos	|[@SannyaArvelos](https://github.com/SannyaArvelos)|	sannyasantana@gmail.com|
+    |Vinicius Rodrigues Oliveira 	|[@vinicinolivera](https://github.com/vinicinolivera)|	vinifladf@gmail.com |
+    </MarkdownBlock>
   </div>
 );
 

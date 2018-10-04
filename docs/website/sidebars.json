@@ -1,8 +1,9 @@
 {
   "docs": {
     "Comunidade": ["codeofconduct", "contributing"],
-    "Gerência": ["comunicacao", "processo", "termodeabertura"],
-    "Capacitação": ["microsservicos", "devOps","treinamentos"],
-    "Visão de Produto": ["docVisao"]
+    "Gerência": ["comunicacao", "processo", "medicao", "politicaBranches"],
+    "Capacitação": ["treinamentos", "microsservicos", "devOps", "pipelineDevOps", "utilizandoDockerDjango"],
+    "Visão de Produto": ["docVisao", "termodeabertura", "eap", "canvas", "prototipo", "guiaestilo"],
+    "Arquitetura": ["definicaoArquitetura", "docArquitetura"]
   }
 }

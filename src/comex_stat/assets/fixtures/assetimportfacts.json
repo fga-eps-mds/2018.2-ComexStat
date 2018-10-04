@@ -1,0 +1,82 @@
+[
+  {
+    "model": "assets.assetimportfacts",
+    "pk": 1,
+    "fields": {
+      "destination_fed_unit": 32,
+      "origin_country": 23,
+      "date": "2018-05-01",
+      "name": "Guarnições para móveis, carrocerias e semelhantes, de plásticos",
+      "ncm": 39263000,
+      "transportation": 1,
+      "urf": 817800,
+      "registries": 4,
+      "net_kilogram": 4,
+      "fob_value": 555
+    }
+  },
+  {
+    "model": "assets.assetimportfacts",
+    "pk": 2,
+    "fields": {
+      "destination_fed_unit": 41,
+      "origin_country": 249,
+      "date": "2018-05-01",
+      "name": "Outras obras de cortiça aglomerada",
+      "ncm": 45049000,
+      "urf": 0,
+      "transportation": 0,
+      "registries": 26,
+      "net_kilogram": 26,
+      "fob_value": 3215
+    }
+  },
+  {
+    "model": "assets.assetimportfacts",
+    "pk": 3,
+    "fields": {
+      "destination_fed_unit": 26,
+      "origin_country": 160,
+      "date": "2018-05-01",
+      "name": "Porcas de ferro fundido, ferro ou aço",
+      "ncm": 73181600,
+      "urf": 417902,
+      "transportation": 1,
+      "registries": 370,
+      "net_kilogram": 370,
+      "fob_value": 2283
+    }
+  },
+  {
+    "model": "assets.assetimportfacts",
+    "pk": 4,
+    "fields": {
+      "destination_fed_unit": 41,
+      "origin_country": 249,
+      "date": "2018-05-01",
+      "name": "Outras partes de bombas para líquidos",
+      "ncm": 84139190,
+      "urf": 817600,
+      "transportation": 4,
+      "registries": 4424,
+      "net_kilogram": 4424,
+      "fob_value": 332623
+    }
+  },
+  {
+    "model": "assets.assetimportfacts",
+    "pk": 5,
+    "fields": {
+      "destination_fed_unit": 41,
+      "origin_country": 386,
+      "date": "2018-05-01",
+      "name": "Outras partes de bombas para líquidos",
+      "ncm": 84139190,
+      "urf": 817600,
+      "transportation": 4,
+      "registries": 464,
+      "net_kilogram": 464,
+      "fob_value": 31454
+    }
+  }
+]
