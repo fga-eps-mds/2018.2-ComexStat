@@ -57,6 +57,25 @@ const Logo = props => (
   </div>
 );
 
+const Features = () => (
+  <Block layout="fourColumn">
+    {[
+      {
+        content: '</p align="justify"> O ComexStat, vem com o objetivo de facilitar o acesso aos dados relacionados ao comércio exterior de bens, e posteriormente serviços no Brasil. Proporcionando aos usuários a possibilidade de trabalhar com as informações desejadas de forma fácil e intuitiva. Aqui está registrada toda a documentação para que o usuário possa ter um bom entendimento do <i>software</i> e de como contribuir com o mesmo.</p>',
+        image: imgUrl('sobre.jpg'),
+        imageAlign: 'top',
+        title: 'Sobre',
+      },
+      {
+        content: '</p align="justify">O <i>software</i> é divido em dois repositórios, um dedicado ao <a href="https://github.com/fga-eps-mds/2018.2-ComexStat">Backend</a>, contendo a API, e o outro dedicado ao <a href="https://github.com/fga-eps-mds/2018.2-ComexStat-FrontEnd">Frontend</a>, contendo uma aplicação visual para facilitar a usabilidade do sistema.</p>',
+        image: imgUrl('repositorio.jpg'),
+        imageAlign: 'top',
+        title: 'Repositório',
+      },
+    ]}
+  </Block>
+);
+
 const ProjectTitle = () => (
   <h2 className="projectTitle">
     {siteConfig.title}
@@ -100,46 +119,70 @@ const Block = props => (
   </Container>
 );
 
-const Features = () => (
-  <Block layout="fourColumn">
-    {[
-      {
-        content: 'This is the content of my feature',
-        image: imgUrl('docusaurus.svg'),
-        imageAlign: 'top',
-        title: 'Feature One',
-      },
-      {
-        content: 'The content of my second feature',
-        image: imgUrl('docusaurus.svg'),
-        imageAlign: 'top',
-        title: 'Feature Two',
-      },
-    ]}
-  </Block>
-);
+const Header = () => {
+  return (
+    <div className="header">
+      <div className="header__text-box">
+        <h1 className="heading-primary">
+          <img src='img/logo_grande.png' alt="Logo"  id="img_logo" />
+        </h1>
+      </div>
+    </div>
+  )
+}
 
-const FeatureCallout = () => (
-  <div
-    className="productShowcaseSection paddingBottom"
-    style={{textAlign: 'center'}}>
-    <h2>Time do projeto</h2>
-    <MarkdownBlock>
-    |Nome|Github|Email|
-    |----------------------- |--------------------| ---------------------|
-    |André Lucas Ferreira Lemos de Souza|[@andrelucasf](https://github.com/andrelucasf)|andre.lucas.lemos@hotmail.com|
-    |Caio Brandão Santos|[@caioiobs](https://github.com/caioiobs)|caiobs10@gmail.com|
-    |Fabíola Malta Fleury|[@fabiolamfleury](https://github.com/fabiolamfleury)|fabiola.mfleury@gmail.com|
-    |João Victor de Oliveira Matos	| [@joao15victor08](https://github.com/joao15victor08)|	joao15victor08@gmail.com|
-    |Kaique Henrique de Carvalho Borges|	[@riquekaique](https://github.com/riquekaique)|	rique.kaique@gmail.com|
-    |Matheus Vitor Costa Joranhezon	|[@Joranhezon](https://github.com/Joranhezon)|	mjoranhezon@gmail.com|
-    |Marcos Nery Borges Júnior	|[@MarcosNBJ](https://github.com/MarcosNBJ)|	marcosnery.comp@gmail.com|
-    |Rogério Silva dos Santos Júnior	|[@rogerioo](https://github.com/rogerioo)|	rogeriojunior@aluno.unb.br|
-    |Sannya Santana De Arvelos	|[@SannyaArvelos](https://github.com/SannyaArvelos)|	sannyasantana@gmail.com|
-    |Vinicius Rodrigues Oliveira 	|[@vinicinolivera](https://github.com/vinicinolivera)|	vinifladf@gmail.com |
-    </MarkdownBlock>
-  </div>
-);
+const Cards = (props) => {
+  let photo, githubLink = null
+  switch (props.name) {
+    case "@rogerioo":
+      photo = siteConfig.Rogerio
+      githubLink = siteConfig.RogerioGithub
+      break
+    case "@marcosnbj":
+      photo = siteConfig.Marcos
+      githubLink = siteConfig.MarcosGithub
+      break
+    case "@joao15victor08":
+      photo = siteConfig.Joao
+      githubLink = siteConfig.JoaoGithub
+      break
+    case "@riquekaique":
+      photo = siteConfig.Kaique
+      githubLink = siteConfig.KaiqueGithub
+      break
+    case "@andrelucasf":
+      photo = siteConfig.Andre
+      githubLink = siteConfig.AndreGithub
+      break
+    case "@caioiobs":
+      photo = siteConfig.Caio
+      githubLink = siteConfig.CaioGithub
+      break
+    case "@johanhezon":
+      photo = siteConfig.Matheus
+      githubLink = siteConfig.MatheusGithub
+      break
+    case "@vinicinolivera":
+      photo = siteConfig.Vinicius
+      githubLink = siteConfig.ViniciusGithub
+      break
+    case "@sannyaarvelos":
+      photo = siteConfig.Sannya
+      githubLink = siteConfig.SannyaGithub
+      break
+    default:
+      break
+  }
+
+  return (
+    <a href={githubLink} className="card-foto">
+      <img src={photo} alt={props.name}  className="card-foto-perfil" />
+      <div className="card-link">
+        <p className="card-link-text">{props.name}</p>
+      </div>
+    </a>
+  )
+}
 
 const LearnHow = () => (
   <Block background="light">
@@ -210,17 +253,14 @@ class Index extends React.Component {
     const language = this.props.language || '';
 
     return (
-      <div>
-        <HomeSplash language={language} />
-        <div className="mainContainer">
-          <Features />
-          <FeatureCallout />
-          <LearnHow />
-          <TryOut />
-          <Description />
-          <Showcase language={language} />
+      <React.Fragment>
+        <Header />
+        <Features />
+         <h1 className="heading-colaboradores">Colaboradores</h1>
+        <div className="card-container">
+          {siteConfig.members.map(member => <Cards key={member} name={member} />)}
         </div>
-      </div>
+      </React.Fragment>
     );
   }
 }
