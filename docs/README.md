@@ -3,7 +3,7 @@
 
 [![Build Status](https://travis-ci.org/fga-eps-mds/2018.2-ComexStat.svg?branch=develop)](https://travis-ci.org/fga-eps-mds/2018.2-ComexStat)
 [![Maintainability](https://api.codeclimate.com/v1/badges/f8c2e994cae38bdd6ce7/maintainability)](https://codeclimate.com/github/fga-eps-mds/2018.2-ComexStat/maintainability)
-[![codecov](https://codecov.io/gh/fga-eps-mds/2018.2-ComexStat/branch/master/graph/badge.svg)](https://codecov.io/gh/fga-eps-mds/2018.2-ComexStat)
+[![codecov](https://codecov.io/gh/fga-eps-mds/2018.2-ComexStat/branch/develop/graph/badge.svg)](https://codecov.io/gh/fga-eps-mds/2018.2-ComexStat)
 
 
 ## Sobre
