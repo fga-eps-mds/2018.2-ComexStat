@@ -54,8 +54,7 @@ const siteConfig = {
   Marcos: 'img/marcos.jpg',
   Joao: 'img/joao.jpg',
   Andre: 'img/andre.jpg',
-  Kaique: 'img/rogerio.jpg',
-  Caio: 'img/rogerio.jpg',
+  Kaique: 'img/kaique.jpeg',
   Matheus: 'img/matheus.jpg',
   Vinicius: 'img/vinicius.jpg',
   Sannya: 'img/sannya.jpg',
@@ -65,14 +64,13 @@ const siteConfig = {
   JoaoGithub: 'https://github.com/joao15victor08',
   AndreGithub: 'https://github.com/andrelucasf',
   KaiqueGithub: 'https://github.com/riquekaique',
-  CaioGithub: 'https://github.com/caioiobs',
   MatheusGithub: 'https://github.com/joranhezon',
   ViniciusGithub: 'https://github.com/vinicinolivera',
   SannyaGithub: 'https://github.com/sannyaarvelos',
 
   members: [
     "@rogerioo", "@marcosnbj", "@joao15victor08", "@andrelucasf",
-    "@riquekaique", "@caioiobs", "@johanhezon", "@vinicinolivera", "@sannyaarvelos"
+    "@riquekaique", "@johanhezon", "@vinicinolivera", "@sannyaarvelos"
   ],
 
   /* path to images for header/footer */
