@@ -940,8 +940,21 @@ class QueryTest(TestCase):
         )
 
         self.AssetExportFacts = AssetExportFacts.objects.create(
-            date="2018-09-21",
+            date="2016-09-21",
             name="Outras partes para motores de explosao",
+            ncm=self.ncm,
+            urf=self.urf,
+            transportation=self.transportation,
+            registries=1,
+            net_kilogram=1,
+            fob_value=191,
+            origin_fed_unit=self.federativeUnit,
+            destination_country=self.country
+        )
+
+        self.AssetExportFacts = AssetExportFacts.objects.create(
+            date="2017-09-21",
+            name="Outras partes para motores de explosao 2",
             ncm=self.ncm,
             urf=self.urf,
             transportation=self.transportation,
@@ -955,6 +968,19 @@ class QueryTest(TestCase):
         self.AssetImportFacts = AssetImportFacts.objects.create(
             date="2018-09-22",
             name="Texto",
+            ncm=self.ncm,
+            urf=self.urf,
+            transportation=self.transportation,
+            registries=1,
+            net_kilogram=1,
+            fob_value=191,
+            destination_fed_unit=self.federativeUnit,
+            origin_country=self.country
+        )
+
+        self.AssetImportFacts = AssetImportFacts.objects.create(
+            date="2016-09-22",
+            name="Texto2",
             ncm=self.ncm,
             urf=self.urf,
             transportation=self.transportation,
@@ -1082,7 +1108,7 @@ class QueryTest(TestCase):
                 "edges": [
                     {
                         "node": {
-                            "date": "2018-09-22",
+                            "date": "2016-09-22",
                             "name": "Texto",
                             "ncm": {
                                 "ncmCode": "84099190",
@@ -1309,7 +1335,7 @@ class QueryTest(TestCase):
                 "edges": [
                     {
                         "node": {
-                            "date": "2018-09-21",
+                            "date": "2017-09-21",
                             "name": "Outras partes para motores de explosao",
                             "ncm": {
                                 "ncmCode": "84099190",
@@ -1594,6 +1620,72 @@ class QueryTest(TestCase):
                 ]
             }
          }
+
+        schema = graphene.Schema(Query)
+        result = schema.execute(query)
+        self.assertEqual(expected, result.data)
+
+    def test_query_range_date_import(self):
+        '''
+            This test verifies the range date search
+        '''
+
+        query = '''
+            {
+                allImportsec(commercializedBetween: "[\"2018-01-01\",\"2018-12-31\"]"){
+                    edges{
+                        node{
+                            name
+                        }
+                    }
+                }
+            }
+        '''
+
+        expected = {"allImportsec":{
+                "edges": [
+                    {
+                        "node": {
+                            "name": "Texto"
+                        }
+                    }
+                ]
+            }
+
+        }
+
+        schema = graphene.Schema(Query)
+        result = schema.execute(query)
+        self.assertEqual(expected, result.data)
+
+    def test_query_range_date_export(self):
+        '''
+            This test verifies the range date search
+        '''
+
+        query = '''
+            {
+                allExportsec(commercializedBetween: "[\"2017-01-01\",\"2017-12-31\"]"){
+                    edges{
+                        node{
+                            name
+                        }
+                    }
+                }
+            }
+        '''
+
+        expected = {"allExportsec":{
+                "edges": [
+                    {
+                        "node": {
+                            "name": "Outras partes para motores de explosao 2"
+                        }
+                    }
+                ]
+            }
+
+        }
 
         schema = graphene.Schema(Query)
         result = schema.execute(query)

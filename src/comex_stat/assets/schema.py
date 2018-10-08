@@ -260,7 +260,7 @@ class Query(graphene.ObjectType):
     all_exportsec = DjangoFilterConnectionField(AssetExportFactsNode,
                                                 filterset_class=AssetExpFilter)
     all_import = DjangoFilterConnectionField(
-        AssetImportFactsType, filterset_class=AssetImpFilter)
+        AssetImportFactsType)
     all_export = DjangoFilterConnectionField(AssetExportFactsType)
     all_tradeBlocs = DjangoFilterConnectionField(TradeBlocsType)
     all_country = DjangoFilterConnectionField(CountryType)
