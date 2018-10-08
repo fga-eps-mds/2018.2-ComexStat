@@ -1,17 +1,88 @@
+import json
+from datetime import datetime, time
+
 import graphene
-
-from graphene_django.types import DjangoObjectType
+from comex_stat.assets.models import (CGCE, CUCI, NCM, SH, AssetExportFacts,
+                                      AssetImportFacts, Country,
+                                      FederativeUnit, TradeBlocs,
+                                      Transportation, Urf)
+from django_filters import rest_framework
+from django.forms import DateField, Field
+from django_filters.filters import RangeFilter
+from django_filters.utils import handle_timezone
 from graphene_django.filter.fields import DjangoFilterConnectionField
+from graphene_django.types import DjangoObjectType
 
-from comex_stat.assets.models import (AssetImportFacts, AssetExportFacts,
-                                      NCM, TradeBlocs, Country, FederativeUnit,
-                                      Transportation, Urf, CUCI, CGCE, SH)
+
+class DateRangeField(Field):
+
+    def compress(self, data_list):
+        if data_list:
+            start_date, stop_date = data_list
+            if start_date:
+                start_date = handle_timezone(
+                    datetime.combine(start_date, time.min))
+            if stop_date:
+                stop_date = handle_timezone(
+                    datetime.combine(stop_date, time.max))
+            return slice(start_date, stop_date)
+        return None
+
+    def clean(self, value):
+        if value:
+            clean_data = []
+            values = json.loads(value)
+            if isinstance(values, (list, tuple)):
+                for field_value in values:
+                    clean_data.append(DateField().clean(field_value))
+            return self.compress(clean_data)
+        else:
+            return self.compress([])
+
+
+class DateFromToRangeFilter(RangeFilter):
+    field_class = DateRangeField
+
+
+class AssetImpFilter(rest_framework.FilterSet):
+
+    commercialized_between = DateFromToRangeFilter('date')
+
+    class Meta:
+        model = AssetImportFacts
+        fields = ['commercialized_between', 'name']
+
+
+class AssetImportFactsNode(DjangoObjectType):
+    class Meta:
+        # Assume you have an Animal model defined with the following fields
+        model = AssetImportFacts
+        filter_fields = ['commercialized_between', 'name']
+        interfaces = (graphene.Node, )
+
+
+class AssetExpFilter(rest_framework.FilterSet):
+
+    commercialized_between = DateFromToRangeFilter('date')
+
+    class Meta:
+        model = AssetExportFacts
+        fields = ['commercialized_between', 'name']
+
+
+class AssetExportFactsNode(DjangoObjectType):
+    class Meta:
+        # Assume you have an Animal model defined with the following fields
+        model = AssetExportFacts
+        filter_fields = ['commercialized_between', 'name']
+        interfaces = (graphene.Node, )
 
 
 class AssetImportFactsType(DjangoObjectType):
     class Meta:
         model = AssetImportFacts
         filter_fields = {
+
             'date': ['icontains'],
             'name': ['icontains'],
             'registries': ['icontains'],
@@ -184,7 +255,12 @@ class UrfType(DjangoObjectType):
 
 
 class Query(graphene.ObjectType):
-    all_import = DjangoFilterConnectionField(AssetImportFactsType)
+    all_importsec = DjangoFilterConnectionField(AssetImportFactsNode,
+                                                filterset_class=AssetImpFilter)
+    all_exportsec = DjangoFilterConnectionField(AssetExportFactsNode,
+                                                filterset_class=AssetExpFilter)
+    all_import = DjangoFilterConnectionField(
+        AssetImportFactsType, filterset_class=AssetImpFilter)
     all_export = DjangoFilterConnectionField(AssetExportFactsType)
     all_tradeBlocs = DjangoFilterConnectionField(TradeBlocsType)
     all_country = DjangoFilterConnectionField(CountryType)
@@ -198,6 +274,12 @@ class Query(graphene.ObjectType):
 
     def resolve_all_import(self, info, **kwargs):
         return AssetImportFacts.objects.all()
+
+    def resolve_all_importsec(self, info, **kwargs):
+        return AssetImportFacts.objects.all()
+
+    def resolve_all_exportsec(self, info, **kwargs):
+        return AssetExportFacts.objects.all()
 
     def resolve_all_export(self, info, **kwargs):
         return AssetExportFacts.objects.all()
