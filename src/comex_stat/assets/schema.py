@@ -6,7 +6,8 @@ from comex_stat.assets.models import (CGCE, CUCI, NCM, SH, AssetExportFacts,
                                       AssetImportFacts, Country,
                                       FederativeUnit, TradeBlocs,
                                       Transportation, Urf)
-from django_filters import rest_framework
+
+from django_filters import FilterSet, CharFilter
 from django.forms import DateField, Field
 from django_filters.filters import RangeFilter
 from django_filters.utils import handle_timezone
@@ -44,65 +45,70 @@ class DateFromToRangeFilter(RangeFilter):
     field_class = DateRangeField
 
 
-class AssetImpFilter(rest_framework.FilterSet):
+class AssetImportFilter(FilterSet):
 
     commercialized_between = DateFromToRangeFilter('date')
+    name = CharFilter(
+        field_name="name", lookup_expr="icontains")
+    date = CharFilter(
+        field_name="date", lookup_expr="icontains")
+    registries = CharFilter(
+        field_name="registries", lookup_expr="icontains")
+    net_kilogram = CharFilter(
+        field_name="net_kilogram", lookup_expr="icontains")
+    fob_value = CharFilter(
+        field_name="fob_value", lookup_expr="icontains")
 
     class Meta:
         model = AssetImportFacts
-        fields = ['commercialized_between', 'name']
+        fields = ['commercialized_between', 'name',
+                  'date', 'registries', 'net_kilogram', 'fob_value']
+
+
+class AssetExportFilter(FilterSet):
+
+    commercialized_between = DateFromToRangeFilter('date')
+    name = CharFilter(
+        field_name="name", lookup_expr="icontains")
+    date = CharFilter(
+        field_name="date", lookup_expr="icontains")
+    registries = CharFilter(
+        field_name="registries", lookup_expr="icontains")
+    net_kilogram = CharFilter(
+        field_name="net_kilogram", lookup_expr="icontains")
+    fob_value = CharFilter(
+        field_name="fob_value", lookup_expr="icontains")
+
+    class Meta:
+        model = AssetExportFacts
+        fields = ['commercialized_between', 'name',
+                  'date', 'registries', 'net_kilogram', 'fob_value']
 
 
 class AssetImportFactsNode(DjangoObjectType):
     class Meta:
-        # Assume you have an Animal model defined with the following fields
         model = AssetImportFacts
-        filter_fields = ['commercialized_between', 'name']
+        filter_fields = ['commercialized_between', 'name',
+                         'date', 'registries', 'net_kilogram', 'fob_value']
         interfaces = (graphene.Node, )
-
-
-class AssetExpFilter(rest_framework.FilterSet):
-
-    commercialized_between = DateFromToRangeFilter('date')
-
-    class Meta:
-        model = AssetExportFacts
-        fields = ['commercialized_between', 'name']
 
 
 class AssetExportFactsNode(DjangoObjectType):
     class Meta:
-        # Assume you have an Animal model defined with the following fields
         model = AssetExportFacts
-        filter_fields = ['commercialized_between', 'name']
+        filter_fields = ['commercialized_between', 'name',
+                         'date', 'registries', 'net_kilogram', 'fob_value']
         interfaces = (graphene.Node, )
 
 
 class AssetImportFactsType(DjangoObjectType):
     class Meta:
         model = AssetImportFacts
-        filter_fields = {
-
-            'date': ['icontains'],
-            'name': ['icontains'],
-            'registries': ['icontains'],
-            'net_kilogram': ['icontains'],
-            'fob_value': ['icontains']
-        }
-        interfaces = {graphene.Node, }
 
 
 class AssetExportFactsType(DjangoObjectType):
     class Meta:
         model = AssetExportFacts
-        filter_fields = {
-            'date': ['icontains'],
-            'name': ['icontains'],
-            'registries': ['icontains'],
-            'net_kilogram': ['icontains'],
-            'fob_value': ['icontains']
-        }
-        interfaces = {graphene.Node, }
 
 
 class NCMType(DjangoObjectType):
@@ -255,13 +261,10 @@ class UrfType(DjangoObjectType):
 
 
 class Query(graphene.ObjectType):
-    all_importsec = DjangoFilterConnectionField(AssetImportFactsNode,
-                                                filterset_class=AssetImpFilter)
-    all_exportsec = DjangoFilterConnectionField(AssetExportFactsNode,
-                                                filterset_class=AssetExpFilter)
     all_import = DjangoFilterConnectionField(
-        AssetImportFactsType)
-    all_export = DjangoFilterConnectionField(AssetExportFactsType)
+        AssetImportFactsNode, filterset_class=AssetImportFilter)
+    all_export = DjangoFilterConnectionField(
+        AssetExportFactsNode, filterset_class=AssetExportFilter)
     all_tradeBlocs = DjangoFilterConnectionField(TradeBlocsType)
     all_country = DjangoFilterConnectionField(CountryType)
     all_federativeUnit = DjangoFilterConnectionField(FederativeUnitType)
@@ -275,11 +278,11 @@ class Query(graphene.ObjectType):
     def resolve_all_import(self, info, **kwargs):
         return AssetImportFacts.objects.all()
 
-    def resolve_all_importsec(self, info, **kwargs):
-        return AssetImportFacts.objects.all()
+    # def resolve_all_importsec(self, info, **kwargs):
+    #     return AssetImportFacts.objects.all()
 
-    def resolve_all_exportsec(self, info, **kwargs):
-        return AssetExportFacts.objects.all()
+    # def resolve_all_exportsec(self, info, **kwargs):
+    #     return AssetExportFacts.objects.all()
 
     def resolve_all_export(self, info, **kwargs):
         return AssetExportFacts.objects.all()
