@@ -3,6 +3,7 @@ title: Sprint 7
 author: Matheus Joranhezon
 authorURL: https://github.com/joranhezon
 authorFBID: 100002504848674
+id: sprint7
 ---
 
 # Planejamento da Sprint
@@ -42,7 +43,7 @@ Fechar dívidas de Devops, começar o desenvolvimento Frontend.
 
 ## Issues
 
-As issues podem ser encontradas [Issues](https://github.com/fga-eps-mds/2018.2-ComexStat/milestone/9)
+As issues podem ser encontradas [aqui](https://github.com/fga-eps-mds/2018.2-ComexStat/milestone/9).
 
 
 ### Dívidas alocadas
@@ -52,7 +53,7 @@ As issues podem ser encontradas [Issues](https://github.com/fga-eps-mds/2018.2-C
 
 ## Possíveis Riscos mapeados para a sprint
 
-Para essa sprint, os riscos alocados foram:
+Para essa sprint, os riscos encontrados foram:
 
 ![Riscos Sprint 7](https://fga-eps-mds.github.io/2018.2-ComexStat/img/sprints/sprint7/riscos.png)
 
@@ -68,30 +69,35 @@ Burndown de riscos:
 
 ## Resultado da Revisão da Sprint
 
+![Burndown Sprint 7](https://fga-eps-mds.github.io/2018.2-ComexStat/img/sprints/sprint7/burndownspront7.png)
+
 ### Histórias entregues
 
+![Entregues Sprint 7](https://fga-eps-mds.github.io/2018.2-ComexStat/img/sprints/sprint7/historiasentregues.png)
 
 ### Dívidas entregues
 
-Pontos de dívidas entregues:
+Pontos de dívidas entregues: 26
+
+Todas as dívidas foram entregues durante essa sprint.
 
 
 ## Retrospectiva da Sprint
 
+![Retrospectiva Sprint 7](https://fga-eps-mds.github.io/2018.2-ComexStat/img/sprints/sprint7/retrospectiva.jpg)
 
 ### Pontos positivos
 
+- Planejamento está se estabilizando e permitindo um melhor trabalho por parte da equipe.
+- Membros motivados.
+- Separação de histórias menores para acomodar a semana conturbada do time e a costume a uma nova tecnologia.
 
 ### Pontos negativos
 
+- Rastreabilidade falha, não permitindo uma clareza nas atividades da equipe.
+- Pontos entregues apenas no final da Sprint.
 
 ### Possíveis melhorias
 
-
-## Medições obtidas dos indicadores e métricas
-
-
-
-
-
-# Análise Geral
+- Criação de mais labels para melhorar a rastreabilidade.
+- Separação de histórias de usuário em tasks.
