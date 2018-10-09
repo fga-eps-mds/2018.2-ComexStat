@@ -125,39 +125,38 @@ class NCM(models.Model):
 
 
 class TradeBlocs(models.Model):
-    name_portuguese = models.CharField(max_length=100)
-    name_english = models.CharField(max_length=100)
-    name_spanish = models.CharField(max_length=100)
-    code = models.CharField(max_length=10)
+    bloc_name_pt = models.CharField(max_length=100)
+    bloc_name_en = models.CharField(max_length=100)
+    bloc_name_es = models.CharField(max_length=100)
+    bloc_code = models.CharField(max_length=10)
 
 
 class Country(models.Model):
-    name_portuguese = models.CharField(max_length=100)
-    name_english = models.CharField(max_length=100)
-    name_spanish = models.CharField(max_length=100)
-    code_iso3 = models.CharField(max_length=3)
+    country_name_pt = models.CharField(max_length=100)
+    country_name_en = models.CharField(max_length=100)
+    country_name_es = models.CharField(max_length=100)
+    country_code_iso3 = models.CharField(max_length=3)
     trade_bloc = models.ForeignKey(TradeBlocs, on_delete=models.CASCADE)
 
 
 class FederativeUnit(models.Model):
-    name = models.CharField(max_length=100)
-    code = models.CharField(max_length=100)
-    initials = models.CharField(max_length=6)
+    uf_name = models.CharField(max_length=100)
+    uf_code = models.CharField(max_length=100)
+    uf_initials = models.CharField(max_length=6)
 
 
 class Transportation(models.Model):
-    name = models.CharField(max_length=100)
-    code = models.CharField(max_length=100)
+    transportation_name = models.CharField(max_length=100)
+    transportation_code = models.CharField(max_length=100)
 
 
 class Urf(models.Model):
-    name = models.CharField(max_length=100)
-    code = models.CharField(max_length=100)
+    urf_name = models.CharField(max_length=100)
+    urf_code = models.CharField(max_length=100)
 
 
 class AssetFacts(models.Model):
     date = models.DateField(default=datetime.now)
-    name = models.CharField(max_length=100)
     ncm = models.ForeignKey(NCM, on_delete=models.CASCADE)
     urf = models.ForeignKey(Urf, on_delete=models.CASCADE, null=True)
     transportation = models.ForeignKey(
