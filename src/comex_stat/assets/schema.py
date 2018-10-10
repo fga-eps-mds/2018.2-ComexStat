@@ -17,6 +17,16 @@ from graphene_django.types import DjangoObjectType
 
 class DateRangeField(Field):
 
+    '''
+
+        Class that expects to receive a JSON string,
+        like: "[\"yyyy-mm-dd\",\"yyyy-mm-dd\"]"
+        The first date being the begin and the second the end.
+        The function then splits the two dates into DateFields
+        and interprets the range between them by using datetime functions.
+
+    '''
+
     def compress(self, data_list):
         if data_list:
             start_date, stop_date = data_list
@@ -42,11 +52,21 @@ class DateRangeField(Field):
 
 
 class DateFromToRangeFilter(RangeFilter):
+    '''
+     Class to define cutom field-filter that will use the DateRange function.
+
+    '''
+
     field_class = DateRangeField
 
 
 class AssetImportFilter(FilterSet):
 
+    '''
+     Custom filter-set class for Import facts
+    '''
+
+    # temporary field used to filter date fields by range
     commercialized_between = DateFromToRangeFilter('date')
     name = CharFilter(
         field_name="name", lookup_expr="icontains")
@@ -67,6 +87,11 @@ class AssetImportFilter(FilterSet):
 
 class AssetExportFilter(FilterSet):
 
+    '''
+     Custom filter-set class for Export facts
+    '''
+
+    # temporary field used to filter date fields by range
     commercialized_between = DateFromToRangeFilter('date')
     name = CharFilter(
         field_name="name", lookup_expr="icontains")
@@ -277,12 +302,6 @@ class Query(graphene.ObjectType):
 
     def resolve_all_import(self, info, **kwargs):
         return AssetImportFacts.objects.all()
-
-    # def resolve_all_importsec(self, info, **kwargs):
-    #     return AssetImportFacts.objects.all()
-
-    # def resolve_all_exportsec(self, info, **kwargs):
-    #     return AssetExportFacts.objects.all()
 
     def resolve_all_export(self, info, **kwargs):
         return AssetExportFacts.objects.all()
