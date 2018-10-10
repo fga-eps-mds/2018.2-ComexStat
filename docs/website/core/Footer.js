@@ -22,50 +22,39 @@ class Footer extends React.Component {
     return (
       <footer className="nav-footer" id="footer">
         <section className="sitemap">
-          <a href={this.props.config.baseUrl} className="nav-home">
-            {this.props.config.footerIcon && (
-              <img
-                src={this.props.config.baseUrl + this.props.config.footerIcon}
-                alt={this.props.config.title}
-                width="66"
-                height="58"
-              />
-            )}
-          </a>
           <div>
-            <h5>Docs</h5>
-            <a href={this.docUrl('doc1.html', this.props.language)}>
-              Getting Started (or other categories)
+            <h5>Universidade de Brasília</h5>
+            <a href="https://github.com/fga-eps-mds/2018.2-ComexStat">
+              Backend
             </a>
-            <a href={this.docUrl('doc2.html', this.props.language)}>
-              Guides (or other categories)
+            <a href="https://github.com/fga-eps-mds/2018.2-ComexStat-Frontend">
+              Frontend
             </a>
-            <a href={this.docUrl('doc3.html', this.props.language)}>
-              API Reference (or other categories)
+            <a href="https://fga-eps-mds.github.io/2018.2-ComexStat/docs/contributing">
+              Contribuindo
             </a>
           </div>
           <div>
-            <h5>Community</h5>
-            <a href={this.pageUrl('users.html', this.props.language)}>
-              User Showcase
+            <h5>Ministério da Indústria - MDIC</h5>
+            <a href="http://comexstat.mdic.gov.br/pt/home">
+              Sistema Antigo
             </a>
             <a
-              href="http://stackoverflow.com/questions/tagged/"
+              href="http://www.mdic.gov.br/index.php/comercio-exterior/estatisticas-de-comercio-exterior/base-de-dados-do-comercio-exterior-brasileiro-arquivos-para-download"
               target="_blank"
               rel="noreferrer noopener">
-              Stack Overflow
+              Base de Dados
             </a>
-            <a href="https://discordapp.com/">Project Chat</a>
             <a
-              href="https://twitter.com/"
+              href="http://www.mdic.gov.br/"
               target="_blank"
               rel="noreferrer noopener">
-              Twitter
+              Site Oficial
             </a>
           </div>
           <div>
-            <h5>More</h5>
-            <a href={`${this.props.config.baseUrl}blog`}>Blog</a>
+            <h5>Outros</h5>
+            <a href={`${this.props.config.baseUrl}blog`}>Últimas Sprints</a>
             <a href="https://github.com/">GitHub</a>
             <a
               className="github-button"
@@ -81,15 +70,13 @@ class Footer extends React.Component {
         </section>
 
         <a
-          href="https://code.facebook.com/projects/"
-          target="_blank"
+          href={this.props.config.baseUrl}
           rel="noreferrer noopener"
           className="fbOpenSource">
           <img
-            src={`${this.props.config.baseUrl}img/oss_logo.png`}
+            src={this.props.config.baseUrl + this.props.config.footerIcon}
             alt="Facebook Open Source"
-            width="170"
-            height="45"
+            id="footer_logo"
           />
         </a>
         <section className="copyright">{this.props.config.copyright}</section>

@@ -51,8 +51,8 @@ const siteConfig = {
 
 
   Rogerio: 'img/rogerio.jpg',
-  Marcos: 'img/marcos.jpg',
   Joao: 'img/joao.jpg',
+  Marcos: 'img/marcos.jpg',
   Andre: 'img/andre.jpg',
   Kaique: 'img/kaique.jpeg',
   Matheus: 'img/matheus.jpg',
@@ -60,8 +60,8 @@ const siteConfig = {
   Sannya: 'img/sannya.jpg',
 
   RogerioGithub: 'https://github.com/rogerioo',
-  MarcosGithub: 'https://github.com/marcosnbj',
   JoaoGithub: 'https://github.com/joao15victor08',
+  MarcosGithub: 'https://github.com/marcosnbj',
   AndreGithub: 'https://github.com/andrelucasf',
   KaiqueGithub: 'https://github.com/riquekaique',
   MatheusGithub: 'https://github.com/joranhezon',
@@ -69,7 +69,7 @@ const siteConfig = {
   SannyaGithub: 'https://github.com/sannyaarvelos',
 
   members: [
-    "@rogerioo", "@marcosnbj", "@joao15victor08", "@andrelucasf",
+    "@rogerioo", "@joao15victor08", "@marcosnbj", "@andrelucasf",
     "@riquekaique", "@johanhezon", "@vinicinolivera", "@sannyaarvelos"
   ],
 
@@ -99,7 +99,7 @@ const siteConfig = {
   */
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} EPS e MDS UnB FGA`,
+  copyright: `Copyright © ${new Date().getFullYear()} ComexStat`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
