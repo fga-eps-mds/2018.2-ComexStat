@@ -3,45 +3,45 @@
     "model": "assets.FederativeUnit",
     "pk": 45,
     "fields": {
-      "name": "Rio Grande do Sul",
-      "code": "45",
-      "initials": "RS"
+      "uf_name": "Rio Grande do Sul",
+      "uf_code": "45",
+      "uf_initials": "RS"
     }
   },
   {
     "model": "assets.FederativeUnit",
     "pk": 41,
     "fields": {
-      "name": "São Paulo",
-      "code": "41",
-      "initials": "SP"
+      "uf_name": "São Paulo",
+      "uf_code": "41",
+      "uf_initials": "SP"
     }
   },
   {
     "model": "assets.FederativeUnit",
     "pk": 33,
     "fields": {
-      "name": "Minas Gerais",
-      "code": "33",
-      "initials": "MG"
+      "uf_name": "Minas Gerais",
+      "uf_code": "33",
+      "uf_initials": "MG"
     }
   },
   {
     "model": "assets.FederativeUnit",
     "pk": 32,
     "fields": {
-      "name": "Bahia",
-      "code": "32",
-      "initials": "BA"
+      "uf_name": "Bahia",
+      "uf_code": "32",
+      "uf_initials": "BA"
     }
   },
   {
     "model": "assets.FederativeUnit",
     "pk": 26,
     "fields": {
-      "name": "Pernambuco",
-      "code": "26",
-      "initials": "PE"
+      "uf_name": "Pernambuco",
+      "uf_code": "26",
+      "uf_initials": "PE"
     }
   }
 ]

@@ -3,96 +3,96 @@
     "model": "assets.Transportation",
     "pk": 0,
     "fields": {
-      "name": "VIA NAO DECLARADA",
-      "code": "00"
+      "transportation_name": "VIA NAO DECLARADA",
+      "transportation_code": "00"
     }
   },
   {
     "model": "assets.Transportation",
     "pk": 1,
     "fields": {
-      "name": "MARITIMA",
-      "code": "01"
+      "transportation_name": "MARITIMA",
+      "transportation_code": "01"
     }
   },
   {
     "model": "assets.Transportation",
     "pk": 2,
     "fields": {
-      "name": "FLUVIAL",
-      "code": "02"
+      "transportation_name": "FLUVIAL",
+      "transportation_code": "02"
     }
   },
   {
     "model": "assets.Transportation",
     "pk": 3,
     "fields": {
-      "name": "LACUSTRE",
-      "code": "03"
+      "transportation_name": "LACUSTRE",
+      "transportation_code": "03"
     }
   },
   {
     "model": "assets.Transportation",
     "pk": 4,
     "fields": {
-      "name": "AEREA",
-      "code": "04"
+      "transportation_name": "AEREA",
+      "transportation_code": "04"
     }
   },
   {
     "model": "assets.Transportation",
     "pk": 5,
     "fields": {
-      "name": "POSTAL",
-      "code": "05"
+      "transportation_name": "POSTAL",
+      "transportation_code": "05"
     }
   },
   {
     "model": "assets.Transportation",
     "pk": 6,
     "fields": {
-      "name": "FERROVIARIA",
-      "code": "06"
+      "transportation_name": "FERROVIARIA",
+      "transportation_code": "06"
     }
   },
   {
     "model": "assets.Transportation",
     "pk": 7,
     "fields": {
-      "name": "RODOVIARIA",
-      "code": "07"
+      "transportation_name": "RODOVIARIA",
+      "transportation_code": "07"
     }
   },
   {
     "model": "assets.Transportation",
     "pk": 8,
     "fields": {
-      "name": "CONDUTO/REDE DE TRANSMISSAO",
-      "code": "08"
+      "transportation_name": "CONDUTO/REDE DE TRANSMISSAO",
+      "transportation_code": "08"
     }
   },
   {
     "model": "assets.Transportation",
     "pk": 9,
     "fields": {
-      "name": "MEIOS PROPRIOS",
-      "code": "09"
+      "transportation_name": "MEIOS PROPRIOS",
+      "transportation_code": "09"
     }
   },
   {
     "model": "assets.Transportation",
     "pk": 99,
     "fields": {
-      "name": "VIA DESCONHECIDA",
-      "code": "99"
+      "transportation_name": "VIA DESCONHECIDA",
+      "transportation_code": "99"
     }
   },
   {
     "model": "assets.Transportation",
     "pk": 10,
     "fields": {
-      "name": "ENTRADA/SAIDA FICTA",
-      "code": "10"
+      "transportation_name": "ENTRADA/SAIDA FICTA",
+      "transportation_code": "10"
     }
   }
 ]
