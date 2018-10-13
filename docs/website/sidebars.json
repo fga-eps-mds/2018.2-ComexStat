@@ -4,6 +4,7 @@
     "Gerência": ["comunicacao", "processo", "medicao", "politicaBranches"],
     "Capacitação": ["treinamentos", "microsservicos", "devOps", "pipelineDevOps", "utilizandoDockerDjango"],
     "Visão de Produto": ["docVisao", "termodeabertura", "eap", "canvas", "prototipo", "guiaestilo"],
-    "Arquitetura": ["definicaoArquitetura", "docArquitetura"]
+    "Arquitetura": ["definicaoArquitetura", "docArquitetura"],
+    "Sprints Release 2": ["sprint7", "sprint8"]
   }
 }

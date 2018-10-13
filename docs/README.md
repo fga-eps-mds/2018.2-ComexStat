@@ -6,7 +6,6 @@
 [![codecov](https://codecov.io/gh/fga-eps-mds/2018.2-ComexStat/branch/develop/graph/badge.svg)](https://codecov.io/gh/fga-eps-mds/2018.2-ComexStat)
 
 Produção
-* https://api-comexstat.herokuapp.com/
 * https://comexstat.herokuapp.com/
 
 Homologação
