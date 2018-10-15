@@ -11,3 +11,4 @@ flake8==3.5.0
 coveralls
 coverage
 psycopg2-binary
+django-cors-headers
