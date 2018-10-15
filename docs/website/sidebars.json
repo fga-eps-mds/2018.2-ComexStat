@@ -5,6 +5,6 @@
     "Capacitação": ["treinamentos", "microsservicos", "devOps", "pipelineDevOps", "utilizandoDockerDjango"],
     "Visão de Produto": ["docVisao", "termodeabertura", "eap", "canvas", "prototipo", "guiaestilo"],
     "Arquitetura": ["definicaoArquitetura", "docArquitetura"],
-    "Sprints Release 2": ["sprint7", "sprint8"]
+    "Sprints Release 2": ["sprint7", "sprint8", "sprint9"]
   }
 }

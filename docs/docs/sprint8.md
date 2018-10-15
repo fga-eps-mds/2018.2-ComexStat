@@ -12,7 +12,6 @@ id: sprint8
 |---------------------|
 | André Lucas  |
 | João Victor  |
-| Matheus Vitor   |
 | Marcos Nery  |
 | Matheus Joranhezon   |
 | Kaique   |
