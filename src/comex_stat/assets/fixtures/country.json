@@ -3,10 +3,10 @@
     "model": "assets.Country",
     "pk": 249,
     "fields": {
-      "name_portuguese": "Estados Unidos",
-      "name_english": "United States",
-      "name_spanish": "Estados Unidos",
-      "code_iso3": "USA",
+      "country_name_pt": "Estados Unidos",
+      "country_name_en": "United States",
+      "country_name_es": "Estados Unidos",
+      "country_code_iso3": "USA",
       "trade_bloc": 107
     }
   },
@@ -14,10 +14,10 @@
     "model": "assets.Country",
     "pk": 160,
     "fields": {
-      "name_portuguese": "China",
-      "name_english": "China",
-      "name_spanish": "China",
-      "code_iso3": "CHN",
+      "country_name_pt": "China",
+      "country_name_en": "China",
+      "country_name_es": "China",
+      "country_code_iso3": "CHN",
       "trade_bloc": 39
     }
   },
@@ -25,10 +25,10 @@
     "model": "assets.Country",
     "pk": 23,
     "fields": {
-      "name_portuguese": "Alemanha",
-      "name_english": "Germany",
-      "name_spanish": "Alemania",
-      "code_iso3": "DEU",
+      "country_name_pt": "Alemanha",
+      "country_name_en": "Germany",
+      "country_name_es": "Alemania",
+      "country_code_iso3": "DEU",
       "trade_bloc": 112
     }
   },
@@ -36,10 +36,10 @@
     "model": "assets.Country",
     "pk": 386,
     "fields": {
-      "name_portuguese": "Itália",
-      "name_english": "Italy",
-      "name_spanish": "Italia",
-      "code_iso3": "ITA",
+      "country_name_pt": "Itália",
+      "country_name_en": "Italy",
+      "country_name_es": "Italia",
+      "country_code_iso3": "ITA",
       "trade_bloc": 112
     }
   },
@@ -47,10 +47,10 @@
     "model": "assets.Country",
     "pk": 97,
     "fields": {
-      "name_portuguese": "Bolívia",
-      "name_english": "Bolivia",
-      "name_spanish": "Bolivia",
-      "code_iso3": "BOL",
+      "country_name_pt": "Bolívia",
+      "country_name_en": "Bolivia",
+      "country_name_es": "Bolivia",
+      "country_code_iso3": "BOL",
       "trade_bloc": 48
     }
   },
@@ -58,10 +58,10 @@
     "model": "assets.Country",
     "pk": 345,
     "fields": {
-      "name_portuguese": "Honduras",
-      "name_english": "Honduras",
-      "name_spanish": "Honduras",
-      "code_iso3": "HND",
+      "country_name_pt": "Honduras",
+      "country_name_en": "Honduras",
+      "country_name_es": "Honduras",
+      "country_code_iso3": "HND",
       "trade_bloc": 105
     }
   },
@@ -69,10 +69,10 @@
     "model": "assets.Country",
     "pk": 845,
     "fields": {
-      "name_portuguese": "Uruguai",
-      "name_english": "Uruguay",
-      "name_spanish": "Uruguay",
-      "code_iso3": "URY",
+      "country_name_pt": "Uruguai",
+      "country_name_en": "Uruguay",
+      "country_name_es": "Uruguay",
+      "country_code_iso3": "URY",
       "trade_bloc": 48
     }
   },
@@ -80,10 +80,10 @@
     "model": "assets.Country",
     "pk": 586,
     "fields": {
-      "name_portuguese": "Paraguai",
-      "name_english": "Paraguay",
-      "name_spanish": "Paraguay",
-      "code_iso3": "PRY",
+      "country_name_pt": "Paraguai",
+      "country_name_en": "Paraguay",
+      "country_name_es": "Paraguay",
+      "country_code_iso3": "PRY",
       "trade_bloc": 111
     }
   },
@@ -91,10 +91,10 @@
     "model": "assets.Country",
     "pk": 239,
     "fields": {
-      "name_portuguese": "Equador",
-      "name_english": "Ecuador",
-      "name_spanish": "Ecuador",
-      "code_iso3": "ECU",
+      "country_name_pt": "Equador",
+      "country_name_en": "Ecuador",
+      "country_name_es": "Ecuador",
+      "country_code_iso3": "ECU",
       "trade_bloc": 48
     }
   }
