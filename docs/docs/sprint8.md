@@ -69,26 +69,77 @@ Burndown de riscos:
 
 ## Resultado da Revisão da Sprint
 
+![Burndown Sprint 8](https://fga-eps-mds.github.io/2018.2-ComexStat/img/sprints/sprint8/burndownsprint8.png)
 
 
 ### Histórias entregues
 
+![Histórias Sprint 8](https://fga-eps-mds.github.io/2018.2-ComexStat/img/sprints/sprint8/entreguessprint8.png)
 
 
 ### Dívidas entregues
 
+Não houveram dívidas alocadas para essa sprint.
 
 
 ## Retrospectiva da Sprint
+
+### O que estamos sentindo?
+
+#### Positivo
+- MDS muito inteligente
+- Marcos mito
+
+#### Negativo
+- Dificuldade escalou muito rápido
+- Documentação do GraphQL desatualizada
+- Distribuição de conhecimento ruim no pareamento
+- Membros estrelas
+- Dor de barriga e febre
+- Exaustão
+
+### O que estamos fazendo?
+
+#### Positivo
+- MDS entregando as histórias
+- Reunião com o Nitai na faculdade foi positiva.(Todos os membros estão)
+
+#### Negativo
+- Nada, pois estava doente.
+- Deixando coisas para última hora.
+
+### O que estamos ouvindo?
+
+#### Positivo
+- Cliente está gostando bastante das entregas da equiep.
+- Cliente surpreso com a produtividade da equipe.
+
+#### Negativo
+- Não estamos fazendo boas práticas.
+
+
+
+### O que estamos vendo?
+
+#### Positivo
+- Projeto em progresso estável
+- Time começando a ver resultados
+
+#### Negativo
+- Infraestrutura do projeto está falha.
 
 
 
 ### Pontos positivos
 
+A equipe de desenvolvimento está sendo produtiva e superando os obstáculos todas as sprints, mesmo que não tenham conhecimento técnico, a determinação e força de vontade para aprender compensa isso. Além disso, o cliente está muito próximo da equipe, sempre provendo o apoio necessário, o que facilita bastante a compreensão da equipe do produto.
 
 
 ### Pontos negativos
 
-
+O Scrum Master/Product Owner pegou uma infecção alimentar, o que o impossibilitou de trabalhar de maneira efetiva durante essa semana. Além disso, a estrutura de devops está falha, de maneira a atrapalhar a equipe. O maior exemplo disso é o Travis do repositório referente ao Frontend, que não está passando por erros no arquivo travis.yml, sendo assim impossível analisar o trabalho do time de desenvolvimento e aceitar o pull request.
 
 ### Possíveis melhorias
+
+- Aplicação de mais boas práticas apresentadas durante a aula de EPS.
+- Melhorar infraestrutura do projeto. Incluindo o Travis, que se tornou um fator crítico do projeto.
