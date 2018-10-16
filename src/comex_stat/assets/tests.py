@@ -1,5 +1,4 @@
 import graphene
-import json
 from django.test import TestCase
 from django.db import IntegrityError
 from comex_stat.assets.schema import Query
@@ -942,34 +941,8 @@ class QueryTest(TestCase):
             destination_country=self.country
         )
 
-        self.AssetExportFacts = AssetExportFacts.objects.create(
-            date="2017-09-21",
-            name="Outras partes para motores de explosao 2",
-            ncm=self.ncm,
-            urf=self.urf,
-            transportation=self.transportation,
-            registries=1,
-            net_kilogram=1,
-            fob_value=191,
-            origin_fed_unit=self.federativeUnit,
-            destination_country=self.country
-        )
-
         self.AssetImportFacts = AssetImportFacts.objects.create(
             date="2018-09-22",
-            ncm=self.ncm,
-            urf=self.urf,
-            transportation=self.transportation,
-            registries=1,
-            net_kilogram=1,
-            fob_value=191,
-            destination_fed_unit=self.federativeUnit,
-            origin_country=self.country
-        )
-
-        self.AssetImportFacts = AssetImportFacts.objects.create(
-            date="2016-09-22",
-            name="Texto2",
             ncm=self.ncm,
             urf=self.urf,
             transportation=self.transportation,
@@ -1197,112 +1170,9 @@ class QueryTest(TestCase):
                             }
                         }
                     }
-                }
-            },
-            {
-                "node": {
-                    "date": "2016-09-22",
-                    "name": "Texto2",
-                    "ncm": {
-                        "ncmCode": "84099190",
-                        "statisticUnitCode": "10",
-                        "ppeCode": "3193",
-                        "ppiCode": "3172",
-                        "aggregateFactorCode": "03",
-                        "isic4Code": "29",
-                        "exportationSubset": "1005",
-                        "ncmNamePt": "Outras partes para motores de explosao",
-                        "ncmNameEn": "Other parts for internal combustion engines",
-                        "ncmNameEs": "Otras partes para motores de explosion",
-                        "siitCode": "2000",
-                        "cuci": {
-                            "itemCode": "1234",
-                            "itemNamePt": "Nome",
-                            "itemNameEn": "Name",
-                            "itemNameEs": "Nombre",
-                            "subitemCode": "5678",
-                            "subitemNamePt": "nome",
-                            "subitemNameEn": "name",
-                            "subitemNameEs": "nombre",
-                            "positionCode": "0000",
-                            "positionNamePt": "posicao",
-                            "positionNameEn": "position",
-                            "positionNameEs": "posicion",
-                            "chapterCode": "1111",
-                            "chapterNamePt": "capitulo",
-                            "chapterNameEn": "chapter",
-                            "chapterNameEs": "capitulo",
-                            "sectionCode": "2222",
-                            "sectionNamePt": "secao",
-                            "sectionNameEn": "section",
-                            "sectionNameEs": "seccion"
-                        },
-                        "cgce": {
-                            "level1Code": "2222",
-                            "level1NamePt": "texto",
-                            "level1NameEn": "text",
-                            "level1NameEs": "texto",
-                            "level2Code": "3333",
-                            "level2NamePt": "algo",
-                            "level2NameEn": "something",
-                            "level2NameEs": "algo",
-                            "level3Code": "4444",
-                            "level3NamePt": "teste",
-                            "level3NameEn": "test",
-                            "level3NameEs": "teste"
-                        },
-                        "sh": {
-                            "chapterCode": "5555",
-                            "chapterNamePt": "abcd",
-                            "chapterNameEn": "efdg",
-                            "chapterNameEs": "ghij",
-                            "positionCode": "6666",
-                            "positionNamePt": "klmn",
-                            "positionNameEn": "nopq",
-                            "positionNameEs": "rstu",
-                            "subpositionCode": "7777",
-                            "subpositionNamePt": "vwyz",
-                            "subpositionNameEn": "asdf",
-                            "subpositionNameEs": "ghjk",
-                            "sectionCode": "8888",
-                            "sectionNamePt": "ideia",
-                            "sectionNameEn": "test",
-                            "sectionNameEs": "teste"
-                        }
-                    },
-                    "urf": {
-                        "name": "name",
-                        "code": "code"
-                    },
-                    "transportation": {
-                        "name": "Name",
-                        "code": "code"
-                    },
-                    "registries": 1,
-                    "netKilogram": 1.0,
-                    "fobValue": 191.0,
-                    "destinationFedUnit": {
-                        "name": "Name",
-                        "code": "9090",
-                        "initials": "SP"
-                    },
-                    "originCountry": {
-                        "namePortuguese": "Nome",
-                        "nameEnglish": "Name",
-                        "nameSpanish": "Nombre",
-                        "codeIso3": "190",
-                        "tradeBloc": {
-                            "namePortuguese": "portuguese",
-                            "nameEnglish": "english",
-                            "nameSpanish": "spanish",
-                            "code": "190"
-                        }
-                    }
-                }
+                ]
             }
-        ]
-    }
-}
+         }
 
         schema = graphene.Schema(Query)
         result = schema.execute(query)
@@ -1525,114 +1395,9 @@ class QueryTest(TestCase):
                             }
                         }
                     }
-                }
-            },
-            {
-                "node": {
-                    "date": "2017-09-21",
-                    "name": "Outras partes para motores de explosao 2",
-                    "ncm": {
-                        "ncmCode": "84099190",
-                        "statisticUnitCode": "10",
-                        "ppeCode": "3193",
-                        "ppiCode": "3172",
-                        "aggregateFactorCode": "03",
-                        "isic4Code": "29",
-                        "exportationSubset": "1005",
-                        "ncmNamePt": "Outras partes para motores de explosao",
-                        "ncmNameEn": "Other parts for internal combustion engines",
-                        "ncmNameEs": "Otras partes para motores de explosion",
-                        "siitCode": "2000",
-                        "cuci": {
-                            "itemCode": "1234",
-                            "itemNamePt": "Nome",
-                            "itemNameEn": "Name",
-                            "itemNameEs": "Nombre",
-                            "subitemCode": "5678",
-                            "subitemNamePt": "nome",
-                            "subitemNameEn": "name",
-                            "subitemNameEs": "nombre",
-                            "positionCode": "0000",
-                            "positionNamePt": "posicao",
-                            "positionNameEn": "position",
-                            "positionNameEs": "posicion",
-                            "chapterCode": "1111",
-                            "chapterNamePt": "capitulo",
-                            "chapterNameEn": "chapter",
-                            "chapterNameEs": "capitulo",
-                            "sectionCode": "2222",
-                            "sectionNamePt": "secao",
-                            "sectionNameEn": "section",
-                            "sectionNameEs": "seccion"
-                        },
-                        "cgce": {
-                            "level1Code": "2222",
-                            "level1NamePt": "texto",
-                            "level1NameEn": "text",
-                            "level1NameEs": "texto",
-                            "level2Code": "3333",
-                            "level2NamePt": "algo",
-                            "level2NameEn": "something",
-                            "level2NameEs": "algo",
-                            "level3Code": "4444",
-                            "level3NamePt": "teste",
-                            "level3NameEn": "test",
-                            "level3NameEs": "teste"
-                        },
-                        "sh": {
-                            "chapterCode": "5555",
-                            "chapterNamePt": "abcd",
-                            "chapterNameEn": "efdg",
-                            "chapterNameEs": "ghij",
-                            "positionCode": "6666",
-                            "positionNamePt": "klmn",
-                            "positionNameEn": "nopq",
-                            "positionNameEs": "rstu",
-                            "subpositionCode": "7777",
-                            "subpositionNamePt": "vwyz",
-                            "subpositionNameEn": "asdf",
-                            "subpositionNameEs": "ghjk",
-                            "sectionCode": "8888",
-                            "sectionNamePt": "ideia",
-                            "sectionNameEn": "test",
-                            "sectionNameEs": "teste"
-                        }
-                    },
-                    "urf": {
-                        "name": "name",
-                        "code": "code"
-                    },
-                    "transportation": {
-                        "name": "Name",
-                        "code": "code"
-                    },
-                    "registries": 1,
-                    "netKilogram": 1.0,
-                    "fobValue": 191.0,
-                    "originFedUnit": {
-                        "name": "Name",
-                        "code": "9090",
-                        "initials": "SP"
-                    },
-                    "destinationCountry": {
-                        "namePortuguese": "Nome",
-                        "nameEnglish": "Name",
-                        "nameSpanish": "Nombre",
-                        "codeIso3": "190",
-                        "tradeBloc": {
-                            "namePortuguese": "portuguese",
-                            "nameEnglish": "english",
-                            "nameSpanish": "spanish",
-                            "code": "190"
-                        }
-                    }
-                }
+                ]
             }
-        ]
-    }
-}
-
-
+         }
 
         schema = graphene.Schema(Query)
         result = schema.execute(query)
@@ -1819,67 +1584,64 @@ class QueryTest(TestCase):
         self.assertEqual(expected, result.data)
 
     def test_query_range_date_import(self):
-        '''
-            This test verifies the range date search
-        '''
 
-        query = '''
-            {
-              allImport(commercializedBetween: "[\\"2018-01-01\\",\\"2018-12-31\\"]"){
-                edges{
-                  node{
-                    name
-                  }
-                }
-              }
-            }
-        '''
-
-        expected = {"allImport":{
-                "edges": [
-                    {
-                        "node": {
-                            "name": "Texto"
+            '''
+                This test verifies the range date search
+            '''
+            query = '''
+                {
+                allImport(commercializedBetween: "[\\"2018-01-01\\",\\"2018-12-31\\"]"){
+                    edges{
+                    node{
+                        ncm{
+                            ncmNamePt
                         }
+                       }
                     }
-                ]
+                }
+                }
+            '''
+            expected = {"allImport": {
+                    "edges": [
+                        {
+                            "node": {
+                                "ncm":{
+                                    "ncmNamePt": "Outras partes para motores de explosao"
+                                }
+                            }
+                        }
+                    ]
+                }
             }
-
-        }
-
-        schema = graphene.Schema(Query)
-        result = schema.execute(query)
-        self.assertEqual(expected, result.data)
+            schema = graphene.Schema(Query)
+            result = schema.execute(query)
+            self.assertEqual(expected, result.data)
 
     def test_query_range_date_export(self):
-        '''
-            This test verifies the range date search
-        '''
-
-        query = '''
-            {
-                allExport(commercializedBetween: "[\\"2017-01-01\\",\\"2017-12-31\\"]"){
-                    edges{
-                        node{
-                            date
+            '''
+                This test verifies the range date search
+            '''
+            query = '''
+                {
+                    allExport(commercializedBetween: "[\\"2018-01-01s\\",\\"2018-12-31\\"]"){
+                        edges{
+                            node{
+                                date
+                            }
                         }
                     }
                 }
-            }
-        '''
-
-        expected = {"allExport":{
-                "edges": [
-                    {
-                        "node": {
-                            "date": "2017-09-21"
+            '''
+            expected = {"allExport": {
+                    "edges": [
+                        {
+                            "node": {
+                                "date": "2018-09-21"
+                            }
                         }
-                    }
-                ]
+                    ]
+                }
             }
-
-        }
-
-        schema = graphene.Schema(Query)
-        result = schema.execute(query)
-        self.assertEqual(expected, result.data)
+            schema = graphene.Schema(Query)
+            result = schema.execute(query)
+            self.assertEqual(expected, result.data)
