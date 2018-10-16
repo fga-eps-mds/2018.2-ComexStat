@@ -3,110 +3,110 @@
     "model": "assets.TradeBlocs",
     "pk": 51,
     "fields": {
-      "name_portuguese": "África",
-      "name_english": "Africa (minus MIDDLE EAST)",
-      "name_spanish": "África (menos ORIENTE MEDIO)",
-      "code": "51"
+      "bloc_name_pt": "África",
+      "bloc_name_en": "Africa (minus MIDDLE EAST)",
+      "bloc_name_es": "África (menos ORIENTE MEDIO)",
+      "bloc_code": "51"
     }
   },
   {
     "model": "assets.TradeBlocs",
     "pk": 105,
     "fields": {
-      "name_portuguese": "América Central e Caribe",
-      "name_english": "Central America and Caribbean",
-      "name_spanish": "América Central y Caribe",
-      "code": "105"
+      "bloc_name_pt": "América Central e Caribe",
+      "bloc_name_en": "Central America and Caribbean",
+      "bloc_name_es": "América Central y Caribe",
+      "bloc_code": "105"
     }
   },
   {
     "model": "assets.TradeBlocs",
     "pk": 107,
     "fields": {
-      "name_portuguese": "América do Norte",
-      "name_english": "North America",
-      "name_spanish": "América del norte",
-      "code": "107"
+      "bloc_name_pt": "América do Norte",
+      "bloc_name_en": "North America",
+      "bloc_name_es": "América del norte",
+      "bloc_code": "107"
     }
   },
   {
     "model": "assets.TradeBlocs",
     "pk": 48,
     "fields": {
-      "name_portuguese": "América do Sul",
-      "name_english": "South America",
-      "name_spanish": "América del Sur",
-      "code": "48"
+      "bloc_name_pt": "América do Sul",
+      "bloc_name_en": "South America",
+      "bloc_name_es": "América del Sur",
+      "bloc_code": "48"
     }
   },
   {
     "model": "assets.TradeBlocs",
     "pk": 39,
     "fields": {
-      "name_portuguese": "Ásia (Exclusive Oriente Médio)",
-      "name_english": "Asia (minus MIDDLE EAST)",
-      "name_spanish": "Asia (menos Oriente Medio)",
-      "code": "39"
+      "bloc_name_pt": "Ásia (Exclusive Oriente Médio)",
+      "bloc_name_en": "Asia (minus MIDDLE EAST)",
+      "bloc_name_es": "Asia (menos Oriente Medio)",
+      "bloc_code": "39"
     }
   },
   {
     "model": "assets.TradeBlocs",
     "pk": 53,
     "fields": {
-      "name_portuguese": "Associcação de Nações do Sudeste Asiático - ASEAN",
-      "name_english": "Association Of Southeast Asian Nations (ASEAN)",
-      "name_spanish": "Asociación de Países del Sudeste Asiático (ASEAN)",
-      "code": "53"
+      "bloc_name_pt": "Associcação de Nações do Sudeste Asiático - ASEAN",
+      "bloc_name_en": "Association Of Southeast Asian Nations (ASEAN)",
+      "bloc_name_es": "Asociación de Países del Sudeste Asiático (ASEAN)",
+      "bloc_code": "53"
     }
   },
   {
     "model": "assets.TradeBlocs",
     "pk": 112,
     "fields": {
-      "name_portuguese": "Europa",
-      "name_english": "Europe",
-      "name_spanish": "Europa",
-      "code": "112"
+      "bloc_name_pt": "Europa",
+      "bloc_name_en": "Europe",
+      "bloc_name_es": "Europa",
+      "bloc_code": "112"
     }
   },
   {
     "model": "assets.TradeBlocs",
     "pk": 111,
     "fields": {
-      "name_portuguese": "Mercado Comum do Sul - Mercosul",
-      "name_english": "Southern Common Market (MERCOSUL)",
-      "name_spanish": "Mercado Comum del Sur (MERCOSUR)",
-      "code": "111"
+      "bloc_name_pt": "Mercado Comum do Sul - Mercosul",
+      "bloc_name_en": "Southern Common Market (MERCOSUL)",
+      "bloc_name_es": "Mercado Comum del Sur (MERCOSUR)",
+      "bloc_code": "111"
     }
   },
   {
     "model": "assets.TradeBlocs",
     "pk": 61,
     "fields": {
-      "name_portuguese": "Oceania",
-      "name_english": "Oceania",
-      "name_spanish": "Oceania",
-      "code": "61"
+      "bloc_name_pt": "Oceania",
+      "bloc_name_en": "Oceania",
+      "bloc_name_es": "Oceania",
+      "bloc_code": "61"
     }
   },
   {
     "model": "assets.TradeBlocs",
     "pk": 41,
     "fields": {
-      "name_portuguese": "Oriente Médio",
-      "name_english": "Middle East",
-      "name_spanish": "Oriente Medio",
-      "code": "41"
+      "bloc_name_pt": "Oriente Médio",
+      "bloc_name_en": "Middle East",
+      "bloc_name_es": "Oriente Medio",
+      "bloc_code": "41"
     }
   },
   {
     "model": "assets.TradeBlocs",
     "pk": 22,
     "fields": {
-      "name_portuguese": "União Europeia - UE",
-      "name_english": "European Union (EU)",
-      "name_spanish": "Uniao Europea (UE)",
-      "code": "22"
+      "bloc_name_pt": "União Europeia - UE",
+      "bloc_name_en": "European Union (EU)",
+      "bloc_name_es": "Uniao Europea (UE)",
+      "bloc_code": "22"
     }
   }
 ]

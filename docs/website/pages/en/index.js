@@ -61,13 +61,13 @@ const Features = () => (
   <Block layout="fourColumn">
     {[
       {
-        content: '</p align="justify"> O ComexStat, vem com o objetivo de facilitar o acesso aos dados relacionados ao comércio exterior de bens, e posteriormente serviços no Brasil. Proporcionando aos usuários a possibilidade de trabalhar com as informações desejadas de forma fácil e intuitiva. Aqui está registrada toda a documentação para que o usuário possa ter um bom entendimento do <i>software</i> e de como contribuir com o mesmo.</p>',
+        content: '<p align="justify"> O ComexStat, vem com o objetivo de facilitar o acesso aos dados relacionados ao comércio exterior de bens, e posteriormente serviços no Brasil. Proporcionando aos usuários a possibilidade de trabalhar com as informações desejadas de forma fácil e intuitiva. Este projeto tem o intuito de substituir o sistema já existente que não possui uma boa usabilidade</p>',
         image: imgUrl('sobre.jpg'),
         imageAlign: 'top',
         title: 'Sobre',
       },
       {
-        content: '</p align="justify">O <i>software</i> é divido em dois repositórios, um dedicado ao <a href="https://github.com/fga-eps-mds/2018.2-ComexStat">Backend</a>, contendo a API, e o outro dedicado ao <a href="https://github.com/fga-eps-mds/2018.2-ComexStat-FrontEnd">Frontend</a>, contendo uma aplicação visual para facilitar a usabilidade do sistema.</p>',
+        content: '<p align="justify">O <i>software</i> é divido em dois repositórios, um dedicado ao <a href="https://github.com/fga-eps-mds/2018.2-ComexStat">Backend</a>, contendo a API, e o outro dedicado ao <a href="https://github.com/fga-eps-mds/2018.2-ComexStat-FrontEnd">Frontend</a>, contendo uma aplicação visual para facilitar a usabilidade do sistema. Aqui está registrada toda a documentação para que programadores possam ter um bom entendimento do <i>software</i> e de como contribuir com o mesmo.</p>',
         image: imgUrl('repositorio.jpg'),
         imageAlign: 'top',
         title: 'Repositório',
@@ -83,32 +83,6 @@ const ProjectTitle = () => (
   </h2>
 );
 
-const PromoSection = props => (
-  <div className="section promoSection">
-    <div className="promoRow">
-      <div className="pluginRowBlock">{props.children}</div>
-    </div>
-  </div>
-);
-
-class HomeSplash extends React.Component {
-  render() {
-    const language = this.props.language || '';
-    return (
-      <SplashContainer>
-        <Logo img_src={imgUrl('docusaurus.svg')} />
-        <div className="inner">
-          <ProjectTitle />
-          <PromoSection>
-            <Button href="#try">Try It Out</Button>
-            <Button href={docUrl('contributing.html', language)}>Example Link</Button>
-            <Button href={docUrl('contributing.html', language)}>Example Link 2</Button>
-          </PromoSection>
-        </div>
-      </SplashContainer>
-    );
-  }
-}
 
 const Block = props => (
   <Container
@@ -138,13 +112,13 @@ const Cards = (props) => {
       photo = siteConfig.Rogerio
       githubLink = siteConfig.RogerioGithub
       break
-    case "@marcosnbj":
-      photo = siteConfig.Marcos
-      githubLink = siteConfig.MarcosGithub
-      break
     case "@joao15victor08":
       photo = siteConfig.Joao
       githubLink = siteConfig.JoaoGithub
+      break
+    case "@marcosnbj":
+      photo = siteConfig.Marcos
+      githubLink = siteConfig.MarcosGithub
       break
     case "@riquekaique":
       photo = siteConfig.Kaique
@@ -179,45 +153,6 @@ const Cards = (props) => {
     </a>
   )
 }
-
-const LearnHow = () => (
-  <Block background="light">
-    {[
-      {
-        content: 'Talk about learning how to use this',
-        image: imgUrl('docusaurus.svg'),
-        imageAlign: 'right',
-        title: 'Learn How',
-      },
-    ]}
-  </Block>
-);
-
-const TryOut = () => (
-  <Block id="try">
-    {[
-      {
-        content: 'Talk about trying this out',
-        image: imgUrl('docusaurus.svg'),
-        imageAlign: 'left',
-        title: 'Try it Out',
-      },
-    ]}
-  </Block>
-);
-
-const Description = () => (
-  <Block background="dark">
-    {[
-      {
-        content: 'This is another description of how this project is useful',
-        image: imgUrl('docusaurus.svg'),
-        imageAlign: 'right',
-        title: 'Description',
-      },
-    ]}
-  </Block>
-);
 
 const Showcase = props => {
   if ((siteConfig.users || []).length === 0) {

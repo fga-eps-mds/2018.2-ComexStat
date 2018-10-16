@@ -248,34 +248,34 @@ class AssetExportFactsTestModel(TestCase):
         """
 
         self.tradeBlocs = TradeBlocs.objects.create(
-            name_portuguese="portuguese",
-            name_english="english",
-            name_spanish="spanish",
-            code="190"
+            bloc_name_pt="portuguese",
+            bloc_name_en="english",
+            bloc_name_es="spanish",
+            bloc_code="190"
         )
 
         self.country = Country.objects.create(
-            name_portuguese="Nome",
-            name_english="Name",
-            name_spanish="Nombre",
-            code_iso3="190",
+            country_name_pt="Nome",
+            country_name_en="Name",
+            country_name_es="Nombre",
+            country_code_iso3="190",
             trade_bloc=self.tradeBlocs
         )
 
         self.federativeUnit = FederativeUnit.objects.create(
-            name="Name",
-            code="9090",
-            initials="SP"
+            uf_name="Name",
+            uf_code="9090",
+            uf_initials="SP"
         )
 
         self.urf = Urf.objects.create(
-            name="name",
-            code="code"
+            urf_name="name",
+            urf_code="code"
         )
 
         self.transportation = Transportation.objects.create(
-            name="Name",
-            code="code"
+            transportation_name="Name",
+            transportation_code="code"
         )
 
         self.sh = SH.objects.create(
@@ -354,7 +354,6 @@ class AssetExportFactsTestModel(TestCase):
 
         self.AssetExportFacts = AssetExportFacts.objects.create(
             date="2018-09-21",
-            name="Outras partes para motores de explosao",
             ncm=self.ncm,
             urf=self.urf,
             transportation=self.transportation,
@@ -469,7 +468,6 @@ class AssetExportFactsTestModel(TestCase):
         with self.assertRaises(IntegrityError):
             self.AssetExportFacts = AssetExportFacts.objects.create(
                 date="2018-09-21",
-                name="Outras partes para motores de explosao",
                 urf=self.urf,
                 transportation=self.transportation,
                 registries=1,
@@ -487,7 +485,6 @@ class AssetExportFactsTestModel(TestCase):
         with self.assertRaises(IntegrityError):
             self.AssetExportFacts = AssetExportFacts.objects.create(
                 date="2018-09-21",
-                name="Outras partes para motores de explosao",
                 ncm=self.ncm,
                 urf=self.urf,
                 registries=1,
@@ -505,7 +502,6 @@ class AssetExportFactsTestModel(TestCase):
         with self.assertRaises(IntegrityError):
             self.AssetExportFacts = AssetExportFacts.objects.create(
                 date="2018-09-21",
-                name="Outras partes para motores de explosao",
                 ncm=self.ncm,
                 urf=self.urf,
                 transportation=self.transportation,
@@ -523,7 +519,6 @@ class AssetExportFactsTestModel(TestCase):
         with self.assertRaises(IntegrityError):
             self.AssetExportFacts = AssetExportFacts.objects.create(
                 date="2018-09-21",
-                name="Outras partes para motores de explosao",
                 ncm=self.ncm,
                 urf=self.urf,
                 transportation=self.transportation,
@@ -542,34 +537,34 @@ class AssetImportFactsTestModel(TestCase):
         """
 
         self.tradeBlocs = TradeBlocs.objects.create(
-            name_portuguese="portuguese",
-            name_english="english",
-            name_spanish="spanish",
-            code="190"
+            bloc_name_pt="portuguese",
+            bloc_name_en="english",
+            bloc_name_es="spanish",
+            bloc_code="190"
         )
 
         self.country = Country.objects.create(
-            name_portuguese="Nome",
-            name_english="Name",
-            name_spanish="Nombre",
-            code_iso3="190",
+            country_name_pt="Nome",
+            country_name_en="Name",
+            country_name_es="Nombre",
+            country_code_iso3="190",
             trade_bloc=self.tradeBlocs
         )
 
         self.federativeUnit = FederativeUnit.objects.create(
-            name="Name",
-            code="9090",
-            initials="SP"
+            uf_name="Name",
+            uf_code="9090",
+            uf_initials="SP"
         )
 
         self.urf = Urf.objects.create(
-            name="name",
-            code="code"
+            urf_name="name",
+            urf_code="code"
         )
 
         self.transportation = Transportation.objects.create(
-            name="Name",
-            code="code"
+            transportation_name="Name",
+            transportation_code="code"
         )
 
         self.sh = SH.objects.create(
@@ -648,7 +643,6 @@ class AssetImportFactsTestModel(TestCase):
 
         self.AssetImportFacts = AssetImportFacts.objects.create(
             date="2018-09-22",
-            name="Texto",
             ncm=self.ncm,
             urf=self.urf,
             transportation=self.transportation,
@@ -763,7 +757,6 @@ class AssetImportFactsTestModel(TestCase):
         with self.assertRaises(IntegrityError):
             self.AssetImportFacts = AssetImportFacts.objects.create(
                 date="2018-09-21",
-                name="Outras partes para motores de explosao",
                 urf=self.urf,
                 transportation=self.transportation,
                 registries=1,
@@ -781,7 +774,6 @@ class AssetImportFactsTestModel(TestCase):
         with self.assertRaises(IntegrityError):
             self.AssetImportFacts = AssetImportFacts.objects.create(
                 date="2018-09-21",
-                name="Outras partes para motores de explosao",
                 ncm=self.ncm,
                 urf=self.urf,
                 registries=1,
@@ -799,7 +791,6 @@ class AssetImportFactsTestModel(TestCase):
         with self.assertRaises(IntegrityError):
             self.AssetImportFacts = AssetImportFacts.objects.create(
                 date="2018-09-21",
-                name="Outras partes para motores de explosao",
                 ncm=self.ncm,
                 urf=self.urf,
                 transportation=self.transportation,
@@ -817,7 +808,6 @@ class AssetImportFactsTestModel(TestCase):
         with self.assertRaises(IntegrityError):
             self.AssetImportFacts = AssetImportFacts.objects.create(
                 date="2018-09-21",
-                name="Outras partes para motores de explosao",
                 ncm=self.ncm,
                 urf=self.urf,
                 transportation=self.transportation,
@@ -836,34 +826,34 @@ class QueryTest(TestCase):
         """
 
         self.tradeBlocs = TradeBlocs.objects.create(
-            name_portuguese="portuguese",
-            name_english="english",
-            name_spanish="spanish",
-            code="190"
+            bloc_name_pt="portuguese",
+            bloc_name_en="english",
+            bloc_name_es="spanish",
+            bloc_code="190"
         )
 
         self.country = Country.objects.create(
-            name_portuguese="Nome",
-            name_english="Name",
-            name_spanish="Nombre",
-            code_iso3="190",
+            country_name_pt="Nome",
+            country_name_en="Name",
+            country_name_es="Nombre",
+            country_code_iso3="190",
             trade_bloc=self.tradeBlocs
         )
 
         self.federativeUnit = FederativeUnit.objects.create(
-            name="Name",
-            code="9090",
-            initials="SP"
+            uf_name="Name",
+            uf_code="9090",
+            uf_initials="SP"
         )
 
         self.urf = Urf.objects.create(
-            name="name",
-            code="code"
+            urf_name="name",
+            urf_code="code"
         )
 
         self.transportation = Transportation.objects.create(
-            name="Name",
-            code="code"
+            transportation_name="Name",
+            transportation_code="code"
         )
 
         self.sh = SH.objects.create(
@@ -941,8 +931,7 @@ class QueryTest(TestCase):
         )
 
         self.AssetExportFacts = AssetExportFacts.objects.create(
-            date="2016-09-21",
-            name="Outras partes para motores de explosao",
+            date="2018-09-21",
             ncm=self.ncm,
             urf=self.urf,
             transportation=self.transportation,
@@ -968,7 +957,6 @@ class QueryTest(TestCase):
 
         self.AssetImportFacts = AssetImportFacts.objects.create(
             date="2018-09-22",
-            name="Texto",
             ncm=self.ncm,
             urf=self.urf,
             transportation=self.transportation,
@@ -1003,7 +991,6 @@ class QueryTest(TestCase):
               edges {
                 node {
                   date
-                  name
                   ncm {
                     ncmCode
                     statisticUnitCode
@@ -1072,31 +1059,31 @@ class QueryTest(TestCase):
                     }
                   }
                   urf {
-                    name
-                    code
+                    urfName
+                    urfCode
                   }
                   transportation {
-                    name
-                    code
+                    transportationName
+                    transportationCode
                   }
                   registries
                   netKilogram
                   fobValue
                   destinationFedUnit {
-                    name
-                    code
-                    initials
+                    ufName
+                    ufCode
+                    ufInitials
                   }
                   originCountry {
-                    namePortuguese
-                    nameEnglish
-                    nameSpanish
-                    codeIso3
+                    countryNamePt
+                    countryNameEn
+                    countryNameEs
+                    countryCodeIso3
                     tradeBloc {
-                      namePortuguese
-                      nameEnglish
-                      nameSpanish
-                      code
+                      blocNamePt
+                      blocNameEn
+                      blocNameEs
+                      blocCode
                     }
                   }
                 }
@@ -1106,104 +1093,108 @@ class QueryTest(TestCase):
       '''
 
         expected = {"allImport": {
-        "edges": [
-            {
-                "node": {
-                    "date": "2018-09-22",
-                    "name": "Texto",
-                    "ncm": {
-                        "ncmCode": "84099190",
-                        "statisticUnitCode": "10",
-                        "ppeCode": "3193",
-                        "ppiCode": "3172",
-                        "aggregateFactorCode": "03",
-                        "isic4Code": "29",
-                        "exportationSubset": "1005",
-                        "ncmNamePt": "Outras partes para motores de explosao",
-                        "ncmNameEn": "Other parts for internal combustion engines",
-                        "ncmNameEs": "Otras partes para motores de explosion",
-                        "siitCode": "2000",
-                        "cuci": {
-                            "itemCode": "1234",
-                            "itemNamePt": "Nome",
-                            "itemNameEn": "Name",
-                            "itemNameEs": "Nombre",
-                            "subitemCode": "5678",
-                            "subitemNamePt": "nome",
-                            "subitemNameEn": "name",
-                            "subitemNameEs": "nombre",
-                            "positionCode": "0000",
-                            "positionNamePt": "posicao",
-                            "positionNameEn": "position",
-                            "positionNameEs": "posicion",
-                            "chapterCode": "1111",
-                            "chapterNamePt": "capitulo",
-                            "chapterNameEn": "chapter",
-                            "chapterNameEs": "capitulo",
-                            "sectionCode": "2222",
-                            "sectionNamePt": "secao",
-                            "sectionNameEn": "section",
-                            "sectionNameEs": "seccion"
-                        },
-                        "cgce": {
-                            "level1Code": "2222",
-                            "level1NamePt": "texto",
-                            "level1NameEn": "text",
-                            "level1NameEs": "texto",
-                            "level2Code": "3333",
-                            "level2NamePt": "algo",
-                            "level2NameEn": "something",
-                            "level2NameEs": "algo",
-                            "level3Code": "4444",
-                            "level3NamePt": "teste",
-                            "level3NameEn": "test",
-                            "level3NameEs": "teste"
-                        },
-                        "sh": {
-                            "chapterCode": "5555",
-                            "chapterNamePt": "abcd",
-                            "chapterNameEn": "efdg",
-                            "chapterNameEs": "ghij",
-                            "positionCode": "6666",
-                            "positionNamePt": "klmn",
-                            "positionNameEn": "nopq",
-                            "positionNameEs": "rstu",
-                            "subpositionCode": "7777",
-                            "subpositionNamePt": "vwyz",
-                            "subpositionNameEn": "asdf",
-                            "subpositionNameEs": "ghjk",
-                            "sectionCode": "8888",
-                            "sectionNamePt": "ideia",
-                            "sectionNameEn": "test",
-                            "sectionNameEs": "teste"
-                        }
-                    },
-                    "urf": {
-                        "name": "name",
-                        "code": "code"
-                    },
-                    "transportation": {
-                        "name": "Name",
-                        "code": "code"
-                    },
-                    "registries": 1,
-                    "netKilogram": 1.0,
-                    "fobValue": 191.0,
-                    "destinationFedUnit": {
-                        "name": "Name",
-                        "code": "9090",
-                        "initials": "SP"
-                    },
-                    "originCountry": {
-                        "namePortuguese": "Nome",
-                        "nameEnglish": "Name",
-                        "nameSpanish": "Nombre",
-                        "codeIso3": "190",
-                        "tradeBloc": {
-                            "namePortuguese": "portuguese",
-                            "nameEnglish": "english",
-                            "nameSpanish": "spanish",
-                            "code": "190"
+                "edges": [
+                    {
+                        "node": {
+                            "date": "2018-09-22",
+                            "ncm": {
+                                "ncmCode": "84099190",
+                                "statisticUnitCode": "10",
+                                "ppeCode": "3193",
+                                "ppiCode": "3172",
+                                "aggregateFactorCode": "03",
+                                "isic4Code": "29",
+                                "exportationSubset": "1005",
+                                "ncmNamePt":
+                                "Outras partes para motores de explosao",
+                                "ncmNameEn":
+                                "Other parts for internal combustion engines",
+                                "ncmNameEs":
+                                "Otras partes para motores de explosion",
+                                "siitCode": "2000",
+                                "cuci": {
+                                    "itemCode": "1234",
+                                    "itemNamePt": "Nome",
+                                    "itemNameEn": "Name",
+                                    "itemNameEs": "Nombre",
+                                    "subitemCode": "5678",
+                                    "subitemNamePt": "nome",
+                                    "subitemNameEn": "name",
+                                    "subitemNameEs": "nombre",
+                                    "positionCode": "0000",
+                                    "positionNamePt": "posicao",
+                                    "positionNameEn": "position",
+                                    "positionNameEs": "posicion",
+                                    "chapterCode": "1111",
+                                    "chapterNamePt": "capitulo",
+                                    "chapterNameEn": "chapter",
+                                    "chapterNameEs": "capitulo",
+                                    "sectionCode": "2222",
+                                    "sectionNamePt": "secao",
+                                    "sectionNameEn": "section",
+                                    "sectionNameEs": "seccion"
+                                },
+                                "cgce": {
+                                    "level1Code": "2222",
+                                    "level1NamePt": "texto",
+                                    "level1NameEn": "text",
+                                    "level1NameEs": "texto",
+                                    "level2Code": "3333",
+                                    "level2NamePt": "algo",
+                                    "level2NameEn": "something",
+                                    "level2NameEs": "algo",
+                                    "level3Code": "4444",
+                                    "level3NamePt": "teste",
+                                    "level3NameEn": "test",
+                                    "level3NameEs": "teste"
+                                },
+                                "sh": {
+                                    "chapterCode": "5555",
+                                    "chapterNamePt": "abcd",
+                                    "chapterNameEn": "efdg",
+                                    "chapterNameEs": "ghij",
+                                    "positionCode": "6666",
+                                    "positionNamePt": "klmn",
+                                    "positionNameEn": "nopq",
+                                    "positionNameEs": "rstu",
+                                    "subpositionCode": "7777",
+                                    "subpositionNamePt": "vwyz",
+                                    "subpositionNameEn": "asdf",
+                                    "subpositionNameEs": "ghjk",
+                                    "sectionCode": "8888",
+                                    "sectionNamePt": "ideia",
+                                    "sectionNameEn": "test",
+                                    "sectionNameEs": "teste"
+                                }
+                            },
+                            "urf": {
+                                "urfName": "name",
+                                "urfCode": "code"
+                            },
+                            "transportation": {
+                                "transportationName": "Name",
+                                "transportationCode": "code"
+                            },
+                            "registries": 1,
+                            "netKilogram": 1.0,
+                            "fobValue": 191.0,
+                            "destinationFedUnit": {
+                                "ufName": "Name",
+                                "ufCode": "9090",
+                                "ufInitials": "SP"
+                            },
+                            "originCountry": {
+                                "countryNamePt": "Nome",
+                                "countryNameEn": "Name",
+                                "countryNameEs": "Nombre",
+                                "countryCodeIso3": "190",
+                                "tradeBloc": {
+                                    "blocNamePt": "portuguese",
+                                    "blocNameEn": "english",
+                                    "blocNameEs": "spanish",
+                                    "blocCode": "190"
+                                }
+                            }
                         }
                     }
                 }
@@ -1328,7 +1319,6 @@ class QueryTest(TestCase):
                 edges {
                   node {
                     date
-                    name
                     ncm {
                       ncmCode
                       statisticUnitCode
@@ -1397,31 +1387,31 @@ class QueryTest(TestCase):
                       }
                     }
                     urf {
-                      name
-                      code
+                      urfName
+                      urfCode
                     }
                     transportation {
-                      name
-                      code
+                      transportationName
+                      transportationCode
                     }
                     registries
                     netKilogram
                     fobValue
                     originFedUnit {
-                      name
-                      code
-                      initials
+                      ufName
+                      ufCode
+                      ufInitials
                     }
                     destinationCountry {
-                      namePortuguese
-                      nameEnglish
-                      nameSpanish
-                      codeIso3
+                      countryNamePt
+                      countryNameEn
+                      countryNameEs
+                      countryCodeIso3
                       tradeBloc {
-                        namePortuguese
-                        nameEnglish
-                        nameSpanish
-                        code
+                        blocNamePt
+                        blocNameEn
+                        blocNameEs
+                        blocCode
                       }
                     }
                   }
@@ -1431,104 +1421,108 @@ class QueryTest(TestCase):
         '''
 
         expected = {"allExport": {
-        "edges": [
-            {
-                "node": {
-                    "date": "2016-09-21",
-                    "name": "Outras partes para motores de explosao",
-                    "ncm": {
-                        "ncmCode": "84099190",
-                        "statisticUnitCode": "10",
-                        "ppeCode": "3193",
-                        "ppiCode": "3172",
-                        "aggregateFactorCode": "03",
-                        "isic4Code": "29",
-                        "exportationSubset": "1005",
-                        "ncmNamePt": "Outras partes para motores de explosao",
-                        "ncmNameEn": "Other parts for internal combustion engines",
-                        "ncmNameEs": "Otras partes para motores de explosion",
-                        "siitCode": "2000",
-                        "cuci": {
-                            "itemCode": "1234",
-                            "itemNamePt": "Nome",
-                            "itemNameEn": "Name",
-                            "itemNameEs": "Nombre",
-                            "subitemCode": "5678",
-                            "subitemNamePt": "nome",
-                            "subitemNameEn": "name",
-                            "subitemNameEs": "nombre",
-                            "positionCode": "0000",
-                            "positionNamePt": "posicao",
-                            "positionNameEn": "position",
-                            "positionNameEs": "posicion",
-                            "chapterCode": "1111",
-                            "chapterNamePt": "capitulo",
-                            "chapterNameEn": "chapter",
-                            "chapterNameEs": "capitulo",
-                            "sectionCode": "2222",
-                            "sectionNamePt": "secao",
-                            "sectionNameEn": "section",
-                            "sectionNameEs": "seccion"
-                        },
-                        "cgce": {
-                            "level1Code": "2222",
-                            "level1NamePt": "texto",
-                            "level1NameEn": "text",
-                            "level1NameEs": "texto",
-                            "level2Code": "3333",
-                            "level2NamePt": "algo",
-                            "level2NameEn": "something",
-                            "level2NameEs": "algo",
-                            "level3Code": "4444",
-                            "level3NamePt": "teste",
-                            "level3NameEn": "test",
-                            "level3NameEs": "teste"
-                        },
-                        "sh": {
-                            "chapterCode": "5555",
-                            "chapterNamePt": "abcd",
-                            "chapterNameEn": "efdg",
-                            "chapterNameEs": "ghij",
-                            "positionCode": "6666",
-                            "positionNamePt": "klmn",
-                            "positionNameEn": "nopq",
-                            "positionNameEs": "rstu",
-                            "subpositionCode": "7777",
-                            "subpositionNamePt": "vwyz",
-                            "subpositionNameEn": "asdf",
-                            "subpositionNameEs": "ghjk",
-                            "sectionCode": "8888",
-                            "sectionNamePt": "ideia",
-                            "sectionNameEn": "test",
-                            "sectionNameEs": "teste"
-                        }
-                    },
-                    "urf": {
-                        "name": "name",
-                        "code": "code"
-                    },
-                    "transportation": {
-                        "name": "Name",
-                        "code": "code"
-                    },
-                    "registries": 1,
-                    "netKilogram": 1.0,
-                    "fobValue": 191.0,
-                    "originFedUnit": {
-                        "name": "Name",
-                        "code": "9090",
-                        "initials": "SP"
-                    },
-                    "destinationCountry": {
-                        "namePortuguese": "Nome",
-                        "nameEnglish": "Name",
-                        "nameSpanish": "Nombre",
-                        "codeIso3": "190",
-                        "tradeBloc": {
-                            "namePortuguese": "portuguese",
-                            "nameEnglish": "english",
-                            "nameSpanish": "spanish",
-                            "code": "190"
+                "edges": [
+                    {
+                        "node": {
+                            "date": "2018-09-21",
+                            "ncm": {
+                                "ncmCode": "84099190",
+                                "statisticUnitCode": "10",
+                                "ppeCode": "3193",
+                                "ppiCode": "3172",
+                                "aggregateFactorCode": "03",
+                                "isic4Code": "29",
+                                "exportationSubset": "1005",
+                                "ncmNamePt":
+                                "Outras partes para motores de explosao",
+                                "ncmNameEn":
+                                "Other parts for internal combustion engines",
+                                "ncmNameEs":
+                                "Otras partes para motores de explosion",
+                                "siitCode": "2000",
+                                "cuci": {
+                                    "itemCode": "1234",
+                                    "itemNamePt": "Nome",
+                                    "itemNameEn": "Name",
+                                    "itemNameEs": "Nombre",
+                                    "subitemCode": "5678",
+                                    "subitemNamePt": "nome",
+                                    "subitemNameEn": "name",
+                                    "subitemNameEs": "nombre",
+                                    "positionCode": "0000",
+                                    "positionNamePt": "posicao",
+                                    "positionNameEn": "position",
+                                    "positionNameEs": "posicion",
+                                    "chapterCode": "1111",
+                                    "chapterNamePt": "capitulo",
+                                    "chapterNameEn": "chapter",
+                                    "chapterNameEs": "capitulo",
+                                    "sectionCode": "2222",
+                                    "sectionNamePt": "secao",
+                                    "sectionNameEn": "section",
+                                    "sectionNameEs": "seccion"
+                                },
+                                "cgce": {
+                                    "level1Code": "2222",
+                                    "level1NamePt": "texto",
+                                    "level1NameEn": "text",
+                                    "level1NameEs": "texto",
+                                    "level2Code": "3333",
+                                    "level2NamePt": "algo",
+                                    "level2NameEn": "something",
+                                    "level2NameEs": "algo",
+                                    "level3Code": "4444",
+                                    "level3NamePt": "teste",
+                                    "level3NameEn": "test",
+                                    "level3NameEs": "teste"
+                                },
+                                "sh": {
+                                    "chapterCode": "5555",
+                                    "chapterNamePt": "abcd",
+                                    "chapterNameEn": "efdg",
+                                    "chapterNameEs": "ghij",
+                                    "positionCode": "6666",
+                                    "positionNamePt": "klmn",
+                                    "positionNameEn": "nopq",
+                                    "positionNameEs": "rstu",
+                                    "subpositionCode": "7777",
+                                    "subpositionNamePt": "vwyz",
+                                    "subpositionNameEn": "asdf",
+                                    "subpositionNameEs": "ghjk",
+                                    "sectionCode": "8888",
+                                    "sectionNamePt": "ideia",
+                                    "sectionNameEn": "test",
+                                    "sectionNameEs": "teste"
+                                }
+                            },
+                            "urf": {
+                                "urfName": "name",
+                                "urfCode": "code"
+                            },
+                            "transportation": {
+                                "transportationName": "Name",
+                                "transportationCode": "code"
+                            },
+                            "registries": 1,
+                            "netKilogram": 1.0,
+                            "fobValue": 191.0,
+                            "originFedUnit": {
+                                "ufName": "Name",
+                                "ufCode": "9090",
+                                "ufInitials": "SP"
+                            },
+                            "destinationCountry": {
+                                "countryNamePt": "Nome",
+                                "countryNameEn": "Name",
+                                "countryNameEs": "Nombre",
+                                "countryCodeIso3": "190",
+                                "tradeBloc": {
+                                    "blocNamePt": "portuguese",
+                                    "blocNameEn": "english",
+                                    "blocNameEs": "spanish",
+                                    "blocCode": "190"
+                                }
+                            }
                         }
                     }
                 }
@@ -1654,10 +1648,10 @@ class QueryTest(TestCase):
               allTradeblocs{
                 edges{
                   node{
-                    nameEnglish
-                    nameSpanish
-                    namePortuguese
-                    code
+                    blocNamePt
+                    blocNameEn
+                    blocNameEs
+                    blocCode
                   }
                 }
               }
@@ -1668,10 +1662,10 @@ class QueryTest(TestCase):
                 "edges": [
                     {
                         "node": {
-                            "nameEnglish": "english",
-                            "nameSpanish": "spanish",
-                            "namePortuguese": "portuguese",
-                            "code": "190"
+                            "blocNamePt": "portuguese",
+                            "blocNameEn": "english",
+                            "blocNameEs": "spanish",
+                            "blocCode": "190"
                         }
                     }
                 ]
@@ -1692,10 +1686,10 @@ class QueryTest(TestCase):
               allCountry{
                 edges{
                   node{
-                    nameEnglish
-                    namePortuguese
-                    nameSpanish
-                    codeIso3
+                    countryNamePt
+                    countryNameEn
+                    countryNameEs
+                    countryCodeIso3
                   }
                 }
               }
@@ -1706,10 +1700,10 @@ class QueryTest(TestCase):
                 "edges": [
                     {
                         "node": {
-                            "nameEnglish": "Name",
-                            "namePortuguese": "Nome",
-                            "nameSpanish": "Nombre",
-                            "codeIso3": "190"
+                            "countryNamePt": "Nome",
+                            "countryNameEn": "Name",
+                            "countryNameEs": "Nombre",
+                            "countryCodeIso3": "190",
                         }
                     }
                 ]
@@ -1730,9 +1724,9 @@ class QueryTest(TestCase):
               allFederativeunit{
                 edges{
                   node{
-                    name
-                    code
-                    initials
+                    ufName
+                    ufCode
+                    ufInitials
                   }
                 }
               }
@@ -1743,9 +1737,9 @@ class QueryTest(TestCase):
                 "edges": [
                     {
                         "node": {
-                            "name": "Name",
-                            "code": "9090",
-                            "initials": "SP"
+                            "ufName": "Name",
+                            "ufCode": "9090",
+                            "ufInitials": "SP"
                         }
                     }
                 ]
@@ -1766,8 +1760,8 @@ class QueryTest(TestCase):
               allTransportation{
                 edges{
                   node{
-                    name
-                    code
+                    transportationName
+                    transportationCode
                   }
                 }
               }
@@ -1778,8 +1772,8 @@ class QueryTest(TestCase):
                 "edges": [
                     {
                         "node": {
-                            "name": "Name",
-                            "code": "code"
+                            "transportationName": "Name",
+                            "transportationCode": "code"
                         }
                     }
                 ]
@@ -1800,8 +1794,8 @@ class QueryTest(TestCase):
               allUrf{
                 edges{
                   node{
-                    name
-                    code
+                    urfName
+                    urfCode
                   }
                 }
               }
@@ -1812,8 +1806,8 @@ class QueryTest(TestCase):
                 "edges": [
                     {
                         "node": {
-                            "name": "name",
-                            "code": "code"
+                            "urfName": "name",
+                            "urfCode": "code"
                         }
                     }
                 ]

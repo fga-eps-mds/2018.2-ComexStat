@@ -234,10 +234,10 @@ class TradeBlocsType(DjangoObjectType):
     class Meta:
         model = TradeBlocs
         filter_fields = {
-            'name_portuguese': ['icontains'],
-            'name_english': ['icontains'],
-            'name_spanish': ['icontains'],
-            'code': ['icontains']
+            'bloc_name_pt': ['icontains'],
+            'bloc_name_en': ['icontains'],
+            'bloc_name_es': ['icontains'],
+            'bloc_code': ['icontains']
         }
         interfaces = {graphene.Node, }
 
@@ -246,10 +246,10 @@ class CountryType(DjangoObjectType):
     class Meta:
         model = Country
         filter_fields = {
-            'name_portuguese': ['icontains'],
-            'name_english': ['icontains'],
-            'name_spanish': ['icontains'],
-            'code_iso3': ['icontains']
+            'country_name_pt': ['icontains'],
+            'country_name_en': ['icontains'],
+            'country_name_es': ['icontains'],
+            'country_code_iso3': ['icontains']
         }
         interfaces = {graphene.Node, }
 
@@ -258,9 +258,9 @@ class FederativeUnitType(DjangoObjectType):
     class Meta:
         model = FederativeUnit
         filter_fields = {
-            'code': ['icontains'],
-            'name': ['icontains'],
-            'initials': ['icontains']
+            'uf_code': ['icontains'],
+            'uf_name': ['icontains'],
+            'uf_initials': ['icontains']
         }
         interfaces = {graphene.Node, }
 
@@ -269,8 +269,8 @@ class TransportationType(DjangoObjectType):
     class Meta:
         model = Transportation
         filter_fields = {
-            'name': ['icontains'],
-            'code': ['icontains']
+            'transportation_name': ['icontains'],
+            'transportation_code': ['icontains']
         }
         interfaces = {graphene.Node, }
 
@@ -279,8 +279,8 @@ class UrfType(DjangoObjectType):
     class Meta:
         model = Urf
         filter_fields = {
-            'code': ['icontains'],
-            'name': ['icontains'],
+            'urf_code': ['icontains'],
+            'urf_name': ['icontains'],
         }
         interfaces = {graphene.Node, }
 
