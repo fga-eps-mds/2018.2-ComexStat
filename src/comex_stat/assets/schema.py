@@ -68,8 +68,6 @@ class AssetImportFilter(FilterSet):
 
     # temporary field used to filter date fields by range
     commercialized_between = DateFromToRangeFilter('date')
-    name = CharFilter(
-        field_name="name", lookup_expr="icontains")
     date = CharFilter(
         field_name="date", lookup_expr="icontains")
     registries = CharFilter(
@@ -81,7 +79,7 @@ class AssetImportFilter(FilterSet):
 
     class Meta:
         model = AssetImportFacts
-        fields = ['commercialized_between', 'name',
+        fields = ['commercialized_between',
                   'date', 'registries', 'net_kilogram', 'fob_value']
 
 
@@ -93,8 +91,6 @@ class AssetExportFilter(FilterSet):
 
     # temporary field used to filter date fields by range
     commercialized_between = DateFromToRangeFilter('date')
-    name = CharFilter(
-        field_name="name", lookup_expr="icontains")
     date = CharFilter(
         field_name="date", lookup_expr="icontains")
     registries = CharFilter(
@@ -106,14 +102,14 @@ class AssetExportFilter(FilterSet):
 
     class Meta:
         model = AssetExportFacts
-        fields = ['commercialized_between', 'name',
+        fields = ['commercialized_between',
                   'date', 'registries', 'net_kilogram', 'fob_value']
 
 
 class AssetImportFactsNode(DjangoObjectType):
     class Meta:
         model = AssetImportFacts
-        filter_fields = ['commercialized_between', 'name',
+        filter_fields = ['commercialized_between',
                          'date', 'registries', 'net_kilogram', 'fob_value']
         interfaces = (graphene.Node, )
 
@@ -121,7 +117,7 @@ class AssetImportFactsNode(DjangoObjectType):
 class AssetExportFactsNode(DjangoObjectType):
     class Meta:
         model = AssetExportFacts
-        filter_fields = ['commercialized_between', 'name',
+        filter_fields = ['commercialized_between',
                          'date', 'registries', 'net_kilogram', 'fob_value']
         interfaces = (graphene.Node, )
 
