@@ -1582,3 +1582,66 @@ class QueryTest(TestCase):
         schema = graphene.Schema(Query)
         result = schema.execute(query)
         self.assertEqual(expected, result.data)
+
+    def test_query_range_date_import(self):
+
+            '''
+                This test verifies the range date search
+            '''
+            query = '''
+                {
+                allImport(commercializedBetween: "[\\"2018-01-01\\",\\"2018-12-31\\"]"){
+                    edges{
+                    node{
+                        ncm{
+                            ncmNamePt
+                        }
+                       }
+                    }
+                }
+                }
+            '''
+            expected = {"allImport": {
+                    "edges": [
+                        {
+                            "node": {
+                                "ncm":{
+                                    "ncmNamePt": "Outras partes para motores de explosao"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+            schema = graphene.Schema(Query)
+            result = schema.execute(query)
+            self.assertEqual(expected, result.data)
+
+    def test_query_range_date_export(self):
+            '''
+                This test verifies the range date search
+            '''
+            query = '''
+                {
+                    allExport(commercializedBetween: "[\\"2018-01-01s\\",\\"2018-12-31\\"]"){
+                        edges{
+                            node{
+                                date
+                            }
+                        }
+                    }
+                }
+            '''
+            expected = {"allExport": {
+                    "edges": [
+                        {
+                            "node": {
+                                "date": "2018-09-21"
+                            }
+                        }
+                    ]
+                }
+            }
+            schema = graphene.Schema(Query)
+            result = schema.execute(query)
+            self.assertEqual(expected, result.data)
