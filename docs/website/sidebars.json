@@ -3,7 +3,8 @@
     "Comunidade": ["codeofconduct", "contributing"],
     "Gerência": ["comunicacao", "processo", "medicao", "politicaBranches"],
     "Capacitação": ["treinamentos", "microsservicos", "devOps", "pipelineDevOps", "utilizandoDockerDjango"],
-    "Visão de Produto": ["docVisao", "termodeabertura", "eap", "canvas", "prototipo", "guiaestilo"],
-    "Arquitetura": ["definicaoArquitetura", "docArquitetura"]
+    "Visão de Produto": ["docVisao", "termodeabertura", "eap", "canvas", "prototipo", "guiaestilo", "roadmap" ],
+    "Arquitetura": ["definicaoArquitetura", "docArquitetura"],
+    "Sprints Release 2": ["sprint7", "sprint8", "sprint9"]
   }
 }

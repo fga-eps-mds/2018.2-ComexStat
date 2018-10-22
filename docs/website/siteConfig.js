@@ -14,7 +14,7 @@ const users = [
     caption: 'User1',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/docusaurus.svg',
+    image: '/img/docusaurus.sv',
     infoLink: 'https://www.facebook.com',
     pinned: true,
   },
@@ -48,14 +48,40 @@ const siteConfig = {
   users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/docusaurus.svg',
-  footerIcon: 'img/docusaurus.svg',
-  favicon: 'img/favicon.png',
+
+
+  Rogerio: 'img/rogerio.jpg',
+  Joao: 'img/joao.jpg',
+  Marcos: 'img/marcos.jpg',
+  Andre: 'img/andre.jpg',
+  Kaique: 'img/kaique.jpeg',
+  Matheus: 'img/matheus.jpg',
+  Vinicius: 'img/vinicius.jpg',
+  Sannya: 'img/sannya.jpg',
+
+  RogerioGithub: 'https://github.com/rogerioo',
+  JoaoGithub: 'https://github.com/joao15victor08',
+  MarcosGithub: 'https://github.com/marcosnbj',
+  AndreGithub: 'https://github.com/andrelucasf',
+  KaiqueGithub: 'https://github.com/riquekaique',
+  MatheusGithub: 'https://github.com/joranhezon',
+  ViniciusGithub: 'https://github.com/vinicinolivera',
+  SannyaGithub: 'https://github.com/sannyaarvelos',
+
+  members: [
+    "@rogerioo", "@joao15victor08", "@marcosnbj", "@andrelucasf",
+    "@riquekaique", "@johanhezon", "@vinicinolivera", "@sannyaarvelos"
+  ],
+
+  /* path to images for header/footer */
+  headerIcon: 'img/logo_header.png',
+  footerIcon: 'img/logo_header.png',
+  favicon: 'img/logo_header.png',
 
   /* Colors for website */
   colors: {
-    primaryColor: '#2E8555',
-    secondaryColor: '#205C3B',
+    primaryColor: '#17c13d',
+    secondaryColor: '#17c13d',
   },
 
   /* Custom fonts for website */
@@ -73,7 +99,7 @@ const siteConfig = {
   */
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} EPS e MDS UnB FGA`,
+  copyright: `Copyright © ${new Date().getFullYear()} ComexStat`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
