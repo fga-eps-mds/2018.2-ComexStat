@@ -76,6 +76,12 @@ class AssetImportFilter(FilterSet):
         field_name="net_kilogram", lookup_expr="icontains")
     fob_value = CharFilter(
         field_name="fob_value", lookup_expr="icontains")
+    country_name = CharFilter(
+        field_name="origin_country__country_name_pt", lookup_expr="icontains")
+    trade_bloc = CharFilter(
+        field_name="origin_country__trade_bloc__bloc_name_pt", lookup_expr="icontains")
+    federative_unity = CharFilter(
+        field_name="destination_fed_unit__uf_name", lookup_expr="icontains")
 
     class Meta:
         model = AssetImportFacts

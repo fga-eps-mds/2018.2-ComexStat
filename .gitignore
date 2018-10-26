@@ -16,4 +16,6 @@ db.sqlite3
 src/comex_stat/static/**
 
 *.pyc
-__pycache__
+__pycache_
+
+.idea/
