@@ -62,9 +62,9 @@ class DateFromToRangeFilter(RangeFilter):
 
 class AssetImportFilter(FilterSet):
 
-    '''
+    """
      Custom filter-set class for Import facts
-    '''
+    """
 
     # temporary field used to filter date fields by range
     commercialized_between = DateFromToRangeFilter('date')
@@ -76,12 +76,49 @@ class AssetImportFilter(FilterSet):
         field_name="net_kilogram", lookup_expr="icontains")
     fob_value = CharFilter(
         field_name="fob_value", lookup_expr="icontains")
-    country_name = CharFilter(
-        field_name="origin_country__country_name_pt", lookup_expr="icontains")
-    trade_bloc = CharFilter(
-        field_name="origin_country__trade_bloc__bloc_name_pt", lookup_expr="icontains")
-    federative_unity = CharFilter(
-        field_name="destination_fed_unit__uf_name", lookup_expr="icontains")
+    country_name_pt = CharFilter(
+        field_name="origin_country__country_name_pt",
+        lookup_expr="icontains")
+    country_name_en = CharFilter(
+        field_name="origin_country__country_name_en",
+        lookup_expr="icontains")
+    country_name_es = CharFilter(
+        field_name="origin_country__country_name_es",
+        lookup_expr="icontains")
+    country_code_iso3 = CharFilter(
+        field_name="origin_country__country_code_iso3",
+        lookup_expr="icontains")
+    trade_bloc_name_pt = CharFilter(
+        field_name="origin_country__trade_bloc__bloc_name_pt",
+        lookup_expr="icontains")
+    trade_bloc_name_en = CharFilter(
+        field_name="origin_country__trade_bloc__bloc_name_en",
+        lookup_expr="icontains")
+    trade_bloc_name_es = CharFilter(
+        field_name="origin_country__trade_bloc__bloc_name_es",
+        lookup_expr="icontains")
+    trade_bloc_code = CharFilter(
+        field_name="origin_country__trade_bloc__bloc_code",
+        lookup_expr="icontains")
+    federative_unity_name = CharFilter(
+        field_name="destination_fed_unit__uf_name",
+        lookup_expr="icontains")
+    federative_unity_code = CharFilter(
+        field_name="destination_fed_unit__uf_code",
+        lookup_expr="icontains")
+    federative_unity_initials = CharFilter(
+        field_name="destination_fed_unit__uf_initials",
+        lookup_expr="icontains")
+    urf_name = CharFilter(
+        field_name="urf__urf_name", lookup_expr="icontains")
+    urf_code = CharFilter(
+        field_name="urf__urf_code", lookup_expr="icontains")
+    transportation_name = CharFilter(
+        field_name="transportation__transportation_name",
+        lookup_expr="icontains")
+    transportation_code = CharFilter(
+        field_name="transportation__transportation_code",
+        lookup_expr="icontains")
 
     class Meta:
         model = AssetImportFacts
@@ -105,6 +142,42 @@ class AssetExportFilter(FilterSet):
         field_name="net_kilogram", lookup_expr="icontains")
     fob_value = CharFilter(
         field_name="fob_value", lookup_expr="icontains")
+    country_name_pt = CharFilter(
+        field_name="destination_country__country_name_pt",
+        lookup_expr="icontains")
+    country_name_en = CharFilter(
+        field_name="destination_country__country_name_en",
+        lookup_expr="icontains")
+    country_name_es = CharFilter(
+        field_name="destination_country__country_name_es",
+        lookup_expr="icontains")
+    country_code_iso3 = CharFilter(
+        field_name="destination_country__country_code_iso3",
+        lookup_expr="icontains")
+    trade_bloc_name_pt = CharFilter(
+        field_name="destination_country__trade_bloc__bloc_name_pt",
+        lookup_expr="icontains")
+    trade_bloc_name_en = CharFilter(
+        field_name="destination_country__trade_bloc__bloc_name_en",
+        lookup_expr="icontains")
+    trade_bloc_name_es = CharFilter(
+        field_name="destination_country__trade_bloc__bloc_name_es",
+        lookup_expr="icontains")
+    trade_bloc_code = CharFilter(
+        field_name="destination_country__trade_bloc__bloc_code",
+        lookup_expr="icontains")
+    federative_unity_name = CharFilter(
+        field_name="origin_fed_unit__uf_name", lookup_expr="icontains")
+    federative_unity_code = CharFilter(
+        field_name="origin_fed_unit__uf_code", lookup_expr="icontains")
+    federative_unity_initials = CharFilter(
+        field_name="origin_fed_unit__uf_initials", lookup_expr="icontains")
+    transportation_name = CharFilter(
+        field_name="transportation__transportation_name",
+        lookup_expr="icontains")
+    transportation_code = CharFilter(
+        field_name="transportation__transportation_code",
+        lookup_expr="icontains")
 
     class Meta:
         model = AssetExportFacts
