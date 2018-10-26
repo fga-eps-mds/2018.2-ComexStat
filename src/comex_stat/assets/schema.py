@@ -119,6 +119,73 @@ class AssetImportFilter(FilterSet):
     transportation_code = CharFilter(
         field_name="transportation__transportation_code",
         lookup_expr="icontains")
+    ncm_code = CharFilter(
+        field_name="ncm__ncm_code",
+        lookup_expr="icontains")
+    statistic_unit_code = CharFilter(
+        field_name="ncm__statistic_unit_code",
+        lookup_expr="icontains")
+    ppe_code = CharFilter(
+        field_name="ncm__ppe_code",
+        lookup_expr="icontains")
+    ppi_code = CharFilter(
+        field_name="ncm__ppi_code",
+        lookup_expr="icontains")
+    aggregate_factor_code = CharFilter(
+        field_name="ncm__aggregate_factor_code",
+        lookup_expr="icontains")
+    isic4_code = CharFilter(
+        field_name="ncm__isic4_code",
+        lookup_expr="icontains")
+    exportation_subset = CharFilter(
+        field_name="ncm__exportation_subset",
+        lookup_expr="icontains")
+    siit_code = CharFilter(
+        field_name="ncm__siit_code",
+        lookup_expr="icontains")
+    cuci_item_code = CharFilter(
+        field_name="ncm__cuci__item_code",
+        lookup_expr="icontains")
+    cuci_subitem_code = CharFilter(
+        field_name="ncm__cuci__subitem_code",
+        lookup_expr="icontains")
+    cuci_position_code = CharFilter(
+        field_name="ncm__cuci__position_code",
+        lookup_expr="icontains")
+    cuci_chapter_code = CharFilter(
+        field_name="ncm__cuci__chapter_code",
+        lookup_expr="icontains")
+    cuci_section_code = CharFilter(
+        field_name="ncm__cuci__section_code",
+        lookup_expr="icontains")
+    cgce_level1_code = CharFilter(
+        field_name="ncm__cgce__level1_code",
+        lookup_expr="icontains"
+    )
+    cgce_level2_code = CharFilter(
+        field_name="ncm__cgce__level2_code",
+        lookup_expr="icontains"
+    )
+    cgce_level3_code = CharFilter(
+        field_name="ncm__cgce__level3_code",
+        lookup_expr="icontains"
+    )
+    sh_chapter_code = CharFilter(
+        field_name="ncm__sh__chapter_code",
+        lookup_expr="icontains"
+    )
+    sh_position_code = CharFilter(
+        field_name="ncm__sh__position_code",
+        lookup_expr="icontains"
+    )
+    sh_subposition_code = CharFilter(
+        field_name="ncm__sh__subposition_code",
+        lookup_expr="icontains"
+    )
+    sh_section_code = CharFilter(
+        field_name="ncm__sh__section_code",
+        lookup_expr="icontains"
+    )
 
     class Meta:
         model = AssetImportFacts
@@ -178,6 +245,73 @@ class AssetExportFilter(FilterSet):
     transportation_code = CharFilter(
         field_name="transportation__transportation_code",
         lookup_expr="icontains")
+    ncm_code = CharFilter(
+        field_name="ncm__ncm_code",
+        lookup_expr="icontains")
+    statistic_unit_code = CharFilter(
+        field_name="ncm__statistic_unit_code",
+        lookup_expr="icontains")
+    ppe_code = CharFilter(
+        field_name="ncm__ppe_code",
+        lookup_expr="icontains")
+    ppi_code = CharFilter(
+        field_name="ncm__ppi_code",
+        lookup_expr="icontains")
+    aggregate_factor_code = CharFilter(
+        field_name="ncm__aggregate_factor_code",
+        lookup_expr="icontains")
+    isic4_code = CharFilter(
+        field_name="ncm__isic4_code",
+        lookup_expr="icontains")
+    exportation_subset = CharFilter(
+        field_name="ncm__exportation_subset",
+        lookup_expr="icontains")
+    siit_code = CharFilter(
+        field_name="ncm__siit_code",
+        lookup_expr="icontains")
+    cuci_item_code = CharFilter(
+        field_name="ncm__cuci__item_code",
+        lookup_expr="icontains")
+    cuci_subitem_code = CharFilter(
+        field_name="ncm__cuci__subitem_code",
+        lookup_expr="icontains")
+    cuci_position_code = CharFilter(
+        field_name="ncm__cuci__position_code",
+        lookup_expr="icontains")
+    cuci_chapter_code = CharFilter(
+        field_name="ncm__cuci__chapter_code",
+        lookup_expr="icontains")
+    cuci_section_code = CharFilter(
+        field_name="ncm__cuci__section_code",
+        lookup_expr="icontains")
+    cgce_level1_code = CharFilter(
+        field_name="ncm__cgce__level1_code",
+        lookup_expr="icontains"
+    )
+    cgce_level2_code = CharFilter(
+        field_name="ncm__cgce__level2_code",
+        lookup_expr="icontains"
+    )
+    cgce_level3_code = CharFilter(
+        field_name="ncm__cgce__level3_code",
+        lookup_expr="icontains"
+    )
+    sh_chapter_code = CharFilter(
+        field_name="ncm__sh__chapter_code",
+        lookup_expr="icontains"
+    )
+    sh_position_code = CharFilter(
+        field_name="ncm__sh__position_code",
+        lookup_expr="icontains"
+    )
+    sh_subposition_code = CharFilter(
+        field_name="ncm__sh__subposition_code",
+        lookup_expr="icontains"
+    )
+    sh_section_code = CharFilter(
+        field_name="ncm__sh__section_code",
+        lookup_expr="icontains"
+    )
 
     class Meta:
         model = AssetExportFacts
