@@ -17,6 +17,7 @@ id: sprint10
 | Kaique   |
 | Vinicius |
 | Sannya |
+| Rogério |
 
 ## Objetivo
 
