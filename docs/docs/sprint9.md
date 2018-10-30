@@ -16,6 +16,7 @@ id: sprint9
 | Matheus Joranhezon   |
 | Kaique   |
 | Vinicius   |
+| Rogério  |
 
 ## Objetivo
 
@@ -74,15 +75,46 @@ Burndown de riscos:
 
 ### Dívidas entregues
 
+Não foram entregues dívidas, pois não foram alocadas nenhuma dívida para essa sprint.
+
 
 
 ## Retrospectiva da Sprint
 
+### O que estamos sentindo?
 
-### Pontos positivos
+#### Positivo
+- Sentindo progresso do projeto.
 
 
-### Pontos negativos
+#### Negativo
+- Membro de MDS putasso;
+- Cansado;
+- Falta de vontade de ir às aulas.
 
+### O que estamos fazendo?
 
-### Possíveis melhorias
+#### Positivo
+- Codando até os confins da terra;
+- Pareamentos efetivos;
+- Planejamento melhorou;
+- Prestatividade da equipe.
+
+#### Negativo
+
+### O que estamos ouvindo?
+
+#### Positivo
+- Cliente já está satisfeito;
+
+#### Negativo
+- Carla insatisfeita com o Front;
+
+### O que estamos vendo?
+
+#### Positivo
+- Grupo de MDS esforçado;
+- Projeto progredindo.
+
+#### Negativo
+- Algumas falhas de boas práticas.
