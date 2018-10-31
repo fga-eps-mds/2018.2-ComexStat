@@ -71,120 +71,120 @@ class AssetImportFilter(FilterSet):
     date = CharFilter(
         field_name="date", lookup_expr="icontains")
     registries = CharFilter(
-        field_name="registries", lookup_expr="icontains")
+        field_name="registries", lookup_expr="iexact")
     net_kilogram = CharFilter(
-        field_name="net_kilogram", lookup_expr="icontains")
+        field_name="net_kilogram", lookup_expr="iexact")
     fob_value = CharFilter(
-        field_name="fob_value", lookup_expr="icontains")
+        field_name="fob_value", lookup_expr="iexact")
     country_name_pt = CharFilter(
         field_name="origin_country__country_name_pt",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     country_name_en = CharFilter(
         field_name="origin_country__country_name_en",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     country_name_es = CharFilter(
         field_name="origin_country__country_name_es",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     country_code_iso3 = CharFilter(
         field_name="origin_country__country_code_iso3",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     trade_bloc_name_pt = CharFilter(
         field_name="origin_country__trade_bloc__bloc_name_pt",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     trade_bloc_name_en = CharFilter(
         field_name="origin_country__trade_bloc__bloc_name_en",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     trade_bloc_name_es = CharFilter(
         field_name="origin_country__trade_bloc__bloc_name_es",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     trade_bloc_code = CharFilter(
         field_name="origin_country__trade_bloc__bloc_code",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     federative_unity_name = CharFilter(
         field_name="destination_fed_unit__uf_name",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     federative_unity_code = CharFilter(
         field_name="destination_fed_unit__uf_code",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     federative_unity_initials = CharFilter(
         field_name="destination_fed_unit__uf_initials",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     urf_name = CharFilter(
-        field_name="urf__urf_name", lookup_expr="icontains")
+        field_name="urf__urf_name", lookup_expr="iexact")
     urf_code = CharFilter(
-        field_name="urf__urf_code", lookup_expr="icontains")
+        field_name="urf__urf_code", lookup_expr="iexact")
     transportation_name = CharFilter(
         field_name="transportation__transportation_name",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     transportation_code = CharFilter(
         field_name="transportation__transportation_code",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     ncm_code = CharFilter(
         field_name="ncm__ncm_code",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     statistic_unit_code = CharFilter(
         field_name="ncm__statistic_unit_code",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     ppe_code = CharFilter(
         field_name="ncm__ppe_code",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     ppi_code = CharFilter(
         field_name="ncm__ppi_code",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     aggregate_factor_code = CharFilter(
         field_name="ncm__aggregate_factor_code",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     isic4_code = CharFilter(
         field_name="ncm__isic4_code",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     exportation_subset = CharFilter(
         field_name="ncm__exportation_subset",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     siit_code = CharFilter(
         field_name="ncm__siit_code",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     cuci_item_code = CharFilter(
         field_name="ncm__cuci__item_code",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     cuci_subitem_code = CharFilter(
         field_name="ncm__cuci__subitem_code",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     cuci_position_code = CharFilter(
         field_name="ncm__cuci__position_code",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     cuci_chapter_code = CharFilter(
         field_name="ncm__cuci__chapter_code",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     cuci_section_code = CharFilter(
         field_name="ncm__cuci__section_code",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     cgce_level1_code = CharFilter(
         field_name="ncm__cgce__level1_code",
-        lookup_expr="icontains"
+        lookup_expr="iexact"
     )
     cgce_level2_code = CharFilter(
         field_name="ncm__cgce__level2_code",
-        lookup_expr="icontains"
+        lookup_expr="iexact"
     )
     cgce_level3_code = CharFilter(
         field_name="ncm__cgce__level3_code",
-        lookup_expr="icontains"
+        lookup_expr="iexact"
     )
     sh_chapter_code = CharFilter(
         field_name="ncm__sh__chapter_code",
-        lookup_expr="icontains"
+        lookup_expr="iexact"
     )
     sh_position_code = CharFilter(
         field_name="ncm__sh__position_code",
-        lookup_expr="icontains"
+        lookup_expr="iexact"
     )
     sh_subposition_code = CharFilter(
         field_name="ncm__sh__subposition_code",
-        lookup_expr="icontains"
+        lookup_expr="iexact"
     )
     sh_section_code = CharFilter(
         field_name="ncm__sh__section_code",
-        lookup_expr="icontains"
+        lookup_expr="iexact"
     )
 
     class Meta:
@@ -204,113 +204,113 @@ class AssetExportFilter(FilterSet):
     date = CharFilter(
         field_name="date", lookup_expr="icontains")
     registries = CharFilter(
-        field_name="registries", lookup_expr="icontains")
+        field_name="registries", lookup_expr="iexact")
     net_kilogram = CharFilter(
-        field_name="net_kilogram", lookup_expr="icontains")
+        field_name="net_kilogram", lookup_expr="iexact")
     fob_value = CharFilter(
-        field_name="fob_value", lookup_expr="icontains")
+        field_name="fob_value", lookup_expr="iexact")
     country_name_pt = CharFilter(
         field_name="destination_country__country_name_pt",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     country_name_en = CharFilter(
         field_name="destination_country__country_name_en",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     country_name_es = CharFilter(
         field_name="destination_country__country_name_es",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     country_code_iso3 = CharFilter(
         field_name="destination_country__country_code_iso3",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     trade_bloc_name_pt = CharFilter(
         field_name="destination_country__trade_bloc__bloc_name_pt",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     trade_bloc_name_en = CharFilter(
         field_name="destination_country__trade_bloc__bloc_name_en",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     trade_bloc_name_es = CharFilter(
         field_name="destination_country__trade_bloc__bloc_name_es",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     trade_bloc_code = CharFilter(
         field_name="destination_country__trade_bloc__bloc_code",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     federative_unity_name = CharFilter(
-        field_name="origin_fed_unit__uf_name", lookup_expr="icontains")
+        field_name="origin_fed_unit__uf_name", lookup_expr="iexact")
     federative_unity_code = CharFilter(
-        field_name="origin_fed_unit__uf_code", lookup_expr="icontains")
+        field_name="origin_fed_unit__uf_code", lookup_expr="iexact")
     federative_unity_initials = CharFilter(
-        field_name="origin_fed_unit__uf_initials", lookup_expr="icontains")
+        field_name="origin_fed_unit__uf_initials", lookup_expr="iexact")
     transportation_name = CharFilter(
         field_name="transportation__transportation_name",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     transportation_code = CharFilter(
         field_name="transportation__transportation_code",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     ncm_code = CharFilter(
         field_name="ncm__ncm_code",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     statistic_unit_code = CharFilter(
         field_name="ncm__statistic_unit_code",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     ppe_code = CharFilter(
         field_name="ncm__ppe_code",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     ppi_code = CharFilter(
         field_name="ncm__ppi_code",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     aggregate_factor_code = CharFilter(
         field_name="ncm__aggregate_factor_code",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     isic4_code = CharFilter(
         field_name="ncm__isic4_code",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     exportation_subset = CharFilter(
         field_name="ncm__exportation_subset",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     siit_code = CharFilter(
         field_name="ncm__siit_code",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     cuci_item_code = CharFilter(
         field_name="ncm__cuci__item_code",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     cuci_subitem_code = CharFilter(
         field_name="ncm__cuci__subitem_code",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     cuci_position_code = CharFilter(
         field_name="ncm__cuci__position_code",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     cuci_chapter_code = CharFilter(
         field_name="ncm__cuci__chapter_code",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     cuci_section_code = CharFilter(
         field_name="ncm__cuci__section_code",
-        lookup_expr="icontains")
+        lookup_expr="iexact")
     cgce_level1_code = CharFilter(
         field_name="ncm__cgce__level1_code",
-        lookup_expr="icontains"
+        lookup_expr="iexact"
     )
     cgce_level2_code = CharFilter(
         field_name="ncm__cgce__level2_code",
-        lookup_expr="icontains"
+        lookup_expr="iexact"
     )
     cgce_level3_code = CharFilter(
         field_name="ncm__cgce__level3_code",
-        lookup_expr="icontains"
+        lookup_expr="iexact"
     )
     sh_chapter_code = CharFilter(
         field_name="ncm__sh__chapter_code",
-        lookup_expr="icontains"
+        lookup_expr="iexact"
     )
     sh_position_code = CharFilter(
         field_name="ncm__sh__position_code",
-        lookup_expr="icontains"
+        lookup_expr="iexact"
     )
     sh_subposition_code = CharFilter(
         field_name="ncm__sh__subposition_code",
-        lookup_expr="icontains"
+        lookup_expr="iexact"
     )
     sh_section_code = CharFilter(
         field_name="ncm__sh__section_code",
-        lookup_expr="icontains"
+        lookup_expr="iexact"
     )
 
     class Meta:
@@ -349,20 +349,20 @@ class NCMType(DjangoObjectType):
     class Meta:
         model = NCM
         filter_fields = {
-            'ncm_code': ['icontains'],
+            'ncm_code': ['iexact'],
             'ncm_name_pt': ['icontains'],
             'ncm_name_en': ['icontains'],
             'ncm_name_es': ['icontains'],
-            'statistic_unit_code': ['icontains'],
-            'ppe_code': ['icontains'],
-            'ppi_code': ['icontains'],
-            'aggregate_factor_code': ['icontains'],
+            'statistic_unit_code': ['iexact'],
+            'ppe_code': ['iexact'],
+            'ppi_code': ['iexact'],
+            'aggregate_factor_code': ['iexact'],
             'cuci': [],
             'cgce': [],
             'sh': [],
-            'isic4_code': ['icontains'],
-            'exportation_subset': ['icontains'],
-            'siit_code': ['icontains']
+            'isic4_code': ['iexact'],
+            'exportation_subset': ['iexact'],
+            'siit_code': ['iexact']
         }
         interfaces = {graphene.Node, }
 
@@ -371,23 +371,23 @@ class CUCIType(DjangoObjectType):
     class Meta:
         model = CUCI
         filter_fields = {
-            'item_code': ['icontains'],
+            'item_code': ['iexact'],
             'item_name_pt': ['icontains'],
             'item_name_en': ['icontains'],
             'item_name_es': ['icontains'],
-            'subitem_code': ['icontains'],
+            'subitem_code': ['iexact'],
             'subitem_name_pt': ['icontains'],
             'subitem_name_en': ['icontains'],
             'subitem_name_es': ['icontains'],
-            'position_code': ['icontains'],
+            'position_code': ['iexact'],
             'position_name_pt': ['icontains'],
             'position_name_en': ['icontains'],
             'position_name_es': ['icontains'],
-            'chapter_code': ['icontains'],
+            'chapter_code': ['iexact'],
             'chapter_name_pt': ['icontains'],
             'chapter_name_en': ['icontains'],
             'chapter_name_es': ['icontains'],
-            'section_code': ['icontains'],
+            'section_code': ['iexact'],
             'section_name_pt': ['icontains'],
             'section_name_en': ['icontains'],
             'section_name_es': ['icontains']
@@ -399,15 +399,15 @@ class CGCEType(DjangoObjectType):
     class Meta:
         model = CGCE
         filter_fields = {
-            'level1_code': ['icontains'],
+            'level1_code': ['iexact'],
             'level1_name_pt': ['icontains'],
             'level1_name_en': ['icontains'],
             'level1_name_es': ['icontains'],
-            'level2_code': ['icontains'],
+            'level2_code': ['iexact'],
             'level2_name_pt': ['icontains'],
             'level2_name_en': ['icontains'],
             'level2_name_es': ['icontains'],
-            'level3_code': ['icontains'],
+            'level3_code': ['iexact'],
             'level3_name_pt': ['icontains'],
             'level3_name_en': ['icontains'],
             'level3_name_es': ['icontains']
@@ -419,19 +419,19 @@ class SHType(DjangoObjectType):
     class Meta:
         model = SH
         filter_fields = {
-            'chapter_code': ['icontains'],
+            'chapter_code': ['iexact'],
             'chapter_name_pt': ['icontains'],
             'chapter_name_en': ['icontains'],
             'chapter_name_es': ['icontains'],
-            'position_code': ['icontains'],
+            'position_code': ['iexact'],
             'position_name_pt': ['icontains'],
             'position_name_en': ['icontains'],
             'position_name_es': ['icontains'],
-            'subposition_code': ['icontains'],
+            'subposition_code': ['iexact'],
             'subposition_name_pt': ['icontains'],
             'subposition_name_en': ['icontains'],
             'subposition_name_es': ['icontains'],
-            'section_code': ['icontains'],
+            'section_code': ['iexact'],
             'section_name_pt': ['icontains'],
             'section_name_en': ['icontains'],
             'section_name_es': ['icontains']
@@ -446,7 +446,7 @@ class TradeBlocsType(DjangoObjectType):
             'bloc_name_pt': ['icontains'],
             'bloc_name_en': ['icontains'],
             'bloc_name_es': ['icontains'],
-            'bloc_code': ['icontains']
+            'bloc_code': ['iexact']
         }
         interfaces = {graphene.Node, }
 
@@ -458,7 +458,7 @@ class CountryType(DjangoObjectType):
             'country_name_pt': ['icontains'],
             'country_name_en': ['icontains'],
             'country_name_es': ['icontains'],
-            'country_code_iso3': ['icontains']
+            'country_code_iso3': ['iexact']
         }
         interfaces = {graphene.Node, }
 
@@ -467,9 +467,9 @@ class FederativeUnitType(DjangoObjectType):
     class Meta:
         model = FederativeUnit
         filter_fields = {
-            'uf_code': ['icontains'],
-            'uf_name': ['icontains'],
-            'uf_initials': ['icontains']
+            'uf_code': ['iexact'],
+            'uf_name': ['iexact'],
+            'uf_initials': ['iexact']
         }
         interfaces = {graphene.Node, }
 
@@ -479,7 +479,7 @@ class TransportationType(DjangoObjectType):
         model = Transportation
         filter_fields = {
             'transportation_name': ['icontains'],
-            'transportation_code': ['icontains']
+            'transportation_code': ['iexact']
         }
         interfaces = {graphene.Node, }
 
@@ -488,8 +488,8 @@ class UrfType(DjangoObjectType):
     class Meta:
         model = Urf
         filter_fields = {
-            'urf_code': ['icontains'],
-            'urf_name': ['icontains'],
+            'urf_code': ['iexact'],
+            'urf_name': ['iexact'],
         }
         interfaces = {graphene.Node, }
 
