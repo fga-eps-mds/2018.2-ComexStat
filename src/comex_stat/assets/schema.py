@@ -13,6 +13,7 @@ from django_filters.filters import RangeFilter
 from django_filters.utils import handle_timezone
 from graphene_django.filter.fields import DjangoFilterConnectionField
 from graphene_django.types import DjangoObjectType
+from django.db.models import Sum
 
 
 class DateRangeField(Field):
@@ -320,11 +321,17 @@ class AssetExportFilter(FilterSet):
 
 
 class AssetImportFactsNode(DjangoObjectType):
+    total_fob_value = graphene.String()
+
     class Meta:
         model = AssetImportFacts
         filter_fields = ['commercialized_between',
                          'date', 'registries', 'net_kilogram', 'fob_value']
         interfaces = (graphene.Node, )
+
+    def resolve_total_fob_value(self, info):
+            a = AssetImportFacts.objects.filter(date=self.date).aggregate(Sum('fob_value'))
+            return a['fob_value__sum']
 
 
 class AssetExportFactsNode(DjangoObjectType):
@@ -510,7 +517,10 @@ class Query(graphene.ObjectType):
     all_sh = DjangoFilterConnectionField(SHType)
 
     def resolve_all_import(self, info, **kwargs):
-        return AssetImportFacts.objects.all()
+        # return AssetImportFacts.objects.all()
+        return list(AssetImportFacts.objects.raw('''Select id, COUNT(date)
+                                                 FROM assets_AssetImportFacts
+                                                 GROUP BY date'''))
 
     def resolve_all_export(self, info, **kwargs):
         return AssetExportFacts.objects.all()
