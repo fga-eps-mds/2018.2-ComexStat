@@ -60,29 +60,29 @@ class CUCI(models.Model):
     '''
     item_code = models.CharField(max_length=5, blank=False,
                                  validators=[validate_only_numbers])
-    item_name_pt = models.CharField(max_length=250, blank=False)
-    item_name_en = models.CharField(max_length=250, blank=False)
-    item_name_es = models.CharField(max_length=250, blank=False)
+    item_name_pt = models.TextField(blank=False)
+    item_name_en = models.TextField(blank=False)
+    item_name_es = models.TextField(blank=False)
     subitem_code = models.CharField(max_length=4, blank=False,
                                     validators=[validate_only_numbers])
-    subitem_name_pt = models.CharField(max_length=250, blank=False)
-    subitem_name_en = models.CharField(max_length=250, blank=False)
-    subitem_name_es = models.CharField(max_length=250, blank=False)
+    subitem_name_pt = models.TextField(blank=False)
+    subitem_name_en = models.TextField(blank=False)
+    subitem_name_es = models.TextField(blank=False)
     position_code = models.CharField(max_length=3, blank=False,
                                      validators=[validate_only_numbers])
-    position_name_pt = models.CharField(max_length=250, blank=False)
-    position_name_en = models.CharField(max_length=250, blank=False)
-    position_name_es = models.CharField(max_length=250, blank=False)
+    position_name_pt = models.TextField(blank=False)
+    position_name_en = models.TextField(blank=False)
+    position_name_es = models.TextField(blank=False)
     chapter_code = models.CharField(max_length=2, blank=False,
                                     validators=[validate_only_numbers])
-    chapter_name_pt = models.CharField(max_length=250, blank=False)
-    chapter_name_en = models.CharField(max_length=250, blank=False)
-    chapter_name_es = models.CharField(max_length=250, blank=False)
+    chapter_name_pt = models.TextField(blank=False)
+    chapter_name_en = models.TextField(blank=False)
+    chapter_name_es = models.TextField(blank=False)
     section_code = models.CharField(max_length=1, blank=False,
                                     verbose_name="Section code from NCM")
-    section_name_pt = models.CharField(max_length=250, blank=False)
-    section_name_en = models.CharField(max_length=250, blank=False)
-    section_name_es = models.CharField(max_length=250, blank=False)
+    section_name_pt = models.TextField(blank=False)
+    section_name_en = models.TextField(blank=False)
+    section_name_es = models.TextField(blank=False)
 
 
 class NCM(models.Model):
