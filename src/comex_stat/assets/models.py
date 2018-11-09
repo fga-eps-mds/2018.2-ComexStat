@@ -13,24 +13,24 @@ class SH(models.Model):
 
     chapter_code = models.CharField(max_length=2, blank=True,
                                     validators=[validate_only_numbers])
-    chapter_name_pt = models.CharField(max_length=250, blank=True)
-    chapter_name_en = models.CharField(max_length=250)
-    chapter_name_es = models.CharField(max_length=250)
+    chapter_name_pt = models.TextField(blank=True)
+    chapter_name_en = models.TextField()
+    chapter_name_es = models.TextField()
     position_code = models.CharField(max_length=4, blank=False,
                                      validators=[validate_only_numbers])
-    position_name_pt = models.CharField(max_length=250)
-    position_name_en = models.CharField(max_length=250)
-    position_name_es = models.CharField(max_length=250)
+    position_name_pt = models.TextField()
+    position_name_en = models.TextField()
+    position_name_es = models.TextField()
     subposition_code = models.CharField(max_length=6, blank=False,
                                         validators=[validate_only_numbers])
-    subposition_name_pt = models.CharField(max_length=250)
-    subposition_name_en = models.CharField(max_length=250)
-    subposition_name_es = models.CharField(max_length=250)
-    section_code = models.CharField(max_length=2, blank=False,
+    subposition_name_pt = models.TextField()
+    subposition_name_en = models.TextField()
+    subposition_name_es = models.TextField()
+    section_code = models.CharField(max_length=6, blank=False,
                                     verbose_name="Section code from NCM")
-    section_name_pt = models.CharField(max_length=250)
-    section_name_en = models.CharField(max_length=250)
-    section_name_es = models.CharField(max_length=250)
+    section_name_pt = models.TextField()
+    section_name_en = models.TextField()
+    section_name_es = models.TextField()
 
 
 class CGCE(models.Model):
