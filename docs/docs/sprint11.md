@@ -18,7 +18,7 @@ id: sprint11
 
 ## Objetivo
 
-
+O objetivo dessa sprint foi fechar as pendências da sprint passada, tendo em vista que nenhum dos membros conseguiu ser produtivo durante a sprint 10
 
 ## Dados gerais
 
