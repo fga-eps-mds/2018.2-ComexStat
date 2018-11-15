@@ -102,7 +102,7 @@ class NCM(models.Model):
     ppi_code = models.CharField(max_length=4, blank=False,
                                 verbose_name="Pauta de Produtos Importados",
                                 validators=[validate_only_numbers])
-    aggregate_factor_code = models.CharField(max_length=1, blank=False,
+    aggregate_factor_code = models.CharField(max_length=4, blank=False,
                                              validators=[validate_only_numbers]
                                              )
     cuci = models.ForeignKey(CUCI, on_delete=models.CASCADE,
