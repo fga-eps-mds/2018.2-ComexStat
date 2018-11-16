@@ -529,12 +529,14 @@ class Aggregated_Import(DjangoObjectType):
 
     def resolve_total_fob_value_country(self, info):
         a = AssetImportFacts.objects.filter(
-            origin_country__country_name_pt=self.origin_country.country_name_pt).aggregate(Sum('fob_value'))
+            origin_country__country_name_pt=self.origin_country.
+            country_name_pt).aggregate(Sum('fob_value'))
         return a['fob_value__sum']
 
     def resolve_total_fob_value_transportation(self, info):
         a = AssetImportFacts.objects.filter(
-            transportation__transportation_name=self.transportation.transportation_name).aggregate(Sum('fob_value'))
+            transportation__transportation_name=self.transportation.
+            transportation_name).aggregate(Sum('fob_value'))
         return a['fob_value__sum']
 
     def resolve_total_fob_value_urf(self, info):
@@ -544,7 +546,8 @@ class Aggregated_Import(DjangoObjectType):
 
     def resolve_total_fob_value_trade_bloc(self, info):
         a = AssetImportFacts.objects.filter(
-            origin_country__trade_bloc__bloc_name_pt=self.origin_country.trade_bloc.bloc_name_pt).aggregate(Sum('fob_value'))
+            origin_country__trade_bloc__bloc_name_pt=self.origin_country.
+            trade_bloc.bloc_name_pt).aggregate(Sum('fob_value'))
         return a['fob_value__sum']
 
     def resolve_total_registries_date(self, info):
@@ -554,12 +557,14 @@ class Aggregated_Import(DjangoObjectType):
 
     def resolve_total_registries_country(self, info):
         a = AssetImportFacts.objects.filter(
-            origin_country__country_name_pt=self.origin_country.country_name_pt).aggregate(Sum('registries'))
+            origin_country__country_name_pt=self.origin_country.
+            country_name_pt).aggregate(Sum('registries'))
         return a['registries__sum']
 
     def resolve_total_registries_transportation(self, info):
         a = AssetImportFacts.objects.filter(
-            transportation__transportation_name=self.transportation.transportation_name).aggregate(Sum('registries'))
+            transportation__transportation_name=self.transportation.
+            transportation_name).aggregate(Sum('registries'))
         return a['registries__sum']
 
     def resolve_total_registries_urf(self, info):
@@ -569,7 +574,8 @@ class Aggregated_Import(DjangoObjectType):
 
     def resolve_total_registries_trade_bloc(self, info):
         a = AssetImportFacts.objects.filter(
-            origin_country__trade_bloc__bloc_name_pt=self.origin_country.trade_bloc.bloc_name_pt).aggregate(Sum('registries'))
+            origin_country__trade_bloc__bloc_name_pt=self.origin_country.
+            trade_bloc.bloc_name_pt).aggregate(Sum('registries'))
         return a['registries__sum']
 
     def resolve_total_net_kilogram_date(self, info):
@@ -579,12 +585,14 @@ class Aggregated_Import(DjangoObjectType):
 
     def resolve_total_net_kilogram_country(self, info):
         a = AssetImportFacts.objects.filter(
-            origin_country__country_name_pt=self.origin_country.country_name_pt).aggregate(Sum('net_kilogram'))
+            origin_country__country_name_pt=self.origin_country.
+            country_name_pt).aggregate(Sum('net_kilogram'))
         return a['net_kilogram__sum']
 
     def resolve_total_net_kilogram_transportation(self, info):
         a = AssetImportFacts.objects.filter(
-            transportation__transportation_name=self.transportation.transportation_name).aggregate(Sum('net_kilogram'))
+            transportation__transportation_name=self.transportation.
+            transportation_name).aggregate(Sum('net_kilogram'))
         return a['net_kilogram__sum']
 
     def resolve_total_net_kilogram_urf(self, info):
@@ -594,7 +602,8 @@ class Aggregated_Import(DjangoObjectType):
 
     def resolve_total_net_kilogram_trade_bloc(self, info):
         a = AssetImportFacts.objects.filter(
-            origin_country__trade_bloc__bloc_name_pt=self.origin_country.trade_bloc.bloc_name_pt).aggregate(Sum('net_kilogram'))
+            origin_country__trade_bloc__bloc_name_pt=self.origin_country.
+            trade_bloc.bloc_name_pt).aggregate(Sum('net_kilogram'))
         return a['net_kilogram__sum']
 
 
@@ -627,12 +636,14 @@ class Aggregated_Export(DjangoObjectType):
 
     def resolve_total_fob_value_country(self, info):
         a = AssetExportFacts.objects.filter(
-            destination_country__country_name_pt=self.destination_country.country_name_pt).aggregate(Sum('fob_value'))
+            destination_country__country_name_pt=self.destination_country.
+            country_name_pt).aggregate(Sum('fob_value'))
         return a['fob_value__sum']
 
     def resolve_total_fob_value_transportation(self, info):
         a = AssetExportFacts.objects.filter(
-            transportation__transportation_name=self.transportation.transportation_name).aggregate(Sum('fob_value'))
+            transportation__transportation_name=self.transportation.
+            transportation_name).aggregate(Sum('fob_value'))
         return a['fob_value__sum']
 
     def resolve_total_fob_value_urf(self, info):
@@ -642,7 +653,9 @@ class Aggregated_Export(DjangoObjectType):
 
     def resolve_total_fob_value_trade_bloc(self, info):
         a = AssetExportFacts.objects.filter(
-            destination_country__trade_bloc__bloc_name_pt=self.destination_country.trade_bloc.bloc_name_pt).aggregate(Sum('fob_value'))
+            destination_country__trade_bloc__bloc_name_pt=self.
+            destination_country.trade_bloc.bloc_name_pt).
+            aggregate(Sum('fob_value'))
         return a['fob_value__sum']
 
     def resolve_total_registries_date(self, info):
@@ -652,12 +665,14 @@ class Aggregated_Export(DjangoObjectType):
 
     def resolve_total_registries_country(self, info):
         a = AssetExportFacts.objects.filter(
-            destination_country__country_name_pt=self.destination_country.country_name_pt).aggregate(Sum('registries'))
+            destination_country__country_name_pt=self.destination_country.
+            country_name_pt).aggregate(Sum('registries'))
         return a['registries__sum']
 
     def resolve_total_registries_transportation(self, info):
         a = AssetExportFacts.objects.filter(
-            transportation__transportation_name=self.transportation.transportation_name).aggregate(Sum('registries'))
+            transportation__transportation_name=self.transportation.
+            transportation_name).aggregate(Sum('registries'))
         return a['registries__sum']
 
     def resolve_total_registries_urf(self, info):
@@ -667,7 +682,9 @@ class Aggregated_Export(DjangoObjectType):
 
     def resolve_total_registries_trade_bloc(self, info):
         a = AssetExportFacts.objects.filter(
-            destination_country__trade_bloc__bloc_name_pt=self.destination_country.trade_bloc.bloc_name_pt).aggregate(Sum('registries'))
+            destination_country__trade_bloc__bloc_name_pt=self.
+            destination_country.trade_bloc.bloc_name_pt).aggregate(
+            Sum('registries'))
         return a['registries__sum']
 
     def resolve_total_net_kilogram_date(self, info):
@@ -677,12 +694,14 @@ class Aggregated_Export(DjangoObjectType):
 
     def resolve_total_net_kilogram_country(self, info):
         a = AssetExportFacts.objects.filter(
-            destination_country__country_name_pt=self.destination_country.country_name_pt).aggregate(Sum('net_kilogram'))
+            destination_country__country_name_pt=self.destination_country.
+            country_name_pt).aggregate(Sum('net_kilogram'))
         return a['net_kilogram__sum']
 
     def resolve_total_net_kilogram_transportation(self, info):
         a = AssetExportFacts.objects.filter(
-            transportation__transportation_name=self.transportation.transportation_name).aggregate(Sum('net_kilogram'))
+            transportation__transportation_name=self.transportation.
+            transportation_name).aggregate(Sum('net_kilogram'))
         return a['net_kilogram__sum']
 
     def resolve_total_net_kilogram_urf(self, info):
@@ -692,7 +711,9 @@ class Aggregated_Export(DjangoObjectType):
 
     def resolve_total_net_kilogram_trade_bloc(self, info):
         a = AssetExportFacts.objects.filter(
-            destination_country__trade_bloc__bloc_name_pt=self.destination_country.trade_bloc.bloc_name_pt).aggregate(Sum('net_kilogram'))
+            destination_country__trade_bloc__bloc_name_pt=self.
+            destination_country.trade_bloc.bloc_name_pt).aggregate(
+            Sum('net_kilogram'))
         return a['net_kilogram__sum']
 
 
