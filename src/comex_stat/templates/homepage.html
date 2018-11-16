@@ -16,11 +16,41 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="graphql">API</a>
+                    <a class="nav-link" href="graphql">Ir para a API</a>
                 </li>
             </ul>
         </div>
     </nav>
+
+    <div class="container container-doc">
+        <h1 class="topics">Comex Stat API</h1>
+        <img class="imgql" src="{% static 'img/graphql1.png' %}"></img>
+        <h2 class="topics">1. Sobre a API</h2>
+        <p class="content">Essa é uma API dedicada a prover acesso aos dados relacionados ao comércio exterior de bens,
+            provenientes do
+            Ministério da
+            Indústria, Comércio Exterior e Serviços (MDIC). A API é feita em GraphQL, cuja ferramenta de busca a banco
+            de dados oferece recursos que facilitam as buscas e filtros nas pesquisas</p>
+        <h2 class="topics">2. Como usar</h2>
+        <p class="content">A estrutura de consultas na API é constituida de uma string em formatada em JSON contendo a
+            operação a ser
+            feita (que no caso dessa API sempre será um query), o método de busca
+            a ser utilizado, com seus respectivos filtros, e os campos pesquisados. Como no exemplo a seguir:</p>
+        <img class="imgquery" src="{% static 'img/query1.png' %}"></img>
+        <p class="content">No exemplo acima é primeiro definida a operação "query", dentro da qual é utilizado o método
+            de busca
+            "allImport" com um filtro que filtra pelo nome do país de origem (os filtros ficam entre parênteses), e o
+            único campo requerido é o "ncm", que por sua vez tem um campo requerido chamado "countryNamePt". Há ainda,
+            separando o método de busca e os campos, uma estrutura com "edges" e "node". Essas são apenas
+            obrigatoriedades estruturais da linguagem que definem uma melhor organização dos resultados que serão
+            mostrados. Em seguida, basta executar o query através do botão "Play" na API e os resultados serão
+            retornados em formato JSON no container da direita</p>
+        <img src="{% static 'img/result1.png' %}"></img>
+    </div>
+
+
+
+
 </body>
 
 </html>
