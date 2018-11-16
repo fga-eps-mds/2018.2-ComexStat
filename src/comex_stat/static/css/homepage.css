@@ -1,0 +1,10 @@
+.navbar{
+    padding: .7em 10% .7em 10%;
+    background-color: #17c13d;
+}
+
+.navbar .nav-item .nav-link {
+    color: white;
+    padding-right: 1em;
+    font-weight: bold;
+}
