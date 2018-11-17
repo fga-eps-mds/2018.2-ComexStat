@@ -2052,3 +2052,407 @@ class QueryTest(TestCase):
         result = schema.execute(query)
         self.assertEqual(expected, result.data) 
 
+    def test_export_aggregated_fob_value_country(self):
+        '''
+            This test verifies the database search result
+            for the aggregated searches
+        '''
+
+        query = '''
+            {
+                aggregatedExportCountry{
+                    edges{
+                        node{
+                            destinationCountry{
+                                countryNamePt
+                            }
+                            totalFobValueCountry
+                        }
+                    }
+                }
+            }
+        '''
+
+        expected = OrderedDict([('aggregatedExportCountry', OrderedDict([('edges', [OrderedDict([('node', OrderedDict([('destinationCountry', OrderedDict([('countryNamePt', 'Nome')])), ('totalFobValueCountry', '191.0')]))])])]))])
+
+        schema = graphene.Schema(Query)
+        result = schema.execute(query)
+        self.assertEqual(expected, result.data)
+
+    def test_export_aggregated_fob_value_date(self):
+        '''
+            This test verifies the database search result
+            for the aggregated searches
+        '''
+
+        query = '''
+            {
+                aggregatedExportCountry{
+                    edges{
+                        node{
+                            destinationCountry{
+                                countryNamePt
+                            }
+                            totalFobValueDate
+                        }
+                    }
+                }
+            }
+        '''
+
+        expected = OrderedDict([('aggregatedExportCountry', OrderedDict([('edges', [OrderedDict([('node', OrderedDict([('destinationCountry', OrderedDict([('countryNamePt', 'Nome')])), ('totalFobValueDate', '191.0')]))])])]))])
+
+        schema = graphene.Schema(Query)
+        result = schema.execute(query)
+        self.assertEqual(expected, result.data)
+
+    def test_export_aggregated_fob_value_transportation(self):
+        '''
+            This test verifies the database search result
+            for the aggregated searches
+        '''
+
+        query = '''
+            {
+                aggregatedExportCountry{
+                    edges{
+                        node{
+                            destinationCountry{
+                                countryNamePt
+                            }
+                            totalFobValueTransportation
+                        }
+                    }
+                }
+            }
+        '''
+
+        expected = OrderedDict([('aggregatedExportCountry', OrderedDict([('edges', [OrderedDict([('node', OrderedDict([('destinationCountry', OrderedDict([('countryNamePt', 'Nome')])), ('totalFobValueTransportation', '191.0')]))])])]))])
+
+        schema = graphene.Schema(Query)
+        result = schema.execute(query)
+        self.assertEqual(expected, result.data)
+
+    def test_export_aggregated_fob_value_urf(self):
+        '''
+            This test verifies the database search result
+            for the aggregated searches
+        '''
+
+        query = '''
+            {
+                aggregatedExportCountry{
+                    edges{
+                        node{
+                            destinationCountry{
+                                countryNamePt
+                            }
+                            totalFobValueUrf
+                        }
+                    }
+                }
+            }
+        '''
+
+        expected = OrderedDict([('aggregatedExportCountry', OrderedDict([('edges', [OrderedDict([('node', OrderedDict([('destinationCountry', OrderedDict([('countryNamePt', 'Nome')])), ('totalFobValueUrf', '191.0')]))])])]))])
+
+        schema = graphene.Schema(Query)
+        result = schema.execute(query)
+        self.assertEqual(expected, result.data)
+    
+    def test_export_aggregated_fob_value_trade_bloc(self):
+        '''
+            This test verifies the database search result
+            for the aggregated searches
+        '''
+
+        query = '''
+            {
+                aggregatedExportCountry{
+                    edges{
+                        node{
+                            destinationCountry{
+                                countryNamePt
+                            }
+                            totalFobValueTradeBloc
+                        }
+                    }
+                }
+            }
+        '''
+
+        expected = OrderedDict([('aggregatedExportCountry', OrderedDict([('edges', [OrderedDict([('node', OrderedDict([('destinationCountry', OrderedDict([('countryNamePt', 'Nome')])), ('totalFobValueTradeBloc', '191.0')]))])])]))])
+
+        schema = graphene.Schema(Query)
+        result = schema.execute(query)
+        self.assertEqual(expected, result.data)
+
+    def test_export_aggregated_registries_country(self):
+        '''
+            This test verifies the database search result
+            for the aggregated searches
+        '''
+
+        query = '''
+            {
+                aggregatedExportCountry{
+                    edges{
+                        node{
+                            destinationCountry{
+                                countryNamePt
+                            }
+                            totalRegistriesCountry
+                        }
+                    }
+                }
+            }
+        '''
+
+        expected = OrderedDict([('aggregatedExportCountry', OrderedDict([('edges', [OrderedDict([('node', OrderedDict([('destinationCountry', OrderedDict([('countryNamePt', 'Nome')])), ('totalRegistriesCountry', '1')]))])])]))])
+
+        schema = graphene.Schema(Query)
+        result = schema.execute(query)
+        self.assertEqual(expected, result.data)
+
+    def test_export_aggregated_registries_date(self):
+        '''
+            This test verifies the database search result
+            for the aggregated searches
+        '''
+
+        query = '''
+            {
+                aggregatedExportCountry{
+                    edges{
+                        node{
+                            destinationCountry{
+                                countryNamePt
+                            }
+                            totalRegistriesDate
+                        }
+                    }
+                }
+            }
+        '''
+
+        expected = OrderedDict([('aggregatedExportCountry', OrderedDict([('edges', [OrderedDict([('node', OrderedDict([('destinationCountry', OrderedDict([('countryNamePt', 'Nome')])), ('totalRegistriesDate', '1')]))])])]))])
+
+        schema = graphene.Schema(Query)
+        result = schema.execute(query)
+        self.assertEqual(expected, result.data)
+
+    def test_export_aggregated_registries_transportation(self):
+        '''
+            This test verifies the database search result
+            for the aggregated searches
+        '''
+
+        query = '''
+            {
+                aggregatedExportCountry{
+                    edges{
+                        node{
+                            destinationCountry{
+                                countryNamePt
+                            }
+                            totalRegistriesTransportation
+                        }
+                    }
+                }
+            }
+        '''
+
+        expected = OrderedDict([('aggregatedExportCountry', OrderedDict([('edges', [OrderedDict([('node', OrderedDict([('destinationCountry', OrderedDict([('countryNamePt', 'Nome')])), ('totalRegistriesTransportation', '1')]))])])]))])
+
+        schema = graphene.Schema(Query)
+        result = schema.execute(query)
+        self.assertEqual(expected, result.data) 
+
+    def test_export_aggregated_registries_urf(self):
+        '''
+            This test verifies the database search result
+            for the aggregated searches
+        '''
+
+        query = '''
+            {
+                aggregatedExportCountry{
+                    edges{
+                        node{
+                            destinationCountry{
+                                countryNamePt
+                            }
+                            totalRegistriesUrf
+                        }
+                    }
+                }
+            }
+        '''
+
+        expected = OrderedDict([('aggregatedExportCountry', OrderedDict([('edges', [OrderedDict([('node', OrderedDict([('destinationCountry', OrderedDict([('countryNamePt', 'Nome')])), ('totalRegistriesUrf', '1')]))])])]))])
+
+        schema = graphene.Schema(Query)
+        result = schema.execute(query)
+        self.assertEqual(expected, result.data) 
+
+    def test_export_aggregated_registries_trade_bloc(self):
+        '''
+            This test verifies the database search result
+            for the aggregated searches
+        '''
+
+        query = '''
+            {
+                aggregatedExportCountry{
+                    edges{
+                        node{
+                            destinationCountry{
+                                countryNamePt
+                            }
+                            totalRegistriesTradeBloc
+                        }
+                    }
+                }
+            }
+        '''
+
+        expected = OrderedDict([('aggregatedExportCountry', OrderedDict([('edges', [OrderedDict([('node', OrderedDict([('destinationCountry', OrderedDict([('countryNamePt', 'Nome')])), ('totalRegistriesTradeBloc', '1')]))])])]))])
+
+        schema = graphene.Schema(Query)
+        result = schema.execute(query)
+        self.assertEqual(expected, result.data) 
+
+    def test_export_aggregated_net_kilogram_date(self):
+        '''
+            This test verifies the database search result
+            for the aggregated searches
+        '''
+
+        query = '''
+            {
+                aggregatedExportCountry{
+                    edges{
+                        node{
+                            destinationCountry{
+                                countryNamePt
+                            }
+                            totalNetKilogramDate
+                        }
+                    }
+                }
+            }
+        '''
+
+        expected = OrderedDict([('aggregatedExportCountry', OrderedDict([('edges', [OrderedDict([('node', OrderedDict([('destinationCountry', OrderedDict([('countryNamePt', 'Nome')])), ('totalNetKilogramDate', '1.0')]))])])]))])
+
+        schema = graphene.Schema(Query)
+        result = schema.execute(query)
+        self.assertEqual(expected, result.data) 
+
+    def test_export_aggregated_net_kilogram_country(self):
+        '''
+            This test verifies the database search result
+            for the aggregated searches
+        '''
+
+        query = '''
+            {
+                aggregatedExportCountry{
+                    edges{
+                        node{
+                            destinationCountry{
+                                countryNamePt
+                            }
+                            totalNetKilogramCountry
+                        }
+                    }
+                }
+            }
+        '''
+
+        expected = OrderedDict([('aggregatedExportCountry', OrderedDict([('edges', [OrderedDict([('node', OrderedDict([('destinationCountry', OrderedDict([('countryNamePt', 'Nome')])), ('totalNetKilogramCountry', '1.0')]))])])]))])
+
+        schema = graphene.Schema(Query)
+        result = schema.execute(query)
+        self.assertEqual(expected, result.data) 
+
+    def test_export_aggregated_net_kilogram_transportation(self):
+        '''
+            This test verifies the database search result
+            for the aggregated searches
+        '''
+
+        query = '''
+            {
+                aggregatedExportCountry{
+                    edges{
+                        node{
+                            destinationCountry{
+                                countryNamePt
+                            }
+                            totalNetKilogramTransportation
+                        }
+                    }
+                }
+            }
+        '''
+
+        expected = OrderedDict([('aggregatedExportCountry', OrderedDict([('edges', [OrderedDict([('node', OrderedDict([('destinationCountry', OrderedDict([('countryNamePt', 'Nome')])), ('totalNetKilogramTransportation', '1.0')]))])])]))])
+
+        schema = graphene.Schema(Query)
+        result = schema.execute(query)
+        self.assertEqual(expected, result.data) 
+
+    def test_export_aggregated_net_kilogram_urf(self):
+        '''
+            This test verifies the database search result
+            for the aggregated searches
+        '''
+
+        query = '''
+            {
+                aggregatedExportCountry{
+                    edges{
+                        node{
+                            destinationCountry{
+                                countryNamePt
+                            }
+                            totalNetKilogramUrf
+                        }
+                    }
+                }
+            }
+        '''
+
+        expected = OrderedDict([('aggregatedExportCountry', OrderedDict([('edges', [OrderedDict([('node', OrderedDict([('destinationCountry', OrderedDict([('countryNamePt', 'Nome')])), ('totalNetKilogramUrf', '1.0')]))])])]))])
+
+        schema = graphene.Schema(Query)
+        result = schema.execute(query)
+        self.assertEqual(expected, result.data) 
+
+    def test_export_aggregated_net_kilogram_trade_bloc(self):
+        '''
+            This test verifies the database search result
+            for the aggregated searches
+        '''
+
+        query = '''
+            {
+                aggregatedExportCountry{
+                    edges{
+                        node{
+                            destinationCountry{
+                                countryNamePt
+                            }
+                            totalNetKilogramTradeBloc
+                        }
+                    }
+                }
+            }
+        '''
+
+        expected = OrderedDict([('aggregatedExportCountry', OrderedDict([('edges', [OrderedDict([('node', OrderedDict([('destinationCountry', OrderedDict([('countryNamePt', 'Nome')])), ('totalNetKilogramTradeBloc', '1.0')]))])])]))])
+
+        schema = graphene.Schema(Query)
+        result = schema.execute(query)
+        self.assertEqual(expected, result.data) 
