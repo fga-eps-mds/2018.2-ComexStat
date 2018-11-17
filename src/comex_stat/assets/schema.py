@@ -1,18 +1,17 @@
-import json
-from datetime import datetime, time
-
-import graphene
 from comex_stat.assets.models import (CGCE, CUCI, NCM, SH, AssetExportFacts,
                                       AssetImportFacts, Country,
                                       FederativeUnit, TradeBlocs,
                                       Transportation, Urf)
-
-from django_filters import FilterSet, CharFilter
-from django.forms import DateField, Field
-from django_filters.filters import RangeFilter
-from django_filters.utils import handle_timezone
 from graphene_django.filter.fields import DjangoFilterConnectionField
 from graphene_django.types import DjangoObjectType
+from django_filters.utils import handle_timezone
+from django_filters import FilterSet, CharFilter
+from django_filters.filters import RangeFilter
+from django.forms import DateField, Field
+from datetime import datetime, time
+from django.db.models import Sum
+import graphene
+import json
 
 
 class DateRangeField(Field):
@@ -320,11 +319,18 @@ class AssetExportFilter(FilterSet):
 
 
 class AssetImportFactsNode(DjangoObjectType):
+    total_fob_value = graphene.String()
+
     class Meta:
         model = AssetImportFacts
         filter_fields = ['commercialized_between',
                          'date', 'registries', 'net_kilogram', 'fob_value']
         interfaces = (graphene.Node, )
+
+    def resolve_total_fob_value(self, info):
+        a = AssetImportFacts.objects.filter(
+            date=self.date).aggregate(Sum('fob_value'))
+        return a['fob_value__sum']
 
 
 class AssetExportFactsNode(DjangoObjectType):
@@ -494,6 +500,223 @@ class UrfType(DjangoObjectType):
         interfaces = {graphene.Node, }
 
 
+class Aggregated_Import(DjangoObjectType):
+    total_fob_value_country = graphene.String()
+    total_fob_value_transportation = graphene.String()
+    total_fob_value_date = graphene.String()
+    total_fob_value_urf = graphene.String()
+    total_fob_value_trade_bloc = graphene.String()
+    total_registries_country = graphene.String()
+    total_registries_transportation = graphene.String()
+    total_registries_date = graphene.String()
+    total_registries_urf = graphene.String()
+    total_registries_trade_bloc = graphene.String()
+    total_net_kilogram_country = graphene.String()
+    total_net_kilogram_transportation = graphene.String()
+    total_net_kilogram_date = graphene.String()
+    total_net_kilogram_urf = graphene.String()
+    total_net_kilogram_trade_bloc = graphene.String()
+
+    class Meta:
+        model = AssetImportFacts
+        filter_fields = ['date', 'registries', 'net_kilogram', 'fob_value']
+        interfaces = (graphene.Node, )
+
+    def resolve_total_fob_value_date(self, info):
+        a = AssetImportFacts.objects.filter(date=self.date).aggregate(
+            Sum('fob_value'))
+        return a['fob_value__sum']
+
+    def resolve_total_fob_value_country(self, info):
+        a = AssetImportFacts.objects.filter(
+            origin_country__country_name_pt=self.origin_country.
+            country_name_pt).aggregate(Sum('fob_value'))
+        return a['fob_value__sum']
+
+    def resolve_total_fob_value_transportation(self, info):
+        a = AssetImportFacts.objects.filter(
+            transportation__transportation_name=self.transportation.
+            transportation_name).aggregate(Sum('fob_value'))
+        return a['fob_value__sum']
+
+    def resolve_total_fob_value_urf(self, info):
+        a = AssetImportFacts.objects.filter(
+            urf__urf_name=self.urf.urf_name).aggregate(Sum('fob_value'))
+        return a['fob_value__sum']
+
+    def resolve_total_fob_value_trade_bloc(self, info):
+        a = AssetImportFacts.objects.filter(
+            origin_country__trade_bloc__bloc_name_pt=self.origin_country.
+            trade_bloc.bloc_name_pt).aggregate(Sum('fob_value'))
+        return a['fob_value__sum']
+
+    def resolve_total_registries_date(self, info):
+        a = AssetImportFacts.objects.filter(date=self.date).aggregate(
+            Sum('registries'))
+        return a['registries__sum']
+
+    def resolve_total_registries_country(self, info):
+        a = AssetImportFacts.objects.filter(
+            origin_country__country_name_pt=self.origin_country.
+            country_name_pt).aggregate(Sum('registries'))
+        return a['registries__sum']
+
+    def resolve_total_registries_transportation(self, info):
+        a = AssetImportFacts.objects.filter(
+            transportation__transportation_name=self.transportation.
+            transportation_name).aggregate(Sum('registries'))
+        return a['registries__sum']
+
+    def resolve_total_registries_urf(self, info):
+        a = AssetImportFacts.objects.filter(
+            urf__urf_name=self.urf.urf_name).aggregate(Sum('registries'))
+        return a['registries__sum']
+
+    def resolve_total_registries_trade_bloc(self, info):
+        a = AssetImportFacts.objects.filter(
+            origin_country__trade_bloc__bloc_name_pt=self.origin_country.
+            trade_bloc.bloc_name_pt).aggregate(Sum('registries'))
+        return a['registries__sum']
+
+    def resolve_total_net_kilogram_date(self, info):
+        a = AssetImportFacts.objects.filter(date=self.date).aggregate(
+            Sum('net_kilogram'))
+        return a['net_kilogram__sum']
+
+    def resolve_total_net_kilogram_country(self, info):
+        a = AssetImportFacts.objects.filter(
+            origin_country__country_name_pt=self.origin_country.
+            country_name_pt).aggregate(Sum('net_kilogram'))
+        return a['net_kilogram__sum']
+
+    def resolve_total_net_kilogram_transportation(self, info):
+        a = AssetImportFacts.objects.filter(
+            transportation__transportation_name=self.transportation.
+            transportation_name).aggregate(Sum('net_kilogram'))
+        return a['net_kilogram__sum']
+
+    def resolve_total_net_kilogram_urf(self, info):
+        a = AssetImportFacts.objects.filter(
+            urf__urf_name=self.urf.urf_name).aggregate(Sum('net_kilogram'))
+        return a['net_kilogram__sum']
+
+    def resolve_total_net_kilogram_trade_bloc(self, info):
+        a = AssetImportFacts.objects.filter(
+            origin_country__trade_bloc__bloc_name_pt=self.origin_country.
+            trade_bloc.bloc_name_pt).aggregate(Sum('net_kilogram'))
+        return a['net_kilogram__sum']
+
+
+class Aggregated_Export(DjangoObjectType):
+    total_fob_value_country = graphene.String()
+    total_fob_value_transportation = graphene.String()
+    total_fob_value_date = graphene.String()
+    total_fob_value_urf = graphene.String()
+    total_fob_value_trade_bloc = graphene.String()
+    total_registries_country = graphene.String()
+    total_registries_transportation = graphene.String()
+    total_registries_date = graphene.String()
+    total_registries_urf = graphene.String()
+    total_registries_trade_bloc = graphene.String()
+    total_net_kilogram_country = graphene.String()
+    total_net_kilogram_transportation = graphene.String()
+    total_net_kilogram_date = graphene.String()
+    total_net_kilogram_urf = graphene.String()
+    total_net_kilogram_trade_bloc = graphene.String()
+
+    class Meta:
+        model = AssetExportFacts
+        filter_fields = ['date', 'registries', 'net_kilogram', 'fob_value']
+        interfaces = (graphene.Node, )
+
+    def resolve_total_fob_value_date(self, info):
+        a = AssetExportFacts.objects.filter(date=self.date).aggregate(
+            Sum('fob_value'))
+        return a['fob_value__sum']
+
+    def resolve_total_fob_value_country(self, info):
+        a = AssetExportFacts.objects.filter(
+            destination_country__country_name_pt=self.destination_country.
+            country_name_pt).aggregate(Sum('fob_value'))
+        return a['fob_value__sum']
+
+    def resolve_total_fob_value_transportation(self, info):
+        a = AssetExportFacts.objects.filter(
+            transportation__transportation_name=self.transportation.
+            transportation_name).aggregate(Sum('fob_value'))
+        return a['fob_value__sum']
+
+    def resolve_total_fob_value_urf(self, info):
+        a = AssetExportFacts.objects.filter(
+            urf__urf_name=self.urf.urf_name).aggregate(Sum('fob_value'))
+        return a['fob_value__sum']
+
+    def resolve_total_fob_value_trade_bloc(self, info):
+        a = AssetExportFacts.objects.filter(
+            destination_country__trade_bloc__bloc_name_pt=self.
+            destination_country.trade_bloc.bloc_name_pt).aggregate(
+            Sum('fob_value'))
+        return a['fob_value__sum']
+
+    def resolve_total_registries_date(self, info):
+        a = AssetExportFacts.objects.filter(date=self.date).aggregate(
+            Sum('registries'))
+        return a['registries__sum']
+
+    def resolve_total_registries_country(self, info):
+        a = AssetExportFacts.objects.filter(
+            destination_country__country_name_pt=self.destination_country.
+            country_name_pt).aggregate(Sum('registries'))
+        return a['registries__sum']
+
+    def resolve_total_registries_transportation(self, info):
+        a = AssetExportFacts.objects.filter(
+            transportation__transportation_name=self.transportation.
+            transportation_name).aggregate(Sum('registries'))
+        return a['registries__sum']
+
+    def resolve_total_registries_urf(self, info):
+        a = AssetExportFacts.objects.filter(
+            urf__urf_name=self.urf.urf_name).aggregate(Sum('registries'))
+        return a['registries__sum']
+
+    def resolve_total_registries_trade_bloc(self, info):
+        a = AssetExportFacts.objects.filter(
+            destination_country__trade_bloc__bloc_name_pt=self.
+            destination_country.trade_bloc.bloc_name_pt).aggregate(
+            Sum('registries'))
+        return a['registries__sum']
+
+    def resolve_total_net_kilogram_date(self, info):
+        a = AssetExportFacts.objects.filter(date=self.date).aggregate(
+            Sum('net_kilogram'))
+        return a['net_kilogram__sum']
+
+    def resolve_total_net_kilogram_country(self, info):
+        a = AssetExportFacts.objects.filter(
+            destination_country__country_name_pt=self.destination_country.
+            country_name_pt).aggregate(Sum('net_kilogram'))
+        return a['net_kilogram__sum']
+
+    def resolve_total_net_kilogram_transportation(self, info):
+        a = AssetExportFacts.objects.filter(
+            transportation__transportation_name=self.transportation.
+            transportation_name).aggregate(Sum('net_kilogram'))
+        return a['net_kilogram__sum']
+
+    def resolve_total_net_kilogram_urf(self, info):
+        a = AssetExportFacts.objects.filter(
+            urf__urf_name=self.urf.urf_name).aggregate(Sum('net_kilogram'))
+        return a['net_kilogram__sum']
+
+    def resolve_total_net_kilogram_trade_bloc(self, info):
+        a = AssetExportFacts.objects.filter(
+            destination_country__trade_bloc__bloc_name_pt=self.
+            destination_country.trade_bloc.bloc_name_pt).aggregate(
+            Sum('net_kilogram'))
+        return a['net_kilogram__sum']
+
+
 class Query(graphene.ObjectType):
     all_import = DjangoFilterConnectionField(
         AssetImportFactsNode, filterset_class=AssetImportFilter)
@@ -508,6 +731,26 @@ class Query(graphene.ObjectType):
     all_cuci = DjangoFilterConnectionField(CUCIType)
     all_cgce = DjangoFilterConnectionField(CGCEType)
     all_sh = DjangoFilterConnectionField(SHType)
+    aggregated_import_transportation = DjangoFilterConnectionField(
+        Aggregated_Import, filterset_class=AssetImportFilter)
+    aggregated_import_urf = DjangoFilterConnectionField(
+        Aggregated_Import, filterset_class=AssetImportFilter)
+    aggregated_import_date = DjangoFilterConnectionField(
+        Aggregated_Import, filterset_class=AssetImportFilter)
+    aggregated_import_country = DjangoFilterConnectionField(
+        Aggregated_Import, filterset_class=AssetImportFilter)
+    aggregated_import_trade_bloc = DjangoFilterConnectionField(
+        Aggregated_Import, filterset_class=AssetImportFilter)
+    aggregated_export_transportation = DjangoFilterConnectionField(
+        Aggregated_Export, filterset_class=AssetExportFilter)
+    aggregated_export_urf = DjangoFilterConnectionField(
+        Aggregated_Export, filterset_class=AssetExportFilter)
+    aggregated_export_date = DjangoFilterConnectionField(
+        Aggregated_Export, filterset_class=AssetExportFilter)
+    aggregated_export_country = DjangoFilterConnectionField(
+        Aggregated_Export, filterset_class=AssetExportFilter)
+    aggregated_export_trade_bloc = DjangoFilterConnectionField(
+        Aggregated_Export, filterset_class=AssetExportFilter)
 
     def resolve_all_import(self, info, **kwargs):
         return AssetImportFacts.objects.all()
@@ -541,3 +784,77 @@ class Query(graphene.ObjectType):
 
     def resolve_all_sh(self, info, **kwargs):
         return SH.objects.all()
+
+    def resolve_aggregated_import_transportation(self, info, **kwargs):
+        return list(AssetImportFacts.objects.raw(
+            '''SELECT b.[id], a.[transportation_code], a.[transportation_name]
+            FROM assets_Transportation a INNER JOIN assets_AssetImportFacts b
+            ON a.[transportation_code]=b.[transportation_id]
+            GROUP BY a.[transportation_name]'''))
+
+    def resolve_aggregated_import_urf(self, info, **kwargs):
+        return list(AssetImportFacts.objects.raw(
+            '''SELECT b.[id], a.[urf_code], a.[urf_name]
+            FROM assets_Urf a INNER JOIN assets_AssetImportFacts b
+            ON a.[urf_code]=b.[urf_id]
+            GROUP BY a.[urf_name]'''))
+
+    def resolve_aggregated_import_date(self, info, **kwargs):
+        return list(AssetImportFacts.objects.raw('''Select id, COUNT(date)
+                                                FROM assets_AssetImportFacts
+                                                GROUP BY date'''))
+
+    def resolve_aggregated_import_country(self, info, **kwargs):
+        return list(AssetImportFacts.objects.raw(
+            '''SELECT b.[id], a.[id], a.[country_name_pt]
+            FROM assets_Country a INNER JOIN assets_AssetImportFacts b
+            ON a.[id]=b.[origin_country_id]
+            GROUP BY a.[country_name_pt]'''))
+
+    def resolve_aggregated_import_trade_bloc(self, info, **kwargs):
+        return list(AssetImportFacts.objects.raw(
+            '''SELECT c.[bloc_code], c.[bloc_name_pt], b.[origin_country_id],
+                a.[id], a.[trade_bloc_id]
+            FROM assets_AssetImportFacts b
+            INNER JOIN assets_Country a
+            ON a.[id]=b.[origin_country_id]
+            INNER JOIN assets_TradeBlocs c
+            ON c.[bloc_code]=a.[trade_bloc_id]
+            GROUP BY c.[bloc_name_pt]'''))
+
+    def resolve_aggregated_export_transportation(self, info, **kwargs):
+        return list(AssetExportFacts.objects.raw(
+            '''SELECT b.[id], a.[transportation_code], a.[transportation_name]
+            FROM assets_Transportation a INNER JOIN assets_AssetExportFacts b
+            ON a.[transportation_code]=b.[transportation_id]
+            GROUP BY a.[transportation_name]'''))
+
+    def resolve_aggregated_export_urf(self, info, **kwargs):
+        return list(AssetExportFacts.objects.raw(
+            '''SELECT b.[id], a.[urf_code], a.[urf_name]
+            FROM assets_Urf a INNER JOIN assets_AssetExportFacts b
+            ON a.[urf_code]=b.[urf_id]
+            GROUP BY a.[urf_name]'''))
+
+    def resolve_aggregated_export_date(self, info, **kwargs):
+        return list(AssetExportFacts.objects.raw('''Select id, COUNT(date)
+                                                FROM assets_AssetExportFacts
+                                                GROUP BY date'''))
+
+    def resolve_aggregated_export_country(self, info, **kwargs):
+        return list(AssetExportFacts.objects.raw(
+            '''SELECT b.[id], a.[id], a.[country_name_pt]
+            FROM assets_Country a INNER JOIN assets_AssetExportFacts b
+            ON a.[id]=b.[destination_country_id]
+            GROUP BY a.[country_name_pt]'''))
+
+    def resolve_aggregated_export_trade_bloc(self, info, **kwargs):
+        return list(AssetExportFacts.objects.raw(
+            '''SELECT c.[bloc_code], c.[bloc_name_pt], b.[destination_country_id],
+                a.[id], a.[trade_bloc_id]
+            FROM assets_AssetExportFacts b
+            INNER JOIN assets_Country a
+            ON a.[id]=b.[destination_country_id]
+            INNER JOIN assets_TradeBlocs c
+            ON c.[bloc_code]=a.[trade_bloc_id]
+            GROUP BY c.[bloc_name_pt]'''))
