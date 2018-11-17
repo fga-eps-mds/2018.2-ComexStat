@@ -654,8 +654,8 @@ class Aggregated_Export(DjangoObjectType):
     def resolve_total_fob_value_trade_bloc(self, info):
         a = AssetExportFacts.objects.filter(
             destination_country__trade_bloc__bloc_name_pt=self.
-            destination_country.trade_bloc.bloc_name_pt).
-            aggregate(Sum('fob_value'))
+            destination_country.trade_bloc.bloc_name_pt).aggregate(
+            Sum('fob_value'))
         return a['fob_value__sum']
 
     def resolve_total_registries_date(self, info):
