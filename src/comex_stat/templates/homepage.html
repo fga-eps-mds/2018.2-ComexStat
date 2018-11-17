@@ -1,0 +1,79 @@
+{% load static %}
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel='stylesheet' href="{% static 'css/homepage.css' %}" type="text/css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand">
+        <a class="navbar-brand" href="#">
+            <img src="{% static 'img/logo.png' %}" width="80" height="50" alt="Logo ComexStat">
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="graphql">Ir para a API</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container container-doc">
+        <h1 class="topics">Comex Stat API</h1>
+        <img class="imgql" src="{% static 'img/graphql1.png' %}"></img>
+        <h2 class="topics">1. Sobre a API</h2>
+        <p class="content">Essa é uma API dedicada a prover acesso aos dados relacionados ao comércio exterior de bens,
+            provenientes do
+            Ministério da
+            Indústria, Comércio Exterior e Serviços (MDIC). A API é feita em GraphQL, cuja ferramenta de busca a banco
+            de dados oferece recursos que facilitam as buscas e filtros nas pesquisas</p>
+        <h2 class="topics">2. Como usar</h2>
+        <p class="content">A estrutura de consultas na API é constituida de uma string em formatada em JSON contendo a
+            operação a ser
+            feita (que no caso dessa API sempre será um query), o método de busca
+            a ser utilizado, com seus respectivos filtros, e os campos pesquisados. Como no exemplo a seguir:</p>
+        <img class="imgquery" src="{% static 'img/query1.png' %}"></img>
+        <p class="content">No exemplo acima é primeiro definida a operação "query", dentro da qual é utilizado o método
+            de busca
+            "allImport" com um filtro que filtra pelo nome do país de origem (os filtros ficam entre parênteses), e o
+            único campo requerido é o "ncm", que por sua vez tem um campo requerido chamado "countryNamePt". Há ainda,
+            separando o método de busca e os campos, uma estrutura com "edges" e "node". Essas são apenas
+            obrigatoriedades estruturais da linguagem que definem uma melhor organização dos resultados que serão
+            mostrados. Em seguida, basta executar o query através do botão "Play" na API e os resultados serão
+            retornados em formato JSON no container da direita</p>
+        <img src="{% static 'img/result1.png' %}"></img>
+        <h2 class="topics">3. Métodos de buscas</h2>
+        <h4 class="topics">3.1. allImport</h4>
+        <p class="content"> Buscar por todas as importações </p>
+        <h4 class="topics">3.2. allExport</h4>
+        <p class="content"> Buscar por todas as expotações </p>
+        <h4 class="topics">3.3. allINcm</h4>
+        <p class="content"> Buscar por Ncm - Nomenclatura Comum do Mercosul</p>
+        <h4 class="topics">3.4. allTradeblocs</h4>
+        <p class="content"> Buscar por blocos econômicos </p>
+        <h4 class="topics">3.5. allCountry</h4>
+        <p class="content"> Buscar por paises </p>
+        <h4 class="topics">3.6. allFederativeunit</h4>
+        <p class="content"> Buscar por unidade federativa </p>
+        <h4 class="topics">3.7. allTransportation</h4>
+        <p class="content"> Buscar por via(modal) de transporte </p>
+        <h4 class="topics">3.8. allUrf</h4>
+        <p class="content"> Buscar por Urf - Unidade da Receita Federal </p>
+        <h4 class="topics">3.9. allCuci</h4>
+        <p class="content"> Buscar por CUCI - Classificação Uniforme para Comércio Internacional</p>
+        <h4 class="topics">3.10. allCgce</h4>
+        <p class="content"> Buscar por CGCE - Classificação por Grandes Categorias Econômicas</p>
+        <h4 class="topics">3.11. allSh</h4>
+        <p class="content"> Buscar SH - Sistema Harmonizado</p>
+    </div>
+
+
+
+
+</body>
+
+</html>
