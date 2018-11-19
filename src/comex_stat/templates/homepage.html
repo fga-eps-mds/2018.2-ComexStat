@@ -1,164 +1,147 @@
 {% load static %}
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <title>Comex Stat API</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <!-- Bootstrap CSS CDN -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
-      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
-      crossorigin="anonymous"
-    />
-    <!-- Custom CSS -->
-    <link
-      rel="stylesheet"
-      href="{% static 'css/homepage.css' %}"
-      type="text/css"
-    />
-    <!-- Scrollbar Custom CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css"
-    />
+  <title>Comex Stat API</title>
 
-    <!-- Font Awesome JS -->
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
-      integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
-      integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    crossorigin="anonymous" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{% static 'css/homepage.css' %}" type="text/css" />
+  <!-- Scrollbar Custom CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css" />
 
-  <body>
-    <div class="wrapper">
-      <!-- Sidebar -->
-      <nav id="sidebar">
-        <div class="sidebar-header"><h3>Comex Stat API</h3></div>
+  <!-- Font Awesome JS -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+    crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+    crossorigin="anonymous"></script>
+</head>
 
-        <ul class="list-unstyled components">
-          <p id="irapi">
-            <img
-              src="{% static 'img/logo.png' %}"
-              width="60"
-              height="30"
-              alt="Logo ComexStat"
-            />
-            <a href="graphql">Ir para a API</a>
-          </p>
-          <li><a href="#sobreapi">1. Sobre a API</a></li>
-          <li><a href="#comousar">2. Como usar</a></li>
-          <li><a href="#metodosdebusca">3. Métodos de Busca</a></li>
-        </ul>
-      </nav>
-      <!-- Page Content -->
-      <div id="content">
-        <h1>Comex Stat API</h1>
-        <img class="imgql" src="{% static 'img/graphql1.png' %}" />
-        <div class="line"></div>
-        <h2 id="sobreapi">1. Sobre a API</h2>
-        <p>
-          Essa é uma API dedicada a prover acesso aos dados relacionados ao
-          comércio exterior de bens, provenientes do Ministério da Indústria,
-          Comércio Exterior e Serviços (MDIC). A API é feita em GraphQL, cuja
-          ferramenta de busca a banco de dados oferece recursos que facilitam as
-          buscas e filtros nas pesquisas
+<body>
+  <div class="wrapper">
+    <!-- Sidebar -->
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <h3>Comex Stat API</h3>
+      </div>
+
+      <ul class="list-unstyled components">
+        <p id="irapi">
+          <img src="{% static 'img/logo.png' %}" width="60" height="30" alt="Logo ComexStat" />
+          <a href="graphql">Ir para a API</a>
         </p>
-        <div class="line"></div>
-        <h2 id="comousar">2. Como usar</h2>
-        <p>
-          A estrutura de consultas na API é constituida de uma string em
-          formatada em JSON contendo a operação a ser feita (que no caso dessa
-          API sempre será um query), o método de busca a ser utilizado, com seus
-          respectivos filtros, e os campos pesquisados. Como no exemplo a
-          seguir:
-        </p>
-        <img class="imgquery" src="{% static 'img/query1.png' %}" />
-        <p>
-          No exemplo acima é primeiro definida a operação "query", dentro da
-          qual é utilizado o método de busca "allImport" com um filtro que
-          filtra pelo nome do país de origem (os filtros ficam entre
-          parênteses), e o único campo requerido é o "ncm", que por sua vez tem
-          um campo requerido chamado "countryNamePt". Há ainda, separando o
-          método de busca e os campos, uma estrutura com "edges" e "node". Essas
-          são apenas obrigatoriedades estruturais da linguagem que definem uma
-          melhor organização dos resultados que serão mostrados. Em seguida,
-          basta executar o query através do botão "Play" na API e os resultados
-          serão retornados em formato JSON no container da direita
-        </p>
-        <img src="{% static 'img/result1.png' %}" />
-        <div class="line"></div>
-        <h2 id="metodosdebusca">3. Métodos de buscas</h2>
-        <p>
-          A seguir estão descritos todos os possíveis métodos de busca que podem
-          ser utilizados no query e seus respectivos valores de retorno. Bem
-          como os filtros cabíveis a cada método.
-        </p>
-        <h5>3.1. allImport</h5>
-        <p>Buscar por todas as importações</p>
-        <h5>3.2. allExport</h5>
-        <p>Buscar por todas as expotações</p>
-        <h5>3.3. allINcm</h5>
-        <p>Buscar por Ncm - Nomenclatura Comum do Mercosul</p>
-        <h5>3.4. allTradeblocs</h5>
-        <p>Buscar por blocos econômicos</p>
-        <h5>3.5. allCountry</h5>
-        <p>Buscar por paises</p>
-        <h5>3.6. allFederativeunit</h5>
-        <p>Buscar por unidade federativa</p>
-        <h5>3.7. allTransportation</h5>
-        <p>Buscar por via(modal) de transporte</p>
-        <h5>3.8. allUrf</h5>
-        <p>Buscar por Urf - Unidade da Receita Federal</p>
-        <h5>3.9. allCuci</h5>
-        <p>
-          Buscar por CUCI - Classificação Uniforme para Comércio Internacional
-        </p>
-        <h5>3.10. allCgce</h5>
-        <p>Buscar por CGCE - Classificação por Grandes Categorias Econômicas</p>
-        <h5>3.11. allSh</h5>
-        <p>Buscar SH - Sistema Harmonizado</p>
+        <li><a href="#sobreapi">1. Sobre a API</a></li>
+        <li><a href="#comousar">2. Como usar</a></li>
+        <li><a href="#metodosdebusca">3. Métodos de Busca</a></li>
+        <li><a href="#docdinamica">5. Documentação dinâmica</a></li>
+      </ul>
+    </nav>
+    <!-- Page Content -->
+    <div id="content">
+      <h1>Comex Stat API</h1>
+      <img class="imgql" src="{% static 'img/graphql1.png' %}" />
+      <div class="line"></div>
+      <h2 id="sobreapi">1. Sobre a API</h2>
+      <p>
+        Essa é uma API dedicada a prover acesso aos dados relacionados ao
+        comércio exterior de bens, provenientes do Ministério da Indústria,
+        Comércio Exterior e Serviços (MDIC). A API é feita em GraphQL, cuja
+        ferramenta de busca a banco de dados oferece recursos que facilitam as
+        buscas e filtros nas pesquisas
+      </p>
+      <div class="line"></div>
+      <h2 id="comousar">2. Como usar</h2>
+      <p>
+        A estrutura de consultas na API é constituida de uma string em
+        formatada em JSON contendo a operação a ser feita (que no caso dessa
+        API sempre será um query), o método de busca a ser utilizado, com seus
+        respectivos filtros, e os campos pesquisados. Como no exemplo a
+        seguir:
+      </p>
+      <img class="imgquery" src="{% static 'img/query1.png' %}" />
+      <p>
+        No exemplo acima é primeiro definida a operação "query", dentro da
+        qual é utilizado o método de busca "allImport" com um filtro que
+        filtra pelo nome do país de origem (os filtros ficam entre
+        parênteses), e o único campo requerido é o "ncm", que por sua vez tem
+        um campo requerido chamado "countryNamePt". Há ainda, separando o
+        método de busca e os campos, uma estrutura com "edges" e "node". Essas
+        são apenas obrigatoriedades estruturais da linguagem que definem uma
+        melhor organização dos resultados que serão mostrados. Em seguida,
+        basta executar o query através do botão "Play" na API e os resultados
+        serão retornados em formato JSON no container da direita
+      </p>
+      <img src="{% static 'img/result1.png' %}" />
+      <div class="line"></div>
+      <h2 id="metodosdebusca">3. Métodos de buscas</h2>
+      <p>
+        A seguir estão descritos todos os possíveis métodos de busca que podem
+        ser utilizados no query e seus respectivos valores de retorno. Bem
+        como os filtros cabíveis a cada método.
+      </p>
+      <h5>3.1. allImport</h5>
+      <p>Buscar por todas as importações</p>
+      <h5>3.2. allExport</h5>
+      <p>Buscar por todas as expotações</p>
+      <h5>3.3. allINcm</h5>
+      <p>Buscar por Ncm - Nomenclatura Comum do Mercosul</p>
+      <h5>3.4. allTradeblocs</h5>
+      <p>Buscar por blocos econômicos</p>
+      <h5>3.5. allCountry</h5>
+      <p>Buscar por paises</p>
+      <h5>3.6. allFederativeunit</h5>
+      <p>Buscar por unidade federativa</p>
+      <h5>3.7. allTransportation</h5>
+      <p>Buscar por via(modal) de transporte</p>
+      <h5>3.8. allUrf</h5>
+      <p>Buscar por Urf - Unidade da Receita Federal</p>
+      <h5>3.9. allCuci</h5>
+      <p>
+        Buscar por CUCI - Classificação Uniforme para Comércio Internacional
+      </p>
+      <h5>3.10. allCgce</h5>
+      <p>Buscar por CGCE - Classificação por Grandes Categorias Econômicas</p>
+      <h5>3.11. allSh</h5>
+      <p>Buscar SH - Sistema Harmonizado</p>
+      <h2 id="docdinamica">5. Documentação Dinâmica</h2>
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <img src="{% static 'img/docs1.png' %}" class="img-fluid mb-3 mb-md-0 logo" alt="logo" width="256" height="210">
+        </div>
+        <div class="form-group col-md-3">
+          <p>O GraphiQL oferece também uma documentação dinâmica, que pode ser acessada pelo botão "Docs" no canto
+            superior direito da API. Por lá podem ser vistas informações de todas as operações possíveis, incluindo
+            descrições do funcionamento e listagem dos campos e filtros. Tudo dentro da própria API !</p>
+        </div>
       </div>
     </div>
+  </div>
 
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Popper.JS -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
-      integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Bootstrap JS -->
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
-      integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-      crossorigin="anonymous"
-    ></script>
-    <!-- jQuery Custom Scroller CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+  <!-- jQuery CDN - Slim version (=without AJAX) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <!-- Popper.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+  <!-- jQuery Custom Scroller CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $("#sidebar").mCustomScrollbar({
-          theme: "minimal"
-        });
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
       });
-    </script>
-  </body>
+    });
+  </script>
+</body>
+
 </html>
