@@ -33,13 +33,14 @@
 
       <ul class="list-unstyled components">
         <p id="irapi">
-          <img src="{% static 'img/logo.png' %}" width="60" height="30" alt="Logo ComexStat" />
+          <img src="{% static 'img/logo.png' %}" width="60" height="30" alt="Erro ao mostrar imagem" />
           <a href="graphql">Ir para a API</a>
         </p>
         <li><a href="#sobreapi">1. Sobre a API</a></li>
         <li><a href="#comousar">2. Como usar</a></li>
         <li><a href="#metodosdebusca">3. Métodos de Busca</a></li>
         <li><a href="#docdinamica">5. Documentação dinâmica</a></li>
+        <li><a href="#outros">6. Outros recursos</a></li>
       </ul>
     </nav>
     <!-- Page Content -->
@@ -112,14 +113,36 @@
       <h2 id="docdinamica">5. Documentação Dinâmica</h2>
       <div class="form-row">
         <div class="form-group col-md-4">
-          <img src="{% static 'img/docs1.png' %}" class="img-fluid mb-3 mb-md-0 logo" alt="logo" width="256" height="210">
+          <img src="{% static 'img/docs1.png' %}" class="img-fluid mb-3 mb-md-0 logo" alt="Erro ao mostrar imagem"
+            width="256" height="210">
         </div>
-        <div class="form-group col-md-3">
+        <div class="form-group col-md-6">
           <p>O GraphiQL oferece também uma documentação dinâmica, que pode ser acessada pelo botão "Docs" no canto
             superior direito da API. Por lá podem ser vistas informações de todas as operações possíveis, incluindo
             descrições do funcionamento e listagem dos campos e filtros. Tudo dentro da própria API !</p>
         </div>
+        <div>
+          <p>Além disso, outro recurso oferecido pelo GraphiQL para facilitar a interação do usuário com a API é a
+            disponibilidade do recurso de autocomplete para todos os métodos de pesquisa e campos. Basta apertar as
+            teclas Ctrl + Space e uma lista com as possibilidades será apresentada</p>
+        </div>
+        <div class="form-group col-md-4">
+          <img src="{% static 'img/graphql_auto.png' %}" class="img-fluid mb-3 mb-md-0 logo" alt="Erro ao mostrar imagem"
+            width="256" height="210">
+        </div>
+        <div class="form-group col-md-6">
+          <img src="{% static 'img/graphql_auto2.png' %}" class="img-fluid mb-3 mb-md-0 logo" alt="Erro ao mostrar imagem"
+            width="256" height="210">
+        </div>
       </div>
+      <h2 id="outros">6. Outros recursos</h2>
+      <p>Além do que já foi apresentado, alguns outros recursos que a API oferece podem ser acessados pelos botões
+        "Prettify" e "History" no canto superior esquerdo, o primeiro serve para automaticamente formatar o query de
+        entrada em um JSON com uma boa legibilidade, e o segundo serve para ver o histórico de operações realizadas.
+        Outra funcionalidade que deve ser citada são os permalinks, ao executar um query a URL ganha um parâmetro
+        contento o JSON da operação feita, de tal forma que essa URL pode ser compartilhada para que outros usuários
+        acessem diretamente esse mesmo query.
+      </p>
     </div>
   </div>
 
