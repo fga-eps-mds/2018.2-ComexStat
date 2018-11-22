@@ -59,8 +59,12 @@ Burndown de riscos:
 
 ## Resultado da Revisão da Sprint
 
+![Burndown Sprint 12](https://fga-eps-mds.github.io/2018.2-ComexStat/img/sprints/sprint12/burndown.png)
+
 
 ### Histórias entregues
+
+![Histórias Sprint 12](https://fga-eps-mds.github.io/2018.2-ComexStat/img/sprints/sprint12/historias.png)
 
 
 ### Dívidas entregues
@@ -68,5 +72,39 @@ Burndown de riscos:
 
 ## Retrospectiva da Sprint
 
+### O que estamos sentindo?
 
-### Possíveis melhorias
+#### Positivo
+- Tá acabando;
+- Orgulho de fechar a issue que está a 3 sprints de dívida.
+
+#### Negativo
+- Agoniados para que acabe;
+- Exaustão;
+- Doenças;
+
+### O que estamos fazendo?
+
+#### Positivo
+- Terminando o projeto;
+- Fechando as issues apesar de exaustos:
+
+#### Negativo
+- Se arrastando até o final;
+- Reunião no fim de semana, de manhã, na chuva e no frio.
+
+### O que estamos ouvindo?
+
+#### Positivo
+- Que está dando certo.
+
+#### Negativo
+- Que a gente tá atrasado.
+
+### O que estamos pensando?
+#### Positivo
+- A gente superou tudo sem a Fabíola.
+
+#### Negativo
+- Que queremos que acabe;
+- Que não queremos vir pra reunião sábado;

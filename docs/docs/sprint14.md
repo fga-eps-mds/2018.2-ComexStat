@@ -1,9 +1,9 @@
 ---
-title: Sprint 13
+title: Sprint 14
 author: Matheus Joranhezon
 authorURL: https://github.com/joranhezon
 authorFBID: 100002504848674
-id: sprint13
+id: sprint14
 ---
 
 # Planejamento da Sprint
@@ -68,40 +68,11 @@ Burndown de riscos:
 
 ### Histórias entregues
 
-![Histórias Sprint 13](https://fga-eps-mds.github.io/2018.2-ComexStat/img/sprints/sprint13/historias.png)
-
 
 ### Dívidas entregues
 
 
 ## Retrospectiva da Sprint
 
-### O que estamos sentindo?
 
-#### Positivo
-- Que vai acabar o semestre.
-
-#### Negativo
-- Ninguém aguenta mais.
-
-### O que estamos fazendo?
-
-#### Positivo
-- Fechando as nossas pendências.
-
-#### Negativo
-
-### O que estamos ouvindo?
-
-#### Positivo
-- Que tá acabando.
-
-#### Negativo
-Que está todo mundo exausto(todos os grupos).
-
-### O que estamos vendo?
-
-#### Positivo
-- O fechamento do projeto e suas pendências;
-
-#### Negativo
+### Possíveis melhorias
