@@ -68,6 +68,8 @@ Burndown de riscos:
 
 ## Resultado da Revisão da Sprint
 
+![Burndown Sprint 10](https://fga-eps-mds.github.io/2018.2-ComexStat/img/sprints/sprint10/burndown.png)
+
 
 ### Histórias entregues
 
