@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <title>Comex Stat API</title>
+  <title>ComexStat API</title>
 
   <!-- Bootstrap CSS CDN -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
@@ -28,7 +28,7 @@
     <!-- Sidebar -->
     <nav id="sidebar">
       <div class="sidebar-header">
-        <h3>Comex Stat API</h3>
+        <h3>ComexStat API</h3>
       </div>
 
       <ul class="list-unstyled components">
@@ -45,7 +45,7 @@
     </nav>
     <!-- Page Content -->
     <div id="content">
-      <h1>Comex Stat API</h1>
+      <h1>ComexStat API</h1>
       <img class="imgql" src="{% static 'img/graphql1.png' %}" />
       <div class="line"></div>
       <h2 id="sobreapi">1. Sobre a API</h2>
@@ -146,6 +146,66 @@
       <p>Buscar SH - Sistema Harmonizado</p>
       <h6>3.11.1. Filtros disponíveis</h6>
       <p>Para filtragem, estão disponíveis como parâmetro de consulta todos os campos da model (como por exemplo: "date", "countryNamePt", "ncmCode", "urfName", etc).</p>
+      <h5>3.12. aggregatedImportTransportation</h5>
+      <p>Buscar por todas as importação agrupadas por transportação.</p>
+      <p>Os campos que podem ser solicitados, que possuem a soma das agregações, são:</p>
+      <p>- Valor FOB (totalFobValueTransportation);</p>
+      <p>-Quantidade de registros (totalRegistriesTransportation);</p>
+      <p>- Quilograma líquido (totalNetKilogramTransportation).</p>
+      <h5>3.13. aggregatedImportUrf</h5>
+      <p>Buscar por todas as importação agrupadas por urf.</p>
+      <p>Os campos que podem ser solicitados, que possuem a soma das agregações, são:</p>
+      <p>- Valor FOB (totalFobValueTransportation);</p>
+      <p>-Quantidade de registros (totalRegistriesTransportation);</p>
+      <p>- Quilograma líquido (totalNetKilogramTransportation).</p>
+      <h5>3.14. aggregatedImportDate</h5>
+      <p>Buscar por todas as importação agrupadas por data.</p>
+      <p>Os campos que podem ser solicitados, que possuem a soma das agregações, são:</p>
+      <p>- Valor FOB (totalFobValueTransportation);</p>
+      <p>-Quantidade de registros (totalRegistriesTransportation);</p>
+      <p>- Quilograma líquido (totalNetKilogramTransportation).</p>
+      <h5>3.15. aggregatedImportCountry</h5>
+      <p>Buscar por todas as importação agrupadas por país.</p>
+      <p>Os campos que podem ser solicitados, que possuem a soma das agregações, são:</p>
+      <p>- Valor FOB (totalFobValueTransportation);</p>
+      <p>-Quantidade de registros (totalRegistriesTransportation);</p>
+      <p>- Quilograma líquido (totalNetKilogramTransportation).</p>
+      <h5>3.16. aggregatedImportTradeBloc</h5>
+      <p>Buscar por todas as importação agrupadas por bloco econômico.</p>
+      <p>Os campos que podem ser solicitados, que possuem a soma das agregações, são:</p>
+      <p>- Valor FOB (totalFobValueTransportation);</p>
+      <p>-Quantidade de registros (totalRegistriesTransportation);</p>
+      <p>- Quilograma líquido (totalNetKilogramTransportation).</p>
+      <h5>3.17. aggregatedExportTransportation</h5>
+      <p>Buscar por todas as exportação agrupadas por transportação.</p>
+      <p>Os campos que podem ser solicitados, que possuem a soma das agregações, são:</p>
+      <p>- Valor FOB (totalFobValueTransportation);</p>
+      <p>-Quantidade de registros (totalRegistriesTransportation);</p>
+      <p>- Quilograma líquido (totalNetKilogramTransportation).</p>
+      <h5>3.18. aggregatedExportUrf</h5>
+      <p>Buscar por todas as exportação agrupadas por urf.</p>
+      <p>Os campos que podem ser solicitados, que possuem a soma das agregações, são:</p>
+      <p>- Valor FOB (totalFobValueTransportation);</p>
+      <p>-Quantidade de registros (totalRegistriesTransportation);</p>
+      <p>- Quilograma líquido (totalNetKilogramTransportation).</p>
+      <h5>3.19. aggregatedExportDate</h5>
+      <p>Buscar por todas as exportação agrupadas por data.</p>
+      <p>Os campos que podem ser solicitados, que possuem a soma das agregações, são:</p>
+      <p>- Valor FOB (totalFobValueTransportation);</p>
+      <p>-Quantidade de registros (totalRegistriesTransportation);</p>
+      <p>- Quilograma líquido (totalNetKilogramTransportation).</p>
+      <h5>3.20. aggregatedExportCountry</h5>
+      <p>Buscar por todas as exportação agrupadas por país.</p>
+      <p>Os campos que podem ser solicitados, que possuem a soma das agregações, são:</p>
+      <p>- Valor FOB (totalFobValueTransportation);</p>
+      <p>-Quantidade de registros (totalRegistriesTransportation);</p>
+      <p>- Quilograma líquido (totalNetKilogramTransportation).</p>
+      <h5>3.21. aggregatedExportTradeBloc</h5>
+      <p>Buscar por todas as exportação agrupadas por bloco econômico.</p>
+      <p>Os campos que podem ser solicitados, que possuem a soma das agregações, são:</p>
+      <p>- Valor FOB (totalFobValueTransportation);</p>
+      <p>-Quantidade de registros (totalRegistriesTransportation);</p>
+      <p>- Quilograma líquido (totalNetKilogramTransportation).</p>
       <h2 id="docdinamica">5. Documentação Dinâmica</h2>
       <div class="form-row">
         <div class="form-group col-md-4">
