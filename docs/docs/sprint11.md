@@ -18,7 +18,7 @@ id: sprint11
 
 ## Objetivo
 
-
+O objetivo dessa sprint foi fechar as pendências da sprint passada, tendo em vista que nenhum dos membros conseguiu ser produtivo durante a sprint 10
 
 ## Dados gerais
 
@@ -67,14 +67,64 @@ Burndown de riscos:
 
 ## Resultado da Revisão da Sprint
 
+![Burndown Sprint 11](https://fga-eps-mds.github.io/2018.2-ComexStat/img/sprints/sprint11/burndown.png)
+
 
 ### Histórias entregues
+
+![Histórias Sprint 11](https://fga-eps-mds.github.io/2018.2-ComexStat/img/sprints/sprint11/historias.png)
 
 
 ### Dívidas entregues
 
+Todas as histórias da sprint passada foi entregue nesse sprint.
+
 
 ## Retrospectiva da Sprint
+
+### O que estamos sentindo?
+
+#### Positivo
+- O fim está próximo;
+- A equipe ressuscitou essa semana;
+- A equipe foi bem produtiva;
+- Terminamos o Frontend.
+
+#### Negativo
+- Indecisão do cliente quanto à tecnologia;
+- Escolha de tecnologia falha;
+
+
+### O que estamos fazendo?
+
+#### Positivo
+- Voltamos a fazer nossos rituais de maneira consistente;
+- Não estamos acatando qualquer opinião maluca do cliente;
+- Equipe voltou a trabalhar e está animada.
+
+#### Negatvo
+
+### O que estamos ouvindo?
+
+#### Positivo
+- Feedback da Professora foi muito bom;
+- Opinião da professora sobre as decisões da equipe.
+
+#### Negativo
+- Que a equipe não sabe pesquisar;
+- Que a escolha de tecnologia da equipe foi falha(escolha não foi feita pela equipe);
+
+
+### O que estamos vendo?
+
+#### Positivo
+- O fim do projeto;
+- Time de MDS está mais maduro(emocionalmente e tecnicamente).
+
+Negativo
+
+
+
 
 
 ### Possíveis melhorias
