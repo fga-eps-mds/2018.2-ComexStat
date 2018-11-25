@@ -2,78 +2,265 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-    <link rel='stylesheet' href="{% static 'css/homepage.css' %}" type="text/css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <title>ComexStat API</title>
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    crossorigin="anonymous" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{% static 'css/homepage.css' %}" type="text/css" />
+  <!-- Scrollbar Custom CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css" />
+
+  <!-- Font Awesome JS -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+    crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand">
-        <a class="navbar-brand" href="#">
-            <img src="{% static 'img/logo.png' %}" width="80" height="50" alt="Logo ComexStat">
-        </a>
+  <div class="wrapper">
+    <!-- Sidebar -->
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <h3>ComexStat API</h3>
+      </div>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="graphql">Ir para a API</a>
-                </li>
-            </ul>
-        </div>
+      <ul class="list-unstyled components">
+        <p id="irapi">
+          <img src="{% static 'img/logo.png' %}" width="60" height="30" alt="Erro ao mostrar imagem" />
+          <a href="graphql">Ir para a API</a>
+        </p>
+        <li><a href="#sobreapi">1. Sobre a API</a></li>
+        <li><a href="#comousar">2. Como usar</a></li>
+        <li><a href="#metodosdebusca">3. Métodos de Busca</a></li>
+        <li><a href="#docdinamica">4. Documentação dinâmica</a></li>
+        <li><a href="#outros">5. Outros recursos</a></li>
+      </ul>
     </nav>
-
-    <div class="container container-doc">
-        <h1 class="topics">Comex Stat API</h1>
-        <img class="imgql" src="{% static 'img/graphql1.png' %}"></img>
-        <h2 class="topics">1. Sobre a API</h2>
-        <p class="content">Essa é uma API dedicada a prover acesso aos dados relacionados ao comércio exterior de bens,
-            provenientes do
-            Ministério da
-            Indústria, Comércio Exterior e Serviços (MDIC). A API é feita em GraphQL, cuja ferramenta de busca a banco
-            de dados oferece recursos que facilitam as buscas e filtros nas pesquisas</p>
-        <h2 class="topics">2. Como usar</h2>
-        <p class="content">A estrutura de consultas na API é constituida de uma string em formatada em JSON contendo a
-            operação a ser
-            feita (que no caso dessa API sempre será um query), o método de busca
-            a ser utilizado, com seus respectivos filtros, e os campos pesquisados. Como no exemplo a seguir:</p>
-        <img class="imgquery" src="{% static 'img/query1.png' %}"></img>
-        <p class="content">No exemplo acima é primeiro definida a operação "query", dentro da qual é utilizado o método
-            de busca
-            "allImport" com um filtro que filtra pelo nome do país de origem (os filtros ficam entre parênteses), e o
-            único campo requerido é o "ncm", que por sua vez tem um campo requerido chamado "countryNamePt". Há ainda,
-            separando o método de busca e os campos, uma estrutura com "edges" e "node". Essas são apenas
-            obrigatoriedades estruturais da linguagem que definem uma melhor organização dos resultados que serão
-            mostrados. Em seguida, basta executar o query através do botão "Play" na API e os resultados serão
-            retornados em formato JSON no container da direita</p>
-        <img src="{% static 'img/result1.png' %}"></img>
-        <h2 class="topics">3. Métodos de buscas</h2>
-        <h4 class="topics">3.1. allImport</h4>
-        <p class="content"> Buscar por todas as importações </p>
-        <h4 class="topics">3.2. allExport</h4>
-        <p class="content"> Buscar por todas as expotações </p>
-        <h4 class="topics">3.3. allINcm</h4>
-        <p class="content"> Buscar por Ncm - Nomenclatura Comum do Mercosul</p>
-        <h4 class="topics">3.4. allTradeblocs</h4>
-        <p class="content"> Buscar por blocos econômicos </p>
-        <h4 class="topics">3.5. allCountry</h4>
-        <p class="content"> Buscar por paises </p>
-        <h4 class="topics">3.6. allFederativeunit</h4>
-        <p class="content"> Buscar por unidade federativa </p>
-        <h4 class="topics">3.7. allTransportation</h4>
-        <p class="content"> Buscar por via(modal) de transporte </p>
-        <h4 class="topics">3.8. allUrf</h4>
-        <p class="content"> Buscar por Urf - Unidade da Receita Federal </p>
-        <h4 class="topics">3.9. allCuci</h4>
-        <p class="content"> Buscar por CUCI - Classificação Uniforme para Comércio Internacional</p>
-        <h4 class="topics">3.10. allCgce</h4>
-        <p class="content"> Buscar por CGCE - Classificação por Grandes Categorias Econômicas</p>
-        <h4 class="topics">3.11. allSh</h4>
-        <p class="content"> Buscar SH - Sistema Harmonizado</p>
+    <!-- Page Content -->
+    <div id="content">
+      <h1>ComexStat API</h1>
+      <img class="imgql" src="{% static 'img/graphql1.png' %}" />
+      <div class="line"></div>
+      <h2 id="sobreapi">1. Sobre a API</h2>
+      <p>
+        Essa é uma API dedicada a prover acesso aos dados relacionados ao
+        comércio exterior de bens, provenientes do Ministério da Indústria,
+        Comércio Exterior e Serviços (MDIC). A API é feita em GraphQL, cuja
+        ferramenta de busca a banco de dados oferece recursos que facilitam as
+        buscas e filtros nas pesquisas
+      </p>
+      <div class="line"></div>
+      <h2 id="comousar">2. Como usar</h2>
+      <p>
+        A estrutura de consultas na API é constituida de uma string em
+        formatada em JSON contendo a operação a ser feita (que no caso dessa
+        API sempre será um query), o método de busca a ser utilizado, com seus
+        respectivos filtros, e os campos pesquisados. Como no exemplo a
+        seguir:
+      </p>
+      <img class="imgquery" src="{% static 'img/query1.png' %}" />
+      <p>
+        No exemplo acima é primeiro definida a operação "query", dentro da
+        qual é utilizado o método de busca "allImport" com um filtro que
+        filtra pelo nome do país de origem (os filtros ficam entre
+        parênteses), e o único campo requerido é o "ncm", que por sua vez tem
+        um campo requerido chamado "countryNamePt". Há ainda, separando o
+        método de busca e os campos, uma estrutura com "edges" e "node". Essas
+        são apenas obrigatoriedades estruturais da linguagem que definem uma
+        melhor organização dos resultados que serão mostrados. Em seguida,
+        basta executar o query através do botão "Play" na API e os resultados
+        serão retornados em formato JSON no container da direita
+      </p>
+      <img src="{% static 'img/result1.png' %}" />
+      <div class="line"></div>
+      <h2 id="metodosdebusca">3. Métodos de buscas</h2>
+      <p>
+        A seguir estão descritos todos os possíveis métodos de busca que podem
+        ser utilizados no query e seus respectivos valores de retorno. Bem
+        como os filtros cabíveis a cada método.
+      </p>
+      <h5>3.1. allImport</h5>
+      <p>Buscar por todas as importações</p>
+      <h6>3.1.1. Filtros disponíveis</h6>
+      <p>Para filtragem, estão disponíveis como parâmetro de consulta todos os campos da model (como por exemplo: "date", "countryNamePt", "ncmCode", "urfName", etc).</p>
+      <p>No caso do allImport também temos um filtro costumizado chamado <i>"commercializedBetween"</i>, que filtra de acordo com o intervalo de datas. Podemos utilizá-lo no seguinte formato:</p>
+        <div class="card">
+          <div class="card-body">
+            commercializedBetween:"[\"yyyy-mm-dd\",\"yyyy-mm-dd\"]"
+          </div>
+        </div>
+      <p><br />A primeira data é o começo da busca e a segunda o fim da busca, obrigatoriamente no formato ano-mês-dia.</p>
+      <h5>3.2. allExport</h5>
+      <p>Buscar por todas as expotações</p>
+      <h6>3.2.1 Filtros disponíveis</h6>
+      <p>Para filtragem, estão disponíveis como parâmetro de consulta todos os campos da model (como por exemplo: "date", "countryNamePt", "ncmCode", "urfName", etc).</p>
+      <p>No caso do allExport também temos um filtro costumizado chamado <i>"commercializedBetween"</i>, que filtra de acordo com o intervalo de datas. Podemos utilizá-lo no seguinte formato:</p>
+        <div class="card">
+          <div class="card-body">
+            commercializedBetween:"[\"yyyy-mm-dd\",\"yyyy-mm-dd\"]"
+          </div>
+        </div>
+      <p><br />A primeira data é o começo da busca e a segunda o fim da busca, obrigatoriamente no formato ano-mês-dia.</p>
+      <h5>3.3. allINcm</h5>
+      <p>Buscar por Ncm - Nomenclatura Comum do Mercosul</p>
+      <h6>3.3.1. Filtros disponíveis</h6>
+      <p>Para filtragem, estão disponíveis como parâmetro de consulta todos os campos da model (como por exemplo: "date", "countryNamePt", "ncmCode", "urfName", etc).</p>
+      <h5>3.4. allTradeblocs</h5>
+      <p>Buscar por blocos econômicos</p>
+      <h6>3.4.1. Filtros disponíveis</h6>
+      <p>Para filtragem, estão disponíveis como parâmetro de consulta todos os campos da model (como por exemplo: "date", "countryNamePt", "ncmCode", "urfName", etc).</p>
+      <h5>3.5. allCountry</h5>
+      <p>Buscar por paises</p>
+      <h6>3.5.1. Filtros disponíveis</h6>
+      <p>Para filtragem, estão disponíveis como parâmetro de consulta todos os campos da model (como por exemplo: "date", "countryNamePt", "ncmCode", "urfName", etc).</p>
+      <h5>3.6. allFederativeunit</h5>
+      <p>Buscar por unidade federativa</p>
+      <h6>3.6.1. Filtros disponíveis</h6>
+      <p>Para filtragem, estão disponíveis como parâmetro de consulta todos os campos da model (como por exemplo: "date", "countryNamePt", "ncmCode", "urfName", etc).</p>
+      <h5>3.7. allTransportation</h5>
+      <p>Buscar por via(modal) de transporte</p>
+      <h6>3.7.1. Filtros disponíveis</h6>
+      <p>Para filtragem, estão disponíveis como parâmetro de consulta todos os campos da model (como por exemplo: "date", "countryNamePt", "ncmCode", "urfName", etc).</p>
+      <h5>3.8. allUrf</h5>
+      <p>Buscar por Urf - Unidade da Receita Federal</p>
+      <h6>3.8.1. Filtros disponíveis</h6>
+      <p>Para filtragem, estão disponíveis como parâmetro de consulta todos os campos da model (como por exemplo: "date", "countryNamePt", "ncmCode", "urfName", etc).</p>
+      <h5>3.9. allCuci</h5>
+      <p>
+        Buscar por CUCI - Classificação Uniforme para Comércio Internacional
+      </p>
+      <h6>3.9.1. Filtros disponíveis</h6>
+      <p>Para filtragem, estão disponíveis como parâmetro de consulta todos os campos da model (como por exemplo: "date", "countryNamePt", "ncmCode", "urfName", etc).</p>
+      <h5>3.10. allCgce</h5>
+      <p>Buscar por CGCE - Classificação por Grandes Categorias Econômicas</p>
+      <h6>3.10.1. Filtros disponíveis</h6>
+      <p>Para filtragem, estão disponíveis como parâmetro de consulta todos os campos da model (como por exemplo: "date", "countryNamePt", "ncmCode", "urfName", etc).</p>
+      <h5>3.11. allSh</h5>
+      <p>Buscar SH - Sistema Harmonizado</p>
+      <h6>3.11.1. Filtros disponíveis</h6>
+      <p>Para filtragem, estão disponíveis como parâmetro de consulta todos os campos da model (como por exemplo: "date", "countryNamePt", "ncmCode", "urfName", etc).</p>
+      <h5>3.12. aggregatedImportTransportation</h5>
+      <p>Buscar por todas as importação agrupadas por transportação.</p>
+      <p>Os campos que podem ser solicitados, que possuem a soma das agregações, são:</p>
+      <p>- Valor FOB (totalFobValueTransportation);</p>
+      <p>-Quantidade de registros (totalRegistriesTransportation);</p>
+      <p>- Quilograma líquido (totalNetKilogramTransportation).</p>
+      <h5>3.13. aggregatedImportUrf</h5>
+      <p>Buscar por todas as importação agrupadas por urf.</p>
+      <p>Os campos que podem ser solicitados, que possuem a soma das agregações, são:</p>
+      <p>- Valor FOB (totalFobValueTransportation);</p>
+      <p>-Quantidade de registros (totalRegistriesTransportation);</p>
+      <p>- Quilograma líquido (totalNetKilogramTransportation).</p>
+      <h5>3.14. aggregatedImportDate</h5>
+      <p>Buscar por todas as importação agrupadas por data.</p>
+      <p>Os campos que podem ser solicitados, que possuem a soma das agregações, são:</p>
+      <p>- Valor FOB (totalFobValueTransportation);</p>
+      <p>-Quantidade de registros (totalRegistriesTransportation);</p>
+      <p>- Quilograma líquido (totalNetKilogramTransportation).</p>
+      <h5>3.15. aggregatedImportCountry</h5>
+      <p>Buscar por todas as importação agrupadas por país.</p>
+      <p>Os campos que podem ser solicitados, que possuem a soma das agregações, são:</p>
+      <p>- Valor FOB (totalFobValueTransportation);</p>
+      <p>-Quantidade de registros (totalRegistriesTransportation);</p>
+      <p>- Quilograma líquido (totalNetKilogramTransportation).</p>
+      <h5>3.16. aggregatedImportTradeBloc</h5>
+      <p>Buscar por todas as importação agrupadas por bloco econômico.</p>
+      <p>Os campos que podem ser solicitados, que possuem a soma das agregações, são:</p>
+      <p>- Valor FOB (totalFobValueTransportation);</p>
+      <p>-Quantidade de registros (totalRegistriesTransportation);</p>
+      <p>- Quilograma líquido (totalNetKilogramTransportation).</p>
+      <h5>3.17. aggregatedExportTransportation</h5>
+      <p>Buscar por todas as exportação agrupadas por transportação.</p>
+      <p>Os campos que podem ser solicitados, que possuem a soma das agregações, são:</p>
+      <p>- Valor FOB (totalFobValueTransportation);</p>
+      <p>-Quantidade de registros (totalRegistriesTransportation);</p>
+      <p>- Quilograma líquido (totalNetKilogramTransportation).</p>
+      <h5>3.18. aggregatedExportUrf</h5>
+      <p>Buscar por todas as exportação agrupadas por urf.</p>
+      <p>Os campos que podem ser solicitados, que possuem a soma das agregações, são:</p>
+      <p>- Valor FOB (totalFobValueTransportation);</p>
+      <p>-Quantidade de registros (totalRegistriesTransportation);</p>
+      <p>- Quilograma líquido (totalNetKilogramTransportation).</p>
+      <h5>3.19. aggregatedExportDate</h5>
+      <p>Buscar por todas as exportação agrupadas por data.</p>
+      <p>Os campos que podem ser solicitados, que possuem a soma das agregações, são:</p>
+      <p>- Valor FOB (totalFobValueTransportation);</p>
+      <p>-Quantidade de registros (totalRegistriesTransportation);</p>
+      <p>- Quilograma líquido (totalNetKilogramTransportation).</p>
+      <h5>3.20. aggregatedExportCountry</h5>
+      <p>Buscar por todas as exportação agrupadas por país.</p>
+      <p>Os campos que podem ser solicitados, que possuem a soma das agregações, são:</p>
+      <p>- Valor FOB (totalFobValueTransportation);</p>
+      <p>-Quantidade de registros (totalRegistriesTransportation);</p>
+      <p>- Quilograma líquido (totalNetKilogramTransportation).</p>
+      <h5>3.21. aggregatedExportTradeBloc</h5>
+      <p>Buscar por todas as exportação agrupadas por bloco econômico.</p>
+      <p>Os campos que podem ser solicitados, que possuem a soma das agregações, são:</p>
+      <p>- Valor FOB (totalFobValueTransportation);</p>
+      <p>-Quantidade de registros (totalRegistriesTransportation);</p>
+      <p>- Quilograma líquido (totalNetKilogramTransportation).</p>
+      <h2 id="docdinamica">4. Documentação Dinâmica</h2>
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <img src="{% static 'img/docs1.png' %}" class="img-fluid mb-3 mb-md-0 logo" alt="Erro ao mostrar imagem"
+            width="256" height="210">
+        </div>
+        <div class="form-group col-md-6">
+          <p>O GraphiQL oferece também uma documentação dinâmica, que pode ser acessada pelo botão "Docs" no canto
+            superior direito da API. Por lá podem ser vistas informações de todas as operações possíveis, incluindo
+            descrições do funcionamento e listagem dos campos e filtros. Tudo dentro da própria API !</p>
+        </div>
+        <div>
+          <p>Além disso, outro recurso oferecido pelo GraphiQL para facilitar a interação do usuário com a API é a
+            disponibilidade do recurso de autocomplete para todos os métodos de pesquisa e campos. Basta apertar as
+            teclas Ctrl + Space e uma lista com as possibilidades será apresentada</p>
+        </div>
+        <div class="form-group col-md-4">
+          <img src="{% static 'img/graphql_auto.png' %}" class="img-fluid mb-3 mb-md-0 logo" alt="Erro ao mostrar imagem"
+            width="256" height="210">
+        </div>
+        <div class="form-group col-md-6">
+          <img src="{% static 'img/graphql_auto2.png' %}" class="img-fluid mb-3 mb-md-0 logo" alt="Erro ao mostrar imagem"
+            width="256" height="210">
+        </div>
+      </div>
+      <h2 id="outros">5. Outros recursos</h2>
+      <p>Além do que já foi apresentado, alguns outros recursos que a API oferece podem ser acessados pelos botões
+        "Prettify" e "History" no canto superior esquerdo, o primeiro serve para automaticamente formatar o query de
+        entrada em um JSON com uma boa legibilidade, e o segundo serve para ver o histórico de operações realizadas.
+        Outra funcionalidade que deve ser citada são os permalinks, ao executar um query a URL ganha um parâmetro
+        contento o JSON da operação feita, de tal forma que essa URL pode ser compartilhada para que outros usuários
+        acessem diretamente esse mesmo query.
+      </p>
     </div>
+  </div>
 
+  <!-- jQuery CDN - Slim version (=without AJAX) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <!-- Popper.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+  <!-- jQuery Custom Scroller CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
-
-
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+    });
+  </script>
 </body>
 
 </html>

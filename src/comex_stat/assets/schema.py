@@ -719,18 +719,36 @@ class Aggregated_Export(DjangoObjectType):
 
 class Query(graphene.ObjectType):
     all_import = DjangoFilterConnectionField(
-        AssetImportFactsNode, filterset_class=AssetImportFilter)
+        AssetImportFactsNode, filterset_class=AssetImportFilter,
+        description="Método que retorna os objetos do tipo importação")
     all_export = DjangoFilterConnectionField(
-        AssetExportFactsNode, filterset_class=AssetExportFilter)
-    all_tradeBlocs = DjangoFilterConnectionField(TradeBlocsType)
-    all_country = DjangoFilterConnectionField(CountryType)
-    all_federativeUnit = DjangoFilterConnectionField(FederativeUnitType)
-    all_transportation = DjangoFilterConnectionField(TransportationType)
-    all_urf = DjangoFilterConnectionField(UrfType)
-    all_ncm = DjangoFilterConnectionField(NCMType)
-    all_cuci = DjangoFilterConnectionField(CUCIType)
-    all_cgce = DjangoFilterConnectionField(CGCEType)
-    all_sh = DjangoFilterConnectionField(SHType)
+        AssetExportFactsNode, filterset_class=AssetExportFilter,
+        description="Método que retorna os objetos do tipo exportação")
+    all_tradeBlocs = DjangoFilterConnectionField(
+        TradeBlocsType,
+        description="Método que retorna os registros de blocos econômicos")
+    all_country = DjangoFilterConnectionField(
+        CountryType,
+        description="Método que retorna os países registrados")
+    all_federativeUnit = DjangoFilterConnectionField(
+        FederativeUnitType,
+        description="Método que retorna as unidades federativas registradas")
+    all_transportation = DjangoFilterConnectionField(
+        TransportationType,
+        description="Método que retorna as vias de trasportação cadastradas")
+    all_urf = DjangoFilterConnectionField(
+        UrfType, description="Método que retorna as URFs registradas")
+    all_ncm = DjangoFilterConnectionField(
+        NCMType, description="Método que retorna os NCMs dos registros")
+    all_cuci = DjangoFilterConnectionField(
+        CUCIType,
+        description="Método que retorna as nomenclaturas CUCI registradas")
+    all_cgce = DjangoFilterConnectionField(
+        CGCEType,
+        description="Método que retorna as nomenclaturas CGCE registradas")
+    all_sh = DjangoFilterConnectionField(
+        SHType,
+        description="Método que retorna as nomenclaturas SH registradas")
     aggregated_import_transportation = DjangoFilterConnectionField(
         Aggregated_Import, filterset_class=AssetImportFilter)
     aggregated_import_urf = DjangoFilterConnectionField(
