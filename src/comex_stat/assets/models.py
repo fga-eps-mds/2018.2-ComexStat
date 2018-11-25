@@ -91,18 +91,18 @@ class NCM(models.Model):
     """
     ncm_code = models.CharField(max_length=8, blank=False,
                                 validators=[validate_only_numbers])
-    ncm_name_pt = models.CharField(max_length=250, blank=False)
-    ncm_name_en = models.CharField(max_length=250, blank=False)
-    ncm_name_es = models.CharField(max_length=250, blank=False)
-    statistic_unit_code = models.CharField(max_length=2, blank=False,
+    ncm_name_pt = models.TextField(blank=False, null=True)
+    ncm_name_en = models.TextField(blank=False, null=True)
+    ncm_name_es = models.TextField(blank=False, null=True)
+    statistic_unit_code = models.CharField(max_length=10, blank=False,
                                            validators=[validate_only_numbers])
-    ppe_code = models.CharField(max_length=4, blank=False,
+    ppe_code = models.CharField(max_length=10, blank=False,
                                 verbose_name="Pauta de Produtos Exportados",
                                 validators=[validate_only_numbers])
-    ppi_code = models.CharField(max_length=4, blank=False,
+    ppi_code = models.CharField(max_length=10, blank=False,
                                 verbose_name="Pauta de Produtos Importados",
                                 validators=[validate_only_numbers])
-    aggregate_factor_code = models.CharField(max_length=4, blank=False,
+    aggregate_factor_code = models.CharField(max_length=10, blank=False,
                                              validators=[validate_only_numbers]
                                              )
     cuci = models.ForeignKey(CUCI, on_delete=models.CASCADE,
@@ -113,12 +113,12 @@ class NCM(models.Model):
                                              Categorias Econômicas''')
     sh = models.ForeignKey(SH, on_delete=models.CASCADE,
                            verbose_name="Sistema Harmónico")
-    isic4_code = models.CharField(max_length=2, blank=False,
+    isic4_code = models.CharField(max_length=10, blank=False,
                                   verbose_name='''International Standard Industrial
                                                Classification (Revision 4)''',
                                   validators=[validate_only_numbers])
-    exportation_subset = models.CharField(max_length=4, blank=False)
-    siit_code = models.CharField(max_length=4, blank=False,
+    exportation_subset = models.CharField(max_length=10, blank=False)
+    siit_code = models.CharField(max_length=8, blank=False,
                                  verbose_name='''Setores Industriais por
                                               Intensidade Tecnológica code''',
                                  validators=[validate_only_numbers])
