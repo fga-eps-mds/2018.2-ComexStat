@@ -131,6 +131,7 @@ O acesso aos serviços do software poderá ser feito por navegadores de internet
 | :--------: | :-------: |
 | Consulta rápida e fácil aos dados disponibilizados pelo MDIC | Pesquisa no banco de dados  |
 | Capacidade de filtrar as informações pesquisadas | Opções para obter resultados de acordo com filtros de categorias pré-determinadas ou customizadas  |
+| Capacidade de agrupar as informações pesquisadas | Opções para gerar dados de agregação dos resultados da pesquisa dentro de um limite temporal estabelecido |
 | Possibilidade de fazer o download das informações desejadas| Recurso que permite ao usuário extrair uma determinada seleção de dados, em formatos como .csv|
 
 
