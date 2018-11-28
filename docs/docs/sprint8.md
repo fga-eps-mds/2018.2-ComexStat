@@ -16,6 +16,7 @@ id: sprint8
 | Matheus Joranhezon   |
 | Kaique   |
 | Vinicius   |
+| Rogerio |
 
 ## Objetivo
 

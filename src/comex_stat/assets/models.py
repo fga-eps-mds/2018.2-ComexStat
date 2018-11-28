@@ -86,9 +86,9 @@ class CUCI(models.Model):
 
 
 class NCM(models.Model):
-    '''
+    """
         NCM stands for Nomenclatura Comum do Mercosul
-    '''
+    """
     ncm_code = models.CharField(max_length=8, blank=False,
                                 validators=[validate_only_numbers])
     ncm_name_pt = models.CharField(max_length=250, blank=False)
