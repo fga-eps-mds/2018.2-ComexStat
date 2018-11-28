@@ -102,7 +102,7 @@ Na forma escolhida para classifica-los, os casos de uso possuem três tipos de p
    |Consultar e filtrar os dados disponibilizados, através da API|Essencial|
    |Ter uma API bem documentada e de fácil uso por outros desenvolvedores |Essencial|
    |Gerar permalinks dos resultados pesquisados|Essencial|
-   |Exportar os resultados das consultas em formatos como .csv e PDF|Essencial|
+   |Exportar os resultados das consultas em formatos como .csv|Essencial|
    |Consultar e filtrar os dados disponibilizados, através da aplicação web|Importante|
 
 
