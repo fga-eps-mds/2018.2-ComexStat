@@ -15,9 +15,11 @@ title: Documento de Visão
 ### 1.2 Escopo
 
 Suprir a necessidade de um sistema proeminente na visualização de dados relacionados ao comércio de bens no Brasil. Proporcionando algo que seja mais intuitivo ao usuário, o ComexStat será integrado por uma plataforma web, cujas capacidades abrangem funcionalidades como:
+
+* Ter uma API de pesquisa bem documentada e de fácil uso, com querys estruturados de maneira intuitiva
 * Gerar tabelas a partir de dados providos pelo banco de dados do MDIC, dando ao usuário a possibilidade de filtrar os resultados a partir de informações específicas, de acordo com as suas necessidades;
-* Disponibilizar os resultados de tais tabelamentos para download, principalmente, em formato PDF ou similar, de tal forma que o usuário tenha facilidade para salvar os dados que são de seu interesse;
-* Gerar gráficos que facilitem a visualização e entendimentos dos dados requisitados.
+* Disponibilizar os resultados de tais tabelamentos para download, de tal forma que o usuário tenha facilidade para salvar os dados que são de seu interesse;
+
 
 Além disso, o sistema também deverá ser feito de forma adequada para integrar posteriormente, além das informações relacionadas ao comércio exterior de bens, os dados relacionados ao comércio exterior de serviços no Brasil.
 
@@ -62,7 +64,7 @@ O ComexStat, tornando mais fácil o acesso aos dados relacionados ao comércio e
 | **Problema**| Dados relacionados ao comércio exterior de bens e serviços no Brasil são abertos a população porém de difícil uso e interpretação, por conta do seu grande volume e formato disponibilizado|
 | **Funções afetadas** | Análise e visualização dos dados de comércio de bens e serviços |
 | **Efeito** | Os dados acabam por não serem utilizados|
-| **Solução** | Reformular a plataforma web já existente, de forma a dar ao usuário a possibilidade de acessar, filtrar e visualizar os dados de forma mais intuitiva|
+| **Solução** | Uma plataforma web que permita ao usuário um acesso mais fácil aos dados e as ferramentas de filtragem e pesquisa|
 
 ### 2.3 Instrução de Posição do produto
 
@@ -71,8 +73,8 @@ O ComexStat, tornando mais fácil o acesso aos dados relacionados ao comércio e
 | **Público Alvo** | Gestores e produtores de bens ou serviços|
 | **Carência** | Necessidade de um melhor acesso e ferramentas de manejo a informações relacionadas ao comércio exterior de bens e serviço no Brasil |
 | **Solução** | ComexStat |
-| **Descrição da Solução** | Uma plataforma web que permita ao usuário o acesso aos dados de forma fácil e intuitiva, a partir de uso de filtros, detalhamento e ferramentas de visualização gráfica, além da possibilidade de exportação das informações em formatos como PDF e .csv  |
-| **Diferenciais** | Facilidade no acesso e ferramental para proporcionar uma melhor interpretação dos dados, oferecendo diversos recursos que não estão presentes no atual sistema, como permalinks para compartilhamento de resultados e as já citadas soluções de exportação e visualização gráfica dos dados  |
+| **Descrição da Solução** | Uma plataforma web que permita ao usuário o acesso aos dados de forma fácil e intuitiva, a partir de uso de filtros de filtros e agrupamentos, além da possibilidade de exportação das informações em formatos como .csv  |
+| **Diferenciais** | Facilidade no acesso e ferramental para proporcionar uma melhor interpretação dos dados, oferecendo diversos recursos que não estão presentes no atual sistema, como permalinks para compartilhamento de resultados e as já citadas soluções de exportação. Isso tudo contando com uma API bem documentada  |
 
 ***
 ## 3. Descrição dos Envolvidos e dos Usuários
@@ -109,7 +111,10 @@ O acesso aos serviços do software poderá ser feito por navegadores de internet
 | :--------: | :-------: | :--------: | :-------: | :--------: |
 | Ter acesso aos dados em outros formatos | Alta | Ter tudo reunido em um arquivo para diversos usos como pesquisas, análise de dados, etc.  | Acessar o site do MDIC, procurar pelas estatísticas de 2017 e baixá-las | Disponibilizar o download dos dados em diversos formatos através de botões na página de resultado da pesquisa |
 | Filtrar a busca dos dados | Alta | Facilitar ao usuário a obtenção dos dados de forma mais rápida e objetiva | Manualmente categorizar e filtrar os dados | Disponibilizar filtros e categorias na página de busca |
-| Visualizar os dados de forma mais organizada | Alta | Entender e absorver os dados com maior facilidade | Gerar gráficos manualmente usando as planilhas disponibilizadas pelo MDIC | Disponibilizar gráficos, tabelas e outras ferramentas interativas para uma descrição mais clara e visual das informações |
+| Agrupar os dados | Alta | Permitir ao usuário visualizar os dados em forma de agrupamentos, constituindo agregações de dados com base em um período de datas especificadas | Manualmente agrupar os dados disponíveis | Agrupar os dados pela utilização dos tipos de query previamente definidos  e disponíveis na API|
+| Ter uma API de fácil uso | Alta| Poder realizar todas as etapas de pesquisa e filtragem por meio da API | Não há | API em GraphQL bem documentada e com querys estruturados de forma intuitiva |
+| Permalinks para as pesquisas| Média|Sistema de permalinks para permitir o compartilhamento das pesquisas feitas |Não há | Páginas de pesquisa geram permalinks com a pesquisa e os filtros/agrupamentos utilizados |
+| Visualizar os dados de forma mais organizada | Baixa | Entender e absorver os dados com maior facilidade | Gerar gráficos manualmente usando as planilhas disponibilizadas pelo MDIC | Disponibilizar tabelas e outras ferramentas interativas para uma descrição mais clara e visual das informações |
 
 ***
 ## 4.Visão Geral do Produto
@@ -117,7 +122,7 @@ O acesso aos serviços do software poderá ser feito por navegadores de internet
 
 ### 4.1 Perspectiva do produto
 
-  O ComexStat visa prover ao usuário facilidade de acesso a informações referentes ao comércio exterior brasileiro de bens, descomplicando a interpretação e visualização dos dados por meio de filtros de pesquisas e uso de gráficos. Além disso, também são disponibilizadas formas coerentes para que os dados de interesse possam ser extraídos, em formato .csv, PDF ou similar.
+  O ComexStat visa prover ao usuário facilidade de acesso a informações referentes ao comércio exterior brasileiro de bens, descomplicando a interpretação e visualização dos dados por meio de filtros de pesquisas, agrupamentos e uma fácil visualização do resultado. Além disso, também são disponibilizadas formas coerentes para que os dados de interesse possam ser extraídos, em formato .csv.
 
 
 ### 4.2 Resumo das capacidades
@@ -126,8 +131,8 @@ O acesso aos serviços do software poderá ser feito por navegadores de internet
 | :--------: | :-------: |
 | Consulta rápida e fácil aos dados disponibilizados pelo MDIC | Pesquisa no banco de dados  |
 | Capacidade de filtrar as informações pesquisadas | Opções para obter resultados de acordo com filtros de categorias pré-determinadas ou customizadas  |
-| Possibilidade de fazer o download das informações desejadas| Recurso que permite ao usuário extrair uma determinada seleção de dados, seja em formatos tabulares como .csv ou em formatos de documento como PDF |
-| Capacidade de visualizar as informações de formas diferentes| Disponibilização de formas gráficas de representação dos dados selecionados|
+| Possibilidade de fazer o download das informações desejadas| Recurso que permite ao usuário extrair uma determinada seleção de dados, em formatos como .csv|
+
 
 ***
 ## 5.Recursos do Produto
@@ -135,11 +140,10 @@ O acesso aos serviços do software poderá ser feito por navegadores de internet
 
    * Área de acesso aos dados disponibilizados acerca do comércio externo brasileiro de bens.
    * Opções para filtrar as pesquisas por categorias específicas.
+   * Opções para agrupar os dados por quaisquer formas desejadas.
    * Layout intuitivo, para que o usuário possa selecionar os filtros que melhor se encaixam as suas necessidades.
    * Opções para ordenar os resultados encontrados a partir de uma coluna específica.
    * Opções para incluir ou retirar colunas de informação da pesquisa feita.
-   * Possibilidade de extrair as informações de interesse em formatos tabulares acessíveis, como .csv, ou em formatos mais acessíveis como o PDF.
-   * Mais ferramentas relacionadas a formas diferentes de visualizar os dados, como aparatos gráficos e afins.
    * Permitir ao usuário, pelo uso de permalinks, compartilhar facilmente um conjunto específico de resultados.
 
 ***
@@ -178,7 +182,7 @@ O sistema deverá ter cobertura de testes - mínimo de 90%.
 
 ### 8.2 Requisitos de Design
 
- O sistema deverá ser intuitivo e autoexplicativo, possibilitando uma fácil interação com o usuário, seguindo um fluxo básico de funcionamento definido por: Pesquisa ->Filtros -> Agrupamentos -> Visualização de dados -> Compartilhamento dos resultados.
+ O sistema deverá ser intuitivo e autoexplicativo, possibilitando uma fácil interação com o usuário, seguindo uma estruturação de querys em JSON na API com os campos da pesquisa e os filtros desejados bem explicitos.
 
 ### 8.3 Requisitos de Portabilidade
 
@@ -206,3 +210,4 @@ O sistema deverá ter cobertura de testes - mínimo de 90%.
 | 31/08/2018 | 1.0.0 | Correções ortográficas e organização final da primeira versão do documento|Marcos Nery|
 | 06/09/2018 | 1.1.1 | Alterações no documento com base nas revisões feitas e novas informações acrescentadas| Marcos Nery, Rogério Júnior, Kaique Borges, André Lucas, João Victor e Caio Santos|
 | 08/09/2018 | 2.0.0 | Feitas as revisões solicitadas pela Scrum Master | Marcos Nery e Rogério Júnior |
+| 25/11/2018 | 3.0.0 | Refatoração de alguns tópicos após mudanças de visão durante o projeto | Marcos Nery |

@@ -50,7 +50,7 @@ O Django, que será utilizado no back-end, por sua vez segue o padrão **MVC** d
 
 Desta forma, a *view* do Django é mais parecida com o *controller* no MVC, e a *view* do MVC é na verdade um *Template* no Django.
 
-Dito isso, o sistema será desenvolvido não pela utilização da arquitetura MVT do Django de forma pura, mas pela adaptação já denotada com a utilização do Angular, dando ao projeto uma nova face arquitetural, na qual as models do Django continuarão fazendo seu papel de classes de domínios e interface com o banco de dados, o Angular 2 será utilizado para construção front-end, substituindo por conseguinte a função que seria feita pelas templates do Django. E por fim, o GraphQL, no caso do Django através da biblioteca Graphene, será a linguagem e ferramenta utilizada para realizar as consultas ao banco, ficando como interface entre o back-end e o front-end. 
+Dito isso, o sistema será desenvolvido não pela utilização da arquitetura MVT do Django de forma pura, mas pela adaptação já denotada com a utilização do Angular, dando ao projeto uma nova face arquitetural, na qual as models do Django continuarão fazendo seu papel de classes de domínios e interface com o banco de dados, o Angular 2 será utilizado para construção front-end, substituindo por conseguinte a função que seria feita pelas templates do Django. E por fim, o GraphQL, no caso do Django através da biblioteca Graphene, será a linguagem e ferramenta utilizada para realizar as consultas ao banco, ficando como interface entre o back-end e o front-end.
 
 Na prática, esse processo se dará por meio do usuário fazendo requisições por meio do front-end em Angular, que enviará uma ordem de pesquisa para a API através de um query parametrizado. Logo então, através dos métodos de pesquisa e filtragem definidos no Schema e pela utilização dos modelos de dados definidos nas models, será feita com o GraphQL uma consulta ao banco de dados (construído em SQLite). Após isso, o front-end receberá em formato JSON uma resposta com os resultados da pesquisa, que serão enfim mostrados ao usuário pelos Components do Angular. Isso tudo pode ser visualizado no seguinte diagrama:
 
@@ -100,13 +100,10 @@ Na forma escolhida para classifica-los, os casos de uso possuem três tipos de p
    |Caso de Uso|Prioridade|
    |:---------:|:--------:|
    |Consultar e filtrar os dados disponibilizados, através da API|Essencial|
-   |Consultar e filtrar os dados disponibilizados, através da aplicação web|Essencial|
+   |Ter uma API bem documentada e de fácil uso por outros desenvolvedores |Essencial|
    |Gerar permalinks dos resultados pesquisados|Essencial|
    |Exportar os resultados das consultas em formatos como .csv e PDF|Essencial|
-   |Gerar visualizações gráficas dos dados|Essencial|
-   |Compartilhamento da consulta feita em redes sociais ou similares|Importante|
-   |Comparar, incluindo graficamente ,os dados resultantes de múltiplas pesquisas|Desejável|
-   |Compartilhamento via embedding de páginas|Desejável|
+   |Consultar e filtrar os dados disponibilizados, através da aplicação web|Importante|
 
 
 ***
@@ -122,9 +119,9 @@ O sistema será desenvolvido usando o framework web Django, com uma forma adapta
   * Front-end em Angular 2 funcionando como cliente do back-end e fazendo requisições a ele pela interação do usuário ao acessar a aplicação, de tal forma a processar e mostrar de forma apropriada os dados de saída ao mesmo.
   * GraphQL como interface entre front-end e back-end, tendo a função de fazer a consulta ao banco, cujos resultados serão posteriormente retornados ao front-end se necessário.
 
-Sendo assim, pelo navegador, o usuário acessa diretamente a API, podendo nela fazer diretamente as suas pesquisas e filtragem nos dados do banco através do GraphQL, ou então acessa a aplicação web por meio do front-end em Angular. Neste, um chamado "router" fará a identificação no padrão da URL e irá direcionar o usuário à View apropriada, através da qual o mesmo poderá fazer suas requisições, que serão então passadas para API da forma já descrita. Por fim, os resultados retornados da busca feita são renderizados na View de forma apropriada para a visualização. 
+Sendo assim, pelo navegador, o usuário acessa diretamente a API, podendo nela fazer diretamente as suas pesquisas e filtragem nos dados do banco através do GraphQL, ou então acessa a aplicação web por meio do front-end em Angular. Neste, um chamado "router" fará a identificação no padrão da URL e irá direcionar o usuário à View apropriada, através da qual o mesmo poderá fazer suas requisições, que serão então passadas para API da forma já descrita. Por fim, os resultados retornados da busca feita são renderizados na View de forma apropriada para a visualização.
 
-### 5.2 Pacotes de Design Significativos do Ponto de Vista da Arquitetura 
+### 5.2 Pacotes de Design Significativos do Ponto de Vista da Arquitetura
 
 ![Diagrama de pacotes](https://fga-eps-mds.github.io/2018.2-ComexStat/img/diagrama_pacotes.png)
 
@@ -137,10 +134,10 @@ No Back-End temos os pacotes de design significativos como sendo: models, schema
 Já no Front-End, em Angular 2, temos a representação dos pacotes de design significativos como sendo os Components do módulo "assets", que pertence a aplicação "comex_stat", sendo estes (todos contendo suas devidas Views e Templates relacionadas):
 
   * search: Component que define a parte da aplicação dedicada as pesquisas de dados
-  * graphic: Component que define a parte da aplicação dedicada a visualização gráfica dos dados 
+  * graphic: Component que define a parte da aplicação dedicada a visualização gráfica dos dados
   * nav: Component que define a barra de navegação da aplicação
-  * export: Component que define a parte da aplicação dedicada a exportação dos dados 
-  * share: Component que define a parte da aplicação dedicada ao compartilhamento de páginas 
+  * export: Component que define a parte da aplicação dedicada a exportação dos dados
+  * share: Component que define a parte da aplicação dedicada ao compartilhamento de páginas
 
 Além disso, há também dentro do módulo "assets" a seção "shared", na qual serão definidas coisas como os já citados Services da aplicação.
 
@@ -181,3 +178,4 @@ Outro ponto a ser ressaltado, é o uso das ferramentas citadas em busca pelo des
 |14/09/2018|1.0.0|Revisões gerais para primeira versão do documento|Marcos Nery e Rogério Júnior|
 |25/09/2018|2.0.0|Refatoração da arquitetura|Marcos Nery|
 |26/09/2018|2.1.0|Adição do diagrama de pacotes|Marcos Nery|
+|25/11/2018|3.0.0|Refatoração de alguns tópicos após mudanças no escopo feitas durante o projeto|Marcos Nery|
