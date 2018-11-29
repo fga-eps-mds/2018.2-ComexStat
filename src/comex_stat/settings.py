@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
-import django_heroku
 import sys
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -71,7 +70,7 @@ ROOT_URLCONF = 'comex_stat.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['comex_stat/templates/'],
+        'DIRS': [os.path.join(os.path.dirname(__file__), 'templates').replace('\\','/')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -146,7 +145,11 @@ USE_TZ = True
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'comex_stat/static/'),
+)
 try:
+    import django_heroku
     django_heroku.settings(locals())
-except:
+except ImportError:
     pass

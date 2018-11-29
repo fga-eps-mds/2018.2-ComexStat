@@ -14,8 +14,11 @@ matrix:
       install:
         - pip install codecov
 
+      before_install:
+        - sed '/django-heroku==/d' requirements.txt > requirements-build.txt
+
       script:
-        - pip install -r requirements.txt
+        - pip install -r requirements-build.txt
         - cd src
         - python manage.py makemigrations
         - python manage.py migrate
