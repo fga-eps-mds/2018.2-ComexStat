@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 
 import os
 import django_heroku
+import sys
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -24,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'jn#m30o_p6ufakd62_hm-2cm#c4o!3)4vauea$db3i8uhlcdz9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False if (os.environ.get('DEBUG') == 'FALSE') else True
+DEBUG = True  # False if (os.environ.get('DEBUG') == 'FALSE') else True
 
 ALLOWED_HOSTS = ['*']
 
@@ -70,7 +71,7 @@ ROOT_URLCONF = 'comex_stat.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['comex_stat/templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -100,6 +101,11 @@ DATABASES = {
     }
 }
 
+if 'test' in sys.argv or 'test_coverage' in sys.argv:
+    DATABASES['default'] = {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3')
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
@@ -139,5 +145,8 @@ USE_TZ = True
 
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
-django_heroku.settings(locals())
+
+# STATIC_ROOT = os.path.join(PROJECT_ROOT, '/static/')
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'comex_stat/static/'),
+)

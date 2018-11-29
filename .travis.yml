@@ -1,11 +1,11 @@
 sudo: required
-    
+
 matrix:
   include:
     - language: python
       python:
         - '3.6.1'
-        
+
       env:
         - CODECOV_TOKEN=219366db-cfde-4936-967d-25072639f80f
 
@@ -15,11 +15,11 @@ matrix:
         - pip install codecov
 
       script:
-        - pip install -r requirements.txt
+        - pip install -r requirements.txt 
         - cd src
         - python manage.py makemigrations
         - python manage.py migrate
-        - coverage run --omit=*/site-packages/* manage.py test
+        - coverage run --omit=*/site-packages/* manage.py test comex_stat/assets
 
       after_success:
         - codecov
