@@ -13,24 +13,24 @@ class SH(models.Model):
 
     chapter_code = models.CharField(max_length=2, blank=True,
                                     validators=[validate_only_numbers])
-    chapter_name_pt = models.CharField(max_length=250, blank=True)
-    chapter_name_en = models.CharField(max_length=250)
-    chapter_name_es = models.CharField(max_length=250)
+    chapter_name_pt = models.TextField(blank=True)
+    chapter_name_en = models.TextField()
+    chapter_name_es = models.TextField()
     position_code = models.CharField(max_length=4, blank=False,
                                      validators=[validate_only_numbers])
-    position_name_pt = models.CharField(max_length=250)
-    position_name_en = models.CharField(max_length=250)
-    position_name_es = models.CharField(max_length=250)
+    position_name_pt = models.TextField()
+    position_name_en = models.TextField()
+    position_name_es = models.TextField()
     subposition_code = models.CharField(max_length=6, blank=False,
                                         validators=[validate_only_numbers])
-    subposition_name_pt = models.CharField(max_length=250)
-    subposition_name_en = models.CharField(max_length=250)
-    subposition_name_es = models.CharField(max_length=250)
-    section_code = models.CharField(max_length=2, blank=False,
+    subposition_name_pt = models.TextField()
+    subposition_name_en = models.TextField()
+    subposition_name_es = models.TextField()
+    section_code = models.CharField(max_length=6, blank=False,
                                     verbose_name="Section code from NCM")
-    section_name_pt = models.CharField(max_length=250)
-    section_name_en = models.CharField(max_length=250)
-    section_name_es = models.CharField(max_length=250)
+    section_name_pt = models.TextField()
+    section_name_en = models.TextField()
+    section_name_es = models.TextField()
 
 
 class CGCE(models.Model):
@@ -60,29 +60,29 @@ class CUCI(models.Model):
     '''
     item_code = models.CharField(max_length=5, blank=False,
                                  validators=[validate_only_numbers])
-    item_name_pt = models.CharField(max_length=250, blank=False)
-    item_name_en = models.CharField(max_length=250, blank=False)
-    item_name_es = models.CharField(max_length=250, blank=False)
+    item_name_pt = models.TextField(blank=False)
+    item_name_en = models.TextField(blank=False)
+    item_name_es = models.TextField(blank=False)
     subitem_code = models.CharField(max_length=4, blank=False,
                                     validators=[validate_only_numbers])
-    subitem_name_pt = models.CharField(max_length=250, blank=False)
-    subitem_name_en = models.CharField(max_length=250, blank=False)
-    subitem_name_es = models.CharField(max_length=250, blank=False)
+    subitem_name_pt = models.TextField(blank=False)
+    subitem_name_en = models.TextField(blank=False)
+    subitem_name_es = models.TextField(blank=False)
     position_code = models.CharField(max_length=3, blank=False,
                                      validators=[validate_only_numbers])
-    position_name_pt = models.CharField(max_length=250, blank=False)
-    position_name_en = models.CharField(max_length=250, blank=False)
-    position_name_es = models.CharField(max_length=250, blank=False)
+    position_name_pt = models.TextField(blank=False)
+    position_name_en = models.TextField(blank=False)
+    position_name_es = models.TextField(blank=False)
     chapter_code = models.CharField(max_length=2, blank=False,
                                     validators=[validate_only_numbers])
-    chapter_name_pt = models.CharField(max_length=250, blank=False)
-    chapter_name_en = models.CharField(max_length=250, blank=False)
-    chapter_name_es = models.CharField(max_length=250, blank=False)
+    chapter_name_pt = models.TextField(blank=False)
+    chapter_name_en = models.TextField(blank=False)
+    chapter_name_es = models.TextField(blank=False)
     section_code = models.CharField(max_length=1, blank=False,
                                     verbose_name="Section code from NCM")
-    section_name_pt = models.CharField(max_length=250, blank=False)
-    section_name_en = models.CharField(max_length=250, blank=False)
-    section_name_es = models.CharField(max_length=250, blank=False)
+    section_name_pt = models.TextField(blank=False)
+    section_name_en = models.TextField(blank=False)
+    section_name_es = models.TextField(blank=False)
 
 
 class NCM(models.Model):
@@ -91,18 +91,18 @@ class NCM(models.Model):
     """
     ncm_code = models.CharField(max_length=8, blank=False,
                                 validators=[validate_only_numbers])
-    ncm_name_pt = models.CharField(max_length=250, blank=False)
-    ncm_name_en = models.CharField(max_length=250, blank=False)
-    ncm_name_es = models.CharField(max_length=250, blank=False)
-    statistic_unit_code = models.CharField(max_length=2, blank=False,
+    ncm_name_pt = models.TextField(blank=False, null=True)
+    ncm_name_en = models.TextField(blank=False, null=True)
+    ncm_name_es = models.TextField(blank=False, null=True)
+    statistic_unit_code = models.CharField(max_length=10, blank=False,
                                            validators=[validate_only_numbers])
-    ppe_code = models.CharField(max_length=4, blank=False,
+    ppe_code = models.CharField(max_length=10, blank=False,
                                 verbose_name="Pauta de Produtos Exportados",
                                 validators=[validate_only_numbers])
-    ppi_code = models.CharField(max_length=4, blank=False,
+    ppi_code = models.CharField(max_length=10, blank=False,
                                 verbose_name="Pauta de Produtos Importados",
                                 validators=[validate_only_numbers])
-    aggregate_factor_code = models.CharField(max_length=1, blank=False,
+    aggregate_factor_code = models.CharField(max_length=10, blank=False,
                                              validators=[validate_only_numbers]
                                              )
     cuci = models.ForeignKey(CUCI, on_delete=models.CASCADE,
@@ -113,12 +113,12 @@ class NCM(models.Model):
                                              Categorias Econômicas''')
     sh = models.ForeignKey(SH, on_delete=models.CASCADE,
                            verbose_name="Sistema Harmónico")
-    isic4_code = models.CharField(max_length=2, blank=False,
+    isic4_code = models.CharField(max_length=10, blank=False,
                                   verbose_name='''International Standard Industrial
                                                Classification (Revision 4)''',
                                   validators=[validate_only_numbers])
-    exportation_subset = models.CharField(max_length=4, blank=False)
-    siit_code = models.CharField(max_length=4, blank=False,
+    exportation_subset = models.CharField(max_length=10, blank=False)
+    siit_code = models.CharField(max_length=8, blank=False,
                                  verbose_name='''Setores Industriais por
                                               Intensidade Tecnológica code''',
                                  validators=[validate_only_numbers])

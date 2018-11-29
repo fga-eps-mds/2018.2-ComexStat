@@ -2,8 +2,14 @@ version: '3.5'
 
 services:
 
-  db:
-    image: postgres
+  postgres:
+    image: postgres:latest
+    container_name: db
+    hostname: postgres
+    environment:
+      - POSTGRES_PASSWORD=comexstat
+      - POSTGRES_USER=comexstat
+      - POSTGRES_DB=comexstat
     ports:
       - 5000:5432
 
@@ -14,5 +20,10 @@ services:
       - .:/code
     ports:
       - "8000:8000"
+    environment:
+      - DB_NAME=comexstat
+      - DB_USER=comexstat
+      - DB_PASSWORD=comexstat
+      - DB_HOST=postgres
     depends_on:
-      - db
+      - postgres
