@@ -62,6 +62,9 @@ Burndown de riscos:
 
 # Resultados
 
+## Velocity
+
+![Velocity](https://fga-eps-mds.github.io/2018.2-ComexStat/img/sprints/sprint13/velocity.png)
 
 ## Resultado da Revisão da Sprint
 
