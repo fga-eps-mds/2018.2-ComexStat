@@ -5,14 +5,14 @@
         <link>https://fga-eps-mds.github.io//2018.2-ComexStat/blog</link>
         <description>The best place to stay up-to-date with the latest Comex Stat news and events.</description>
         <lastBuildDate>Sat, 22 Sep 2018 06:00:00 GMT</lastBuildDate>
-        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
             <title>Comex Stat Blog</title>
             <url>https://fga-eps-mds.github.io//2018.2-ComexStat/img/logo_header.png</url>
             <link>https://fga-eps-mds.github.io//2018.2-ComexStat/blog</link>
         </image>
-        <copyright>Copyright © 2019 ComexStat</copyright>
+        <copyright>Copyright © 2020 ComexStat</copyright>
         <item>
             <title><![CDATA[Sprint 6]]></title>
             <link>https://fga-eps-mds.github.io//2018.2-ComexStat/blog/2018/09/22/sprint-6.html</link>
